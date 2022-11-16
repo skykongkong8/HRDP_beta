@@ -1,0 +1,4 @@
+source;share/hrdp_beta_actions/local_setup.bash
+source;share/hrdp_beta_actions/local_setup.dsv
+source;share/hrdp_beta_actions/local_setup.sh
+source;share/hrdp_beta_actions/local_setup.zsh

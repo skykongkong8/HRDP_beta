@@ -1,0 +1,21 @@
+[0.400s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/hrdp_beta_actions -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/hrdp_beta_actions
+[0.525s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.928s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.923s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.957s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[4.002s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.101s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.411s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.884s] -- Found FastRTPS: /opt/ros/foxy/include  
+[6.948s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.184s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[8.185s]   rosidl_generate_interfaces() the passed file 'action/Fibonacci.action'
+[8.187s]   doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[8.189s]   '/home/r1mini/sungsik_ws/src/hrdp_beta_actions'
+[8.190s] Call Stack (most recent call first):
+[8.193s]   CMakeLists.txt:34 (rosidl_generate_interfaces)
+[8.195s] 
+[8.196s] 
+[8.197s] -- Configuring incomplete, errors occurred!
+[8.198s] See also "/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles/CMakeOutput.log".
+[8.302s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/hrdp_beta_actions -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/hrdp_beta_actions

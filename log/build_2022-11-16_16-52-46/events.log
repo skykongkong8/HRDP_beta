@@ -1,0 +1,680 @@
+[0.000000] (-) TimerEvent: {}
+[0.002555] (hrdp_beta) JobQueued: {'identifier': 'hrdp_beta', 'dependencies': OrderedDict()}
+[0.003241] (hrdp_beta_actions) JobQueued: {'identifier': 'hrdp_beta_actions', 'dependencies': OrderedDict()}
+[0.004750] (hrdp_beta) JobStarted: {'identifier': 'hrdp_beta'}
+[0.097676] (-) TimerEvent: {}
+[0.140454] (hrdp_beta_actions) JobStarted: {'identifier': 'hrdp_beta_actions'}
+[0.203423] (-) TimerEvent: {}
+[0.287152] (hrdp_beta) JobProgress: {'identifier': 'hrdp_beta', 'progress': 'cmake'}
+[0.295794] (hrdp_beta) JobProgress: {'identifier': 'hrdp_beta', 'progress': 'build'}
+[0.300662] (hrdp_beta) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/r1mini/sungsik_ws/build/hrdp_beta', '--', '-j4', '-l4'], 'cwd': '/home/r1mini/sungsik_ws/build/hrdp_beta', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'r1mini'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '6111'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/r1mini'), ('OLDPWD', '/home/r1mini/sungsik_ws'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/r1mini/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'r1mini'), ('WINDOWID', '67117019'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-10.0/bin:/home/r1mini/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/foxy/bin:/home/r1mini/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ros2:@/tmp/.ICE-unix/6018,unix/ros2:/tmp/.ICE-unix/6018'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/r1mini/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/r1mini'), ('AMENT_PREFIX_PATH', '/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '7'), ('PWD', '/home/r1mini/sungsik_ws/build/hrdp_beta'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/home/r1mini/ros2_ws/build/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_teleop/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_bringup/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy')]), 'shell': False}
+[0.310149] (-) TimerEvent: {}
+[0.345632] (hrdp_beta_actions) JobProgress: {'identifier': 'hrdp_beta_actions', 'progress': 'cmake'}
+[0.357061] (hrdp_beta_actions) Command: {'cmd': ['/usr/bin/cmake', '/home/r1mini/sungsik_ws/src/hrdp_beta_actions', '-DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/hrdp_beta_actions'], 'cwd': '/home/r1mini/sungsik_ws/build/hrdp_beta_actions', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'r1mini'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '6111'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/r1mini'), ('OLDPWD', '/home/r1mini/sungsik_ws'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/r1mini/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'r1mini'), ('WINDOWID', '67117019'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-10.0/bin:/home/r1mini/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/foxy/bin:/home/r1mini/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ros2:@/tmp/.ICE-unix/6018,unix/ros2:/tmp/.ICE-unix/6018'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/r1mini/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/r1mini'), ('AMENT_PREFIX_PATH', '/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '7'), ('PWD', '/home/r1mini/sungsik_ws/build/hrdp_beta_actions'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/home/r1mini/ros2_ws/build/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_teleop/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_bringup/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy')]), 'shell': False}
+[0.410691] (-) TimerEvent: {}
+[0.491558] (hrdp_beta_actions) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.511161] (-) TimerEvent: {}
+[0.613459] (-) TimerEvent: {}
+[0.685414] (hrdp_beta) CommandEnded: {'returncode': 0}
+[0.714215] (-) TimerEvent: {}
+[0.799294] (hrdp_beta_actions) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.803020] (hrdp_beta_actions) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.814539] (-) TimerEvent: {}
+[0.865990] (hrdp_beta) JobProgress: {'identifier': 'hrdp_beta', 'progress': 'install'}
+[0.915230] (-) TimerEvent: {}
+[0.966044] (hrdp_beta) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/r1mini/sungsik_ws/build/hrdp_beta'], 'cwd': '/home/r1mini/sungsik_ws/build/hrdp_beta', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'r1mini'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '6111'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/r1mini'), ('OLDPWD', '/home/r1mini/sungsik_ws'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/r1mini/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'r1mini'), ('WINDOWID', '67117019'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-10.0/bin:/home/r1mini/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/foxy/bin:/home/r1mini/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ros2:@/tmp/.ICE-unix/6018,unix/ros2:/tmp/.ICE-unix/6018'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/r1mini/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/r1mini'), ('AMENT_PREFIX_PATH', '/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '7'), ('PWD', '/home/r1mini/sungsik_ws/build/hrdp_beta'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/home/r1mini/ros2_ws/build/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_teleop/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_bringup/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy')]), 'shell': False}
+[1.015565] (-) TimerEvent: {}
+[1.064606] (hrdp_beta) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.073535] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/ament_index/resource_index/package_run_dependencies/hrdp_beta\n'}
+[1.077532] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/ament_index/resource_index/parent_prefix_path/hrdp_beta\n'}
+[1.079931] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/environment/ament_prefix_path.sh\n'}
+[1.081292] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/environment/ament_prefix_path.dsv\n'}
+[1.082486] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/environment/path.sh\n'}
+[1.085008] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/environment/path.dsv\n'}
+[1.088328] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/local_setup.bash\n'}
+[1.089805] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/local_setup.sh\n'}
+[1.097259] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/local_setup.zsh\n'}
+[1.102713] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/local_setup.dsv\n'}
+[1.107827] (hrdp_beta) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.dsv\n'}
+[1.109127] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/ament_index/resource_index/packages/hrdp_beta\n'}
+[1.110270] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/cmake/hrdp_betaConfig.cmake\n'}
+[1.111705] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/cmake/hrdp_betaConfig-version.cmake\n'}
+[1.113055] (hrdp_beta) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.xml\n'}
+[1.114265] (hrdp_beta) CommandEnded: {'returncode': 0}
+[1.117525] (-) TimerEvent: {}
+[1.224600] (-) TimerEvent: {}
+[1.335018] (-) TimerEvent: {}
+[1.437780] (-) TimerEvent: {}
+[1.545200] (-) TimerEvent: {}
+[1.651508] (hrdp_beta) JobEnded: {'identifier': 'hrdp_beta', 'rc': 0}
+[1.656558] (-) TimerEvent: {}
+[1.757965] (-) TimerEvent: {}
+[1.859751] (-) TimerEvent: {}
+[1.961614] (-) TimerEvent: {}
+[2.063309] (-) TimerEvent: {}
+[2.165044] (-) TimerEvent: {}
+[2.266780] (-) TimerEvent: {}
+[2.368703] (-) TimerEvent: {}
+[2.470914] (-) TimerEvent: {}
+[2.525796] (hrdp_beta_actions) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[2.542146] (hrdp_beta_actions) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.558293] (hrdp_beta_actions) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.571107] (-) TimerEvent: {}
+[2.672762] (-) TimerEvent: {}
+[2.774811] (-) TimerEvent: {}
+[2.876878] (-) TimerEvent: {}
+[2.978841] (-) TimerEvent: {}
+[3.081041] (-) TimerEvent: {}
+[3.183050] (-) TimerEvent: {}
+[3.285870] (-) TimerEvent: {}
+[3.387844] (-) TimerEvent: {}
+[3.489820] (-) TimerEvent: {}
+[3.591749] (-) TimerEvent: {}
+[3.639740] (hrdp_beta_actions) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.692117] (-) TimerEvent: {}
+[3.793976] (-) TimerEvent: {}
+[3.895996] (-) TimerEvent: {}
+[3.998222] (hrdp_beta_actions) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[4.000100] (-) TimerEvent: {}
+[4.101607] (-) TimerEvent: {}
+[4.203589] (-) TimerEvent: {}
+[4.305730] (-) TimerEvent: {}
+[4.407873] (-) TimerEvent: {}
+[4.509798] (-) TimerEvent: {}
+[4.611803] (-) TimerEvent: {}
+[4.714008] (-) TimerEvent: {}
+[4.815923] (-) TimerEvent: {}
+[4.917879] (-) TimerEvent: {}
+[5.019834] (-) TimerEvent: {}
+[5.121881] (-) TimerEvent: {}
+[5.223879] (-) TimerEvent: {}
+[5.325719] (-) TimerEvent: {}
+[5.427571] (-) TimerEvent: {}
+[5.542243] (-) TimerEvent: {}
+[5.644464] (-) TimerEvent: {}
+[5.672422] (hrdp_beta_actions) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[5.745041] (-) TimerEvent: {}
+[5.846958] (-) TimerEvent: {}
+[5.948967] (-) TimerEvent: {}
+[6.050937] (-) TimerEvent: {}
+[6.153151] (-) TimerEvent: {}
+[6.255098] (-) TimerEvent: {}
+[6.357101] (-) TimerEvent: {}
+[6.459258] (-) TimerEvent: {}
+[6.561382] (-) TimerEvent: {}
+[6.663414] (-) TimerEvent: {}
+[6.765369] (-) TimerEvent: {}
+[6.805537] (hrdp_beta_actions) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.866036] (-) TimerEvent: {}
+[6.968618] (-) TimerEvent: {}
+[6.977644] (hrdp_beta_actions) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.068994] (-) TimerEvent: {}
+[7.170870] (-) TimerEvent: {}
+[7.257146] (hrdp_beta_actions) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[7.271130] (-) TimerEvent: {}
+[7.276582] (hrdp_beta_actions) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[7.371543] (-) TimerEvent: {}
+[7.473624] (-) TimerEvent: {}
+[7.575804] (-) TimerEvent: {}
+[7.588705] (hrdp_beta_actions) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[7.592007] (hrdp_beta_actions) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[7.593196] (hrdp_beta_actions) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[7.593949] (hrdp_beta_actions) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[7.676117] (-) TimerEvent: {}
+[7.778417] (-) TimerEvent: {}
+[7.839736] (hrdp_beta_actions) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[7.878806] (-) TimerEvent: {}
+[7.980548] (-) TimerEvent: {}
+[8.082549] (-) TimerEvent: {}
+[8.184374] (-) TimerEvent: {}
+[8.284011] (hrdp_beta_actions) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[8.285873] (-) TimerEvent: {}
+[8.365685] (hrdp_beta_actions) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.377424] (hrdp_beta_actions) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.384352] (hrdp_beta_actions) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.385991] (-) TimerEvent: {}
+[8.417014] (hrdp_beta_actions) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.486503] (-) TimerEvent: {}
+[8.588469] (-) TimerEvent: {}
+[8.690619] (-) TimerEvent: {}
+[8.792869] (-) TimerEvent: {}
+[8.807340] (hrdp_beta_actions) StdoutLine: {'line': b'-- Generating done\n'}
+[8.828468] (hrdp_beta_actions) StdoutLine: {'line': b'-- Build files have been written to: /home/r1mini/sungsik_ws/build/hrdp_beta_actions\n'}
+[8.893339] (-) TimerEvent: {}
+[8.973264] (hrdp_beta_actions) CommandEnded: {'returncode': 0}
+[8.979269] (hrdp_beta_actions) JobProgress: {'identifier': 'hrdp_beta_actions', 'progress': 'build'}
+[8.981384] (hrdp_beta_actions) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/r1mini/sungsik_ws/build/hrdp_beta_actions', '--', '-j4', '-l4'], 'cwd': '/home/r1mini/sungsik_ws/build/hrdp_beta_actions', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'r1mini'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '6111'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/r1mini'), ('OLDPWD', '/home/r1mini/sungsik_ws'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/r1mini/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'r1mini'), ('WINDOWID', '67117019'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-10.0/bin:/home/r1mini/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/foxy/bin:/home/r1mini/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ros2:@/tmp/.ICE-unix/6018,unix/ros2:/tmp/.ICE-unix/6018'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/r1mini/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/r1mini'), ('AMENT_PREFIX_PATH', '/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '7'), ('PWD', '/home/r1mini/sungsik_ws/build/hrdp_beta_actions'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/home/r1mini/ros2_ws/build/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_teleop/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_bringup/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy')]), 'shell': False}
+[8.999587] (-) TimerEvent: {}
+[9.101712] (-) TimerEvent: {}
+[9.203913] (-) TimerEvent: {}
+[9.306533] (hrdp_beta_actions) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.308971] (-) TimerEvent: {}
+[9.310362] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__cpp\x1b[0m\n'}
+[9.401735] (hrdp_beta_actions) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[9.409221] (-) TimerEvent: {}
+[9.511383] (-) TimerEvent: {}
+[9.613253] (-) TimerEvent: {}
+[9.715233] (-) TimerEvent: {}
+[9.817216] (-) TimerEvent: {}
+[9.919283] (-) TimerEvent: {}
+[10.021275] (-) TimerEvent: {}
+[10.123631] (-) TimerEvent: {}
+[10.225524] (-) TimerEvent: {}
+[10.327642] (-) TimerEvent: {}
+[10.429560] (-) TimerEvent: {}
+[10.531791] (-) TimerEvent: {}
+[10.633760] (-) TimerEvent: {}
+[10.735671] (-) TimerEvent: {}
+[10.837578] (-) TimerEvent: {}
+[10.939484] (-) TimerEvent: {}
+[11.041499] (-) TimerEvent: {}
+[11.143262] (-) TimerEvent: {}
+[11.245085] (-) TimerEvent: {}
+[11.347024] (-) TimerEvent: {}
+[11.448941] (-) TimerEvent: {}
+[11.550775] (-) TimerEvent: {}
+[11.652614] (-) TimerEvent: {}
+[11.754474] (-) TimerEvent: {}
+[11.856281] (-) TimerEvent: {}
+[11.958018] (-) TimerEvent: {}
+[12.059961] (-) TimerEvent: {}
+[12.162177] (-) TimerEvent: {}
+[12.264260] (-) TimerEvent: {}
+[12.366644] (-) TimerEvent: {}
+[12.469446] (hrdp_beta_actions) StdoutLine: {'line': b'[  6%] Built target hrdp_beta_actions__cpp\n'}
+[12.471661] (-) TimerEvent: {}
+[12.574337] (-) TimerEvent: {}
+[12.585792] (hrdp_beta_actions) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.603195] (hrdp_beta_actions) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.660184] (hrdp_beta_actions) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.674763] (-) TimerEvent: {}
+[12.776984] (-) TimerEvent: {}
+[12.879043] (-) TimerEvent: {}
+[12.981231] (-) TimerEvent: {}
+[13.083438] (-) TimerEvent: {}
+[13.185706] (-) TimerEvent: {}
+[13.288182] (-) TimerEvent: {}
+[13.382641] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__rosidl_generator_c\x1b[0m\n'}
+[13.388759] (-) TimerEvent: {}
+[13.490867] (-) TimerEvent: {}
+[13.593141] (-) TimerEvent: {}
+[13.659208] (hrdp_beta_actions) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/camera_rgb__functions.c.o\x1b[0m\n'}
+[13.693523] (-) TimerEvent: {}
+[13.795449] (-) TimerEvent: {}
+[13.897547] (-) TimerEvent: {}
+[13.999599] (-) TimerEvent: {}
+[14.101838] (-) TimerEvent: {}
+[14.203780] (-) TimerEvent: {}
+[14.305780] (-) TimerEvent: {}
+[14.407604] (-) TimerEvent: {}
+[14.510418] (-) TimerEvent: {}
+[14.612508] (-) TimerEvent: {}
+[14.714565] (-) TimerEvent: {}
+[14.816516] (-) TimerEvent: {}
+[14.918575] (-) TimerEvent: {}
+[15.020535] (-) TimerEvent: {}
+[15.122573] (-) TimerEvent: {}
+[15.224640] (-) TimerEvent: {}
+[15.327152] (-) TimerEvent: {}
+[15.429342] (-) TimerEvent: {}
+[15.531817] (-) TimerEvent: {}
+[15.634207] (-) TimerEvent: {}
+[15.736588] (-) TimerEvent: {}
+[15.795606] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__rosidl_typesupport_cpp\x1b[0m\n'}
+[15.837128] (-) TimerEvent: {}
+[15.850734] (hrdp_beta_actions) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libhrdp_beta_actions__rosidl_generator_c.so\x1b[0m\n'}
+[15.937685] (-) TimerEvent: {}
+[15.941528] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[16.011498] (hrdp_beta_actions) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/hrdp_beta_actions__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hrdp_beta_actions/action/camera_rgb__type_support.cpp.o\x1b[0m\n'}
+[16.038117] (-) TimerEvent: {}
+[16.096667] (hrdp_beta_actions) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hrdp_beta_actions/action/detail/camera_rgb__type_support.cpp.o\x1b[0m\n'}
+[16.138532] (-) TimerEvent: {}
+[16.241152] (-) TimerEvent: {}
+[16.343382] (-) TimerEvent: {}
+[16.445853] (-) TimerEvent: {}
+[16.549345] (-) TimerEvent: {}
+[16.652418] (-) TimerEvent: {}
+[16.754752] (-) TimerEvent: {}
+[16.856998] (-) TimerEvent: {}
+[16.887185] (hrdp_beta_actions) StdoutLine: {'line': b'[ 29%] Built target hrdp_beta_actions__rosidl_generator_c\n'}
+[16.960670] (-) TimerEvent: {}
+[17.062350] (hrdp_beta_actions) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[17.064570] (-) TimerEvent: {}
+[17.129563] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[17.165163] (-) TimerEvent: {}
+[17.267228] (-) TimerEvent: {}
+[17.369397] (-) TimerEvent: {}
+[17.471492] (-) TimerEvent: {}
+[17.573637] (-) TimerEvent: {}
+[17.675895] (-) TimerEvent: {}
+[17.762083] (hrdp_beta_actions) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/camera_rgb__type_support.cpp.o\x1b[0m\n'}
+[17.776381] (-) TimerEvent: {}
+[17.880091] (-) TimerEvent: {}
+[17.982261] (-) TimerEvent: {}
+[18.084335] (-) TimerEvent: {}
+[18.186446] (-) TimerEvent: {}
+[18.288506] (-) TimerEvent: {}
+[18.390806] (-) TimerEvent: {}
+[18.493018] (-) TimerEvent: {}
+[18.595164] (-) TimerEvent: {}
+[18.697333] (-) TimerEvent: {}
+[18.799424] (-) TimerEvent: {}
+[18.901647] (-) TimerEvent: {}
+[19.003879] (-) TimerEvent: {}
+[19.106094] (-) TimerEvent: {}
+[19.208353] (-) TimerEvent: {}
+[19.310557] (-) TimerEvent: {}
+[19.412717] (-) TimerEvent: {}
+[19.514921] (-) TimerEvent: {}
+[19.617117] (-) TimerEvent: {}
+[19.719189] (-) TimerEvent: {}
+[19.821316] (-) TimerEvent: {}
+[19.923433] (-) TimerEvent: {}
+[20.026070] (-) TimerEvent: {}
+[20.128266] (-) TimerEvent: {}
+[20.230602] (-) TimerEvent: {}
+[20.333138] (-) TimerEvent: {}
+[20.435524] (-) TimerEvent: {}
+[20.624935] (-) TimerEvent: {}
+[20.727190] (-) TimerEvent: {}
+[20.829581] (-) TimerEvent: {}
+[20.931921] (-) TimerEvent: {}
+[20.981524] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__rosidl_typesupport_c\x1b[0m\n'}
+[21.032634] (-) TimerEvent: {}
+[21.135255] (-) TimerEvent: {}
+[21.238257] (-) TimerEvent: {}
+[21.272571] (hrdp_beta_actions) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/hrdp_beta_actions__rosidl_typesupport_c.dir/rosidl_typesupport_c/hrdp_beta_actions/action/camera_rgb__type_support.cpp.o\x1b[0m\n'}
+[21.338802] (-) TimerEvent: {}
+[21.441406] (-) TimerEvent: {}
+[21.467299] (hrdp_beta_actions) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libhrdp_beta_actions__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[21.541858] (-) TimerEvent: {}
+[21.644346] (-) TimerEvent: {}
+[21.746996] (-) TimerEvent: {}
+[21.849621] (-) TimerEvent: {}
+[21.951924] (-) TimerEvent: {}
+[21.956684] (hrdp_beta_actions) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libhrdp_beta_actions__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[21.960323] (hrdp_beta_actions) StdoutLine: {'line': b'[ 45%] Built target hrdp_beta_actions__rosidl_typesupport_cpp\n'}
+[22.052454] (-) TimerEvent: {}
+[22.068333] (hrdp_beta_actions) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[22.127555] (hrdp_beta_actions) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libhrdp_beta_actions__rosidl_typesupport_c.so\x1b[0m\n'}
+[22.153095] (-) TimerEvent: {}
+[22.257064] (-) TimerEvent: {}
+[22.359992] (-) TimerEvent: {}
+[22.462441] (-) TimerEvent: {}
+[22.564728] (-) TimerEvent: {}
+[22.661615] (hrdp_beta_actions) StdoutLine: {'line': b'[ 51%] Built target hrdp_beta_actions__rosidl_typesupport_c\n'}
+[22.665233] (-) TimerEvent: {}
+[22.767903] (-) TimerEvent: {}
+[22.871663] (-) TimerEvent: {}
+[22.920163] (hrdp_beta_actions) StdoutLine: {'line': b'[ 51%] Built target hrdp_beta_actions__rosidl_typesupport_introspection_cpp\n'}
+[22.972081] (-) TimerEvent: {}
+[23.074312] (-) TimerEvent: {}
+[23.176182] (-) TimerEvent: {}
+[23.278237] (-) TimerEvent: {}
+[23.380274] (-) TimerEvent: {}
+[23.482464] (-) TimerEvent: {}
+[23.584455] (-) TimerEvent: {}
+[23.686695] (-) TimerEvent: {}
+[23.788725] (-) TimerEvent: {}
+[23.890912] (-) TimerEvent: {}
+[23.993180] (-) TimerEvent: {}
+[24.095195] (-) TimerEvent: {}
+[24.197232] (-) TimerEvent: {}
+[24.299343] (-) TimerEvent: {}
+[24.401472] (-) TimerEvent: {}
+[24.503528] (-) TimerEvent: {}
+[24.605690] (-) TimerEvent: {}
+[24.656233] (hrdp_beta_actions) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[24.706106] (-) TimerEvent: {}
+[24.808586] (-) TimerEvent: {}
+[24.910625] (-) TimerEvent: {}
+[25.012788] (-) TimerEvent: {}
+[25.115139] (-) TimerEvent: {}
+[25.217879] (-) TimerEvent: {}
+[25.320070] (-) TimerEvent: {}
+[25.422278] (-) TimerEvent: {}
+[25.524662] (-) TimerEvent: {}
+[25.627079] (-) TimerEvent: {}
+[25.729398] (-) TimerEvent: {}
+[25.740488] (hrdp_beta_actions) StdoutLine: {'line': b'[ 54%] Built target hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp\n'}
+[25.828984] (hrdp_beta_actions) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[25.831109] (-) TimerEvent: {}
+[25.898667] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[25.931589] (-) TimerEvent: {}
+[26.025496] (hrdp_beta_actions) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/camera_rgb__type_support.c.o\x1b[0m\n'}
+[26.031938] (-) TimerEvent: {}
+[26.134199] (-) TimerEvent: {}
+[26.236398] (-) TimerEvent: {}
+[26.339097] (-) TimerEvent: {}
+[26.441196] (-) TimerEvent: {}
+[26.466397] (hrdp_beta_actions) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libhrdp_beta_actions__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[26.541649] (-) TimerEvent: {}
+[26.644486] (-) TimerEvent: {}
+[26.726808] (hrdp_beta_actions) StdoutLine: {'line': b'[ 64%] Built target hrdp_beta_actions__rosidl_typesupport_introspection_c\n'}
+[26.744790] (-) TimerEvent: {}
+[26.846672] (-) TimerEvent: {}
+[26.949007] (-) TimerEvent: {}
+[27.051188] (-) TimerEvent: {}
+[27.153049] (-) TimerEvent: {}
+[27.254849] (-) TimerEvent: {}
+[27.356655] (-) TimerEvent: {}
+[27.458402] (-) TimerEvent: {}
+[27.560251] (-) TimerEvent: {}
+[27.662110] (-) TimerEvent: {}
+[27.763897] (-) TimerEvent: {}
+[27.865786] (-) TimerEvent: {}
+[27.967580] (-) TimerEvent: {}
+[28.069398] (-) TimerEvent: {}
+[28.171202] (-) TimerEvent: {}
+[28.273250] (-) TimerEvent: {}
+[28.375404] (-) TimerEvent: {}
+[28.477684] (-) TimerEvent: {}
+[28.580079] (-) TimerEvent: {}
+[28.641700] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[28.680482] (-) TimerEvent: {}
+[28.782291] (hrdp_beta_actions) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hrdp_beta_actions/action/detail/camera_rgb__type_support_c.cpp.o\x1b[0m\n'}
+[28.784193] (-) TimerEvent: {}
+[28.885766] (-) TimerEvent: {}
+[28.987814] (-) TimerEvent: {}
+[29.089863] (-) TimerEvent: {}
+[29.191875] (-) TimerEvent: {}
+[29.293955] (-) TimerEvent: {}
+[29.395995] (-) TimerEvent: {}
+[29.498852] (-) TimerEvent: {}
+[29.601017] (-) TimerEvent: {}
+[29.703134] (-) TimerEvent: {}
+[29.805215] (-) TimerEvent: {}
+[29.907212] (-) TimerEvent: {}
+[30.009253] (-) TimerEvent: {}
+[30.111266] (-) TimerEvent: {}
+[30.213362] (-) TimerEvent: {}
+[30.315451] (-) TimerEvent: {}
+[30.417630] (-) TimerEvent: {}
+[30.519724] (-) TimerEvent: {}
+[30.621853] (-) TimerEvent: {}
+[30.724163] (-) TimerEvent: {}
+[30.826290] (-) TimerEvent: {}
+[30.928351] (-) TimerEvent: {}
+[31.031172] (-) TimerEvent: {}
+[31.133262] (-) TimerEvent: {}
+[31.235333] (-) TimerEvent: {}
+[31.337520] (-) TimerEvent: {}
+[31.439744] (-) TimerEvent: {}
+[31.541916] (-) TimerEvent: {}
+[31.643930] (-) TimerEvent: {}
+[31.746677] (-) TimerEvent: {}
+[31.847221] (hrdp_beta_actions) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libhrdp_beta_actions__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[31.849191] (-) TimerEvent: {}
+[31.950709] (-) TimerEvent: {}
+[32.052797] (-) TimerEvent: {}
+[32.155081] (-) TimerEvent: {}
+[32.257381] (-) TimerEvent: {}
+[32.360956] (-) TimerEvent: {}
+[32.463341] (-) TimerEvent: {}
+[32.565509] (-) TimerEvent: {}
+[32.667798] (-) TimerEvent: {}
+[32.769895] (-) TimerEvent: {}
+[32.788083] (hrdp_beta_actions) StdoutLine: {'line': b'[ 70%] Built target hrdp_beta_actions__rosidl_typesupport_fastrtps_c\n'}
+[32.869415] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions\x1b[0m\n'}
+[32.871188] (-) TimerEvent: {}
+[32.952727] (hrdp_beta_actions) StdoutLine: {'line': b'[ 70%] Built target hrdp_beta_actions\n'}
+[32.971648] (-) TimerEvent: {}
+[33.031902] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__py\x1b[0m\n'}
+[33.072103] (-) TimerEvent: {}
+[33.107804] (hrdp_beta_actions) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[33.172559] (-) TimerEvent: {}
+[33.274496] (-) TimerEvent: {}
+[33.376221] (-) TimerEvent: {}
+[33.478214] (-) TimerEvent: {}
+[33.580057] (-) TimerEvent: {}
+[33.681936] (-) TimerEvent: {}
+[33.783878] (-) TimerEvent: {}
+[33.885824] (-) TimerEvent: {}
+[33.987732] (-) TimerEvent: {}
+[34.089724] (-) TimerEvent: {}
+[34.191545] (-) TimerEvent: {}
+[34.293410] (-) TimerEvent: {}
+[34.395423] (-) TimerEvent: {}
+[34.497334] (-) TimerEvent: {}
+[34.599208] (-) TimerEvent: {}
+[34.701143] (-) TimerEvent: {}
+[34.802952] (-) TimerEvent: {}
+[34.906038] (-) TimerEvent: {}
+[35.008196] (-) TimerEvent: {}
+[35.110001] (-) TimerEvent: {}
+[35.211769] (-) TimerEvent: {}
+[35.313986] (-) TimerEvent: {}
+[35.415995] (-) TimerEvent: {}
+[35.518093] (-) TimerEvent: {}
+[35.620253] (-) TimerEvent: {}
+[35.722118] (-) TimerEvent: {}
+[35.825611] (-) TimerEvent: {}
+[35.927370] (-) TimerEvent: {}
+[36.029165] (-) TimerEvent: {}
+[36.130958] (-) TimerEvent: {}
+[36.232758] (-) TimerEvent: {}
+[36.334564] (-) TimerEvent: {}
+[36.436370] (-) TimerEvent: {}
+[36.538214] (-) TimerEvent: {}
+[36.640019] (-) TimerEvent: {}
+[36.741803] (-) TimerEvent: {}
+[36.843567] (-) TimerEvent: {}
+[36.945354] (-) TimerEvent: {}
+[37.047131] (-) TimerEvent: {}
+[37.148980] (-) TimerEvent: {}
+[37.250916] (-) TimerEvent: {}
+[37.352727] (-) TimerEvent: {}
+[37.454740] (-) TimerEvent: {}
+[37.556564] (-) TimerEvent: {}
+[37.658394] (-) TimerEvent: {}
+[37.760174] (-) TimerEvent: {}
+[37.862047] (-) TimerEvent: {}
+[37.963826] (-) TimerEvent: {}
+[38.065654] (-) TimerEvent: {}
+[38.167411] (-) TimerEvent: {}
+[38.269164] (-) TimerEvent: {}
+[38.370901] (-) TimerEvent: {}
+[38.472629] (-) TimerEvent: {}
+[38.574491] (-) TimerEvent: {}
+[38.676160] (-) TimerEvent: {}
+[38.778164] (-) TimerEvent: {}
+[38.880378] (-) TimerEvent: {}
+[38.982736] (-) TimerEvent: {}
+[39.085091] (-) TimerEvent: {}
+[39.187284] (-) TimerEvent: {}
+[39.289549] (-) TimerEvent: {}
+[39.391876] (-) TimerEvent: {}
+[39.444947] (hrdp_beta_actions) StdoutLine: {'line': b'[ 74%] Built target hrdp_beta_actions__py\n'}
+[39.492294] (-) TimerEvent: {}
+[39.519051] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__python\x1b[0m\n'}
+[39.592748] (-) TimerEvent: {}
+[39.695288] (-) TimerEvent: {}
+[39.759772] (hrdp_beta_actions) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/hrdp_beta_actions__python.dir/rosidl_generator_py/hrdp_beta_actions/action/_camera_rgb_s.c.o\x1b[0m\n'}
+[39.795773] (-) TimerEvent: {}
+[39.898054] (-) TimerEvent: {}
+[40.000067] (-) TimerEvent: {}
+[40.102287] (-) TimerEvent: {}
+[40.204349] (-) TimerEvent: {}
+[40.306415] (-) TimerEvent: {}
+[40.408678] (-) TimerEvent: {}
+[40.510860] (-) TimerEvent: {}
+[40.613012] (-) TimerEvent: {}
+[40.715108] (-) TimerEvent: {}
+[40.817197] (-) TimerEvent: {}
+[40.919235] (-) TimerEvent: {}
+[40.924714] (hrdp_beta_actions) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/hrdp_beta_actions/libhrdp_beta_actions__python.so\x1b[0m\n'}
+[41.019703] (-) TimerEvent: {}
+[41.121896] (-) TimerEvent: {}
+[41.224090] (-) TimerEvent: {}
+[41.326344] (-) TimerEvent: {}
+[41.375589] (hrdp_beta_actions) StdoutLine: {'line': b'[ 80%] Built target hrdp_beta_actions__python\n'}
+[41.426821] (-) TimerEvent: {}
+[41.454308] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[41.466659] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[41.478222] (hrdp_beta_actions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hrdp_beta_actions__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[41.527311] (-) TimerEvent: {}
+[41.610252] (hrdp_beta_actions) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[41.627796] (-) TimerEvent: {}
+[41.666985] (hrdp_beta_actions) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[41.679077] (hrdp_beta_actions) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/hrdp_beta_actions__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[41.728368] (-) TimerEvent: {}
+[41.830835] (-) TimerEvent: {}
+[41.933216] (-) TimerEvent: {}
+[42.035506] (-) TimerEvent: {}
+[42.137939] (-) TimerEvent: {}
+[42.240340] (-) TimerEvent: {}
+[42.343154] (-) TimerEvent: {}
+[42.445649] (-) TimerEvent: {}
+[42.548309] (-) TimerEvent: {}
+[42.651364] (-) TimerEvent: {}
+[42.670997] (hrdp_beta_actions) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[42.675750] (hrdp_beta_actions) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[42.751868] (-) TimerEvent: {}
+[42.854426] (-) TimerEvent: {}
+[42.889690] (hrdp_beta_actions) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[42.955040] (-) TimerEvent: {}
+[43.057892] (-) TimerEvent: {}
+[43.160593] (-) TimerEvent: {}
+[43.263572] (-) TimerEvent: {}
+[43.291292] (hrdp_beta_actions) StdoutLine: {'line': b'[100%] Built target hrdp_beta_actions__rosidl_typesupport_introspection_c__pyext\n'}
+[43.364165] (-) TimerEvent: {}
+[43.466734] (-) TimerEvent: {}
+[43.498523] (hrdp_beta_actions) StdoutLine: {'line': b'[100%] Built target hrdp_beta_actions__rosidl_typesupport_c__pyext\n'}
+[43.567158] (-) TimerEvent: {}
+[43.600533] (hrdp_beta_actions) StdoutLine: {'line': b'[100%] Built target hrdp_beta_actions__rosidl_typesupport_fastrtps_c__pyext\n'}
+[43.667600] (-) TimerEvent: {}
+[43.697231] (hrdp_beta_actions) CommandEnded: {'returncode': 0}
+[43.783098] (-) TimerEvent: {}
+[43.885419] (-) TimerEvent: {}
+[43.987424] (-) TimerEvent: {}
+[44.089722] (-) TimerEvent: {}
+[44.115268] (hrdp_beta_actions) JobProgress: {'identifier': 'hrdp_beta_actions', 'progress': 'install'}
+[44.118329] (hrdp_beta_actions) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/r1mini/sungsik_ws/build/hrdp_beta_actions'], 'cwd': '/home/r1mini/sungsik_ws/build/hrdp_beta_actions', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'r1mini'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '6111'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/r1mini'), ('OLDPWD', '/home/r1mini/sungsik_ws'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/r1mini/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'r1mini'), ('WINDOWID', '67117019'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-10.0/bin:/home/r1mini/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/foxy/bin:/home/r1mini/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ros2:@/tmp/.ICE-unix/6018,unix/ros2:/tmp/.ICE-unix/6018'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/r1mini/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/r1mini'), ('AMENT_PREFIX_PATH', '/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '7'), ('PWD', '/home/r1mini/sungsik_ws/build/hrdp_beta_actions'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/home/r1mini/ros2_ws/build/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_teleop/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_bringup/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy')]), 'shell': False}
+[44.190602] (-) TimerEvent: {}
+[44.225473] (hrdp_beta_actions) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[44.230522] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/ament_index/resource_index/rosidl_interfaces/hrdp_beta_actions\n'}
+[44.233546] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions\n'}
+[44.234827] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg\n'}
+[44.242072] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg/rosidl_generator_c__visibility_control.h\n'}
+[44.249803] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action\n'}
+[44.258012] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail\n'}
+[44.261749] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__type_support.h\n'}
+[44.268337] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__struct.h\n'}
+[44.284029] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__functions.h\n'}
+[44.292530] (-) TimerEvent: {}
+[44.295225] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__functions.c\n'}
+[44.296920] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/camera_rgb.h\n'}
+[44.308668] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/library_path.sh\n'}
+[44.310774] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/library_path.dsv\n'}
+[44.319181] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_generator_c.so\n'}
+[44.320711] (hrdp_beta_actions) StdoutLine: {'line': b'-- Set runtime path of "/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_generator_c.so" to ""\n'}
+[44.335933] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions\n'}
+[44.339596] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg\n'}
+[44.341689] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[44.344050] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action\n'}
+[44.357083] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail\n'}
+[44.360530] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__rosidl_typesupport_fastrtps_c.h\n'}
+[44.368688] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_fastrtps_c.so\n'}
+[44.374254] (hrdp_beta_actions) StdoutLine: {'line': b'-- Set runtime path of "/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[44.375816] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions\n'}
+[44.377595] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg\n'}
+[44.378893] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[44.380046] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action\n'}
+[44.381259] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail\n'}
+[44.382373] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[44.388030] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/dds_fastrtps\n'}
+[44.390143] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so\n'}
+[44.391492] (hrdp_beta_actions) StdoutLine: {'line': b'-- Set runtime path of "/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[44.392633] (-) TimerEvent: {}
+[44.394992] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions\n'}
+[44.396738] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg\n'}
+[44.398211] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[44.399446] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action\n'}
+[44.400648] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail\n'}
+[44.402276] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__rosidl_typesupport_introspection_c.h\n'}
+[44.403993] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__type_support.c\n'}
+[44.405846] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_introspection_c.so\n'}
+[44.408367] (hrdp_beta_actions) StdoutLine: {'line': b'-- Set runtime path of "/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_introspection_c.so" to ""\n'}
+[44.410267] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_c.so\n'}
+[44.411744] (hrdp_beta_actions) StdoutLine: {'line': b'-- Set runtime path of "/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_c.so" to ""\n'}
+[44.413660] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions\n'}
+[44.416036] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action\n'}
+[44.418619] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail\n'}
+[44.420090] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__struct.hpp\n'}
+[44.421949] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__builder.hpp\n'}
+[44.423761] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__traits.hpp\n'}
+[44.426098] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/camera_rgb.hpp\n'}
+[44.427811] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions\n'}
+[44.429415] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action\n'}
+[44.430807] (hrdp_beta_actions) StdoutLine: {'line': b'-- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail\n'}
+[44.450718] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__type_support.cpp\n'}
+[44.453493] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__rosidl_typesupport_introspection_cpp.hpp\n'}
+[44.455086] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_introspection_cpp.so\n'}
+[44.456554] (hrdp_beta_actions) StdoutLine: {'line': b'-- Set runtime path of "/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[44.458116] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_cpp.so\n'}
+[44.459686] (hrdp_beta_actions) StdoutLine: {'line': b'-- Set runtime path of "/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_cpp.so" to ""\n'}
+[44.461094] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/pythonpath.sh\n'}
+[44.462414] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/pythonpath.dsv\n'}
+[44.463657] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/__init__.py\n'}
+[44.493132] (-) TimerEvent: {}
+[44.595259] (-) TimerEvent: {}
+[44.697093] (-) TimerEvent: {}
+[44.703952] (hrdp_beta_actions) StdoutLine: {'line': b"Compiling '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/__init__.py'...\n"}
+[44.783338] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/action\n'}
+[44.785705] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/action/_camera_rgb_s.c\n'}
+[44.786822] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/action/__init__.py\n'}
+[44.787968] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/action/_camera_rgb.py\n'}
+[44.789424] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[44.791934] (hrdp_beta_actions) StdoutLine: {'line': b'-- Set runtime path of "/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[44.794074] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[44.795416] (hrdp_beta_actions) StdoutLine: {'line': b'-- Set runtime path of "/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[44.796415] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[44.797489] (-) TimerEvent: {}
+[44.798763] (hrdp_beta_actions) StdoutLine: {'line': b'-- Set runtime path of "/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[44.799805] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__python.so\n'}
+[44.801767] (hrdp_beta_actions) StdoutLine: {'line': b'-- Set runtime path of "/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__python.so" to ""\n'}
+[44.802707] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/action/CameraRGB.idl\n'}
+[44.803512] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/action/CameraRGB.action\n'}
+[44.804479] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/ament_index/resource_index/package_run_dependencies/hrdp_beta_actions\n'}
+[44.805779] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/ament_index/resource_index/parent_prefix_path/hrdp_beta_actions\n'}
+[44.807401] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/ament_prefix_path.sh\n'}
+[44.813481] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/ament_prefix_path.dsv\n'}
+[44.815713] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/path.sh\n'}
+[44.816987] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/path.dsv\n'}
+[44.817871] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/local_setup.bash\n'}
+[44.818649] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/local_setup.sh\n'}
+[44.819411] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/local_setup.zsh\n'}
+[44.820158] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/local_setup.dsv\n'}
+[44.821166] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.dsv\n'}
+[44.822395] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/ament_index/resource_index/packages/hrdp_beta_actions\n'}
+[44.823713] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_generator_cExport.cmake\n'}
+[44.824770] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_generator_cExport-noconfig.cmake\n'}
+[44.826749] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_introspection_cExport.cmake\n'}
+[44.828183] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[44.829843] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_cExport.cmake\n'}
+[44.831253] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[44.832644] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_generator_cppExport.cmake\n'}
+[44.834220] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[44.836173] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[44.838190] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_cppExport.cmake\n'}
+[44.839771] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[44.841277] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/rosidl_cmake-extras.cmake\n'}
+[44.843008] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[44.844014] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[44.845296] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[44.846628] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[44.847672] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[44.849594] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[44.851601] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actionsConfig.cmake\n'}
+[44.852621] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actionsConfig-version.cmake\n'}
+[44.853667] (hrdp_beta_actions) StdoutLine: {'line': b'-- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.xml\n'}
+[44.872615] (hrdp_beta_actions) CommandEnded: {'returncode': 0}
+[44.897709] (-) TimerEvent: {}
+[44.999576] (-) TimerEvent: {}
+[45.104091] (-) TimerEvent: {}
+[45.206828] (-) TimerEvent: {}
+[45.308933] (-) TimerEvent: {}
+[45.414451] (-) TimerEvent: {}
+[45.534113] (-) TimerEvent: {}
+[45.557823] (hrdp_beta_actions) JobEnded: {'identifier': 'hrdp_beta_actions', 'rc': 0}
+[45.565839] (-) EventReactorShutdown: {}

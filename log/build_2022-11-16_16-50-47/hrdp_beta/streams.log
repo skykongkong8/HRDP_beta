@@ -1,0 +1,32 @@
+[0.307s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta -- -j4 -l4
+[0.535s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.842s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.517s] -- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)
+[2.518s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.181s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.197s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.202s] -- Added test 'lint_cmake' to check CMake code style
+[3.204s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[3.217s] -- Added test 'xmllint' to check XML markup files
+[3.231s] -- Configuring done
+[3.247s] -- Generating done
+[3.253s] -- Build files have been written to: /home/r1mini/sungsik_ws/build/hrdp_beta
+[3.444s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta -- -j4 -l4
+[3.750s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_beta
+[3.840s] -- Install configuration: ""
+[3.843s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta/share/ament_index/resource_index/package_run_dependencies/hrdp_beta
+[3.846s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/ament_index/resource_index/parent_prefix_path/hrdp_beta
+[3.849s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/environment/ament_prefix_path.sh
+[3.851s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/environment/ament_prefix_path.dsv
+[3.854s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/environment/path.sh
+[3.857s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/environment/path.dsv
+[3.859s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/local_setup.bash
+[3.862s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/local_setup.sh
+[3.866s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/local_setup.zsh
+[3.871s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/local_setup.dsv
+[3.879s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.dsv
+[3.882s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/ament_index/resource_index/packages/hrdp_beta
+[3.883s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/cmake/hrdp_betaConfig.cmake
+[3.885s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/cmake/hrdp_betaConfig-version.cmake
+[3.886s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.xml
+[3.888s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_beta

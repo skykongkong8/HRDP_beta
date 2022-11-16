@@ -1,0 +1,26 @@
+[0.431s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/hrdp_beta_actions -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/hrdp_beta_actions
+[2.385s] -- The C compiler identification is GNU 9.4.0
+[3.584s] -- The CXX compiler identification is GNU 9.4.0
+[3.667s] -- Check for working C compiler: /usr/bin/cc
+[4.764s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.781s] -- Detecting C compiler ABI info
+[5.918s] -- Detecting C compiler ABI info - done
+[6.041s] -- Detecting C compile features
+[6.044s] -- Detecting C compile features - done
+[6.107s] -- Check for working CXX compiler: /usr/bin/c++
+[7.241s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[7.253s] -- Detecting CXX compiler ABI info
+[8.447s] -- Detecting CXX compiler ABI info - done
+[8.584s] -- Detecting CXX compile features
+[8.587s] -- Detecting CXX compile features - done
+[8.624s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[9.091s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[9.096s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[11.602s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[12.530s] CMake Error at CMakeLists.txt:33 (rosidl_generate_interfaces):
+[12.531s]   Unknown CMake command "rosidl_generate_interfaces".
+[12.535s] 
+[12.537s] -- Configuring incomplete, errors occurred!
+[12.539s] See also "/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles/CMakeOutput.log".
+[12.541s] 
+[12.590s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/hrdp_beta_actions -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/hrdp_beta_actions
