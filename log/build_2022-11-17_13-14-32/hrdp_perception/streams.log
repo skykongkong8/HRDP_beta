@@ -1,0 +1,46 @@
+[0.333s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/hrdp_perception -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/hrdp_perception
+[2.121s] -- The C compiler identification is GNU 9.4.0
+[3.711s] -- The CXX compiler identification is GNU 9.4.0
+[3.887s] -- Check for working C compiler: /usr/bin/cc
+[5.775s] -- Check for working C compiler: /usr/bin/cc -- works
+[5.903s] -- Detecting C compiler ABI info
+[6.990s] -- Detecting C compiler ABI info - done
+[7.156s] -- Detecting C compile features
+[7.162s] -- Detecting C compile features - done
+[7.189s] -- Check for working CXX compiler: /usr/bin/c++
+[8.805s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[8.859s] -- Detecting CXX compiler ABI info
+[11.073s] -- Detecting CXX compiler ABI info - done
+[11.261s] -- Detecting CXX compile features
+[11.266s] -- Detecting CXX compile features - done
+[11.321s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[11.936s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[11.939s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[16.021s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[17.299s] -- Added test 'copyright' to check source files copyright and LICENSE
+[17.311s] -- Added test 'lint_cmake' to check CMake code style
+[17.322s] -- Added test 'xmllint' to check XML markup files
+[17.350s] -- Configuring done
+[17.391s] -- Generating done
+[17.420s] -- Build files have been written to: /home/r1mini/sungsik_ws/build/hrdp_perception
+[17.555s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/hrdp_perception -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/hrdp_perception
+[17.598s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_perception -- -j4 -l4
+[19.078s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_perception -- -j4 -l4
+[19.768s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_perception
+[20.097s] -- Install configuration: ""
+[20.101s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/ament_index/resource_index/package_run_dependencies/hrdp_perception
+[20.104s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/ament_index/resource_index/parent_prefix_path/hrdp_perception
+[20.107s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/ament_prefix_path.sh
+[20.114s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/ament_prefix_path.dsv
+[20.117s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/path.sh
+[20.130s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/path.dsv
+[20.141s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.bash
+[20.153s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.sh
+[20.155s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.zsh
+[20.158s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.dsv
+[20.169s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.dsv
+[20.179s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/ament_index/resource_index/packages/hrdp_perception
+[20.183s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/cmake/hrdp_perceptionConfig.cmake
+[20.186s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/cmake/hrdp_perceptionConfig-version.cmake
+[20.191s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.xml
+[20.215s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_perception

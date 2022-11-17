@@ -1,0 +1,4 @@
+source;share/hrdp_sensors/local_setup.bash
+source;share/hrdp_sensors/local_setup.dsv
+source;share/hrdp_sensors/local_setup.sh
+source;share/hrdp_sensors/local_setup.zsh

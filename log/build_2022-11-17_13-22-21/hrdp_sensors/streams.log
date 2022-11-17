@@ -1,0 +1,30 @@
+[0.740s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_sensors -- -j4 -l4
+[1.127s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.577s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.771s] -- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)
+[5.776s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[6.766s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.780s] -- Added test 'lint_cmake' to check CMake code style
+[6.790s] -- Added test 'xmllint' to check XML markup files
+[6.845s] -- Configuring done
+[6.853s] -- Generating done
+[6.857s] -- Build files have been written to: /home/r1mini/sungsik_ws/build/hrdp_sensors
+[7.075s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_sensors -- -j4 -l4
+[7.314s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_sensors
+[7.427s] -- Install configuration: ""
+[7.432s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/ament_index/resource_index/package_run_dependencies/hrdp_sensors
+[7.436s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/ament_index/resource_index/parent_prefix_path/hrdp_sensors
+[7.448s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/environment/ament_prefix_path.sh
+[7.450s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/environment/ament_prefix_path.dsv
+[7.452s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/environment/path.sh
+[7.454s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/environment/path.dsv
+[7.456s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/local_setup.bash
+[7.464s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/local_setup.sh
+[7.489s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/local_setup.zsh
+[7.505s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/local_setup.dsv
+[7.506s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.dsv
+[7.507s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/ament_index/resource_index/packages/hrdp_sensors
+[7.508s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/cmake/hrdp_sensorsConfig.cmake
+[7.509s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/cmake/hrdp_sensorsConfig-version.cmake
+[7.510s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.xml
+[7.511s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_sensors

@@ -1,0 +1,46 @@
+[0.799s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/hrdp_human_interfaces -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/hrdp_human_interfaces
+[2.946s] -- The C compiler identification is GNU 9.4.0
+[4.347s] -- The CXX compiler identification is GNU 9.4.0
+[4.432s] -- Check for working C compiler: /usr/bin/cc
+[6.409s] -- Check for working C compiler: /usr/bin/cc -- works
+[6.437s] -- Detecting C compiler ABI info
+[8.695s] -- Detecting C compiler ABI info - done
+[8.863s] -- Detecting C compile features
+[8.875s] -- Detecting C compile features - done
+[8.924s] -- Check for working CXX compiler: /usr/bin/c++
+[10.889s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[10.933s] -- Detecting CXX compiler ABI info
+[12.310s] -- Detecting CXX compiler ABI info - done
+[12.519s] -- Detecting CXX compile features
+[12.534s] -- Detecting CXX compile features - done
+[12.587s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[13.564s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[13.592s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[18.399s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[20.241s] -- Added test 'copyright' to check source files copyright and LICENSE
+[20.289s] -- Added test 'lint_cmake' to check CMake code style
+[20.305s] -- Added test 'xmllint' to check XML markup files
+[20.383s] -- Configuring done
+[20.393s] -- Generating done
+[20.410s] -- Build files have been written to: /home/r1mini/sungsik_ws/build/hrdp_human_interfaces
+[20.479s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/hrdp_human_interfaces -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/hrdp_human_interfaces
+[20.534s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_human_interfaces -- -j4 -l4
+[21.673s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_human_interfaces -- -j4 -l4
+[22.460s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_human_interfaces
+[22.851s] -- Install configuration: ""
+[22.861s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/ament_index/resource_index/package_run_dependencies/hrdp_human_interfaces
+[22.872s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/ament_index/resource_index/parent_prefix_path/hrdp_human_interfaces
+[22.881s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/environment/ament_prefix_path.sh
+[22.913s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/environment/ament_prefix_path.dsv
+[22.945s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/environment/path.sh
+[22.967s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/environment/path.dsv
+[22.975s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/local_setup.bash
+[23.016s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/local_setup.sh
+[23.018s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/local_setup.zsh
+[23.020s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/local_setup.dsv
+[23.023s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.dsv
+[23.025s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/ament_index/resource_index/packages/hrdp_human_interfaces
+[23.026s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/cmake/hrdp_human_interfacesConfig.cmake
+[23.038s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/cmake/hrdp_human_interfacesConfig-version.cmake
+[23.067s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.xml
+[23.076s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_human_interfaces
