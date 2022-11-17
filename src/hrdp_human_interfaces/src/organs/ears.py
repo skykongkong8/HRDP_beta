@@ -2,16 +2,16 @@ import speech_recognition as sr
 
 """EARS MODULE FOR SPEECH RECOGNITION"""
 
-class Listen():
+class Ears():
     def listen(self)->list:
-        # obtain audio from the microphone - PREREQUISITE: PyAduio 0.2.11 or later version
+        # obtain audio from the microphone - PREREQUISITE: PyAudio 0.2.11 or later version
 
         """if you want to adjust the minimum energy threshold"""
         # with m as source: r.adjust_for_ambient_noise(source)
         # print("Set minimum energy threshold to {}".format(r.energy_threshold))
 
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        r = sr.Recognizer() # device_index = 3 for Jetson Nano
+        with sr.Microphone(device_index = 3) as source:
                 # r.adjust_for_ambient_noise(source, duration =1)
                 print("Say something!")
                 audio = r.listen(source) 
@@ -35,6 +35,13 @@ class Listen():
             print('Unknown Error')
             pass
         return [eng, kor, esp]
+
+if __name__ == "__main__":
+    ears = Ears()
+    what_you_said = ears.listen()
+    print(what_you_said)
+
+
 
 #Notes for listen() and its internal fns - DETAILED REGULATION OPTIONS - Sungsik Kong
 
