@@ -1,0 +1,20 @@
+[0.212s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_perception -- -j4 -l4
+[1.120s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_perception -- -j4 -l4
+[1.742s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_perception
+[1.991s] -- Install configuration: ""
+[1.993s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/ament_index/resource_index/package_run_dependencies/hrdp_perception
+[1.994s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/ament_index/resource_index/parent_prefix_path/hrdp_perception
+[1.995s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/ament_prefix_path.sh
+[1.997s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/ament_prefix_path.dsv
+[1.997s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/path.sh
+[1.998s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/path.dsv
+[1.999s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.bash
+[2.000s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.sh
+[2.002s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.zsh
+[2.012s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.dsv
+[2.015s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.dsv
+[2.022s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/ament_index/resource_index/packages/hrdp_perception
+[2.055s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/cmake/hrdp_perceptionConfig.cmake
+[2.064s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/cmake/hrdp_perceptionConfig-version.cmake
+[2.067s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.xml
+[2.077s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_perception
