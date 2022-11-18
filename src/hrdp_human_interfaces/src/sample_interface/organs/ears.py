@@ -1,4 +1,5 @@
 import speech_recognition as sr
+from check_microphone_connection import DEVICE_INDEX
 
 """EARS MODULE FOR SPEECH RECOGNITION"""
 
@@ -11,30 +12,35 @@ class Ears():
         # print("Set minimum energy threshold to {}".format(r.energy_threshold))
 
         r = sr.Recognizer() # device_index = 3 for Jetson Nano
-        with sr.Microphone(device_index = 3) as source:
+        with sr.Microphone(device_index = DEVICE_INDEX) as source:
                 # r.adjust_for_ambient_noise(source, duration =1)
                 print("Say something!")
-                audio = r.listen(source) 
+                r.pause_threshold = 1
+                r.adjust_for_ambient_noise(source)
+                audio = r.listen(source, timeout=3) 
 
         # recognize speech using Google Speech Recognition
-        try:
-            eng = r.recognize_google(audio)
-            kor = r.recognize_google(audio, language = 'ko-KR')
-            esp = r.recognize_google(audio, language = 'es-ES')
-        except:
-            print('Unknown Error! Please restart the program')
-            pass
-        try:
-            print("Google Speech Recognition thinks you said " + eng + '\n or ' + kor +'\n or '+ esp)
-        except sr.UnknownValueError:
-            print("Google Speech Recognition could not understand audio")
-            pass
-        except sr.RequestError as e:
-            print("Could not request results from Google Speech Recognition service; {0}".format(e))
-        except:
-            print('Unknown Error')
-            pass
+        # try:
+        eng = r.recognize_google(audio, language="en-US", show_all = True)
+        kor = r.recognize_google(audio, language = 'ko-KR', show_all = True)
+        esp = r.recognize_google(audio, language = 'es-ES', show_all = True)
+        # except:
+        #     print('Unknown Error! Please restart the program')
+        #     return
+
+        # try:
+        #     print("Google Speech Recognition thinks you said " + eng + '\n or ' + kor +'\n or '+ esp)
+        # except sr.UnknownValueError:
+        #     print("Google Speech Recognition could not understand audio")
+        #     pass
+        # except sr.RequestError as e:
+        #     print("Could not request results from Google Speech Recognition service; {0}".format(e))
+        # except Exception as e:
+        #     print(e)
+        #     pass
         return [eng, kor, esp]
+
+        # return eng
 
 if __name__ == "__main__":
     ears = Ears()

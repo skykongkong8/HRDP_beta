@@ -1,0 +1,467 @@
+[3.302s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.305s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fadf0bbb0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fadf0bbb0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fadf14160>)
+[4.049s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.068s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.070s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.072s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.074s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/r1mini/sungsik_ws'
+[4.077s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.080s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.096s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.450s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.452s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.454s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.461s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.465s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.467s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.470s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.477s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.481s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.482s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.483s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.484s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.488s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.490s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.491s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.493s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extensions ['ignore', 'ignore_ament_install']
+[4.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extension 'ignore'
+[4.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extension 'ignore_ament_install'
+[4.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extensions ['colcon_pkg']
+[4.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extension 'colcon_pkg'
+[4.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extensions ['colcon_meta']
+[4.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extension 'colcon_meta'
+[4.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extensions ['ros']
+[4.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extension 'ros'
+[4.574s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_actuators' with type 'ros.ament_cmake' and name 'hrdp_actuators'
+[4.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extensions ['ignore', 'ignore_ament_install']
+[4.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'ignore'
+[4.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'ignore_ament_install'
+[4.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extensions ['colcon_pkg']
+[4.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'colcon_pkg'
+[4.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extensions ['colcon_meta']
+[4.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'colcon_meta'
+[4.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extensions ['ros']
+[4.592s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'ros'
+[4.683s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_beta' with type 'ros.ament_cmake' and name 'hrdp_beta'
+[4.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extensions ['ignore', 'ignore_ament_install']
+[4.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extension 'ignore'
+[4.690s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extension 'ignore_ament_install'
+[4.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extensions ['colcon_pkg']
+[4.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extension 'colcon_pkg'
+[4.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extensions ['colcon_meta']
+[4.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extension 'colcon_meta'
+[4.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extensions ['ros']
+[4.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extension 'ros'
+[4.709s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_beta_actions' with type 'ros.ament_cmake' and name 'hrdp_beta_actions'
+[4.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[4.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extension 'ignore'
+[4.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extension 'ignore_ament_install'
+[4.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extensions ['colcon_pkg']
+[4.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extension 'colcon_pkg'
+[4.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extensions ['colcon_meta']
+[4.729s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extension 'colcon_meta'
+[4.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extensions ['ros']
+[4.731s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extension 'ros'
+[4.749s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_human_interfaces' with type 'ros.ament_cmake' and name 'hrdp_human_interfaces'
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extensions ['ignore', 'ignore_ament_install']
+[4.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extension 'ignore'
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extension 'ignore_ament_install'
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extensions ['colcon_pkg']
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extension 'colcon_pkg'
+[4.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extensions ['colcon_meta']
+[4.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extension 'colcon_meta'
+[4.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extensions ['ros']
+[4.768s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extension 'ros'
+[4.790s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_perception' with type 'ros.ament_cmake' and name 'hrdp_perception'
+[4.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extensions ['ignore', 'ignore_ament_install']
+[4.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extension 'ignore'
+[4.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extension 'ignore_ament_install'
+[4.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extensions ['colcon_pkg']
+[4.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extension 'colcon_pkg'
+[4.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extensions ['colcon_meta']
+[4.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extension 'colcon_meta'
+[4.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extensions ['ros']
+[4.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extension 'ros'
+[4.817s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_sensors' with type 'ros.ament_cmake' and name 'hrdp_sensors'
+[4.820s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.822s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.823s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.824s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.647s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.794s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/r1mini/ros2_ws/install
+[5.822s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/foxy
+[5.840s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[8.755s] Level 5:colcon.colcon_core.verb:set package 'hrdp_actuators' build argument 'cmake_args' from command line to 'None'
+[8.762s] Level 5:colcon.colcon_core.verb:set package 'hrdp_actuators' build argument 'cmake_target' from command line to 'None'
+[8.763s] Level 5:colcon.colcon_core.verb:set package 'hrdp_actuators' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[8.764s] Level 5:colcon.colcon_core.verb:set package 'hrdp_actuators' build argument 'cmake_clean_cache' from command line to 'False'
+[8.764s] Level 5:colcon.colcon_core.verb:set package 'hrdp_actuators' build argument 'cmake_clean_first' from command line to 'False'
+[8.765s] Level 5:colcon.colcon_core.verb:set package 'hrdp_actuators' build argument 'cmake_force_configure' from command line to 'False'
+[8.772s] Level 5:colcon.colcon_core.verb:set package 'hrdp_actuators' build argument 'ament_cmake_args' from command line to 'None'
+[8.781s] Level 5:colcon.colcon_core.verb:set package 'hrdp_actuators' build argument 'catkin_cmake_args' from command line to 'None'
+[8.783s] Level 5:colcon.colcon_core.verb:set package 'hrdp_actuators' build argument 'catkin_skip_building_tests' from command line to 'False'
+[8.784s] DEBUG:colcon.colcon_core.verb:Building package 'hrdp_actuators' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/r1mini/sungsik_ws/build/hrdp_actuators', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/r1mini/sungsik_ws/install/hrdp_actuators', 'merge_install': False, 'path': '/home/r1mini/sungsik_ws/src/hrdp_actuators', 'symlink_install': False, 'test_result_base': None}
+[8.824s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta' build argument 'cmake_args' from command line to 'None'
+[8.827s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta' build argument 'cmake_target' from command line to 'None'
+[8.829s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[8.831s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta' build argument 'cmake_clean_cache' from command line to 'False'
+[8.832s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta' build argument 'cmake_clean_first' from command line to 'False'
+[8.834s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta' build argument 'cmake_force_configure' from command line to 'False'
+[8.835s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta' build argument 'ament_cmake_args' from command line to 'None'
+[8.836s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta' build argument 'catkin_cmake_args' from command line to 'None'
+[8.837s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta' build argument 'catkin_skip_building_tests' from command line to 'False'
+[8.838s] DEBUG:colcon.colcon_core.verb:Building package 'hrdp_beta' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/r1mini/sungsik_ws/build/hrdp_beta', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/r1mini/sungsik_ws/install/hrdp_beta', 'merge_install': False, 'path': '/home/r1mini/sungsik_ws/src/hrdp_beta', 'symlink_install': False, 'test_result_base': None}
+[8.912s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta_actions' build argument 'cmake_args' from command line to 'None'
+[8.914s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta_actions' build argument 'cmake_target' from command line to 'None'
+[8.934s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta_actions' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[8.943s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta_actions' build argument 'cmake_clean_cache' from command line to 'False'
+[8.946s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta_actions' build argument 'cmake_clean_first' from command line to 'False'
+[8.947s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta_actions' build argument 'cmake_force_configure' from command line to 'False'
+[8.948s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta_actions' build argument 'ament_cmake_args' from command line to 'None'
+[8.949s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta_actions' build argument 'catkin_cmake_args' from command line to 'None'
+[8.949s] Level 5:colcon.colcon_core.verb:set package 'hrdp_beta_actions' build argument 'catkin_skip_building_tests' from command line to 'False'
+[8.950s] DEBUG:colcon.colcon_core.verb:Building package 'hrdp_beta_actions' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/r1mini/sungsik_ws/build/hrdp_beta_actions', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/r1mini/sungsik_ws/install/hrdp_beta_actions', 'merge_install': False, 'path': '/home/r1mini/sungsik_ws/src/hrdp_beta_actions', 'symlink_install': False, 'test_result_base': None}
+[8.970s] Level 5:colcon.colcon_core.verb:set package 'hrdp_human_interfaces' build argument 'cmake_args' from command line to 'None'
+[8.971s] Level 5:colcon.colcon_core.verb:set package 'hrdp_human_interfaces' build argument 'cmake_target' from command line to 'None'
+[8.972s] Level 5:colcon.colcon_core.verb:set package 'hrdp_human_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[8.973s] Level 5:colcon.colcon_core.verb:set package 'hrdp_human_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[8.975s] Level 5:colcon.colcon_core.verb:set package 'hrdp_human_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[8.976s] Level 5:colcon.colcon_core.verb:set package 'hrdp_human_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[8.989s] Level 5:colcon.colcon_core.verb:set package 'hrdp_human_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[8.991s] Level 5:colcon.colcon_core.verb:set package 'hrdp_human_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[8.993s] Level 5:colcon.colcon_core.verb:set package 'hrdp_human_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[8.994s] DEBUG:colcon.colcon_core.verb:Building package 'hrdp_human_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces', 'merge_install': False, 'path': '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces', 'symlink_install': False, 'test_result_base': None}
+[9.047s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_args' from command line to 'None'
+[9.050s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_target' from command line to 'None'
+[9.054s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[9.056s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[9.058s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_clean_first' from command line to 'False'
+[9.061s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_force_configure' from command line to 'False'
+[9.064s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'ament_cmake_args' from command line to 'None'
+[9.066s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[9.070s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[9.073s] DEBUG:colcon.colcon_core.verb:Building package 'hrdp_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/r1mini/sungsik_ws/build/hrdp_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/r1mini/sungsik_ws/install/hrdp_perception', 'merge_install': False, 'path': '/home/r1mini/sungsik_ws/src/hrdp_perception', 'symlink_install': False, 'test_result_base': None}
+[9.110s] Level 5:colcon.colcon_core.verb:set package 'hrdp_sensors' build argument 'cmake_args' from command line to 'None'
+[9.111s] Level 5:colcon.colcon_core.verb:set package 'hrdp_sensors' build argument 'cmake_target' from command line to 'None'
+[9.112s] Level 5:colcon.colcon_core.verb:set package 'hrdp_sensors' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[9.114s] Level 5:colcon.colcon_core.verb:set package 'hrdp_sensors' build argument 'cmake_clean_cache' from command line to 'False'
+[9.115s] Level 5:colcon.colcon_core.verb:set package 'hrdp_sensors' build argument 'cmake_clean_first' from command line to 'False'
+[9.115s] Level 5:colcon.colcon_core.verb:set package 'hrdp_sensors' build argument 'cmake_force_configure' from command line to 'False'
+[9.117s] Level 5:colcon.colcon_core.verb:set package 'hrdp_sensors' build argument 'ament_cmake_args' from command line to 'None'
+[9.120s] Level 5:colcon.colcon_core.verb:set package 'hrdp_sensors' build argument 'catkin_cmake_args' from command line to 'None'
+[9.122s] Level 5:colcon.colcon_core.verb:set package 'hrdp_sensors' build argument 'catkin_skip_building_tests' from command line to 'False'
+[9.126s] DEBUG:colcon.colcon_core.verb:Building package 'hrdp_sensors' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/r1mini/sungsik_ws/build/hrdp_sensors', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/r1mini/sungsik_ws/install/hrdp_sensors', 'merge_install': False, 'path': '/home/r1mini/sungsik_ws/src/hrdp_sensors', 'symlink_install': False, 'test_result_base': None}
+[9.147s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[9.291s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[9.303s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/r1mini/sungsik_ws/src/hrdp_actuators' with build type 'ament_cmake'
+[9.306s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/r1mini/sungsik_ws/src/hrdp_actuators'
+[9.506s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[9.509s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.514s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.677s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/r1mini/sungsik_ws/src/hrdp_beta' with build type 'ament_cmake'
+[9.695s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/r1mini/sungsik_ws/src/hrdp_beta'
+[9.821s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.839s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.029s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/r1mini/sungsik_ws/src/hrdp_beta_actions' with build type 'ament_cmake'
+[10.042s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/r1mini/sungsik_ws/src/hrdp_beta_actions'
+[10.090s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.092s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.297s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces' with build type 'ament_cmake'
+[10.302s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces'
+[10.408s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.410s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_actuators': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_actuators -- -j4 -l4
+[11.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta -- -j4 -l4
+[11.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta_actions -- -j4 -l4
+[11.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_human_interfaces -- -j4 -l4
+[12.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_actuators' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_actuators -- -j4 -l4
+[12.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta -- -j4 -l4
+[13.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_beta
+[13.955s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_actuators': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_actuators
+[14.235s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_beta)
+[14.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_beta
+[14.832s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta' for CMake module files
+[14.879s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta' for CMake config files
+[14.886s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_beta', 'cmake_prefix_path')
+[14.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/hook/cmake_prefix_path.ps1'
+[14.957s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/hook/cmake_prefix_path.dsv'
+[14.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/hook/cmake_prefix_path.sh'
+[15.012s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta/bin'
+[15.014s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta/lib/pkgconfig/hrdp_beta.pc'
+[15.020s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta/lib/python3.8/site-packages'
+[15.024s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta/bin'
+[15.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.ps1'
+[15.083s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.dsv'
+[15.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.sh'
+[15.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.bash'
+[15.190s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.zsh'
+[15.217s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_beta/share/colcon-core/packages/hrdp_beta)
+[15.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_actuators' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_actuators
+[15.409s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_actuators)
+[15.546s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators' for CMake module files
+[15.598s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators' for CMake config files
+[15.618s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_actuators', 'cmake_prefix_path')
+[15.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/hook/cmake_prefix_path.ps1'
+[15.774s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/hook/cmake_prefix_path.dsv'
+[15.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/hook/cmake_prefix_path.sh'
+[15.844s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators/bin'
+[15.855s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators/lib/pkgconfig/hrdp_actuators.pc'
+[15.863s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators/lib/python3.8/site-packages'
+[15.879s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators/bin'
+[15.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.ps1'
+[16.017s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.dsv'
+[16.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.sh'
+[16.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.bash'
+[16.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.zsh'
+[16.120s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_actuators/share/colcon-core/packages/hrdp_actuators)
+[16.339s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_beta)
+[16.544s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta' for CMake module files
+[16.578s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta' for CMake config files
+[16.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_beta', 'cmake_prefix_path')
+[16.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/hook/cmake_prefix_path.ps1'
+[16.727s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/hook/cmake_prefix_path.dsv'
+[16.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/hook/cmake_prefix_path.sh'
+[16.809s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta/bin'
+[16.814s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta/lib/pkgconfig/hrdp_beta.pc'
+[16.825s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta/lib/python3.8/site-packages'
+[16.847s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta/bin'
+[16.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.ps1'
+[17.059s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.dsv'
+[17.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.sh'
+[17.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.bash'
+[17.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta/share/hrdp_beta/package.zsh'
+[17.109s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_beta/share/colcon-core/packages/hrdp_beta)
+[17.175s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/r1mini/sungsik_ws/src/hrdp_perception' with build type 'ament_cmake'
+[17.191s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/r1mini/sungsik_ws/src/hrdp_perception'
+[17.246s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.250s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[17.602s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_actuators)
+[17.776s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators' for CMake module files
+[17.803s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators' for CMake config files
+[17.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_actuators', 'cmake_prefix_path')
+[17.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/hook/cmake_prefix_path.ps1'
+[17.949s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/hook/cmake_prefix_path.dsv'
+[17.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/hook/cmake_prefix_path.sh'
+[18.005s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators/bin'
+[18.007s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators/lib/pkgconfig/hrdp_actuators.pc'
+[18.012s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators/lib/python3.8/site-packages'
+[18.016s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_actuators/bin'
+[18.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.ps1'
+[18.161s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.dsv'
+[18.178s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.sh'
+[18.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.bash'
+[18.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.zsh'
+[18.261s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_actuators/share/colcon-core/packages/hrdp_actuators)
+[18.310s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/r1mini/sungsik_ws/src/hrdp_sensors' with build type 'ament_cmake'
+[18.322s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/r1mini/sungsik_ws/src/hrdp_sensors'
+[18.394s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.403s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_perception -- -j4 -l4
+[19.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_sensors -- -j4 -l4
+[20.672s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_perception -- -j4 -l4
+[21.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_sensors -- -j4 -l4
+[21.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_perception
+[22.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_sensors
+[22.276s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_perception)
+[22.319s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_perception
+[22.501s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception' for CMake module files
+[22.539s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception' for CMake config files
+[22.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_perception', 'cmake_prefix_path')
+[22.652s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/hook/cmake_prefix_path.ps1'
+[22.680s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/hook/cmake_prefix_path.dsv'
+[22.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/hook/cmake_prefix_path.sh'
+[22.758s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/bin'
+[22.777s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/lib/pkgconfig/hrdp_perception.pc'
+[22.792s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/lib/python3.8/site-packages'
+[22.801s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/bin'
+[22.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.ps1'
+[22.898s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.dsv'
+[22.910s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.sh'
+[22.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.bash'
+[22.968s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.zsh'
+[23.004s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_perception/share/colcon-core/packages/hrdp_perception)
+[23.216s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_sensors)
+[23.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_sensors
+[23.386s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors' for CMake module files
+[23.407s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors' for CMake config files
+[23.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_sensors', 'cmake_prefix_path')
+[23.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/hook/cmake_prefix_path.ps1'
+[23.590s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/hook/cmake_prefix_path.dsv'
+[23.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/hook/cmake_prefix_path.sh'
+[23.656s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors/bin'
+[23.659s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors/lib/pkgconfig/hrdp_sensors.pc'
+[23.671s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors/lib/python3.8/site-packages'
+[23.706s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors/bin'
+[23.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.ps1'
+[23.890s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.dsv'
+[23.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.sh'
+[23.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.bash'
+[23.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.zsh'
+[23.992s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_sensors/share/colcon-core/packages/hrdp_sensors)
+[24.338s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_perception)
+[24.650s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception' for CMake module files
+[24.676s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception' for CMake config files
+[24.682s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_perception', 'cmake_prefix_path')
+[24.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/hook/cmake_prefix_path.ps1'
+[24.879s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/hook/cmake_prefix_path.dsv'
+[24.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/hook/cmake_prefix_path.sh'
+[24.966s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/bin'
+[24.991s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/lib/pkgconfig/hrdp_perception.pc'
+[25.012s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/lib/python3.8/site-packages'
+[25.022s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/bin'
+[25.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.ps1'
+[25.125s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.dsv'
+[25.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.sh'
+[25.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.bash'
+[25.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.zsh'
+[25.226s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_perception/share/colcon-core/packages/hrdp_perception)
+[25.338s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_sensors)
+[25.449s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors' for CMake module files
+[25.484s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors' for CMake config files
+[25.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_sensors', 'cmake_prefix_path')
+[25.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/hook/cmake_prefix_path.ps1'
+[25.571s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/hook/cmake_prefix_path.dsv'
+[25.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/hook/cmake_prefix_path.sh'
+[25.618s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors/bin'
+[25.621s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors/lib/pkgconfig/hrdp_sensors.pc'
+[25.623s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors/lib/python3.8/site-packages'
+[25.627s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_sensors/bin'
+[25.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.ps1'
+[25.729s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.dsv'
+[25.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.sh'
+[25.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.bash'
+[25.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.zsh'
+[25.804s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_sensors/share/colcon-core/packages/hrdp_sensors)
+[27.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta_actions -- -j4 -l4
+[29.106s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_human_interfaces -- -j4 -l4
+[29.412s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_beta_actions
+[30.150s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_human_interfaces
+[30.366s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_human_interfaces)
+[30.518s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces' for CMake module files
+[30.569s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces' for CMake config files
+[30.610s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_human_interfaces', 'cmake_prefix_path')
+[30.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/hook/cmake_prefix_path.ps1'
+[30.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/hook/cmake_prefix_path.dsv'
+[30.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/hook/cmake_prefix_path.sh'
+[30.749s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/bin'
+[30.761s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/lib/pkgconfig/hrdp_human_interfaces.pc'
+[30.767s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/lib/python3.8/site-packages'
+[30.791s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/bin'
+[30.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.ps1'
+[30.865s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.dsv'
+[30.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_human_interfaces
+[30.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.sh'
+[30.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.bash'
+[30.923s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.zsh'
+[30.941s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/colcon-core/packages/hrdp_human_interfaces)
+[31.716s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_human_interfaces)
+[31.807s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces' for CMake module files
+[31.835s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces' for CMake config files
+[31.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_human_interfaces', 'cmake_prefix_path')
+[31.929s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/hook/cmake_prefix_path.ps1'
+[31.952s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/hook/cmake_prefix_path.dsv'
+[31.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/hook/cmake_prefix_path.sh'
+[32.020s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/bin'
+[32.024s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/lib/pkgconfig/hrdp_human_interfaces.pc'
+[32.031s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/lib/python3.8/site-packages'
+[32.038s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/bin'
+[32.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.ps1'
+[32.182s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.dsv'
+[32.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.sh'
+[32.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.bash'
+[32.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.zsh'
+[32.264s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/colcon-core/packages/hrdp_human_interfaces)
+[32.302s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_beta_actions)
+[32.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_beta_actions
+[32.385s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions' for CMake module files
+[32.401s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions' for CMake config files
+[32.412s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_beta_actions', 'cmake_prefix_path')
+[32.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/cmake_prefix_path.ps1'
+[32.446s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/cmake_prefix_path.dsv'
+[32.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/cmake_prefix_path.sh'
+[32.471s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib'
+[32.482s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_beta_actions', 'ld_library_path_lib')
+[32.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/ld_library_path_lib.ps1'
+[32.541s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/ld_library_path_lib.dsv'
+[32.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/ld_library_path_lib.sh'
+[32.558s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/bin'
+[32.559s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/pkgconfig/hrdp_beta_actions.pc'
+[32.562s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages'
+[32.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_beta_actions', 'pythonpath')
+[32.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/pythonpath.ps1'
+[32.595s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/pythonpath.dsv'
+[32.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/pythonpath.sh'
+[32.615s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/bin'
+[32.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.ps1'
+[32.668s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.dsv'
+[32.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.sh'
+[32.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.bash'
+[32.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.zsh'
+[32.696s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/colcon-core/packages/hrdp_beta_actions)
+[34.067s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_beta_actions)
+[34.113s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions' for CMake module files
+[34.125s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions' for CMake config files
+[34.139s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_beta_actions', 'cmake_prefix_path')
+[34.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/cmake_prefix_path.ps1'
+[34.226s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/cmake_prefix_path.dsv'
+[34.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/cmake_prefix_path.sh'
+[34.262s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib'
+[34.267s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_beta_actions', 'ld_library_path_lib')
+[34.333s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/ld_library_path_lib.ps1'
+[34.353s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/ld_library_path_lib.dsv'
+[34.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/ld_library_path_lib.sh'
+[34.376s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/bin'
+[34.380s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/pkgconfig/hrdp_beta_actions.pc'
+[34.385s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages'
+[34.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_beta_actions', 'pythonpath')
+[34.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/pythonpath.ps1'
+[34.459s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/pythonpath.dsv'
+[34.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/hook/pythonpath.sh'
+[34.486s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/bin'
+[34.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.ps1'
+[34.575s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.dsv'
+[34.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.sh'
+[34.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.bash'
+[34.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.zsh'
+[34.720s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/colcon-core/packages/hrdp_beta_actions)
+[34.740s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[34.749s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[34.750s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[34.752s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[35.181s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[35.182s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[35.191s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[35.392s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[35.440s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/r1mini/sungsik_ws/install/local_setup.ps1'
+[35.468s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/r1mini/sungsik_ws/install/_local_setup_util_ps1.py'
+[35.493s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/r1mini/sungsik_ws/install/setup.ps1'
+[35.540s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/r1mini/sungsik_ws/install/local_setup.sh'
+[35.552s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/r1mini/sungsik_ws/install/_local_setup_util_sh.py'
+[35.572s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/r1mini/sungsik_ws/install/setup.sh'
+[35.612s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/r1mini/sungsik_ws/install/local_setup.bash'
+[35.645s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/r1mini/sungsik_ws/install/setup.bash'
+[35.761s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/r1mini/sungsik_ws/install/local_setup.zsh'
+[35.783s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/r1mini/sungsik_ws/install/setup.zsh'
