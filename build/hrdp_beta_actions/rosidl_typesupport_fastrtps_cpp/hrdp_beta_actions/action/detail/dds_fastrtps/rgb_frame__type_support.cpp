@@ -217,9 +217,7 @@ cdr_serialize(
   eprosima::fastcdr::Cdr & cdr)
 {
   // Member: sequence
-  {
-    cdr << ros_message.sequence;
-  }
+  cdr << ros_message.sequence;
   return true;
 }
 
@@ -230,9 +228,7 @@ cdr_deserialize(
   hrdp_beta_actions::action::RGBFrame_Result & ros_message)
 {
   // Member: sequence
-  {
-    cdr >> ros_message.sequence;
-  }
+  cdr >> ros_message.sequence;
 
   return true;
 }
@@ -252,12 +248,8 @@ get_serialized_size(
 
   // Member: sequence
   {
-    size_t array_size = ros_message.sequence.size();
-
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    size_t item_size = sizeof(ros_message.sequence[0]);
-    current_alignment += array_size * item_size +
+    size_t item_size = sizeof(ros_message.sequence);
+    current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -281,10 +273,7 @@ max_serialized_size_RGBFrame_Result(
 
   // Member: sequence
   {
-    size_t array_size = 0;
-    full_bounded = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
@@ -412,9 +401,7 @@ cdr_serialize(
   eprosima::fastcdr::Cdr & cdr)
 {
   // Member: partial_sequence
-  {
-    cdr << ros_message.partial_sequence;
-  }
+  cdr << ros_message.partial_sequence;
   return true;
 }
 
@@ -425,9 +412,7 @@ cdr_deserialize(
   hrdp_beta_actions::action::RGBFrame_Feedback & ros_message)
 {
   // Member: partial_sequence
-  {
-    cdr >> ros_message.partial_sequence;
-  }
+  cdr >> ros_message.partial_sequence;
 
   return true;
 }
@@ -447,12 +432,8 @@ get_serialized_size(
 
   // Member: partial_sequence
   {
-    size_t array_size = ros_message.partial_sequence.size();
-
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    size_t item_size = sizeof(ros_message.partial_sequence[0]);
-    current_alignment += array_size * item_size +
+    size_t item_size = sizeof(ros_message.partial_sequence);
+    current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -476,10 +457,7 @@ max_serialized_size_RGBFrame_Feedback(
 
   // Member: partial_sequence
   {
-    size_t array_size = 0;
-    full_bounded = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));

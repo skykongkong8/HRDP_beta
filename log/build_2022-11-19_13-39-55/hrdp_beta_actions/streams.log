@@ -1,0 +1,21 @@
+[1.261s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta_actions -- -j4 -l4
+[3.904s] [  3%] Built target hrdp_beta_actions__cpp
+[4.965s] [ 12%] Built target hrdp_beta_actions__rosidl_generator_c
+[5.728s] [ 22%] Built target hrdp_beta_actions__rosidl_typesupport_cpp
+[6.334s] [ 32%] Built target hrdp_beta_actions__rosidl_typesupport_c
+[7.107s] [ 41%] Built target hrdp_beta_actions__rosidl_typesupport_introspection_c
+[7.995s] [ 51%] Built target hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp
+[8.402s] [ 61%] Built target hrdp_beta_actions__rosidl_typesupport_introspection_cpp
+[9.563s] [ 70%] Built target hrdp_beta_actions__rosidl_typesupport_fastrtps_c
+[10.299s] [ 70%] Built target hrdp_beta_actions
+[11.306s] [ 74%] Built target hrdp_beta_actions__py
+[11.995s] [35m[1mScanning dependencies of target hrdp_beta_actions__python[0m
+[12.482s] [ 77%] [32mBuilding C object CMakeFiles/hrdp_beta_actions__python.dir/rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame_s.c.o[0m
+[15.370s] [01m[K/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame_s.c:11:10:[m[K [01;31m[Kfatal error: [m[Knumpy/ndarrayobject.h: No such file or directory
+[15.387s]    11 | #include [01;31m[K"numpy/ndarrayobject.h"[m[K
+[15.393s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.396s] compilation terminated.
+[15.451s] make[2]: *** [CMakeFiles/hrdp_beta_actions__python.dir/build.make:63: CMakeFiles/hrdp_beta_actions__python.dir/rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame_s.c.o] Error 1
+[15.453s] make[1]: *** [CMakeFiles/Makefile2:526: CMakeFiles/hrdp_beta_actions__python.dir/all] Error 2
+[15.496s] make: *** [Makefile:141: all] Error 2
+[15.618s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta_actions -- -j4 -l4

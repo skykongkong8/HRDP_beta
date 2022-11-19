@@ -154,48 +154,21 @@ void RGBFrame_Result_fini_function(void * message_memory)
   typed_message->~RGBFrame_Result();
 }
 
-size_t size_function__RGBFrame_Result__sequence(const void * untyped_member)
-{
-  const auto * member = reinterpret_cast<const std::vector<int32_t> *>(untyped_member);
-  return member->size();
-}
-
-const void * get_const_function__RGBFrame_Result__sequence(const void * untyped_member, size_t index)
-{
-  const auto & member =
-    *reinterpret_cast<const std::vector<int32_t> *>(untyped_member);
-  return &member[index];
-}
-
-void * get_function__RGBFrame_Result__sequence(void * untyped_member, size_t index)
-{
-  auto & member =
-    *reinterpret_cast<std::vector<int32_t> *>(untyped_member);
-  return &member[index];
-}
-
-void resize_function__RGBFrame_Result__sequence(void * untyped_member, size_t size)
-{
-  auto * member =
-    reinterpret_cast<std::vector<int32_t> *>(untyped_member);
-  member->resize(size);
-}
-
 static const ::rosidl_typesupport_introspection_cpp::MessageMember RGBFrame_Result_message_member_array[1] = {
   {
     "sequence",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
-    true,  // is array
+    false,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(hrdp_beta_actions::action::RGBFrame_Result, sequence),  // bytes offset in struct
     nullptr,  // default value
-    size_function__RGBFrame_Result__sequence,  // size() function pointer
-    get_const_function__RGBFrame_Result__sequence,  // get_const(index) function pointer
-    get_function__RGBFrame_Result__sequence,  // get(index) function pointer
-    resize_function__RGBFrame_Result__sequence  // resize(index) function pointer
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
@@ -298,48 +271,21 @@ void RGBFrame_Feedback_fini_function(void * message_memory)
   typed_message->~RGBFrame_Feedback();
 }
 
-size_t size_function__RGBFrame_Feedback__partial_sequence(const void * untyped_member)
-{
-  const auto * member = reinterpret_cast<const std::vector<int32_t> *>(untyped_member);
-  return member->size();
-}
-
-const void * get_const_function__RGBFrame_Feedback__partial_sequence(const void * untyped_member, size_t index)
-{
-  const auto & member =
-    *reinterpret_cast<const std::vector<int32_t> *>(untyped_member);
-  return &member[index];
-}
-
-void * get_function__RGBFrame_Feedback__partial_sequence(void * untyped_member, size_t index)
-{
-  auto & member =
-    *reinterpret_cast<std::vector<int32_t> *>(untyped_member);
-  return &member[index];
-}
-
-void resize_function__RGBFrame_Feedback__partial_sequence(void * untyped_member, size_t size)
-{
-  auto * member =
-    reinterpret_cast<std::vector<int32_t> *>(untyped_member);
-  member->resize(size);
-}
-
 static const ::rosidl_typesupport_introspection_cpp::MessageMember RGBFrame_Feedback_message_member_array[1] = {
   {
     "partial_sequence",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
-    true,  // is array
+    false,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(hrdp_beta_actions::action::RGBFrame_Feedback, partial_sequence),  // bytes offset in struct
     nullptr,  // default value
-    size_function__RGBFrame_Feedback__partial_sequence,  // size() function pointer
-    get_const_function__RGBFrame_Feedback__partial_sequence,  // get_const(index) function pointer
-    get_function__RGBFrame_Feedback__partial_sequence,  // get(index) function pointer
-    resize_function__RGBFrame_Feedback__partial_sequence  // resize(index) function pointer
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 

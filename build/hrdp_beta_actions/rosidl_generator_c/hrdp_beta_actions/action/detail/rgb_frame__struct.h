@@ -36,14 +36,10 @@ typedef struct hrdp_beta_actions__action__RGBFrame_Goal__Sequence
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'sequence'
-#include "rosidl_runtime_c/primitives_sequence.h"
-
 // Struct defined in action/RGBFrame in the package hrdp_beta_actions.
 typedef struct hrdp_beta_actions__action__RGBFrame_Result
 {
-  rosidl_runtime_c__int32__Sequence sequence;
+  int32_t sequence;
 } hrdp_beta_actions__action__RGBFrame_Result;
 
 // Struct for a sequence of hrdp_beta_actions__action__RGBFrame_Result.
@@ -59,15 +55,10 @@ typedef struct hrdp_beta_actions__action__RGBFrame_Result__Sequence
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'partial_sequence'
-// already included above
-// #include "rosidl_runtime_c/primitives_sequence.h"
-
 // Struct defined in action/RGBFrame in the package hrdp_beta_actions.
 typedef struct hrdp_beta_actions__action__RGBFrame_Feedback
 {
-  rosidl_runtime_c__int32__Sequence partial_sequence;
+  int32_t partial_sequence;
 } hrdp_beta_actions__action__RGBFrame_Feedback;
 
 // Struct for a sequence of hrdp_beta_actions__action__RGBFrame_Feedback.

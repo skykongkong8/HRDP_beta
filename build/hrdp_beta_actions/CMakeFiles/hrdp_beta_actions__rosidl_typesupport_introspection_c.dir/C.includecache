@@ -23,8 +23,6 @@ hrdp_beta_actions/action/detail/rgb_frame__functions.h
 /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/hrdp_beta_actions/action/detail/rgb_frame__functions.h
 hrdp_beta_actions/action/detail/rgb_frame__struct.h
 /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/hrdp_beta_actions/action/detail/rgb_frame__struct.h
-rosidl_runtime_c/primitives_sequence_functions.h
-/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rosidl_runtime_c/primitives_sequence_functions.h
 unique_identifier_msgs/msg/uuid.h
 /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/unique_identifier_msgs/msg/uuid.h
 unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_introspection_c.h
@@ -105,24 +103,6 @@ rosidl_runtime_c/visibility_control.h
 /opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
 rosidl_typesupport_interface/macros.h
 /opt/ros/foxy/include/rosidl_runtime_c/rosidl_typesupport_interface/macros.h
-
-/opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
-stdbool.h
--
-stddef.h
--
-stdint.h
--
-
-/opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence_functions.h
-stdbool.h
--
-stddef.h
--
-rosidl_runtime_c/primitives_sequence.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
-rosidl_runtime_c/visibility_control.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/service_type_support_struct.h
 rosidl_runtime_c/visibility_control.h
@@ -237,8 +217,6 @@ stddef.h
 -
 stdint.h
 -
-rosidl_runtime_c/primitives_sequence.h
-rosidl_generator_c/hrdp_beta_actions/action/detail/rosidl_runtime_c/primitives_sequence.h
 unique_identifier_msgs/msg/detail/uuid__struct.h
 rosidl_generator_c/hrdp_beta_actions/action/detail/unique_identifier_msgs/msg/detail/uuid__struct.h
 hrdp_beta_actions/action/detail/rgb_frame__struct.h

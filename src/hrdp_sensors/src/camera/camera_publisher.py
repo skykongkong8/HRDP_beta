@@ -1,7 +1,8 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from rgbd_camera import RGBDRealsenseCamera
+# from rgbd_camera import RGBDRealsenseCamera
+from rgb_camera import RGBRealsenseCamera
 
 class CameraPublisher(Node):
     """
@@ -24,7 +25,7 @@ class CameraPublisher(Node):
             qos_policy 
         )
 
-        self.rgb_frame = RGBDRealsenseCamera()
+        self.rgb_camera = RGBRealsenseCamera()
 
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.timer_callback)
@@ -33,8 +34,7 @@ class CameraPublisher(Node):
     
     def timer_callback(self):
         msg = Image()
-        raw_camera_data = self.rgb_frame.get_frame_stream()
-        success, msg.data = raw_camera_data[0], raw_camera_data[1]
+        success, msg.data = self.rgb_camera.get_frame_stream()
 
         self.get_logger().info(f"Camera Publisher publishing state is : {success}")
 

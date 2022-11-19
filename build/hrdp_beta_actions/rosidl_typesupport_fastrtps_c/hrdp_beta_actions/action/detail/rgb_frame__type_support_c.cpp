@@ -200,8 +200,6 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/primitives_sequence.h"  // sequence
-#include "rosidl_runtime_c/primitives_sequence_functions.h"  // sequence
 
 // forward declare type support functions
 
@@ -219,10 +217,7 @@ static bool _RGBFrame_Result__cdr_serialize(
   const _RGBFrame_Result__ros_msg_type * ros_message = static_cast<const _RGBFrame_Result__ros_msg_type *>(untyped_ros_message);
   // Field name: sequence
   {
-    size_t size = ros_message->sequence.size;
-    auto array_ptr = ros_message->sequence.data;
-    cdr << static_cast<uint32_t>(size);
-    cdr.serializeArray(array_ptr, size);
+    cdr << ros_message->sequence;
   }
 
   return true;
@@ -239,17 +234,7 @@ static bool _RGBFrame_Result__cdr_deserialize(
   _RGBFrame_Result__ros_msg_type * ros_message = static_cast<_RGBFrame_Result__ros_msg_type *>(untyped_ros_message);
   // Field name: sequence
   {
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->sequence.data) {
-      rosidl_runtime_c__int32__Sequence__fini(&ros_message->sequence);
-    }
-    if (!rosidl_runtime_c__int32__Sequence__init(&ros_message->sequence, size)) {
-      return "failed to create array for field 'sequence'";
-    }
-    auto array_ptr = ros_message->sequence.data;
-    cdr.deserializeArray(array_ptr, size);
+    cdr >> ros_message->sequence;
   }
 
   return true;
@@ -271,13 +256,8 @@ size_t get_serialized_size_hrdp_beta_actions__action__RGBFrame_Result(
 
   // field.name sequence
   {
-    size_t array_size = ros_message->sequence.size;
-    auto array_ptr = ros_message->sequence.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    (void)array_ptr;
-    size_t item_size = sizeof(array_ptr[0]);
-    current_alignment += array_size * item_size +
+    size_t item_size = sizeof(ros_message->sequence);
+    current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -306,10 +286,7 @@ size_t max_serialized_size_hrdp_beta_actions__action__RGBFrame_Result(
 
   // member: sequence
   {
-    size_t array_size = 0;
-    full_bounded = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
@@ -389,10 +366,6 @@ extern "C"
 {
 #endif
 
-// already included above
-// #include "rosidl_runtime_c/primitives_sequence.h"  // partial_sequence
-// already included above
-// #include "rosidl_runtime_c/primitives_sequence_functions.h"  // partial_sequence
 
 // forward declare type support functions
 
@@ -410,10 +383,7 @@ static bool _RGBFrame_Feedback__cdr_serialize(
   const _RGBFrame_Feedback__ros_msg_type * ros_message = static_cast<const _RGBFrame_Feedback__ros_msg_type *>(untyped_ros_message);
   // Field name: partial_sequence
   {
-    size_t size = ros_message->partial_sequence.size;
-    auto array_ptr = ros_message->partial_sequence.data;
-    cdr << static_cast<uint32_t>(size);
-    cdr.serializeArray(array_ptr, size);
+    cdr << ros_message->partial_sequence;
   }
 
   return true;
@@ -430,17 +400,7 @@ static bool _RGBFrame_Feedback__cdr_deserialize(
   _RGBFrame_Feedback__ros_msg_type * ros_message = static_cast<_RGBFrame_Feedback__ros_msg_type *>(untyped_ros_message);
   // Field name: partial_sequence
   {
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->partial_sequence.data) {
-      rosidl_runtime_c__int32__Sequence__fini(&ros_message->partial_sequence);
-    }
-    if (!rosidl_runtime_c__int32__Sequence__init(&ros_message->partial_sequence, size)) {
-      return "failed to create array for field 'partial_sequence'";
-    }
-    auto array_ptr = ros_message->partial_sequence.data;
-    cdr.deserializeArray(array_ptr, size);
+    cdr >> ros_message->partial_sequence;
   }
 
   return true;
@@ -462,13 +422,8 @@ size_t get_serialized_size_hrdp_beta_actions__action__RGBFrame_Feedback(
 
   // field.name partial_sequence
   {
-    size_t array_size = ros_message->partial_sequence.size;
-    auto array_ptr = ros_message->partial_sequence.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    (void)array_ptr;
-    size_t item_size = sizeof(array_ptr[0]);
-    current_alignment += array_size * item_size +
+    size_t item_size = sizeof(ros_message->partial_sequence);
+    current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -497,10 +452,7 @@ size_t max_serialized_size_hrdp_beta_actions__action__RGBFrame_Feedback(
 
   // member: partial_sequence
   {
-    size_t array_size = 0;
-    full_bounded = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));

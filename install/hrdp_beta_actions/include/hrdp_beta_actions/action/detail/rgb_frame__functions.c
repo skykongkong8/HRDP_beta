@@ -231,10 +231,6 @@ hrdp_beta_actions__action__RGBFrame_Goal__Sequence__copy(
 }
 
 
-// Include directives for member types
-// Member `sequence`
-#include "rosidl_runtime_c/primitives_sequence_functions.h"
-
 bool
 hrdp_beta_actions__action__RGBFrame_Result__init(hrdp_beta_actions__action__RGBFrame_Result * msg)
 {
@@ -242,10 +238,6 @@ hrdp_beta_actions__action__RGBFrame_Result__init(hrdp_beta_actions__action__RGBF
     return false;
   }
   // sequence
-  if (!rosidl_runtime_c__int32__Sequence__init(&msg->sequence, 0)) {
-    hrdp_beta_actions__action__RGBFrame_Result__fini(msg);
-    return false;
-  }
   return true;
 }
 
@@ -256,7 +248,6 @@ hrdp_beta_actions__action__RGBFrame_Result__fini(hrdp_beta_actions__action__RGBF
     return;
   }
   // sequence
-  rosidl_runtime_c__int32__Sequence__fini(&msg->sequence);
 }
 
 bool
@@ -266,9 +257,7 @@ hrdp_beta_actions__action__RGBFrame_Result__are_equal(const hrdp_beta_actions__a
     return false;
   }
   // sequence
-  if (!rosidl_runtime_c__int32__Sequence__are_equal(
-      &(lhs->sequence), &(rhs->sequence)))
-  {
+  if (lhs->sequence != rhs->sequence) {
     return false;
   }
   return true;
@@ -283,11 +272,7 @@ hrdp_beta_actions__action__RGBFrame_Result__copy(
     return false;
   }
   // sequence
-  if (!rosidl_runtime_c__int32__Sequence__copy(
-      &(input->sequence), &(output->sequence)))
-  {
-    return false;
-  }
+  output->sequence = input->sequence;
   return true;
 }
 
@@ -466,11 +451,6 @@ hrdp_beta_actions__action__RGBFrame_Result__Sequence__copy(
 }
 
 
-// Include directives for member types
-// Member `partial_sequence`
-// already included above
-// #include "rosidl_runtime_c/primitives_sequence_functions.h"
-
 bool
 hrdp_beta_actions__action__RGBFrame_Feedback__init(hrdp_beta_actions__action__RGBFrame_Feedback * msg)
 {
@@ -478,10 +458,6 @@ hrdp_beta_actions__action__RGBFrame_Feedback__init(hrdp_beta_actions__action__RG
     return false;
   }
   // partial_sequence
-  if (!rosidl_runtime_c__int32__Sequence__init(&msg->partial_sequence, 0)) {
-    hrdp_beta_actions__action__RGBFrame_Feedback__fini(msg);
-    return false;
-  }
   return true;
 }
 
@@ -492,7 +468,6 @@ hrdp_beta_actions__action__RGBFrame_Feedback__fini(hrdp_beta_actions__action__RG
     return;
   }
   // partial_sequence
-  rosidl_runtime_c__int32__Sequence__fini(&msg->partial_sequence);
 }
 
 bool
@@ -502,9 +477,7 @@ hrdp_beta_actions__action__RGBFrame_Feedback__are_equal(const hrdp_beta_actions_
     return false;
   }
   // partial_sequence
-  if (!rosidl_runtime_c__int32__Sequence__are_equal(
-      &(lhs->partial_sequence), &(rhs->partial_sequence)))
-  {
+  if (lhs->partial_sequence != rhs->partial_sequence) {
     return false;
   }
   return true;
@@ -519,11 +492,7 @@ hrdp_beta_actions__action__RGBFrame_Feedback__copy(
     return false;
   }
   // partial_sequence
-  if (!rosidl_runtime_c__int32__Sequence__copy(
-      &(input->partial_sequence), &(output->partial_sequence)))
-  {
-    return false;
-  }
+  output->partial_sequence = input->partial_sequence;
   return true;
 }
 

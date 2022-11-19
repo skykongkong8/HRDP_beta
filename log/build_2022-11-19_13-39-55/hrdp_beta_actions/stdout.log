@@ -1,0 +1,12 @@
+[  3%] Built target hrdp_beta_actions__cpp
+[ 12%] Built target hrdp_beta_actions__rosidl_generator_c
+[ 22%] Built target hrdp_beta_actions__rosidl_typesupport_cpp
+[ 32%] Built target hrdp_beta_actions__rosidl_typesupport_c
+[ 41%] Built target hrdp_beta_actions__rosidl_typesupport_introspection_c
+[ 51%] Built target hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp
+[ 61%] Built target hrdp_beta_actions__rosidl_typesupport_introspection_cpp
+[ 70%] Built target hrdp_beta_actions__rosidl_typesupport_fastrtps_c
+[ 70%] Built target hrdp_beta_actions
+[ 74%] Built target hrdp_beta_actions__py
+[35m[1mScanning dependencies of target hrdp_beta_actions__python[0m
+[ 77%] [32mBuilding C object CMakeFiles/hrdp_beta_actions__python.dir/rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame_s.c.o[0m

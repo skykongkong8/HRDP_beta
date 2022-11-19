@@ -56,11 +56,11 @@ inline const char * name<hrdp_beta_actions::action::RGBFrame_Result>()
 
 template<>
 struct has_fixed_size<hrdp_beta_actions::action::RGBFrame_Result>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct has_bounded_size<hrdp_beta_actions::action::RGBFrame_Result>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct is_message<hrdp_beta_actions::action::RGBFrame_Result>
@@ -85,11 +85,11 @@ inline const char * name<hrdp_beta_actions::action::RGBFrame_Feedback>()
 
 template<>
 struct has_fixed_size<hrdp_beta_actions::action::RGBFrame_Feedback>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct has_bounded_size<hrdp_beta_actions::action::RGBFrame_Feedback>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct is_message<hrdp_beta_actions::action::RGBFrame_Feedback>

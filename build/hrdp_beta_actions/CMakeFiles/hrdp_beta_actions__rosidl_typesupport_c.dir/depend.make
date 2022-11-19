@@ -16,7 +16,6 @@ CMakeFiles/hrdp_beta_actions__rosidl_typesupport_c.dir/rosidl_typesupport_c/hrdp
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_c.dir/rosidl_typesupport_c/hrdp_beta_actions/action/rgb_frame__type_support.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_c.dir/rosidl_typesupport_c/hrdp_beta_actions/action/rgb_frame__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/action_type_support_struct.h
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_c.dir/rosidl_typesupport_c/hrdp_beta_actions/action/rgb_frame__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
-CMakeFiles/hrdp_beta_actions__rosidl_typesupport_c.dir/rosidl_typesupport_c/hrdp_beta_actions/action/rgb_frame__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_c.dir/rosidl_typesupport_c/hrdp_beta_actions/action/rgb_frame__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/service_type_support_struct.h
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_c.dir/rosidl_typesupport_c/hrdp_beta_actions/action/rgb_frame__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_c.dir/rosidl_typesupport_c/hrdp_beta_actions/action/rgb_frame__type_support.cpp.o: /opt/ros/foxy/include/rosidl_typesupport_c/identifier.h

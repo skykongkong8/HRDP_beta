@@ -148,23 +148,31 @@ struct RGBFrame_Result_
 
   explicit RGBFrame_Result_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->sequence = 0l;
+    }
   }
 
   explicit RGBFrame_Result_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
-    (void)_init;
     (void)_alloc;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->sequence = 0l;
+    }
   }
 
   // field types and members
   using _sequence_type =
-    std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other>;
+    int32_t;
   _sequence_type sequence;
 
   // setters for named parameter idiom
   Type & set__sequence(
-    const std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other> & _arg)
+    const int32_t & _arg)
   {
     this->sequence = _arg;
     return *this;
@@ -254,23 +262,31 @@ struct RGBFrame_Feedback_
 
   explicit RGBFrame_Feedback_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->partial_sequence = 0l;
+    }
   }
 
   explicit RGBFrame_Feedback_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
-    (void)_init;
     (void)_alloc;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->partial_sequence = 0l;
+    }
   }
 
   // field types and members
   using _partial_sequence_type =
-    std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other>;
+    int32_t;
   _partial_sequence_type partial_sequence;
 
   // setters for named parameter idiom
   Type & set__partial_sequence(
-    const std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other> & _arg)
+    const int32_t & _arg)
   {
     this->partial_sequence = _arg;
     return *this;

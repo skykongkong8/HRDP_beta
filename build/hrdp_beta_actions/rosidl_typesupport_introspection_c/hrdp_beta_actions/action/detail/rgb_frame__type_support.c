@@ -98,10 +98,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "hrdp_beta_actions/action/detail/rgb_frame__struct.h"
 
 
-// Include directives for member types
-// Member `sequence`
-#include "rosidl_runtime_c/primitives_sequence_functions.h"
-
 #ifdef __cplusplus
 extern "C"
 {
@@ -127,7 +123,7 @@ static rosidl_typesupport_introspection_c__MessageMember RGBFrame_Result__rosidl
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    true,  // is array
+    false,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(hrdp_beta_actions__action__RGBFrame_Result, sequence),  // bytes offset in struct
@@ -188,11 +184,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "hrdp_beta_actions/action/detail/rgb_frame__struct.h"
 
 
-// Include directives for member types
-// Member `partial_sequence`
-// already included above
-// #include "rosidl_runtime_c/primitives_sequence_functions.h"
-
 #ifdef __cplusplus
 extern "C"
 {
@@ -218,7 +209,7 @@ static rosidl_typesupport_introspection_c__MessageMember RGBFrame_Feedback__rosi
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    true,  // is array
+    false,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(hrdp_beta_actions__action__RGBFrame_Feedback, partial_sequence),  // bytes offset in struct

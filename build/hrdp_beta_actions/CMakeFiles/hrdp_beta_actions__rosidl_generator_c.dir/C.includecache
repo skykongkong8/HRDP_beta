@@ -19,8 +19,6 @@ string.h
 -
 rcutils/allocator.h
 /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_c/hrdp_beta_actions/action/detail/rcutils/allocator.h
-rosidl_runtime_c/primitives_sequence_functions.h
-/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_c/hrdp_beta_actions/action/detail/rosidl_runtime_c/primitives_sequence_functions.h
 unique_identifier_msgs/msg/detail/uuid__functions.h
 /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_c/hrdp_beta_actions/action/detail/unique_identifier_msgs/msg/detail/uuid__functions.h
 builtin_interfaces/msg/detail/time__functions.h
@@ -88,24 +86,6 @@ rcutils/visibility_control_macros.h
 
 /opt/ros/foxy/include/rcutils/visibility_control_macros.h
 
-/opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
-stdbool.h
--
-stddef.h
--
-stdint.h
--
-
-/opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence_functions.h
-stdbool.h
--
-stddef.h
--
-rosidl_runtime_c/primitives_sequence.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
-rosidl_runtime_c/visibility_control.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
-
 /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 
 /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__functions.h
@@ -149,8 +129,6 @@ stddef.h
 -
 stdint.h
 -
-rosidl_runtime_c/primitives_sequence.h
-rosidl_generator_c/hrdp_beta_actions/action/detail/rosidl_runtime_c/primitives_sequence.h
 unique_identifier_msgs/msg/detail/uuid__struct.h
 rosidl_generator_c/hrdp_beta_actions/action/detail/unique_identifier_msgs/msg/detail/uuid__struct.h
 hrdp_beta_actions/action/detail/rgb_frame__struct.h

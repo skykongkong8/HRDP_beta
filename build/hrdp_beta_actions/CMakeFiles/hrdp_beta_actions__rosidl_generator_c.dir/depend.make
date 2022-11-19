@@ -11,8 +11,6 @@ CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_bet
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o: /opt/ros/foxy/include/rcutils/types/rcutils_ret.h
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o: /opt/ros/foxy/include/rcutils/visibility_control.h
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o: /opt/ros/foxy/include/rcutils/visibility_control_macros.h
-CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o: /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
-CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o: /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence_functions.h
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o: /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o: /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__functions.h
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o: /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__struct.h
