@@ -1,0 +1,35 @@
+[0.305s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta_actions -- -j4 -l4
+[0.611s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.015s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.055s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[6.089s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.128s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[7.658s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.243s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[10.705s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[11.853s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[12.031s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[12.403s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[12.410s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[12.764s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[12.773s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[12.782s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[13.407s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[14.167s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:213 (add_custom_target):
+[14.172s]   add_custom_target cannot create target "hrdp_beta_actions" because another
+[14.183s]   target with the same name already exists.  The existing target is a custom
+[14.189s]   target created in source directory
+[14.195s]   "/home/r1mini/sungsik_ws/src/hrdp_beta_actions".  See documentation for
+[14.197s]   policy CMP0002 for more details.
+[14.200s] Call Stack (most recent call first):
+[14.201s]   CMakeLists.txt:27 (rosidl_generate_interfaces)
+[14.202s] 
+[14.203s] 
+[14.204s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[14.354s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.378s] -- Added test 'lint_cmake' to check CMake code style
+[14.398s] -- Added test 'xmllint' to check XML markup files
+[14.444s] -- Configuring incomplete, errors occurred!
+[14.445s] See also "/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles/CMakeOutput.log".
+[14.589s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[14.614s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta_actions -- -j4 -l4

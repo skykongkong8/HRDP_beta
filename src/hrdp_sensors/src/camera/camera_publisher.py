@@ -21,7 +21,7 @@ class CameraPublisher(Node):
         )
         self.publisher = self.create_publisher(
             Image,
-            'sensor/rgbd_camera/rgb_frame',
+            'sensor/rgb_camera/rgb_frame',
             qos_policy 
         )
 
@@ -43,3 +43,15 @@ class CameraPublisher(Node):
 
     def terminate(self):
         self.destroy_node()
+
+if __name__ == "__main__":
+    rclpy.init(args = None)
+    rgb_camera_publisher = CameraPublisher()
+
+    while True:
+        try:
+            rgb_camera_publisher.run()
+        except KeyboardInterrupt:
+            break
+    rgb_camera_publisher.termiante()
+    rclpy.shutdown()

@@ -1,0 +1,1151 @@
+[0.906s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces': AMENT_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:${CMAKE_PREFIX_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[1.082s] UpdateCTestConfiguration  from :/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/CTestConfiguration.ini
+[1.086s] Parse Config file:/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/CTestConfiguration.ini
+[1.089s]    Site: ros2
+[1.094s]    Build name: (empty)
+[1.096s]  Add coverage exclude regular expressions.
+[1.098s] SetCTestConfiguration:CMakeCommand:/usr/bin/cmake
+[1.099s] Create new tag: 20221121-0838 - Experimental
+[1.101s] UpdateCTestConfiguration  from :/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/CTestConfiguration.ini
+[1.113s] Parse Config file:/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/CTestConfiguration.ini
+[1.133s] Test project /home/r1mini/sungsik_ws/build/hrdp_human_interfaces
+[1.137s] Constructing a list of tests
+[1.139s] Done constructing a list of tests
+[1.141s] Updating test list for fixtures
+[1.142s] Added 0 tests to meet fixture requirements
+[1.143s] Checking test dependency graph...
+[1.144s] Checking test dependency graph end
+[1.146s] test 1
+[1.155s]     Start 1: copyright
+[1.157s] 
+[1.158s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/copyright.xunit.xml" "--package-name" "hrdp_human_interfaces" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/ament_copyright/copyright.txt" "--command" "/opt/ros/foxy/bin/ament_copyright" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/copyright.xunit.xml"
+[1.159s] 1: Test timeout computed to be: 60
+[2.870s] 1: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces':
+[2.872s] 1:  - /opt/ros/foxy/bin/ament_copyright --xunit-file /home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/copyright.xunit.xml
+[8.433s] 1: src/sample_interface/application/clock.py: could not find copyright notice
+[8.439s] 1: src/sample_interface/application/joke.py: could not find copyright notice
+[8.441s] 1: src/sample_interface/application/timer.py: could not find copyright notice
+[8.452s] 1: src/sample_interface/application_managers/action.py: could not find copyright notice
+[8.461s] 1: src/sample_interface/application_managers/constant_variables.py: could not find copyright notice
+[8.469s] 1: src/sample_interface/application_managers/mode.py: could not find copyright notice
+[8.483s] 1: src/sample_interface/application_managers/utils.py: could not find copyright notice
+[8.486s] 1: src/sample_interface/home.py: could not find copyright notice
+[8.489s] 1: src/sample_interface/organs/check_microphone_connection.py: could not find copyright notice
+[8.491s] 1: src/sample_interface/organs/ears.py: could not find copyright notice
+[8.492s] 1: src/sample_interface/organs/mouth.py: could not find copyright notice
+[8.494s] 1: 11 errors, checked 12 files
+[9.230s] 1: -- run_test.py: return code 1
+[9.232s] 1: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/copyright.xunit.xml'
+[9.646s] 1/5 Test #1: copyright ........................***Failed    8.58 sec
+[9.649s] test 2
+[9.651s]     Start 2: flake8
+[9.657s] 
+[9.661s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/flake8.xunit.xml" "--package-name" "hrdp_human_interfaces" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/ament_flake8/flake8.txt" "--command" "/opt/ros/foxy/bin/ament_flake8" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/flake8.xunit.xml"
+[9.664s] 2: Test timeout computed to be: 60
+[12.183s] 2: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces':
+[12.186s] 2:  - /opt/ros/foxy/bin/ament_flake8 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/flake8.xunit.xml
+[24.780s] 2: 
+[24.781s] 2: ./src/sample_interface/home.py:6:1: F403 'from application_managers.constant_variables import *' used; unable to detect undefined names
+[24.789s] 2: from application_managers.constant_variables import*
+[24.798s] 2: ^
+[24.835s] 2: 
+[24.836s] 2: ./src/sample_interface/home.py:17:1: E302 expected 2 blank lines, found 1
+[24.837s] 2: def language_inquiry(flag)->int:
+[24.837s] 2: ^
+[24.865s] 2: 
+[24.869s] 2: ./src/sample_interface/home.py:17:27: E225 missing whitespace around operator
+[24.882s] 2: def language_inquiry(flag)->int:
+[24.901s] 2:                           ^
+[24.907s] 2: 
+[24.913s] 2: ./src/sample_interface/home.py:20:84: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+[24.930s] 2:         universal_talk('Hello, please tell me what language are you speaking in.', ENGLISH)
+[24.936s] 2:                                                                                    ^
+[24.951s] 2: 
+[24.959s] 2: ./src/sample_interface/home.py:23:47: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+[24.963s] 2:         Eng = split_string(language_selection[ENGLISH])
+[24.982s] 2:                                               ^
+[24.988s] 2: 
+[24.991s] 2: ./src/sample_interface/home.py:24:47: F405 'KOREAN' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.009s] 2:         Kor = split_string(language_selection[KOREAN])
+[25.014s] 2:                                               ^
+[25.018s] 2: 
+[25.025s] 2: ./src/sample_interface/home.py:25:47: F405 'ESPANOL' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.042s] 2:         Esp = split_string(language_selection[ESPANOL])
+[25.051s] 2:                                               ^
+[25.062s] 2: 
+[25.068s] 2: ./src/sample_interface/home.py:26:5: E722 do not use bare 'except'
+[25.081s] 2:     except:
+[25.086s] 2:     ^
+[25.104s] 2: 
+[25.109s] 2: ./src/sample_interface/home.py:27:100: E501 line too long (179 > 99 characters)
+[25.122s] 2:         universal_talk('Sorry, there were some error during the process. In this case, language is automatically selected to default. Current default language is Korean', ENGLISH)
+[25.127s] 2:                                                                                                    ^
+[25.131s] 2: 
+[25.134s] 2: ./src/sample_interface/home.py:27:172: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.150s] 2:         universal_talk('Sorry, there were some error during the process. In this case, language is automatically selected to default. Current default language is Korean', ENGLISH)
+[25.164s] 2:                                                                                                                                                                            ^
+[25.168s] 2: 
+[25.170s] 2: ./src/sample_interface/home.py:28:16: F405 'DEFAULT_LANGUAGE' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.172s] 2:         return DEFAULT_LANGUAGE
+[25.173s] 2:                ^
+[25.186s] 2: 
+[25.188s] 2: ./src/sample_interface/home.py:30:92: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.191s] 2:         universal_talk('You chose English. Welcome. Please press s key to make me alert.', ENGLISH)
+[25.196s] 2:                                                                                            ^
+[25.200s] 2: 
+[25.205s] 2: ./src/sample_interface/home.py:31:16: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.212s] 2:         return ENGLISH
+[25.216s] 2:                ^
+[25.220s] 2: 
+[25.223s] 2: ./src/sample_interface/home.py:32:100: E501 line too long (144 > 99 characters)
+[25.228s] 2:     elif check_item(Kor, '한국어') or check_item(Kor, '한국') or check_item(Eng, 'korea') or check_item(Eng, 'korean') or check_item(Esp, 'coreano'):
+[25.251s] 2:                                                                                                    ^
+[25.271s] 2: 
+[25.278s] 2: ./src/sample_interface/home.py:33:134: F405 'KOREAN' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.282s] 2:         universal_talk('한국어를 선택하셨습니다. 만나서 반갑습니다. 에스 키를 누르면 활성화됩니다.', KOREAN)
+[25.285s] 2:                                                                                                                                      ^
+[25.287s] 2: 
+[25.291s] 2: ./src/sample_interface/home.py:34:16: F405 'KOREAN' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.294s] 2:         return KOREAN
+[25.301s] 2:                ^
+[25.312s] 2: 
+[25.317s] 2: ./src/sample_interface/home.py:36:71: F405 'ESPANOL' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.320s] 2:         universal_talk('Usted he seleccionado español. Bienvenido!', ESPANOL)
+[25.322s] 2:                                                                       ^
+[25.324s] 2: 
+[25.327s] 2: ./src/sample_interface/home.py:37:16: F405 'ESPANOL' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.335s] 2:         return ESPANOL
+[25.349s] 2:                ^
+[25.365s] 2: 
+[25.374s] 2: ./src/sample_interface/home.py:39:100: E501 line too long (161 > 99 characters)
+[25.376s] 2:         universal_talk('Sorry, I could not understand what you said. We only support English, Korean, and Spanish. Please tell me your language again.', ENGLISH)
+[25.385s] 2:                                                                                                    ^
+[25.386s] 2: 
+[25.387s] 2: ./src/sample_interface/home.py:39:154: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.389s] 2:         universal_talk('Sorry, I could not understand what you said. We only support English, Korean, and Spanish. Please tell me your language again.', ENGLISH)
+[25.390s] 2:                                                                                                                                                          ^
+[25.391s] 2: 
+[25.393s] 2: ./src/sample_interface/home.py:43:33: E225 missing whitespace around operator
+[25.411s] 2: def language_selection(argument)->int:
+[25.414s] 2:                                 ^
+[25.416s] 2: 
+[25.417s] 2: ./src/sample_interface/home.py:47:20: F405 'KOREAN' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.421s] 2:             return KOREAN
+[25.434s] 2:                    ^
+[25.436s] 2: 
+[25.437s] 2: ./src/sample_interface/home.py:49:20: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.439s] 2:             return ENGLISH
+[25.441s] 2:                    ^
+[25.463s] 2: 
+[25.467s] 2: ./src/sample_interface/home.py:51:20: F405 'ESPANOL' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.470s] 2:             return ESPANOL
+[25.473s] 2:                    ^
+[25.482s] 2: 
+[25.495s] 2: ./src/sample_interface/home.py:54:20: F405 'DEFAULT_LANGUAGE' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.497s] 2:             return DEFAULT_LANGUAGE
+[25.499s] 2:                    ^
+[25.502s] 2: 
+[25.515s] 2: ./src/sample_interface/home.py:57:16: F405 'DEFAULT_LANGUAGE' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.519s] 2:         return DEFAULT_LANGUAGE
+[25.522s] 2:                ^
+[25.525s] 2: 
+[25.540s] 2: ./src/sample_interface/home.py:61:1: E305 expected 2 blank lines after class or function definition, found 1
+[25.544s] 2: """Actual Home"""
+[25.547s] 2: ^
+[25.551s] 2: 
+[25.560s] 2: ./src/sample_interface/home.py:81:13: F405 'gc' may be undefined, or defined from star imports: application_managers.constant_variables
+[25.576s] 2:             gc.collect(generation=2)
+[25.582s] 2:             ^
+[25.586s] 2: 
+[25.603s] 2: ./src/sample_interface/home.py:84:13: E722 do not use bare 'except'
+[25.605s] 2:             except:
+[25.606s] 2:             ^
+[25.607s] 2: 
+[25.608s] 2: ./src/sample_interface/home.py:91:13: W292 no newline at end of file
+[25.616s] 2:         pass            ^
+[25.620s] 2: 
+[25.621s] 2: ./src/sample_interface/application_managers/action.py:1:1: F403 'from constant_variables import *' used; unable to detect undefined names
+[25.627s] 2: from constant_variables import*
+[25.629s] 2: ^
+[25.630s] 2: 
+[25.632s] 2: ./src/sample_interface/application_managers/action.py:8:1: E302 expected 2 blank lines, found 1
+[25.633s] 2: class Action():
+[25.643s] 2: ^
+[25.645s] 2: 
+[25.652s] 2: ./src/sample_interface/application_managers/action.py:13:1: W293 blank line contains whitespace
+[25.653s] 2:  
+[25.655s] 2: ^
+[25.673s] 2: 
+[25.679s] 2: ./src/sample_interface/application_managers/action.py:15:27: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+[25.683s] 2:         if mode_number == UNKNOWN_ERROR:
+[25.688s] 2:                           ^
+[25.691s] 2: 
+[25.694s] 2: ./src/sample_interface/application_managers/action.py:16:100: E501 line too long (118 > 99 characters)
+[25.698s] 2:             universal_talk('Sorry, I could not understand what you said. I will try harder next time.', self.language)
+[25.703s] 2:                                                                                                    ^
+[25.709s] 2: 
+[25.711s] 2: ./src/sample_interface/application_managers/action.py:17:29: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+[25.712s] 2:         elif mode_number == GREETING:
+[25.713s] 2:                             ^
+[25.715s] 2: 
+[25.716s] 2: ./src/sample_interface/application_managers/action.py:21:31: F405 'CLOCK' may be undefined, or defined from star imports: constant_variables
+[25.722s] 2:             if mode_number == CLOCK:
+[25.724s] 2:                               ^
+[25.728s] 2: 
+[25.732s] 2: ./src/sample_interface/application_managers/action.py:23:33: F405 'TIMER' may be undefined, or defined from star imports: constant_variables
+[25.734s] 2:             elif mode_number == TIMER:
+[25.735s] 2:                                 ^
+[25.737s] 2: 
+[25.740s] 2: ./src/sample_interface/application_managers/action.py:25:33: F405 'JOKE' may be undefined, or defined from star imports: constant_variables
+[25.742s] 2:             elif mode_number == JOKE:
+[25.774s] 2:                                 ^
+[25.788s] 2: 
+[25.790s] 2: ./src/sample_interface/application_managers/action.py:27:1: W293 blank line contains whitespace
+[25.792s] 2:             
+[25.794s] 2: ^
+[25.796s] 2: 
+[25.799s] 2: ./src/sample_interface/application_managers/action.py:28:33: F405 'HOUSE_PARTY_PROTOCOL' may be undefined, or defined from star imports: constant_variables
+[25.801s] 2:             elif mode_number == HOUSE_PARTY_PROTOCOL:
+[25.802s] 2:                                 ^
+[25.803s] 2: 
+[25.804s] 2: ./src/sample_interface/application_managers/action.py:31:78: E231 missing whitespace after ','
+[25.805s] 2:                 universal_talk('Sorry, requested service is not readied yet.',self.language)
+[25.809s] 2:                                                                              ^
+[25.811s] 2: 
+[25.812s] 2: ./src/sample_interface/application_managers/action.py:32:1: W293 blank line contains whitespace
+[25.817s] 2:         
+[25.831s] 2: ^
+[25.836s] 2: 
+[25.838s] 2: ./src/sample_interface/application_managers/action.py:34:27: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+[25.843s] 2:         if mode_number == UNKNOWN_ERROR:
+[25.847s] 2:                           ^
+[25.849s] 2: 
+[25.862s] 2: ./src/sample_interface/application_managers/action.py:36:29: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+[25.864s] 2:         elif mode_number == GREETING:
+[25.865s] 2:                             ^
+[25.867s] 2: 
+[25.869s] 2: ./src/sample_interface/application_managers/action.py:40:31: F405 'CLOCK' may be undefined, or defined from star imports: constant_variables
+[25.870s] 2:             if mode_number == CLOCK:
+[25.871s] 2:                               ^
+[25.872s] 2: 
+[25.873s] 2: ./src/sample_interface/application_managers/action.py:42:33: F405 'TIMER' may be undefined, or defined from star imports: constant_variables
+[25.874s] 2:             elif mode_number == TIMER:
+[25.885s] 2:                                 ^
+[25.888s] 2: 
+[25.890s] 2: ./src/sample_interface/application_managers/action.py:44:33: F405 'JOKE' may be undefined, or defined from star imports: constant_variables
+[25.903s] 2:             elif mode_number == JOKE:
+[25.905s] 2:                                 ^
+[25.906s] 2: 
+[25.908s] 2: ./src/sample_interface/application_managers/action.py:46:1: W293 blank line contains whitespace
+[25.909s] 2:             
+[25.910s] 2: ^
+[25.911s] 2: 
+[25.913s] 2: ./src/sample_interface/application_managers/action.py:47:33: F405 'HOUSE_PARTY_PROTOCOL' may be undefined, or defined from star imports: constant_variables
+[25.914s] 2:             elif mode_number == HOUSE_PARTY_PROTOCOL:
+[25.938s] 2:                                 ^
+[25.939s] 2: 
+[25.940s] 2: ./src/sample_interface/application_managers/action.py:53:27: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+[25.942s] 2:         if mode_number == UNKNOWN_ERROR:
+[25.943s] 2:                           ^
+[25.945s] 2: 
+[25.946s] 2: ./src/sample_interface/application_managers/action.py:54:100: E501 line too long (153 > 99 characters)
+[25.959s] 2:             universal_talk('Lo siento, no entendí bien lo que estabas diciendo. Haremos todo lo posible para ayudarle en la próxima vez.', self.language)
+[25.962s] 2:                                                                                                    ^
+[25.964s] 2: 
+[25.965s] 2: ./src/sample_interface/application_managers/action.py:55:29: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+[25.967s] 2:         elif mode_number == GREETING:
+[25.968s] 2:                             ^
+[25.969s] 2: 
+[25.971s] 2: ./src/sample_interface/application_managers/action.py:73:1: E303 too many blank lines (3)
+[25.972s] 2: class EngAction(Action):
+[25.973s] 2: ^
+[25.996s] 2: 
+[26.000s] 2: ./src/sample_interface/application_managers/action.py:81:14: E203 whitespace before ':'
+[26.001s] 2:             1 : 'January',
+[26.003s] 2:              ^
+[26.004s] 2: 
+[26.005s] 2: ./src/sample_interface/application_managers/action.py:82:14: E203 whitespace before ':'
+[26.007s] 2:             2 : 'Feburary',
+[26.009s] 2:              ^
+[26.011s] 2: 
+[26.012s] 2: ./src/sample_interface/application_managers/action.py:83:14: E203 whitespace before ':'
+[26.014s] 2:             3 : 'March',
+[26.036s] 2:              ^
+[26.039s] 2: 
+[26.040s] 2: ./src/sample_interface/application_managers/action.py:84:14: E203 whitespace before ':'
+[26.041s] 2:             4 : 'April',
+[26.042s] 2:              ^
+[26.055s] 2: 
+[26.057s] 2: ./src/sample_interface/application_managers/action.py:85:14: E203 whitespace before ':'
+[26.058s] 2:             5 : 'May',
+[26.059s] 2:              ^
+[26.060s] 2: 
+[26.061s] 2: ./src/sample_interface/application_managers/action.py:86:14: E203 whitespace before ':'
+[26.062s] 2:             6 : 'June',
+[26.064s] 2:              ^
+[26.088s] 2: 
+[26.091s] 2: ./src/sample_interface/application_managers/action.py:87:14: E203 whitespace before ':'
+[26.094s] 2:             7 : 'July',
+[26.096s] 2:              ^
+[26.106s] 2: 
+[26.110s] 2: ./src/sample_interface/application_managers/action.py:88:14: E203 whitespace before ':'
+[26.113s] 2:             8 : 'August',
+[26.116s] 2:              ^
+[26.117s] 2: 
+[26.119s] 2: ./src/sample_interface/application_managers/action.py:89:14: E203 whitespace before ':'
+[26.120s] 2:             9 : 'September',
+[26.121s] 2:              ^
+[26.123s] 2: 
+[26.125s] 2: ./src/sample_interface/application_managers/action.py:90:15: E203 whitespace before ':'
+[26.127s] 2:             10 : 'October',
+[26.128s] 2:               ^
+[26.130s] 2: 
+[26.132s] 2: ./src/sample_interface/application_managers/action.py:91:15: E203 whitespace before ':'
+[26.134s] 2:             11 : 'November',
+[26.136s] 2:               ^
+[26.141s] 2: 
+[26.142s] 2: ./src/sample_interface/application_managers/action.py:92:15: E203 whitespace before ':'
+[26.147s] 2:             12 : 'December'
+[26.150s] 2:               ^
+[26.152s] 2: 
+[26.153s] 2: ./src/sample_interface/application_managers/action.py:95:14: E203 whitespace before ':'
+[26.155s] 2:             1 : 'first',
+[26.158s] 2:              ^
+[26.160s] 2: 
+[26.161s] 2: ./src/sample_interface/application_managers/action.py:96:14: E203 whitespace before ':'
+[26.162s] 2:             2 : 'second',
+[26.163s] 2:              ^
+[26.165s] 2: 
+[26.168s] 2: ./src/sample_interface/application_managers/action.py:97:14: E203 whitespace before ':'
+[26.192s] 2:             3 : 'third',
+[26.201s] 2:              ^
+[26.202s] 2: 
+[26.203s] 2: ./src/sample_interface/application_managers/action.py:98:14: E203 whitespace before ':'
+[26.204s] 2:             4 : 'fourth',
+[26.206s] 2:              ^
+[26.209s] 2: 
+[26.210s] 2: ./src/sample_interface/application_managers/action.py:99:14: E203 whitespace before ':'
+[26.211s] 2:             5 : 'fifth',
+[26.212s] 2:              ^
+[26.213s] 2: 
+[26.215s] 2: ./src/sample_interface/application_managers/action.py:100:14: E203 whitespace before ':'
+[26.217s] 2:             6 : 'sixth',
+[26.219s] 2:              ^
+[26.220s] 2: 
+[26.222s] 2: ./src/sample_interface/application_managers/action.py:101:14: E203 whitespace before ':'
+[26.223s] 2:             7 : 'seventh'
+[26.227s] 2:              ^
+[26.229s] 2: 
+[26.230s] 2: ./src/sample_interface/application_managers/action.py:104:100: E501 line too long (144 > 99 characters)
+[26.232s] 2:             universal_talk('Today is {0} {1} {2} {3}'.format(time_list[0], month_dict[time_list[1]], time_list[2], time_list[3]), self.language)
+[26.233s] 2:                                                                                                    ^
+[26.234s] 2: 
+[26.235s] 2: ./src/sample_interface/application_managers/action.py:106:100: E501 line too long (154 > 99 characters)
+[26.236s] 2:             universal_talk('Today is {0} {1} {2} {3}'.format(time_list[0], month_dict[time_list[1]], day_dict[time_list[2]], time_list[3]), self.language)
+[26.240s] 2:                                                                                                    ^
+[26.241s] 2: 
+[26.260s] 2: ./src/sample_interface/application_managers/action.py:109:5: E303 too many blank lines (2)
+[26.262s] 2:     def _notification_ENG(self):
+[26.264s] 2:     ^
+[26.265s] 2: 
+[26.281s] 2: ./src/sample_interface/application_managers/action.py:116:33: E225 missing whitespace around operator
+[26.284s] 2:             if (timer_seconds >=0):
+[26.286s] 2:                                 ^
+[26.289s] 2: 
+[26.292s] 2: ./src/sample_interface/application_managers/action.py:117:100: E501 line too long (126 > 99 characters)
+[26.295s] 2:                 universal_talk('your timer has just set. I will let you know for three times when it is done!', self.language)
+[26.319s] 2:                                                                                                    ^
+[26.321s] 2: 
+[26.323s] 2: ./src/sample_interface/application_managers/action.py:122:100: E501 line too long (117 > 99 characters)
+[26.325s] 2:                 universal_talk('Sorry, I could not understand your timer order. Please try it again.', self.language)
+[26.326s] 2:                                                                                                    ^
+[26.329s] 2: 
+[26.331s] 2: ./src/sample_interface/application_managers/action.py:123:9: E722 do not use bare 'except'
+[26.332s] 2:         except:
+[26.334s] 2:         ^
+[26.336s] 2: 
+[26.337s] 2: ./src/sample_interface/application_managers/action.py:124:100: E501 line too long (113 > 99 characters)
+[26.352s] 2:             universal_talk('Sorry, I could not understand your timer order. Please try it again.', self.language)
+[26.353s] 2:                                                                                                    ^
+[26.355s] 2: 
+[26.357s] 2: ./src/sample_interface/application_managers/action.py:125:1: W293 blank line contains whitespace
+[26.358s] 2:     
+[26.359s] 2: ^
+[26.361s] 2: 
+[26.370s] 2: ./src/sample_interface/application_managers/action.py:142:5: E303 too many blank lines (2)
+[26.373s] 2:     def house_party_protocol_ENG(self):
+[26.376s] 2:     ^
+[26.380s] 2: 
+[26.384s] 2: ./src/sample_interface/application_managers/action.py:143:100: E501 line too long (141 > 99 characters)
+[26.389s] 2:         universal_talk('Activate house party protocol! Let me show you some of my representative functions at the same time.', self.language)
+[26.394s] 2:                                                                                                    ^
+[26.425s] 2: 
+[26.429s] 2: ./src/sample_interface/application_managers/action.py:149:1: W293 blank line contains whitespace
+[26.432s] 2:         
+[26.436s] 2: ^
+[26.453s] 2: 
+[26.458s] 2: ./src/sample_interface/application_managers/action.py:152:1: E303 too many blank lines (3)
+[26.461s] 2: class KorAction(Action):
+[26.464s] 2: ^
+[26.478s] 2: 
+[26.483s] 2: ./src/sample_interface/application_managers/action.py:156:1: W293 blank line contains whitespace
+[26.486s] 2:     
+[26.490s] 2: ^
+[26.493s] 2: 
+[26.507s] 2: ./src/sample_interface/application_managers/action.py:159:100: E501 line too long (132 > 99 characters)
+[26.523s] 2:         universal_talk('지금은 {0}월 {1}일 {2}시 {3}분 입니다.'.format(time_list[0], time_list[1], time_list[2], time_list[3]), self.language)
+[26.531s] 2:                                                                                                    ^
+[26.534s] 2: 
+[26.547s] 2: ./src/sample_interface/application_managers/action.py:160:1: W293 blank line contains whitespace
+[26.550s] 2:     
+[26.553s] 2: ^
+[26.556s] 2: 
+[26.571s] 2: ./src/sample_interface/application_managers/action.py:168:32: E225 missing whitespace around operator
+[26.581s] 2:             if (timer_seconds >0):
+[26.582s] 2:                                ^
+[26.583s] 2: 
+[26.584s] 2: ./src/sample_interface/application_managers/action.py:175:9: E722 do not use bare 'except'
+[26.586s] 2:         except:
+[26.589s] 2:         ^
+[26.596s] 2: 
+[26.602s] 2: ./src/sample_interface/application_managers/action.py:177:1: W293 blank line contains whitespace
+[26.619s] 2:     
+[26.624s] 2: ^
+[26.628s] 2: 
+[26.643s] 2: ./src/sample_interface/application_managers/action.py:180:47: E231 missing whitespace after ','
+[26.647s] 2:         joke_list = [['경찰관에는 어떤 혈액형이 가장 많을까요?','정답은 비형~ 비형~'],
+[26.650s] 2:                                               ^
+[26.653s] 2: 
+[26.656s] 2: ./src/sample_interface/application_managers/action.py:181:13: E128 continuation line under-indented for visual indent
+[26.671s] 2:             ['차 열쇠의 색깔은?', '정답은 카 키 색'],
+[26.674s] 2:             ^
+[26.677s] 2: 
+[26.692s] 2: ./src/sample_interface/application_managers/action.py:182:37: E231 missing whitespace after ','
+[26.695s] 2:             ['신하가 왕에게 공을 던지며 하는 말은?','정답은 송구하옵니다.. 전하..'],
+[26.698s] 2:                                     ^
+[26.701s] 2: 
+[26.704s] 2: ./src/sample_interface/application_managers/action.py:183:32: E231 missing whitespace after ','
+[26.714s] 2:             ['자동차를 톡하고 치면 뭘까요?','정답은 카 톡 '],
+[26.733s] 2:                                ^
+[26.739s] 2: 
+[26.752s] 2: ./src/sample_interface/application_managers/action.py:193:5: E303 too many blank lines (2)
+[26.753s] 2:     def house_party_protocol_KOR(self):
+[26.758s] 2:     ^
+[26.760s] 2: 
+[26.761s] 2: ./src/sample_interface/application_managers/action.py:201:9: W292 no newline at end of file
+[26.763s] 2:     pass        ^
+[26.764s] 2: 
+[26.765s] 2: ./src/sample_interface/application_managers/utils.py:4:1: F401 'gc' imported but unused
+[26.766s] 2: import gc
+[26.791s] 2: ^
+[26.792s] 2: 
+[26.794s] 2: ./src/sample_interface/application_managers/utils.py:10:5: F401 'termios' imported but unused
+[26.795s] 2:     import termios
+[26.797s] 2:     ^
+[26.798s] 2: 
+[26.799s] 2: ./src/sample_interface/application_managers/utils.py:12:1: E302 expected 2 blank lines, found 1
+[26.800s] 2: def getKey():
+[26.801s] 2: ^
+[26.802s] 2: 
+[26.803s] 2: ./src/sample_interface/application_managers/utils.py:29:1: E302 expected 2 blank lines, found 1
+[26.804s] 2: def check_internet_connection()->bool:
+[26.816s] 2: ^
+[26.820s] 2: 
+[26.824s] 2: ./src/sample_interface/application_managers/utils.py:29:32: E225 missing whitespace around operator
+[26.841s] 2: def check_internet_connection()->bool:
+[26.849s] 2:                                ^
+[26.850s] 2: 
+[26.852s] 2: ./src/sample_interface/application_managers/utils.py:36:20: W292 no newline at end of file
+[26.852s] 2:         return True                   ^
+[26.853s] 2: 
+[26.854s] 2: ./src/sample_interface/application_managers/constant_variables.py:2:21: E261 at least two spaces before inline comment
+[26.855s] 2: DEFAULT_LANGUAGE = 1 # Current default language is Korean.
+[26.856s] 2:                     ^
+[26.857s] 2: 
+[26.877s] 2: ./src/sample_interface/application_managers/constant_variables.py:14:27: W292 no newline at end of file
+[26.881s] 2: HOUSE_PARTY_PROTOCOL = 999                          ^
+[26.883s] 2: 
+[26.884s] 2: ./src/sample_interface/application_managers/mode.py:1:100: E501 line too long (112 > 99 characters)
+[26.885s] 2: ################################################################################################################
+[26.886s] 2:                                                                                                    ^
+[26.887s] 2: 
+[26.888s] 2: ./src/sample_interface/application_managers/mode.py:3:92: W291 trailing whitespace
+[26.889s] 2: # Originally, mode selection should be done by NLP, analyzing the given sentence by syntax. 
+[26.889s] 2:                                                                                            ^
+[26.906s] 2: 
+[26.908s] 2: ./src/sample_interface/application_managers/mode.py:4:100: E501 line too long (112 > 99 characters)
+[26.909s] 2: # However in this case, since the system is simple enough, we just use classification function like following...
+[26.911s] 2:                                                                                                    ^
+[26.913s] 2: 
+[26.914s] 2: ./src/sample_interface/application_managers/mode.py:8:1: E303 too many blank lines (3)
+[26.915s] 2: from constant_variables import*
+[26.916s] 2: ^
+[26.946s] 2: 
+[26.948s] 2: ./src/sample_interface/application_managers/mode.py:8:1: F403 'from constant_variables import *' used; unable to detect undefined names
+[26.951s] 2: from constant_variables import*
+[26.953s] 2: ^
+[26.954s] 2: 
+[26.980s] 2: ./src/sample_interface/application_managers/mode.py:12:1: E303 too many blank lines (3)
+[26.983s] 2: def check_item(my_list, word):
+[26.984s] 2: ^
+[26.985s] 2: 
+[26.999s] 2: ./src/sample_interface/application_managers/mode.py:20:1: E302 expected 2 blank lines, found 1
+[27.001s] 2: def split_string(string):
+[27.002s] 2: ^
+[27.004s] 2: 
+[27.004s] 2: ./src/sample_interface/application_managers/mode.py:24:1: E302 expected 2 blank lines, found 1
+[27.005s] 2: def mode_selection_eng(string):    
+[27.007s] 2: ^
+[27.010s] 2: 
+[27.017s] 2: ./src/sample_interface/application_managers/mode.py:24:32: W291 trailing whitespace
+[27.039s] 2: def mode_selection_eng(string):    
+[27.045s] 2:                                ^
+[27.049s] 2: 
+[27.050s] 2: ./src/sample_interface/application_managers/mode.py:27:100: E501 line too long (161 > 99 characters)
+[27.052s] 2:     if check_item(my_list, 'hello') or check_item(my_list, 'hi') or (check_item(my_list, 'meet') and check_item(my_list, 'nice') and check_item(my_list, 'you')):
+[27.053s] 2:                                                                                                    ^
+[27.054s] 2: 
+[27.055s] 2: ./src/sample_interface/application_managers/mode.py:28:16: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+[27.057s] 2:         return GREETING
+[27.059s] 2:                ^
+[27.061s] 2: 
+[27.063s] 2: ./src/sample_interface/application_managers/mode.py:30:16: F405 'COVID' may be undefined, or defined from star imports: constant_variables
+[27.065s] 2:         return COVID
+[27.067s] 2:                ^
+[27.068s] 2: 
+[27.070s] 2: ./src/sample_interface/application_managers/mode.py:31:100: E501 line too long (140 > 99 characters)
+[27.072s] 2:     elif check_item(my_list, 'brightness') or (check_item(my_list, 'light') and (check_item(my_list, 'down') or check_item(my_list, 'up'))):
+[27.074s] 2:                                                                                                    ^
+[27.076s] 2: 
+[27.077s] 2: ./src/sample_interface/application_managers/mode.py:32:16: F405 'BRIGHTNESS' may be undefined, or defined from star imports: constant_variables
+[27.079s] 2:         return BRIGHTNESS
+[27.080s] 2:                ^
+[27.085s] 2: 
+[27.087s] 2: ./src/sample_interface/application_managers/mode.py:34:16: F405 'VOLUME' may be undefined, or defined from star imports: constant_variables
+[27.088s] 2:         return VOLUME
+[27.090s] 2:                ^
+[27.091s] 2: 
+[27.092s] 2: ./src/sample_interface/application_managers/mode.py:35:100: E501 line too long (103 > 99 characters)
+[27.096s] 2:     elif (check_item(my_list, 'time') and check_item(my_list, 'what')) or check_item(my_list, 'clock'):
+[27.097s] 2:                                                                                                    ^
+[27.099s] 2: 
+[27.101s] 2: ./src/sample_interface/application_managers/mode.py:36:16: F405 'CLOCK' may be undefined, or defined from star imports: constant_variables
+[27.102s] 2:         return CLOCK
+[27.104s] 2:                ^
+[27.105s] 2: 
+[27.106s] 2: ./src/sample_interface/application_managers/mode.py:38:16: F405 'TIMER' may be undefined, or defined from star imports: constant_variables
+[27.108s] 2:         return TIMER
+[27.109s] 2:                ^
+[27.132s] 2: 
+[27.135s] 2: ./src/sample_interface/application_managers/mode.py:39:100: E501 line too long (172 > 99 characters)
+[27.137s] 2:     elif check_item(my_list, 'joke') or check_item(my_list, 'jokes') or (check_item(my_list, 'funny') and (check_item(my_list, 'story') or check_item(my_list, 'stories'))):
+[27.139s] 2:                                                                                                    ^
+[27.141s] 2: 
+[27.144s] 2: ./src/sample_interface/application_managers/mode.py:40:16: F405 'JOKE' may be undefined, or defined from star imports: constant_variables
+[27.148s] 2:         return JOKE
+[27.150s] 2:                ^
+[27.152s] 2: 
+[27.154s] 2: ./src/sample_interface/application_managers/mode.py:41:100: E501 line too long (138 > 99 characters)
+[27.155s] 2:     elif check_item(my_list, 'protocol') and (check_item(my_list, 'house') or check_item(my_list, 'party'), check_item(my_list, 'final')):
+[27.157s] 2:                                                                                                    ^
+[27.158s] 2: 
+[27.160s] 2: ./src/sample_interface/application_managers/mode.py:42:16: F405 'HOUSE_PARTY_PROTOCOL' may be undefined, or defined from star imports: constant_variables
+[27.161s] 2:         return HOUSE_PARTY_PROTOCOL
+[27.162s] 2:                ^
+[27.163s] 2: 
+[27.164s] 2: ./src/sample_interface/application_managers/mode.py:45:16: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+[27.166s] 2:         return UNKNOWN_ERROR
+[27.167s] 2:                ^
+[27.168s] 2: 
+[27.169s] 2: ./src/sample_interface/application_managers/mode.py:47:1: E302 expected 2 blank lines, found 1
+[27.170s] 2: def mode_selection_kor(string):
+[27.170s] 2: ^
+[27.171s] 2: 
+[27.172s] 2: ./src/sample_interface/application_managers/mode.py:51:16: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+[27.173s] 2:         return GREETING
+[27.173s] 2:                ^
+[27.175s] 2: 
+[27.176s] 2: ./src/sample_interface/application_managers/mode.py:53:16: F405 'COVID' may be undefined, or defined from star imports: constant_variables
+[27.178s] 2:         return COVID
+[27.180s] 2:                ^
+[27.181s] 2: 
+[27.184s] 2: ./src/sample_interface/application_managers/mode.py:54:100: E501 line too long (129 > 99 characters)
+[27.187s] 2:     elif check_item(my_list, '밝기') or (check_item(my_list, '화면이') and (check_item(my_list, '밝아') or check_item(my_list, '어두워'))):
+[27.188s] 2:                                                                                                    ^
+[27.189s] 2: 
+[27.191s] 2: ./src/sample_interface/application_managers/mode.py:55:16: F405 'BRIGHTNESS' may be undefined, or defined from star imports: constant_variables
+[27.192s] 2:         return BRIGHTNESS
+[27.193s] 2:                ^
+[27.194s] 2: 
+[27.195s] 2: ./src/sample_interface/application_managers/mode.py:57:16: F405 'VOLUME' may be undefined, or defined from star imports: constant_variables
+[27.196s] 2:         return VOLUME
+[27.197s] 2:                ^
+[27.199s] 2: 
+[27.200s] 2: ./src/sample_interface/application_managers/mode.py:58:100: E501 line too long (123 > 99 characters)
+[27.201s] 2:     elif check_item(my_list, '시간') or (check_item(my_list, '몇') and check_item(my_list, '시')) or check_item(my_list, '시계'):
+[27.202s] 2:                                                                                                    ^
+[27.203s] 2: 
+[27.203s] 2: ./src/sample_interface/application_managers/mode.py:59:16: F405 'CLOCK' may be undefined, or defined from star imports: constant_variables
+[27.204s] 2:         return CLOCK
+[27.205s] 2:                ^
+[27.206s] 2: 
+[27.231s] 2: ./src/sample_interface/application_managers/mode.py:61:16: F405 'TIMER' may be undefined, or defined from star imports: constant_variables
+[27.233s] 2:         return TIMER
+[27.236s] 2:                ^
+[27.243s] 2: 
+[27.248s] 2: ./src/sample_interface/application_managers/mode.py:62:100: E501 line too long (162 > 99 characters)
+[27.256s] 2:     elif check_item(my_list, '농담') or ((check_item(my_list, '재미있는') or check_item(my_list, '재밌는')) and (check_item(my_list, '이야기') or check_item(my_list, '얘기'))):
+[27.258s] 2:                                                                                                    ^
+[27.259s] 2: 
+[27.260s] 2: ./src/sample_interface/application_managers/mode.py:63:16: F405 'JOKE' may be undefined, or defined from star imports: constant_variables
+[27.261s] 2:         return JOKE
+[27.279s] 2:                ^
+[27.281s] 2: 
+[27.284s] 2: ./src/sample_interface/application_managers/mode.py:64:100: E501 line too long (216 > 99 characters)
+[27.285s] 2:     elif (check_item(my_list, '전부') or check_item(my_list, '다') or (check_item(my_list, '할') and check_item(my_list, '수') and check_item(my_list, '있는지'))) and (check_item(my_list, '보여') and check_item(my_list, '줘')):
+[27.287s] 2:                                                                                                    ^
+[27.302s] 2: 
+[27.306s] 2: ./src/sample_interface/application_managers/mode.py:65:16: F405 'HOUSE_PARTY_PROTOCOL' may be undefined, or defined from star imports: constant_variables
+[27.309s] 2:         return HOUSE_PARTY_PROTOCOL
+[27.312s] 2:                ^
+[27.315s] 2: 
+[27.317s] 2: ./src/sample_interface/application_managers/mode.py:67:16: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+[27.332s] 2:         return UNKNOWN_ERROR
+[27.338s] 2:                ^
+[27.350s] 2: 
+[27.353s] 2: ./src/sample_interface/application_managers/mode.py:69:1: E302 expected 2 blank lines, found 1
+[27.356s] 2: def mode_selection_esp(string):
+[27.366s] 2: ^
+[27.369s] 2: 
+[27.372s] 2: ./src/sample_interface/application_managers/mode.py:74:16: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+[27.388s] 2:         return GREETING
+[27.393s] 2:                ^
+[27.395s] 2: 
+[27.397s] 2: ./src/sample_interface/application_managers/mode.py:75:100: E501 line too long (103 > 99 characters)
+[27.399s] 2:     elif check_item(my_list, 'corona') or check_item(my_list, 'virus') or check_item(my_list, 'covid'):
+[27.402s] 2:                                                                                                    ^
+[27.412s] 2: 
+[27.425s] 2: ./src/sample_interface/application_managers/mode.py:76:16: F405 'COVID' may be undefined, or defined from star imports: constant_variables
+[27.430s] 2:         return COVID
+[27.433s] 2:                ^
+[27.437s] 2: 
+[27.445s] 2: ./src/sample_interface/application_managers/mode.py:78:16: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+[27.453s] 2:         return UNKNOWN_ERROR
+[27.457s] 2:                ^
+[27.460s] 2: 
+[27.463s] 2: ./src/sample_interface/application_managers/mode.py:80:1: E302 expected 2 blank lines, found 1
+[27.468s] 2: def universal_mode_selection(string, language):
+[27.472s] 2: ^
+[27.475s] 2: 
+[27.478s] 2: ./src/sample_interface/application_managers/mode.py:89:20: F405 'ENGLISH' may be undefined, or defined from star imports: constant_variables
+[27.481s] 2:     if language == ENGLISH:
+[27.483s] 2:                    ^
+[27.485s] 2: 
+[27.487s] 2: ./src/sample_interface/application_managers/mode.py:91:22: F405 'KOREAN' may be undefined, or defined from star imports: constant_variables
+[27.489s] 2:     elif language == KOREAN:
+[27.502s] 2:                      ^
+[27.506s] 2: 
+[27.509s] 2: ./src/sample_interface/application_managers/mode.py:93:22: F405 'ESPANOL' may be undefined, or defined from star imports: constant_variables
+[27.511s] 2:     elif language == ESPANOL:
+[27.514s] 2:                      ^
+[27.515s] 2: 
+[27.517s] 2: ./src/sample_interface/application_managers/mode.py:94:42: W292 no newline at end of file
+[27.518s] 2:         return mode_selection_esp(string)                                         ^
+[27.525s] 2: 
+[27.528s] 2: ./src/sample_interface/organs/check_microphone_connection.py:5:18: E261 at least two spaces before inline comment
+[27.531s] 2: DEVICE_INDEX = 11 # FIX HERE!
+[27.536s] 2:                  ^
+[27.540s] 2: 
+[27.544s] 2: ./src/sample_interface/organs/check_microphone_connection.py:9:32: E251 unexpected spaces around keyword / parameter equals
+[27.553s] 2: with sr.Microphone(device_index = DEVICE_INDEX) as source:
+[27.558s] 2:                                ^
+[27.560s] 2: 
+[27.563s] 2: ./src/sample_interface/organs/check_microphone_connection.py:9:34: E251 unexpected spaces around keyword / parameter equals
+[27.565s] 2: with sr.Microphone(device_index = DEVICE_INDEX) as source:
+[27.569s] 2:                                  ^
+[27.572s] 2: 
+[27.575s] 2: ./src/sample_interface/organs/check_microphone_connection.py:15:35: E231 missing whitespace after ','
+[27.578s] 2: with open("microphone_results.wav","wb") as f:
+[27.581s] 2:                                   ^
+[27.584s] 2: 
+[27.587s] 2: ./src/sample_interface/organs/ears.py:6:1: E302 expected 2 blank lines, found 1
+[27.589s] 2: class Ears():
+[27.592s] 2: ^
+[27.597s] 2: 
+[27.609s] 2: ./src/sample_interface/organs/ears.py:7:21: E225 missing whitespace around operator
+[27.611s] 2:     def listen(self)->list:
+[27.613s] 2:                     ^
+[27.616s] 2: 
+[27.628s] 2: ./src/sample_interface/organs/ears.py:14:28: E261 at least two spaces before inline comment
+[27.631s] 2:         r = sr.Recognizer() # device_index = 3 for Jetson Nano
+[27.634s] 2:                            ^
+[27.644s] 2: 
+[27.656s] 2: ./src/sample_interface/organs/ears.py:15:40: E251 unexpected spaces around keyword / parameter equals
+[27.659s] 2:         with sr.Microphone(device_index = DEVICE_INDEX) as source:
+[27.661s] 2:                                        ^
+[27.666s] 2: 
+[27.669s] 2: ./src/sample_interface/organs/ears.py:15:42: E251 unexpected spaces around keyword / parameter equals
+[27.671s] 2:         with sr.Microphone(device_index = DEVICE_INDEX) as source:
+[27.675s] 2:                                          ^
+[27.680s] 2: 
+[27.683s] 2: ./src/sample_interface/organs/ears.py:16:17: E117 over-indented (comment)
+[27.685s] 2:                 # r.adjust_for_ambient_noise(source, duration =1)
+[27.687s] 2:                 ^
+[27.690s] 2: 
+[27.692s] 2: ./src/sample_interface/organs/ears.py:17:17: E117 over-indented
+[27.694s] 2:                 print("Say something!")
+[27.699s] 2:                 ^
+[27.701s] 2: 
+[27.704s] 2: ./src/sample_interface/organs/ears.py:20:52: W291 trailing whitespace
+[27.709s] 2:                 audio = r.listen(source, timeout=3) 
+[27.712s] 2:                                                    ^
+[27.716s] 2: 
+[27.719s] 2: ./src/sample_interface/organs/ears.py:24:67: E251 unexpected spaces around keyword / parameter equals
+[27.721s] 2:         eng = r.recognize_google(audio, language="en-US", show_all = True)
+[27.728s] 2:                                                                   ^
+[27.731s] 2: 
+[27.733s] 2: ./src/sample_interface/organs/ears.py:24:69: E251 unexpected spaces around keyword / parameter equals
+[27.735s] 2:         eng = r.recognize_google(audio, language="en-US", show_all = True)
+[27.737s] 2:                                                                     ^
+[27.752s] 2: 
+[27.756s] 2: ./src/sample_interface/organs/ears.py:25:49: E251 unexpected spaces around keyword / parameter equals
+[27.772s] 2:         kor = r.recognize_google(audio, language = 'ko-KR', show_all = True)
+[27.774s] 2:                                                 ^
+[27.775s] 2: 
+[27.776s] 2: ./src/sample_interface/organs/ears.py:25:51: E251 unexpected spaces around keyword / parameter equals
+[27.777s] 2:         kor = r.recognize_google(audio, language = 'ko-KR', show_all = True)
+[27.778s] 2:                                                   ^
+[27.779s] 2: 
+[27.781s] 2: ./src/sample_interface/organs/ears.py:25:69: E251 unexpected spaces around keyword / parameter equals
+[27.781s] 2:         kor = r.recognize_google(audio, language = 'ko-KR', show_all = True)
+[27.795s] 2:                                                                     ^
+[27.798s] 2: 
+[27.799s] 2: ./src/sample_interface/organs/ears.py:25:71: E251 unexpected spaces around keyword / parameter equals
+[27.800s] 2:         kor = r.recognize_google(audio, language = 'ko-KR', show_all = True)
+[27.801s] 2:                                                                       ^
+[27.802s] 2: 
+[27.802s] 2: ./src/sample_interface/organs/ears.py:26:49: E251 unexpected spaces around keyword / parameter equals
+[27.804s] 2:         esp = r.recognize_google(audio, language = 'es-ES', show_all = True)
+[27.804s] 2:                                                 ^
+[27.805s] 2: 
+[27.806s] 2: ./src/sample_interface/organs/ears.py:26:51: E251 unexpected spaces around keyword / parameter equals
+[27.820s] 2:         esp = r.recognize_google(audio, language = 'es-ES', show_all = True)
+[27.821s] 2:                                                   ^
+[27.822s] 2: 
+[27.824s] 2: ./src/sample_interface/organs/ears.py:26:69: E251 unexpected spaces around keyword / parameter equals
+[27.825s] 2:         esp = r.recognize_google(audio, language = 'es-ES', show_all = True)
+[27.827s] 2:                                                                     ^
+[27.840s] 2: 
+[27.844s] 2: ./src/sample_interface/organs/ears.py:26:71: E251 unexpected spaces around keyword / parameter equals
+[27.857s] 2:         esp = r.recognize_google(audio, language = 'es-ES', show_all = True)
+[27.864s] 2:                                                                       ^
+[27.866s] 2: 
+[27.867s] 2: ./src/sample_interface/organs/ears.py:32:100: E501 line too long (103 > 99 characters)
+[27.868s] 2:         #     print("Google Speech Recognition thinks you said " + eng + '\n or ' + kor +'\n or '+ esp)
+[27.869s] 2:                                                                                                    ^
+[27.884s] 2: 
+[27.885s] 2: ./src/sample_interface/organs/ears.py:37:100: E501 line too long (102 > 99 characters)
+[27.886s] 2:         #     print("Could not request results from Google Speech Recognition service; {0}".format(e))
+[27.887s] 2:                                                                                                    ^
+[27.888s] 2: 
+[27.888s] 2: ./src/sample_interface/organs/ears.py:45:1: E305 expected 2 blank lines after class or function definition, found 1
+[27.889s] 2: if __name__ == "__main__":
+[27.890s] 2: ^
+[27.891s] 2: 
+[27.891s] 2: ./src/sample_interface/organs/ears.py:52:1: E303 too many blank lines (3)
+[27.892s] 2: #Notes for listen() and its internal fns - DETAILED REGULATION OPTIONS - Sungsik Kong
+[27.893s] 2: ^
+[27.893s] 2: 
+[27.894s] 2: ./src/sample_interface/organs/ears.py:52:1: E265 block comment should start with '# '
+[27.907s] 2: #Notes for listen() and its internal fns - DETAILED REGULATION OPTIONS - Sungsik Kong
+[27.908s] 2: ^
+[27.909s] 2: 
+[27.910s] 2: ./src/sample_interface/organs/ears.py:54:1: E265 block comment should start with '# '
+[27.912s] 2: #1 listen function changes 'source' into 'AudioData' instance. 'AudioData' can be 'recognized' by google data deisgnated languages
+[27.912s] 2: ^
+[27.913s] 2: 
+[27.927s] 2: ./src/sample_interface/organs/ears.py:54:100: E501 line too long (130 > 99 characters)
+[27.929s] 2: #1 listen function changes 'source' into 'AudioData' instance. 'AudioData' can be 'recognized' by google data deisgnated languages
+[27.931s] 2:                                                                                                    ^
+[27.932s] 2: 
+[27.933s] 2: ./src/sample_interface/organs/ears.py:55:1: E265 block comment should start with '# '
+[27.934s] 2: #2 'timeout' param is maximum waiting time(seconds) before 'speech_recognition.WaitTimeoutError'
+[27.935s] 2: ^
+[27.960s] 2: 
+[27.967s] 2: ./src/sample_interface/organs/ears.py:56:1: E265 block comment should start with '# '
+[27.971s] 2: #3 'phrase_time_limit' param is maximum seconds that letting phrase to continue before stopping and returning the part of the phrase
+[27.982s] 2: ^
+[27.985s] 2: 
+[27.988s] 2: ./src/sample_interface/organs/ears.py:56:100: E501 line too long (132 > 99 characters)
+[28.003s] 2: #3 'phrase_time_limit' param is maximum seconds that letting phrase to continue before stopping and returning the part of the phrase
+[28.012s] 2:                                                                                                    ^
+[28.015s] 2: 
+[28.020s] 2: ./src/sample_interface/organs/ears.py:57:1: E265 block comment should start with '# '
+[28.023s] 2: #4 starts when energy above 'recognizer_instance.energy_threshold' and completed after 'timeout + phrase_timeout' seconds, and this returns one of the followings: audio data / waittimeError
+[28.031s] 2: ^
+[28.034s] 2: 
+[28.044s] 2: ./src/sample_interface/organs/ears.py:57:100: E501 line too long (189 > 99 characters)
+[28.050s] 2: #4 starts when energy above 'recognizer_instance.energy_threshold' and completed after 'timeout + phrase_timeout' seconds, and this returns one of the followings: audio data / waittimeError
+[28.065s] 2:                                                                                                    ^
+[28.069s] 2: 
+[28.071s] 2: ./src/sample_interface/organs/ears.py:58:1: E265 block comment should start with '# '
+[28.074s] 2: #5 such params are predetermined at the original __init__ function^
+[28.076s] 2: 
+[28.083s] 2: ./src/sample_interface/organs/ears.py:58:67: W292 no newline at end of file
+[28.096s] 2: #5 such params are predetermined at the original __init__ function                                                                  ^
+[28.099s] 2: 
+[28.102s] 2: ./src/sample_interface/organs/ears.py:58:67: W292 no newline at end of file
+[28.104s] 2: #5 such params are predetermined at the original __init__ function                                                                  ^
+[28.120s] 2: 
+[28.130s] 2: ./src/sample_interface/organs/ears.py:58:67: W292 no newline at end of file
+[28.133s] 2: #5 such params are predetermined at the original __init__ function                                                                  ^
+[28.136s] 2: 
+[28.148s] 2: ./src/sample_interface/organs/mouth.py:7:1: W293 blank line contains whitespace
+[28.151s] 2:         
+[28.155s] 2: ^
+[28.159s] 2: 
+[28.177s] 2: ./src/sample_interface/organs/mouth.py:9:9: E117 over-indented
+[28.181s] 2:         tts = gTTS(text = words, lang = 'en')
+[28.184s] 2:         ^
+[28.200s] 2: 
+[28.203s] 2: ./src/sample_interface/organs/mouth.py:9:24: E251 unexpected spaces around keyword / parameter equals
+[28.205s] 2:         tts = gTTS(text = words, lang = 'en')
+[28.209s] 2:                        ^
+[28.212s] 2: 
+[28.226s] 2: ./src/sample_interface/organs/mouth.py:9:26: E251 unexpected spaces around keyword / parameter equals
+[28.230s] 2:         tts = gTTS(text = words, lang = 'en')
+[28.233s] 2:                          ^
+[28.237s] 2: 
+[28.241s] 2: ./src/sample_interface/organs/mouth.py:9:38: E251 unexpected spaces around keyword / parameter equals
+[28.244s] 2:         tts = gTTS(text = words, lang = 'en')
+[28.247s] 2:                                      ^
+[28.251s] 2: 
+[28.260s] 2: ./src/sample_interface/organs/mouth.py:9:40: E251 unexpected spaces around keyword / parameter equals
+[28.267s] 2:         tts = gTTS(text = words, lang = 'en')
+[28.272s] 2:                                        ^
+[28.275s] 2: 
+[28.281s] 2: ./src/sample_interface/organs/mouth.py:16:9: E117 over-indented
+[28.284s] 2:         tts = gTTS(text = words, lang = 'ko')
+[28.287s] 2:         ^
+[28.289s] 2: 
+[28.292s] 2: ./src/sample_interface/organs/mouth.py:16:24: E251 unexpected spaces around keyword / parameter equals
+[28.302s] 2:         tts = gTTS(text = words, lang = 'ko')
+[28.305s] 2:                        ^
+[28.312s] 2: 
+[28.317s] 2: ./src/sample_interface/organs/mouth.py:16:26: E251 unexpected spaces around keyword / parameter equals
+[28.322s] 2:         tts = gTTS(text = words, lang = 'ko')
+[28.325s] 2:                          ^
+[28.342s] 2: 
+[28.345s] 2: ./src/sample_interface/organs/mouth.py:16:38: E251 unexpected spaces around keyword / parameter equals
+[28.349s] 2:         tts = gTTS(text = words, lang = 'ko')
+[28.365s] 2:                                      ^
+[28.381s] 2: 
+[28.385s] 2: ./src/sample_interface/organs/mouth.py:16:40: E251 unexpected spaces around keyword / parameter equals
+[28.388s] 2:         tts = gTTS(text = words, lang = 'ko')
+[28.391s] 2:                                        ^
+[28.405s] 2: 
+[28.408s] 2: ./src/sample_interface/organs/mouth.py:23:9: E117 over-indented
+[28.412s] 2:         tts = gTTS(text = words, lang = 'es')
+[28.414s] 2:         ^
+[28.423s] 2: 
+[28.426s] 2: ./src/sample_interface/organs/mouth.py:23:24: E251 unexpected spaces around keyword / parameter equals
+[28.430s] 2:         tts = gTTS(text = words, lang = 'es')
+[28.444s] 2:                        ^
+[28.447s] 2: 
+[28.451s] 2: ./src/sample_interface/organs/mouth.py:23:26: E251 unexpected spaces around keyword / parameter equals
+[28.466s] 2:         tts = gTTS(text = words, lang = 'es')
+[28.473s] 2:                          ^
+[28.481s] 2: 
+[28.484s] 2: ./src/sample_interface/organs/mouth.py:23:38: E251 unexpected spaces around keyword / parameter equals
+[28.499s] 2:         tts = gTTS(text = words, lang = 'es')
+[28.502s] 2:                                      ^
+[28.505s] 2: 
+[28.507s] 2: ./src/sample_interface/organs/mouth.py:23:40: E251 unexpected spaces around keyword / parameter equals
+[28.509s] 2:         tts = gTTS(text = words, lang = 'es')
+[28.513s] 2:                                        ^
+[28.524s] 2: 
+[28.526s] 2: ./src/sample_interface/organs/mouth.py:26:34: W291 trailing whitespace
+[28.527s] 2:         os.remove('sample_1.mp3') 
+[28.529s] 2:                                  ^
+[28.539s] 2: 
+[28.541s] 2: ./src/sample_interface/organs/mouth.py:28:1: E302 expected 2 blank lines, found 1
+[28.543s] 2: def universal_talk(string, language):
+[28.545s] 2: ^
+[28.559s] 2: 
+[28.574s] 2: ./src/sample_interface/organs/mouth.py:41:1: E305 expected 2 blank lines after class or function definition, found 1
+[28.578s] 2: if __name__ =="__main__":
+[28.580s] 2: ^
+[28.582s] 2: 
+[28.583s] 2: ./src/sample_interface/organs/mouth.py:41:15: E225 missing whitespace around operator
+[28.584s] 2: if __name__ =="__main__":
+[28.585s] 2:               ^
+[28.587s] 2: 
+[28.588s] 2: ./src/sample_interface/organs/mouth.py:50:2: W291 trailing whitespace
+[28.589s] 2: # 
+[28.590s] 2:  ^
+[28.598s] 2: 
+[28.600s] 2: ./src/sample_interface/organs/mouth.py:56:43: W292 no newline at end of file
+[28.601s] 2: #         mixer.music.play('sample_1.mp3')                                          ^
+[28.602s] 2: 
+[28.603s] 2: ./src/sample_interface/organs/mouth.py:56:43: W292 no newline at end of file
+[28.605s] 2: #         mixer.music.play('sample_1.mp3')                                          ^
+[28.606s] 2: 
+[28.607s] 2: ./src/sample_interface/organs/mouth.py:56:43: W292 no newline at end of file
+[28.609s] 2: #         mixer.music.play('sample_1.mp3')                                          ^
+[28.630s] 2: 
+[28.635s] 2: ./src/sample_interface/application/clock.py:1:1: F401 'time' imported but unused
+[28.636s] 2: import time
+[28.638s] 2: ^
+[28.639s] 2: 
+[28.640s] 2: ./src/sample_interface/application/clock.py:3:1: F401 'schedule' imported but unused
+[28.642s] 2: import schedule
+[28.643s] 2: ^
+[28.644s] 2: 
+[28.659s] 2: ./src/sample_interface/application/clock.py:5:1: E302 expected 2 blank lines, found 1
+[28.661s] 2: def clock() -> list:
+[28.662s] 2: ^
+[28.678s] 2: 
+[28.682s] 2: ./src/sample_interface/application/clock.py:12:38: W292 no newline at end of file
+[28.686s] 2:     return [year, month, day, minute]                                     ^
+[28.689s] 2: 
+[28.711s] 2: ./src/sample_interface/application/timer.py:1:1: F403 'from constant_variables import *' used; unable to detect undefined names
+[28.713s] 2: from constant_variables import*
+[28.715s] 2: ^
+[28.716s] 2: 
+[28.718s] 2: ./src/sample_interface/application/timer.py:4:1: E302 expected 2 blank lines, found 1
+[28.719s] 2: def universal_timertime(master, language):
+[28.720s] 2: ^
+[28.721s] 2: 
+[28.722s] 2: ./src/sample_interface/application/timer.py:5:20: F405 'ENGLISH' may be undefined, or defined from star imports: constant_variables
+[28.724s] 2:     if language == ENGLISH:
+[28.724s] 2:                    ^
+[28.725s] 2: 
+[28.743s] 2: ./src/sample_interface/application/timer.py:7:22: F405 'KOREAN' may be undefined, or defined from star imports: constant_variables
+[28.747s] 2:     elif language == KOREAN:
+[28.749s] 2:                      ^
+[28.750s] 2: 
+[28.752s] 2: ./src/sample_interface/application/timer.py:9:22: F405 'ESPANOL' may be undefined, or defined from star imports: constant_variables
+[28.753s] 2:     elif language == ESPANOL:
+[28.755s] 2:                      ^
+[28.756s] 2: 
+[28.758s] 2: ./src/sample_interface/application/timer.py:12:1: E302 expected 2 blank lines, found 1
+[28.765s] 2: def timertime_KOR(master)->float:
+[28.767s] 2: ^
+[28.768s] 2: 
+[28.769s] 2: ./src/sample_interface/application/timer.py:12:26: E225 missing whitespace around operator
+[28.770s] 2: def timertime_KOR(master)->float:
+[28.772s] 2:                          ^
+[28.773s] 2: 
+[28.790s] 2: ./src/sample_interface/application/timer.py:14:22: W605 invalid escape sequence '\d'
+[28.795s] 2:     p = re.compile('(\d)+')
+[28.811s] 2:                      ^
+[28.813s] 2: 
+[28.815s] 2: ./src/sample_interface/application/timer.py:24:14: E225 missing whitespace around operator
+[28.816s] 2:             t*=60
+[28.818s] 2:              ^
+[28.819s] 2: 
+[28.820s] 2: ./src/sample_interface/application/timer.py:26:14: E225 missing whitespace around operator
+[28.821s] 2:             t*=3600
+[28.823s] 2:              ^
+[28.824s] 2: 
+[28.825s] 2: ./src/sample_interface/application/timer.py:29:5: E722 do not use bare 'except'
+[28.830s] 2:     except:
+[28.832s] 2:     ^
+[28.834s] 2: 
+[28.835s] 2: ./src/sample_interface/application/timer.py:31:13: W291 trailing whitespace
+[28.836s] 2:     return t     
+[28.837s] 2:             ^
+[28.841s] 2: 
+[28.845s] 2: ./src/sample_interface/application/timer.py:33:1: E302 expected 2 blank lines, found 1
+[28.852s] 2: def timertime_ENG(master)->float:
+[28.855s] 2: ^
+[28.861s] 2: 
+[28.865s] 2: ./src/sample_interface/application/timer.py:33:26: E225 missing whitespace around operator
+[28.867s] 2: def timertime_ENG(master)->float:
+[28.871s] 2:                          ^
+[28.874s] 2: 
+[28.878s] 2: ./src/sample_interface/application/timer.py:35:22: W605 invalid escape sequence '\d'
+[28.908s] 2:     p = re.compile('(\d)+')
+[28.912s] 2:                      ^
+[28.915s] 2: 
+[28.918s] 2: ./src/sample_interface/application/timer.py:45:14: E225 missing whitespace around operator
+[28.921s] 2:             t*=60
+[28.924s] 2:              ^
+[28.927s] 2: 
+[28.931s] 2: ./src/sample_interface/application/timer.py:47:14: E225 missing whitespace around operator
+[28.933s] 2:             t*=3600
+[28.934s] 2:              ^
+[28.936s] 2: 
+[28.938s] 2: ./src/sample_interface/application/timer.py:50:5: E722 do not use bare 'except'
+[28.940s] 2:     except:
+[28.942s] 2:     ^
+[28.944s] 2: 
+[28.947s] 2: ./src/sample_interface/application/timer.py:52:13: W291 trailing whitespace
+[28.962s] 2:     return t     
+[28.964s] 2:             ^
+[28.966s] 2: 
+[28.968s] 2: ./src/sample_interface/application/timer.py:54:1: E302 expected 2 blank lines, found 1
+[28.972s] 2: def timertime_ESP(master):
+[28.977s] 2: ^
+[29.007s] 2: 
+[29.017s] 2: ./src/sample_interface/application/timer.py:55:9: W292 no newline at end of file
+[29.025s] 2:     pass        ^
+[29.028s] 2: 
+[29.033s] 2: ./src/sample_interface/application/joke.py:3:1: E302 expected 2 blank lines, found 1
+[29.036s] 2: def joke()->int:
+[29.039s] 2: ^
+[29.042s] 2: 
+[29.045s] 2: ./src/sample_interface/application/joke.py:3:11: E225 missing whitespace around operator
+[29.050s] 2: def joke()->int:
+[29.064s] 2:           ^
+[29.069s] 2: 
+[29.072s] 2: ./src/sample_interface/application/joke.py:4:25: E231 missing whitespace after ','
+[29.075s] 2:     joke_num = randint(1,6)
+[29.084s] 2:                         ^
+[29.095s] 2: 
+[29.097s] 2: ./src/sample_interface/application/joke.py:5:20: W292 no newline at end of file
+[29.098s] 2:     return joke_num                   ^
+[29.100s] 2: 
+[29.101s] 2: 5     E117 over-indented (comment)
+[29.119s] 2: 1     E128 continuation line under-indented for visual indent
+[29.124s] 2: 19    E203 whitespace before ':'
+[29.129s] 2: 14    E225 missing whitespace around operator
+[29.135s] 2: 6     E231 missing whitespace after ','
+[29.137s] 2: 26    E251 unexpected spaces around keyword / parameter equals
+[29.140s] 2: 3     E261 at least two spaces before inline comment
+[29.144s] 2: 6     E265 block comment should start with '# '
+[29.147s] 2: 17    E302 expected 2 blank lines, found 1
+[29.151s] 2: 8     E303 too many blank lines (3)
+[29.154s] 2: 3     E305 expected 2 blank lines after class or function definition, found 1
+[29.160s] 2: 29    E501 line too long (118 > 99 characters)
+[29.168s] 2: 6     E722 do not use bare 'except'
+[29.178s] 2: 4     F401 'time' imported but unused
+[29.183s] 2: 4     F403 'from constant_variables import *' used; unable to detect undefined names
+[29.186s] 2: 60    F405 'ENGLISH' may be undefined, or defined from star imports: constant_variables
+[29.188s] 2: 7     W291 trailing whitespace
+[29.191s] 2: 14    W292 no newline at end of file
+[29.194s] 2: 10    W293 blank line contains whitespace
+[29.198s] 2: 2     W605 invalid escape sequence '\d'
+[29.201s] 2: 
+[29.204s] 2: 12 files checked
+[29.207s] 2: 244 errors
+[29.210s] 2: 
+[29.215s] 2: 'E'-type errors: 143
+[29.221s] 2: 'F'-type errors: 68
+[29.227s] 2: 'W'-type errors: 33
+[29.235s] 2: 
+[29.239s] 2: Checked files:
+[29.242s] 2: 
+[29.244s] 2: * ./src/sample_interface/home.py
+[29.247s] 2: * ./src/sample_interface/application_managers/action.py
+[29.250s] 2: * ./src/sample_interface/application_managers/utils.py
+[29.253s] 2: * ./src/sample_interface/application_managers/constant_variables.py
+[29.256s] 2: * ./src/sample_interface/application_managers/mode.py
+[29.258s] 2: * ./src/sample_interface/organs/check_microphone_connection.py
+[29.261s] 2: * ./src/sample_interface/organs/ears.py
+[29.264s] 2: * ./src/sample_interface/organs/__init__.py
+[29.266s] 2: * ./src/sample_interface/organs/mouth.py
+[29.269s] 2: * ./src/sample_interface/application/clock.py
+[29.273s] 2: * ./src/sample_interface/application/timer.py
+[29.276s] 2: * ./src/sample_interface/application/joke.py
+[29.300s] 2: -- run_test.py: return code 1
+[29.303s] 2: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/flake8.xunit.xml'
+[29.315s] 2/5 Test #2: flake8 ...........................***Failed   17.77 sec
+[29.319s] test 3
+[29.324s]     Start 3: lint_cmake
+[29.329s] 
+[29.334s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/lint_cmake.xunit.xml" "--package-name" "hrdp_human_interfaces" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/foxy/bin/ament_lint_cmake" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/lint_cmake.xunit.xml"
+[29.336s] 3: Test timeout computed to be: 60
+[29.339s] 3: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces':
+[29.343s] 3:  - /opt/ros/foxy/bin/ament_lint_cmake --xunit-file /home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/lint_cmake.xunit.xml
+[34.662s] 3: 
+[34.664s] 3: No problems found
+[35.503s] 3: -- run_test.py: return code 0
+[35.514s] 3: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/lint_cmake.xunit.xml'
+[35.924s] 3/5 Test #3: lint_cmake .......................   Passed    8.50 sec
+[35.930s] test 4
+[35.936s]     Start 4: pep257
+[35.948s] 
+[35.963s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/pep257.xunit.xml" "--package-name" "hrdp_human_interfaces" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/ament_pep257/pep257.txt" "--command" "/opt/ros/foxy/bin/ament_pep257" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/pep257.xunit.xml"
+[35.983s] 4: Test timeout computed to be: 60
+[37.022s] 4: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces':
+[37.037s] 4:  - /opt/ros/foxy/bin/ament_pep257 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/pep257.xunit.xml
+[47.740s] 4: ./src/sample_interface/application/clock.py:5 in public function `clock`: D400: First line should end with a period (not 'e')
+[47.741s] 4: ./src/sample_interface/application/timer.py:12 in public function `timertime_KOR`: D400: First line should end with a period (not 'r')
+[47.754s] 4: ./src/sample_interface/application/timer.py:12 in public function `timertime_KOR`: D403: First word of the first line should be properly capitalized ('Extract', not 'extract')
+[47.756s] 4: ./src/sample_interface/application/timer.py:33 in public function `timertime_ENG`: D400: First line should end with a period (not 'r')
+[47.757s] 4: ./src/sample_interface/application/timer.py:33 in public function `timertime_ENG`: D403: First word of the first line should be properly capitalized ('Extract', not 'extract')
+[47.759s] 4: ./src/sample_interface/application_managers/action.py:9 in public method `__init__`: D400: First line should end with a period (not 'e')
+[47.777s] 4: ./src/sample_interface/application_managers/action.py:58 in public method `universal_action`: D205: 1 blank line required between summary line and description (found 0)
+[47.783s] 4: ./src/sample_interface/application_managers/action.py:58 in public method `universal_action`: D208: Docstring is over-indented
+[47.793s] 4: ./src/sample_interface/application_managers/action.py:58 in public method `universal_action`: D213: Multi-line docstring summary should start at the second line
+[47.797s] 4: ./src/sample_interface/application_managers/action.py:58 in public method `universal_action`: D400: First line should end with a period (not 'y')
+[47.800s] 4: ./src/sample_interface/application_managers/action.py:74 in public method `__init__`: D400: First line should end with a period (not 's')
+[47.815s] 4: ./src/sample_interface/application_managers/action.py:153 in public method `__init__`: D400: First line should end with a period (not 's')
+[47.818s] 4: ./src/sample_interface/application_managers/constant_variables.py:1 at module level: D400: First line should end with a period (not 'N')
+[47.820s] 4: ./src/sample_interface/application_managers/mode.py:20 in public function `split_string`: D400: First line should end with a period (not 'g')
+[47.822s] 4: ./src/sample_interface/application_managers/mode.py:20 in public function `split_string`: D403: First word of the first line should be properly capitalized ('Split', not 'split')
+[47.827s] 4: ./src/sample_interface/application_managers/mode.py:69 in public function `mode_selection_esp`: D400: First line should end with a period (not 'P')
+[47.843s] 4: ./src/sample_interface/application_managers/mode.py:80 in public function `universal_mode_selection`: D208: Docstring is over-indented
+[47.847s] 4: ./src/sample_interface/application_managers/mode.py:80 in public function `universal_mode_selection`: D213: Multi-line docstring summary should start at the second line
+[47.850s] 4: ./src/sample_interface/application_managers/mode.py:80 in public function `universal_mode_selection`: D400: First line should end with a period (not 'e')
+[47.855s] 4: ./src/sample_interface/home.py:17 in public function `language_inquiry`: D400: First line should end with a period (not 'e')
+[47.867s] 4: ./src/sample_interface/home.py:43 in public function `language_selection`: D400: First line should end with a period (not 't')
+[47.873s] 4: ./src/sample_interface/home.py:43 in public function `language_selection`: D403: First word of the first line should be properly capitalized ('Language', not 'language')
+[47.876s] 4: ./src/sample_interface/organs/ears.py:7 in public method `listen`: D201: No blank lines allowed before function docstring (found 1)
+[47.884s] 4: ./src/sample_interface/organs/ears.py:7 in public method `listen`: D400: First line should end with a period (not 'd')
+[47.899s] 4: ./src/sample_interface/organs/ears.py:7 in public method `listen`: D403: First word of the first line should be properly capitalized ('If', not 'if')
+[47.902s] 4: ./src/sample_interface/organs/mouth.py:1 at module level: D400: First line should end with a period (not 'S')
+[47.904s] 4: ./src/sample_interface/organs/mouth.py:28 in public function `universal_talk`: D205: 1 blank line required between summary line and description (found 0)
+[47.906s] 4: ./src/sample_interface/organs/mouth.py:28 in public function `universal_talk`: D208: Docstring is over-indented
+[47.908s] 4: ./src/sample_interface/organs/mouth.py:28 in public function `universal_talk`: D213: Multi-line docstring summary should start at the second line
+[47.911s] 4: ./src/sample_interface/organs/mouth.py:28 in public function `universal_talk`: D400: First line should end with a period (not 'n')
+[47.915s] 4: ./src/sample_interface/organs/mouth.py:28 in public function `universal_talk`: D401: First line should be in imperative mood ('Define', not 'Defined')
+[47.928s] 4: 31 errors
+[47.931s] 4: checking ./src/sample_interface/application/clock.py
+[47.934s] 4: checking ./src/sample_interface/application/joke.py
+[47.936s] 4: checking ./src/sample_interface/application/timer.py
+[47.938s] 4: checking ./src/sample_interface/application_managers/action.py
+[47.946s] 4: checking ./src/sample_interface/application_managers/constant_variables.py
+[47.949s] 4: checking ./src/sample_interface/application_managers/mode.py
+[47.966s] 4: checking ./src/sample_interface/application_managers/utils.py
+[47.971s] 4: checking ./src/sample_interface/home.py
+[47.982s] 4: checking ./src/sample_interface/organs/__init__.py
+[47.985s] 4: checking ./src/sample_interface/organs/check_microphone_connection.py
+[47.993s] 4: checking ./src/sample_interface/organs/ears.py
+[48.010s] 4: checking ./src/sample_interface/organs/mouth.py
+[48.997s] 4: -- run_test.py: return code 1
+[49.002s] 4: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/pep257.xunit.xml'
+[49.375s] 4/5 Test #4: pep257 ...........................***Failed   13.44 sec
+[49.377s] test 5
+[49.379s]     Start 5: xmllint
+[49.383s] 
+[49.397s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/xmllint.xunit.xml" "--package-name" "hrdp_human_interfaces" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/ament_xmllint/xmllint.txt" "--command" "/opt/ros/foxy/bin/ament_xmllint" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/xmllint.xunit.xml"
+[49.410s] 5: Test timeout computed to be: 60
+[50.868s] 5: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces':
+[50.875s] 5:  - /opt/ros/foxy/bin/ament_xmllint --xunit-file /home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/xmllint.xunit.xml
+[62.485s] 5: File 'package.xml' is valid
+[62.489s] 5: 
+[62.490s] 5: No problems found
+[62.496s] 5: -- run_test.py: return code 0
+[62.497s] 5: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/xmllint.xunit.xml'
+[62.498s] 5/5 Test #5: xmllint ..........................   Passed   12.36 sec
+[62.500s] 
+[62.503s] 40% tests passed[0;0m, [0;31m3 tests failed[0;0m out of 5
+[62.512s] 
+[62.515s] Label Time Summary:
+[62.520s] copyright     =   8.58 sec*proc (1 test)
+[62.523s] flake8        =  17.77 sec*proc (1 test)
+[62.525s] lint_cmake    =   8.50 sec*proc (1 test)
+[62.534s] linter        =  60.66 sec*proc (5 tests)
+[62.536s] pep257        =  13.44 sec*proc (1 test)
+[62.537s] xmllint       =  12.36 sec*proc (1 test)
+[62.538s] 
+[62.539s] Total Test time (real) =  60.68 sec
+[62.542s] 
+[62.547s] The following tests FAILED:
+[62.571s] 	[0;31m  1 - copyright (Failed)[0;0m
+[62.575s] 	[0;31m  2 - flake8 (Failed)[0;0m
+[62.578s] 	[0;31m  4 - pep257 (Failed)[0;0m
+[62.581s] Errors while running CTest
+[62.590s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces' returned '8': AMENT_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:${CMAKE_PREFIX_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

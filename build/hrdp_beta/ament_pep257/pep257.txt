@@ -1,0 +1,17 @@
+-- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_beta':
+ - /opt/ros/foxy/bin/ament_pep257 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/pep257.xunit.xml
+
+./src/sensors/sensor_manager.py:6 in public class `SensorManager`: D204: 1 blank line required after class docstring (found 0)
+./src/sensors/sensor_manager.py:6 in public class `SensorManager`: D205: 1 blank line required between summary line and description (found 0)
+./src/sensors/sensor_manager.py:6 in public class `SensorManager`: D400: First line should end with a period (not 'r')
+3 errors
+checking ./src/core/interface/ears.py
+checking ./src/core/interface/mouth.py
+checking ./src/core/localization/__init__.py
+checking ./src/core/naviagation/__init__.py
+checking ./src/sensors/camera/__init__.py
+checking ./src/sensors/sensor_manager.py
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/pep257.xunit.xml'

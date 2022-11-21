@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="hrdp_sensors.copyright"
+  tests="6"
+  errors="0"
+  failures="5"
+  time="0.024"
+>
+  <testcase
+    name="src/camera/camera_constants.py"
+    classname="hrdp_sensors.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/camera/camera_publisher.py"
+    classname="hrdp_sensors.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/camera/depth_filter_manager.py"
+    classname="hrdp_sensors.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/camera/rgb_camera.py"
+    classname="hrdp_sensors.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/camera/rgbd_camera.py"
+    classname="hrdp_sensors.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/lidar/__init__.py"
+    classname="hrdp_sensors.copyright"/>
+  <system-out>Checked files:
+* src/camera/camera_constants.py
+* src/camera/camera_publisher.py
+* src/camera/depth_filter_manager.py
+* src/camera/rgb_camera.py
+* src/camera/rgbd_camera.py
+* src/lidar/__init__.py</system-out>
+</testsuite>

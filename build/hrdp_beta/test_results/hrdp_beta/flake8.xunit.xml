@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="hrdp_beta.flake8"
+  tests="5"
+  errors="0"
+  failures="5"
+  time="3.093"
+>
+  <testcase
+    name="F401 (./src/sensors/sensor_manager.py:1:1)"
+    classname="hrdp_beta.flake8"
+  >
+      <failure message="'rclpy' imported but unused:&#10;import rclpy&#10;"/>
+  </testcase>
+  <testcase
+    name="F403 (./src/sensors/sensor_manager.py:3:1)"
+    classname="hrdp_beta.flake8"
+  >
+      <failure message="'from lidar import *' used; unable to detect undefined names:&#10;from lidar import *&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./src/sensors/sensor_manager.py:3:1)"
+    classname="hrdp_beta.flake8"
+  >
+      <failure message="'lidar.*' imported but unused:&#10;from lidar import *&#10;"/>
+  </testcase>
+  <testcase
+    name="W391 (./src/sensors/sensor_manager.py:23:1)"
+    classname="hrdp_beta.flake8"
+  >
+      <failure message="blank line at end of file:&#10;        "/>
+  </testcase>
+  <testcase
+    name="W293 (./src/sensors/sensor_manager.py:23:1)"
+    classname="hrdp_beta.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;        "/>
+  </testcase>
+  <system-out>Checked files:
+* ./src/sensors/sensor_manager.py
+* ./src/sensors/camera/__init__.py
+* ./src/core/localization/__init__.py
+* ./src/core/naviagation/__init__.py
+* ./src/core/interface/ears.py
+* ./src/core/interface/mouth.py</system-out>
+</testsuite>

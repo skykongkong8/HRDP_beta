@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="hrdp_beta_actions.xmllint"
+  tests="1"
+  errors="0"
+  failures="1"
+  time="0.821"
+>
+  <testcase
+    name="package.xml"
+    classname="hrdp_beta_actions.xmllint"
+  >
+      <failure message="Diff with 285 lines"><![CDATA[/home/r1mini/sungsik_ws/src/hrdp_beta_actions/package.xml:20: element test_depend: Schemas validity error : Element 'test_depend': This element is not expected. Expected is one of ( member_of_group, export ).
+/home/r1mini/sungsik_ws/src/hrdp_beta_actions/package.xml fails to validate
+]]></failure>
+  </testcase>
+  <system-out>Checked files:
+* package.xml</system-out>
+</testsuite>

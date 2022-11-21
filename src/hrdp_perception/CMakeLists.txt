@@ -21,6 +21,7 @@ find_package(ament_cmake REQUIRED)
 
 
 find_package(rclpy REQUIRED)
+find_package(hrdp_beta_actions REQUIRED)
 
 
 

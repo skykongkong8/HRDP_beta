@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/r1mini/sungsik_ws/build/hrdp_beta_actions
 include CMakeFiles/hrdp_beta_actions.dir/progress.make
 
 CMakeFiles/hrdp_beta_actions: /home/r1mini/sungsik_ws/src/hrdp_beta_actions/action/RGBFrame.action
+CMakeFiles/hrdp_beta_actions: /home/r1mini/sungsik_ws/src/hrdp_beta_actions/action/FaceDetection.action
 CMakeFiles/hrdp_beta_actions: /opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/hrdp_beta_actions: /opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl
 CMakeFiles/hrdp_beta_actions: /opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl

@@ -57,8 +57,10 @@ hrdp_beta_actions__py/CMakeFiles/hrdp_beta_actions__py: rosidl_generator_py/hrdp
 hrdp_beta_actions__py/CMakeFiles/hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_introspection_c.c
 hrdp_beta_actions__py/CMakeFiles/hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_c.c
 hrdp_beta_actions__py/CMakeFiles/hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame.py
+hrdp_beta_actions__py/CMakeFiles/hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/action/_face_detection.py
 hrdp_beta_actions__py/CMakeFiles/hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/action/__init__.py
 hrdp_beta_actions__py/CMakeFiles/hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame_s.c
+hrdp_beta_actions__py/CMakeFiles/hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/action/_face_detection_s.c
 
 
 rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/lib/rosidl_generator_py/rosidl_generator_py
@@ -75,6 +77,7 @@ rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport
 rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/hrdp_beta_actions/action/RGBFrame.idl
+rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/hrdp_beta_actions/action/FaceDetection.idl
 rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl
@@ -94,19 +97,27 @@ rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport
 rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame.py: rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame.py
 
+rosidl_generator_py/hrdp_beta_actions/action/_face_detection.py: rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/hrdp_beta_actions/action/_face_detection.py
+
 rosidl_generator_py/hrdp_beta_actions/action/__init__.py: rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/hrdp_beta_actions/action/__init__.py
 
 rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame_s.c: rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame_s.c
 
+rosidl_generator_py/hrdp_beta_actions/action/_face_detection_s.c: rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/hrdp_beta_actions/action/_face_detection_s.c
+
 hrdp_beta_actions__py: hrdp_beta_actions__py/CMakeFiles/hrdp_beta_actions__py
 hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_fastrtps_c.c
 hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_introspection_c.c
 hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/_hrdp_beta_actions_s.ep.rosidl_typesupport_c.c
 hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame.py
+hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/action/_face_detection.py
 hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/action/__init__.py
 hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame_s.c
+hrdp_beta_actions__py: rosidl_generator_py/hrdp_beta_actions/action/_face_detection_s.c
 hrdp_beta_actions__py: hrdp_beta_actions__py/CMakeFiles/hrdp_beta_actions__py.dir/build.make
 
 .PHONY : hrdp_beta_actions__py

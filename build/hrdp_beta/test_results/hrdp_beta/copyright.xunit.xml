@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="hrdp_beta.copyright"
+  tests="6"
+  errors="0"
+  failures="1"
+  time="0.019"
+>
+  <testcase
+    name="src/core/interface/ears.py"
+    classname="hrdp_beta.copyright"/>
+  <testcase
+    name="src/core/interface/mouth.py"
+    classname="hrdp_beta.copyright"/>
+  <testcase
+    name="src/core/localization/__init__.py"
+    classname="hrdp_beta.copyright"/>
+  <testcase
+    name="src/core/naviagation/__init__.py"
+    classname="hrdp_beta.copyright"/>
+  <testcase
+    name="src/sensors/camera/__init__.py"
+    classname="hrdp_beta.copyright"/>
+  <testcase
+    name="src/sensors/sensor_manager.py"
+    classname="hrdp_beta.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <system-out>Checked files:
+* src/core/interface/ears.py
+* src/core/interface/mouth.py
+* src/core/localization/__init__.py
+* src/core/naviagation/__init__.py
+* src/sensors/camera/__init__.py
+* src/sensors/sensor_manager.py</system-out>
+</testsuite>

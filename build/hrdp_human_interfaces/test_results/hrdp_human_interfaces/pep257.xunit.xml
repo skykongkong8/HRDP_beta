@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="hrdp_human_interfaces.pep257"
+  tests="35"
+  errors="0"
+  failures="31"
+  time="1.024"
+>
+  <testcase
+    name="D400 (./src/sample_interface/application/clock.py:5)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'e')"/>
+  </testcase>
+  <testcase
+    name="./src/sample_interface/application/joke.py"
+    classname="hrdp_human_interfaces.pep257"/>
+  <testcase
+    name="D400 (./src/sample_interface/application/timer.py:12)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'r')"/>
+  </testcase>
+  <testcase
+    name="D403 (./src/sample_interface/application/timer.py:12)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D403: First word of the first line should be properly capitalized ('Extract', not 'extract')"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/application/timer.py:33)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'r')"/>
+  </testcase>
+  <testcase
+    name="D403 (./src/sample_interface/application/timer.py:33)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D403: First word of the first line should be properly capitalized ('Extract', not 'extract')"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/application_managers/action.py:9)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'e')"/>
+  </testcase>
+  <testcase
+    name="D205 (./src/sample_interface/application_managers/action.py:58)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D205: 1 blank line required between summary line and description (found 0)"/>
+  </testcase>
+  <testcase
+    name="D208 (./src/sample_interface/application_managers/action.py:58)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D208: Docstring is over-indented"/>
+  </testcase>
+  <testcase
+    name="D213 (./src/sample_interface/application_managers/action.py:58)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D213: Multi-line docstring summary should start at the second line"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/application_managers/action.py:58)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'y')"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/application_managers/action.py:74)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 's')"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/application_managers/action.py:153)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 's')"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/application_managers/constant_variables.py:1)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'N')"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/application_managers/mode.py:20)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'g')"/>
+  </testcase>
+  <testcase
+    name="D403 (./src/sample_interface/application_managers/mode.py:20)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D403: First word of the first line should be properly capitalized ('Split', not 'split')"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/application_managers/mode.py:69)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'P')"/>
+  </testcase>
+  <testcase
+    name="D208 (./src/sample_interface/application_managers/mode.py:80)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D208: Docstring is over-indented"/>
+  </testcase>
+  <testcase
+    name="D213 (./src/sample_interface/application_managers/mode.py:80)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D213: Multi-line docstring summary should start at the second line"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/application_managers/mode.py:80)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'e')"/>
+  </testcase>
+  <testcase
+    name="./src/sample_interface/application_managers/utils.py"
+    classname="hrdp_human_interfaces.pep257"/>
+  <testcase
+    name="D400 (./src/sample_interface/home.py:17)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'e')"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/home.py:43)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 't')"/>
+  </testcase>
+  <testcase
+    name="D403 (./src/sample_interface/home.py:43)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D403: First word of the first line should be properly capitalized ('Language', not 'language')"/>
+  </testcase>
+  <testcase
+    name="./src/sample_interface/organs/__init__.py"
+    classname="hrdp_human_interfaces.pep257"/>
+  <testcase
+    name="./src/sample_interface/organs/check_microphone_connection.py"
+    classname="hrdp_human_interfaces.pep257"/>
+  <testcase
+    name="D201 (./src/sample_interface/organs/ears.py:7)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D201: No blank lines allowed before function docstring (found 1)"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/organs/ears.py:7)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'd')"/>
+  </testcase>
+  <testcase
+    name="D403 (./src/sample_interface/organs/ears.py:7)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D403: First word of the first line should be properly capitalized ('If', not 'if')"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/organs/mouth.py:1)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'S')"/>
+  </testcase>
+  <testcase
+    name="D205 (./src/sample_interface/organs/mouth.py:28)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D205: 1 blank line required between summary line and description (found 0)"/>
+  </testcase>
+  <testcase
+    name="D208 (./src/sample_interface/organs/mouth.py:28)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D208: Docstring is over-indented"/>
+  </testcase>
+  <testcase
+    name="D213 (./src/sample_interface/organs/mouth.py:28)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D213: Multi-line docstring summary should start at the second line"/>
+  </testcase>
+  <testcase
+    name="D400 (./src/sample_interface/organs/mouth.py:28)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'n')"/>
+  </testcase>
+  <testcase
+    name="D401 (./src/sample_interface/organs/mouth.py:28)"
+    classname="hrdp_human_interfaces.pep257"
+  >
+      <failure message="D401: First line should be in imperative mood ('Define', not 'Defined')"/>
+  </testcase>
+  <system-out>Checked files:
+* ./src/sample_interface/application/clock.py
+* ./src/sample_interface/application/joke.py
+* ./src/sample_interface/application/timer.py
+* ./src/sample_interface/application_managers/action.py
+* ./src/sample_interface/application_managers/constant_variables.py
+* ./src/sample_interface/application_managers/mode.py
+* ./src/sample_interface/application_managers/utils.py
+* ./src/sample_interface/home.py
+* ./src/sample_interface/organs/__init__.py
+* ./src/sample_interface/organs/check_microphone_connection.py
+* ./src/sample_interface/organs/ears.py
+* ./src/sample_interface/organs/mouth.py</system-out>
+</testsuite>

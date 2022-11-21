@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_py/hrdp_beta_actions/action/_face_detection_s.c
+Python.h
+-
+stdbool.h
+-
+numpy/ndarrayobject.h
+/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_py/hrdp_beta_actions/action/numpy/ndarrayobject.h
+rosidl_runtime_c/visibility_control.h
+/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_py/hrdp_beta_actions/action/rosidl_runtime_c/visibility_control.h
+hrdp_beta_actions/action/detail/face_detection__struct.h
+/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_py/hrdp_beta_actions/action/hrdp_beta_actions/action/detail/face_detection__struct.h
+hrdp_beta_actions/action/detail/face_detection__functions.h
+/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_py/hrdp_beta_actions/action/hrdp_beta_actions/action/detail/face_detection__functions.h
+
 /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame_s.c
 Python.h
 -
@@ -539,6 +553,32 @@ cpython/unicodeobject.h
 /usr/include/python3.8/warnings.h
 
 /usr/include/python3.8/weakrefobject.h
+
+rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/hrdp_beta_actions/action/detail/rosidl_runtime_c/visibility_control.h
+hrdp_beta_actions/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/hrdp_beta_actions/action/detail/hrdp_beta_actions/msg/rosidl_generator_c__visibility_control.h
+hrdp_beta_actions/action/detail/face_detection__struct.h
+rosidl_generator_c/hrdp_beta_actions/action/detail/hrdp_beta_actions/action/detail/face_detection__struct.h
+
+rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+unique_identifier_msgs/msg/detail/uuid__struct.h
+rosidl_generator_c/hrdp_beta_actions/action/detail/unique_identifier_msgs/msg/detail/uuid__struct.h
+hrdp_beta_actions/action/detail/face_detection__struct.h
+rosidl_generator_c/hrdp_beta_actions/action/detail/hrdp_beta_actions/action/detail/face_detection__struct.h
+builtin_interfaces/msg/detail/time__struct.h
+rosidl_generator_c/hrdp_beta_actions/action/detail/builtin_interfaces/msg/detail/time__struct.h
 
 rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.h
 stdbool.h

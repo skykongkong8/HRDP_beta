@@ -1,0 +1,26 @@
+[0.396s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta_actions -- -j4 -l4
+[1.355s] CMake Warning (dev) at CMakeLists.txt:25:
+[1.357s]   Syntax Warning in cmake code at column 27
+[1.368s] 
+[1.386s]   Argument not separated from preceding token by whitespace.
+[1.389s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.390s] 
+[1.434s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.813s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.815s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.683s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[6.737s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.785s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.790s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.102s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[9.104s]   rosidl_generate_interfaces() the passed file ',' doesn't exist relative to
+[9.106s]   the CMAKE_CURRENT_SOURCE_DIR
+[9.117s]   '/home/r1mini/sungsik_ws/src/hrdp_beta_actions'
+[9.130s] Call Stack (most recent call first):
+[9.133s]   CMakeLists.txt:24 (rosidl_generate_interfaces)
+[9.171s] 
+[9.188s] 
+[9.192s] -- Configuring incomplete, errors occurred!
+[9.197s] See also "/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles/CMakeOutput.log".
+[9.250s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[9.285s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta_actions -- -j4 -l4

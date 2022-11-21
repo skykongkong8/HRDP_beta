@@ -1,2 +1,4 @@
+action/FaceDetection.action
+action/FaceDetection.idl
 action/RGBFrame.action
 action/RGBFrame.idl

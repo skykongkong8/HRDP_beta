@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="hrdp_human_interfaces.copyright"
+  tests="12"
+  errors="0"
+  failures="11"
+  time="0.057"
+>
+  <testcase
+    name="src/sample_interface/application/clock.py"
+    classname="hrdp_human_interfaces.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/sample_interface/application/joke.py"
+    classname="hrdp_human_interfaces.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/sample_interface/application/timer.py"
+    classname="hrdp_human_interfaces.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/sample_interface/application_managers/action.py"
+    classname="hrdp_human_interfaces.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/sample_interface/application_managers/constant_variables.py"
+    classname="hrdp_human_interfaces.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/sample_interface/application_managers/mode.py"
+    classname="hrdp_human_interfaces.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/sample_interface/application_managers/utils.py"
+    classname="hrdp_human_interfaces.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/sample_interface/home.py"
+    classname="hrdp_human_interfaces.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/sample_interface/organs/__init__.py"
+    classname="hrdp_human_interfaces.copyright"/>
+  <testcase
+    name="src/sample_interface/organs/check_microphone_connection.py"
+    classname="hrdp_human_interfaces.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/sample_interface/organs/ears.py"
+    classname="hrdp_human_interfaces.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/sample_interface/organs/mouth.py"
+    classname="hrdp_human_interfaces.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <system-out>Checked files:
+* src/sample_interface/application/clock.py
+* src/sample_interface/application/joke.py
+* src/sample_interface/application/timer.py
+* src/sample_interface/application_managers/action.py
+* src/sample_interface/application_managers/constant_variables.py
+* src/sample_interface/application_managers/mode.py
+* src/sample_interface/application_managers/utils.py
+* src/sample_interface/home.py
+* src/sample_interface/organs/__init__.py
+* src/sample_interface/organs/check_microphone_connection.py
+* src/sample_interface/organs/ears.py
+* src/sample_interface/organs/mouth.py</system-out>
+</testsuite>

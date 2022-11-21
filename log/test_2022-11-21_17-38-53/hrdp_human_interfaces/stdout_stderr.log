@@ -1,0 +1,1149 @@
+UpdateCTestConfiguration  from :/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/CTestConfiguration.ini
+Parse Config file:/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/CTestConfiguration.ini
+   Site: ros2
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+SetCTestConfiguration:CMakeCommand:/usr/bin/cmake
+Create new tag: 20221121-0838 - Experimental
+UpdateCTestConfiguration  from :/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/CTestConfiguration.ini
+Parse Config file:/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/CTestConfiguration.ini
+Test project /home/r1mini/sungsik_ws/build/hrdp_human_interfaces
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: copyright
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/copyright.xunit.xml" "--package-name" "hrdp_human_interfaces" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/ament_copyright/copyright.txt" "--command" "/opt/ros/foxy/bin/ament_copyright" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/copyright.xunit.xml"
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces':
+1:  - /opt/ros/foxy/bin/ament_copyright --xunit-file /home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/copyright.xunit.xml
+1: src/sample_interface/application/clock.py: could not find copyright notice
+1: src/sample_interface/application/joke.py: could not find copyright notice
+1: src/sample_interface/application/timer.py: could not find copyright notice
+1: src/sample_interface/application_managers/action.py: could not find copyright notice
+1: src/sample_interface/application_managers/constant_variables.py: could not find copyright notice
+1: src/sample_interface/application_managers/mode.py: could not find copyright notice
+1: src/sample_interface/application_managers/utils.py: could not find copyright notice
+1: src/sample_interface/home.py: could not find copyright notice
+1: src/sample_interface/organs/check_microphone_connection.py: could not find copyright notice
+1: src/sample_interface/organs/ears.py: could not find copyright notice
+1: src/sample_interface/organs/mouth.py: could not find copyright notice
+1: 11 errors, checked 12 files
+1: -- run_test.py: return code 1
+1: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/copyright.xunit.xml'
+1/5 Test #1: copyright ........................***Failed    8.58 sec
+test 2
+    Start 2: flake8
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/flake8.xunit.xml" "--package-name" "hrdp_human_interfaces" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/ament_flake8/flake8.txt" "--command" "/opt/ros/foxy/bin/ament_flake8" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/flake8.xunit.xml"
+2: Test timeout computed to be: 60
+2: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces':
+2:  - /opt/ros/foxy/bin/ament_flake8 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/flake8.xunit.xml
+2: 
+2: ./src/sample_interface/home.py:6:1: F403 'from application_managers.constant_variables import *' used; unable to detect undefined names
+2: from application_managers.constant_variables import*
+2: ^
+2: 
+2: ./src/sample_interface/home.py:17:1: E302 expected 2 blank lines, found 1
+2: def language_inquiry(flag)->int:
+2: ^
+2: 
+2: ./src/sample_interface/home.py:17:27: E225 missing whitespace around operator
+2: def language_inquiry(flag)->int:
+2:                           ^
+2: 
+2: ./src/sample_interface/home.py:20:84: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         universal_talk('Hello, please tell me what language are you speaking in.', ENGLISH)
+2:                                                                                    ^
+2: 
+2: ./src/sample_interface/home.py:23:47: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         Eng = split_string(language_selection[ENGLISH])
+2:                                               ^
+2: 
+2: ./src/sample_interface/home.py:24:47: F405 'KOREAN' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         Kor = split_string(language_selection[KOREAN])
+2:                                               ^
+2: 
+2: ./src/sample_interface/home.py:25:47: F405 'ESPANOL' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         Esp = split_string(language_selection[ESPANOL])
+2:                                               ^
+2: 
+2: ./src/sample_interface/home.py:26:5: E722 do not use bare 'except'
+2:     except:
+2:     ^
+2: 
+2: ./src/sample_interface/home.py:27:100: E501 line too long (179 > 99 characters)
+2:         universal_talk('Sorry, there were some error during the process. In this case, language is automatically selected to default. Current default language is Korean', ENGLISH)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/home.py:27:172: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         universal_talk('Sorry, there were some error during the process. In this case, language is automatically selected to default. Current default language is Korean', ENGLISH)
+2:                                                                                                                                                                            ^
+2: 
+2: ./src/sample_interface/home.py:28:16: F405 'DEFAULT_LANGUAGE' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         return DEFAULT_LANGUAGE
+2:                ^
+2: 
+2: ./src/sample_interface/home.py:30:92: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         universal_talk('You chose English. Welcome. Please press s key to make me alert.', ENGLISH)
+2:                                                                                            ^
+2: 
+2: ./src/sample_interface/home.py:31:16: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         return ENGLISH
+2:                ^
+2: 
+2: ./src/sample_interface/home.py:32:100: E501 line too long (144 > 99 characters)
+2:     elif check_item(Kor, '한국어') or check_item(Kor, '한국') or check_item(Eng, 'korea') or check_item(Eng, 'korean') or check_item(Esp, 'coreano'):
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/home.py:33:134: F405 'KOREAN' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         universal_talk('한국어를 선택하셨습니다. 만나서 반갑습니다. 에스 키를 누르면 활성화됩니다.', KOREAN)
+2:                                                                                                                                      ^
+2: 
+2: ./src/sample_interface/home.py:34:16: F405 'KOREAN' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         return KOREAN
+2:                ^
+2: 
+2: ./src/sample_interface/home.py:36:71: F405 'ESPANOL' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         universal_talk('Usted he seleccionado español. Bienvenido!', ESPANOL)
+2:                                                                       ^
+2: 
+2: ./src/sample_interface/home.py:37:16: F405 'ESPANOL' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         return ESPANOL
+2:                ^
+2: 
+2: ./src/sample_interface/home.py:39:100: E501 line too long (161 > 99 characters)
+2:         universal_talk('Sorry, I could not understand what you said. We only support English, Korean, and Spanish. Please tell me your language again.', ENGLISH)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/home.py:39:154: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         universal_talk('Sorry, I could not understand what you said. We only support English, Korean, and Spanish. Please tell me your language again.', ENGLISH)
+2:                                                                                                                                                          ^
+2: 
+2: ./src/sample_interface/home.py:43:33: E225 missing whitespace around operator
+2: def language_selection(argument)->int:
+2:                                 ^
+2: 
+2: ./src/sample_interface/home.py:47:20: F405 'KOREAN' may be undefined, or defined from star imports: application_managers.constant_variables
+2:             return KOREAN
+2:                    ^
+2: 
+2: ./src/sample_interface/home.py:49:20: F405 'ENGLISH' may be undefined, or defined from star imports: application_managers.constant_variables
+2:             return ENGLISH
+2:                    ^
+2: 
+2: ./src/sample_interface/home.py:51:20: F405 'ESPANOL' may be undefined, or defined from star imports: application_managers.constant_variables
+2:             return ESPANOL
+2:                    ^
+2: 
+2: ./src/sample_interface/home.py:54:20: F405 'DEFAULT_LANGUAGE' may be undefined, or defined from star imports: application_managers.constant_variables
+2:             return DEFAULT_LANGUAGE
+2:                    ^
+2: 
+2: ./src/sample_interface/home.py:57:16: F405 'DEFAULT_LANGUAGE' may be undefined, or defined from star imports: application_managers.constant_variables
+2:         return DEFAULT_LANGUAGE
+2:                ^
+2: 
+2: ./src/sample_interface/home.py:61:1: E305 expected 2 blank lines after class or function definition, found 1
+2: """Actual Home"""
+2: ^
+2: 
+2: ./src/sample_interface/home.py:81:13: F405 'gc' may be undefined, or defined from star imports: application_managers.constant_variables
+2:             gc.collect(generation=2)
+2:             ^
+2: 
+2: ./src/sample_interface/home.py:84:13: E722 do not use bare 'except'
+2:             except:
+2:             ^
+2: 
+2: ./src/sample_interface/home.py:91:13: W292 no newline at end of file
+2:         pass            ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:1:1: F403 'from constant_variables import *' used; unable to detect undefined names
+2: from constant_variables import*
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:8:1: E302 expected 2 blank lines, found 1
+2: class Action():
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:13:1: W293 blank line contains whitespace
+2:  
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:15:27: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+2:         if mode_number == UNKNOWN_ERROR:
+2:                           ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:16:100: E501 line too long (118 > 99 characters)
+2:             universal_talk('Sorry, I could not understand what you said. I will try harder next time.', self.language)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:17:29: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+2:         elif mode_number == GREETING:
+2:                             ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:21:31: F405 'CLOCK' may be undefined, or defined from star imports: constant_variables
+2:             if mode_number == CLOCK:
+2:                               ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:23:33: F405 'TIMER' may be undefined, or defined from star imports: constant_variables
+2:             elif mode_number == TIMER:
+2:                                 ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:25:33: F405 'JOKE' may be undefined, or defined from star imports: constant_variables
+2:             elif mode_number == JOKE:
+2:                                 ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:27:1: W293 blank line contains whitespace
+2:             
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:28:33: F405 'HOUSE_PARTY_PROTOCOL' may be undefined, or defined from star imports: constant_variables
+2:             elif mode_number == HOUSE_PARTY_PROTOCOL:
+2:                                 ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:31:78: E231 missing whitespace after ','
+2:                 universal_talk('Sorry, requested service is not readied yet.',self.language)
+2:                                                                              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:32:1: W293 blank line contains whitespace
+2:         
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:34:27: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+2:         if mode_number == UNKNOWN_ERROR:
+2:                           ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:36:29: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+2:         elif mode_number == GREETING:
+2:                             ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:40:31: F405 'CLOCK' may be undefined, or defined from star imports: constant_variables
+2:             if mode_number == CLOCK:
+2:                               ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:42:33: F405 'TIMER' may be undefined, or defined from star imports: constant_variables
+2:             elif mode_number == TIMER:
+2:                                 ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:44:33: F405 'JOKE' may be undefined, or defined from star imports: constant_variables
+2:             elif mode_number == JOKE:
+2:                                 ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:46:1: W293 blank line contains whitespace
+2:             
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:47:33: F405 'HOUSE_PARTY_PROTOCOL' may be undefined, or defined from star imports: constant_variables
+2:             elif mode_number == HOUSE_PARTY_PROTOCOL:
+2:                                 ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:53:27: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+2:         if mode_number == UNKNOWN_ERROR:
+2:                           ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:54:100: E501 line too long (153 > 99 characters)
+2:             universal_talk('Lo siento, no entendí bien lo que estabas diciendo. Haremos todo lo posible para ayudarle en la próxima vez.', self.language)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:55:29: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+2:         elif mode_number == GREETING:
+2:                             ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:73:1: E303 too many blank lines (3)
+2: class EngAction(Action):
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:81:14: E203 whitespace before ':'
+2:             1 : 'January',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:82:14: E203 whitespace before ':'
+2:             2 : 'Feburary',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:83:14: E203 whitespace before ':'
+2:             3 : 'March',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:84:14: E203 whitespace before ':'
+2:             4 : 'April',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:85:14: E203 whitespace before ':'
+2:             5 : 'May',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:86:14: E203 whitespace before ':'
+2:             6 : 'June',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:87:14: E203 whitespace before ':'
+2:             7 : 'July',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:88:14: E203 whitespace before ':'
+2:             8 : 'August',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:89:14: E203 whitespace before ':'
+2:             9 : 'September',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:90:15: E203 whitespace before ':'
+2:             10 : 'October',
+2:               ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:91:15: E203 whitespace before ':'
+2:             11 : 'November',
+2:               ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:92:15: E203 whitespace before ':'
+2:             12 : 'December'
+2:               ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:95:14: E203 whitespace before ':'
+2:             1 : 'first',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:96:14: E203 whitespace before ':'
+2:             2 : 'second',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:97:14: E203 whitespace before ':'
+2:             3 : 'third',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:98:14: E203 whitespace before ':'
+2:             4 : 'fourth',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:99:14: E203 whitespace before ':'
+2:             5 : 'fifth',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:100:14: E203 whitespace before ':'
+2:             6 : 'sixth',
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:101:14: E203 whitespace before ':'
+2:             7 : 'seventh'
+2:              ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:104:100: E501 line too long (144 > 99 characters)
+2:             universal_talk('Today is {0} {1} {2} {3}'.format(time_list[0], month_dict[time_list[1]], time_list[2], time_list[3]), self.language)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:106:100: E501 line too long (154 > 99 characters)
+2:             universal_talk('Today is {0} {1} {2} {3}'.format(time_list[0], month_dict[time_list[1]], day_dict[time_list[2]], time_list[3]), self.language)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:109:5: E303 too many blank lines (2)
+2:     def _notification_ENG(self):
+2:     ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:116:33: E225 missing whitespace around operator
+2:             if (timer_seconds >=0):
+2:                                 ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:117:100: E501 line too long (126 > 99 characters)
+2:                 universal_talk('your timer has just set. I will let you know for three times when it is done!', self.language)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:122:100: E501 line too long (117 > 99 characters)
+2:                 universal_talk('Sorry, I could not understand your timer order. Please try it again.', self.language)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:123:9: E722 do not use bare 'except'
+2:         except:
+2:         ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:124:100: E501 line too long (113 > 99 characters)
+2:             universal_talk('Sorry, I could not understand your timer order. Please try it again.', self.language)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:125:1: W293 blank line contains whitespace
+2:     
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:142:5: E303 too many blank lines (2)
+2:     def house_party_protocol_ENG(self):
+2:     ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:143:100: E501 line too long (141 > 99 characters)
+2:         universal_talk('Activate house party protocol! Let me show you some of my representative functions at the same time.', self.language)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:149:1: W293 blank line contains whitespace
+2:         
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:152:1: E303 too many blank lines (3)
+2: class KorAction(Action):
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:156:1: W293 blank line contains whitespace
+2:     
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:159:100: E501 line too long (132 > 99 characters)
+2:         universal_talk('지금은 {0}월 {1}일 {2}시 {3}분 입니다.'.format(time_list[0], time_list[1], time_list[2], time_list[3]), self.language)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:160:1: W293 blank line contains whitespace
+2:     
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:168:32: E225 missing whitespace around operator
+2:             if (timer_seconds >0):
+2:                                ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:175:9: E722 do not use bare 'except'
+2:         except:
+2:         ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:177:1: W293 blank line contains whitespace
+2:     
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:180:47: E231 missing whitespace after ','
+2:         joke_list = [['경찰관에는 어떤 혈액형이 가장 많을까요?','정답은 비형~ 비형~'],
+2:                                               ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:181:13: E128 continuation line under-indented for visual indent
+2:             ['차 열쇠의 색깔은?', '정답은 카 키 색'],
+2:             ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:182:37: E231 missing whitespace after ','
+2:             ['신하가 왕에게 공을 던지며 하는 말은?','정답은 송구하옵니다.. 전하..'],
+2:                                     ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:183:32: E231 missing whitespace after ','
+2:             ['자동차를 톡하고 치면 뭘까요?','정답은 카 톡 '],
+2:                                ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:193:5: E303 too many blank lines (2)
+2:     def house_party_protocol_KOR(self):
+2:     ^
+2: 
+2: ./src/sample_interface/application_managers/action.py:201:9: W292 no newline at end of file
+2:     pass        ^
+2: 
+2: ./src/sample_interface/application_managers/utils.py:4:1: F401 'gc' imported but unused
+2: import gc
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/utils.py:10:5: F401 'termios' imported but unused
+2:     import termios
+2:     ^
+2: 
+2: ./src/sample_interface/application_managers/utils.py:12:1: E302 expected 2 blank lines, found 1
+2: def getKey():
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/utils.py:29:1: E302 expected 2 blank lines, found 1
+2: def check_internet_connection()->bool:
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/utils.py:29:32: E225 missing whitespace around operator
+2: def check_internet_connection()->bool:
+2:                                ^
+2: 
+2: ./src/sample_interface/application_managers/utils.py:36:20: W292 no newline at end of file
+2:         return True                   ^
+2: 
+2: ./src/sample_interface/application_managers/constant_variables.py:2:21: E261 at least two spaces before inline comment
+2: DEFAULT_LANGUAGE = 1 # Current default language is Korean.
+2:                     ^
+2: 
+2: ./src/sample_interface/application_managers/constant_variables.py:14:27: W292 no newline at end of file
+2: HOUSE_PARTY_PROTOCOL = 999                          ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:1:100: E501 line too long (112 > 99 characters)
+2: ################################################################################################################
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:3:92: W291 trailing whitespace
+2: # Originally, mode selection should be done by NLP, analyzing the given sentence by syntax. 
+2:                                                                                            ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:4:100: E501 line too long (112 > 99 characters)
+2: # However in this case, since the system is simple enough, we just use classification function like following...
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:8:1: E303 too many blank lines (3)
+2: from constant_variables import*
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:8:1: F403 'from constant_variables import *' used; unable to detect undefined names
+2: from constant_variables import*
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:12:1: E303 too many blank lines (3)
+2: def check_item(my_list, word):
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:20:1: E302 expected 2 blank lines, found 1
+2: def split_string(string):
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:24:1: E302 expected 2 blank lines, found 1
+2: def mode_selection_eng(string):    
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:24:32: W291 trailing whitespace
+2: def mode_selection_eng(string):    
+2:                                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:27:100: E501 line too long (161 > 99 characters)
+2:     if check_item(my_list, 'hello') or check_item(my_list, 'hi') or (check_item(my_list, 'meet') and check_item(my_list, 'nice') and check_item(my_list, 'you')):
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:28:16: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+2:         return GREETING
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:30:16: F405 'COVID' may be undefined, or defined from star imports: constant_variables
+2:         return COVID
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:31:100: E501 line too long (140 > 99 characters)
+2:     elif check_item(my_list, 'brightness') or (check_item(my_list, 'light') and (check_item(my_list, 'down') or check_item(my_list, 'up'))):
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:32:16: F405 'BRIGHTNESS' may be undefined, or defined from star imports: constant_variables
+2:         return BRIGHTNESS
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:34:16: F405 'VOLUME' may be undefined, or defined from star imports: constant_variables
+2:         return VOLUME
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:35:100: E501 line too long (103 > 99 characters)
+2:     elif (check_item(my_list, 'time') and check_item(my_list, 'what')) or check_item(my_list, 'clock'):
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:36:16: F405 'CLOCK' may be undefined, or defined from star imports: constant_variables
+2:         return CLOCK
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:38:16: F405 'TIMER' may be undefined, or defined from star imports: constant_variables
+2:         return TIMER
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:39:100: E501 line too long (172 > 99 characters)
+2:     elif check_item(my_list, 'joke') or check_item(my_list, 'jokes') or (check_item(my_list, 'funny') and (check_item(my_list, 'story') or check_item(my_list, 'stories'))):
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:40:16: F405 'JOKE' may be undefined, or defined from star imports: constant_variables
+2:         return JOKE
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:41:100: E501 line too long (138 > 99 characters)
+2:     elif check_item(my_list, 'protocol') and (check_item(my_list, 'house') or check_item(my_list, 'party'), check_item(my_list, 'final')):
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:42:16: F405 'HOUSE_PARTY_PROTOCOL' may be undefined, or defined from star imports: constant_variables
+2:         return HOUSE_PARTY_PROTOCOL
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:45:16: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+2:         return UNKNOWN_ERROR
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:47:1: E302 expected 2 blank lines, found 1
+2: def mode_selection_kor(string):
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:51:16: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+2:         return GREETING
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:53:16: F405 'COVID' may be undefined, or defined from star imports: constant_variables
+2:         return COVID
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:54:100: E501 line too long (129 > 99 characters)
+2:     elif check_item(my_list, '밝기') or (check_item(my_list, '화면이') and (check_item(my_list, '밝아') or check_item(my_list, '어두워'))):
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:55:16: F405 'BRIGHTNESS' may be undefined, or defined from star imports: constant_variables
+2:         return BRIGHTNESS
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:57:16: F405 'VOLUME' may be undefined, or defined from star imports: constant_variables
+2:         return VOLUME
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:58:100: E501 line too long (123 > 99 characters)
+2:     elif check_item(my_list, '시간') or (check_item(my_list, '몇') and check_item(my_list, '시')) or check_item(my_list, '시계'):
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:59:16: F405 'CLOCK' may be undefined, or defined from star imports: constant_variables
+2:         return CLOCK
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:61:16: F405 'TIMER' may be undefined, or defined from star imports: constant_variables
+2:         return TIMER
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:62:100: E501 line too long (162 > 99 characters)
+2:     elif check_item(my_list, '농담') or ((check_item(my_list, '재미있는') or check_item(my_list, '재밌는')) and (check_item(my_list, '이야기') or check_item(my_list, '얘기'))):
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:63:16: F405 'JOKE' may be undefined, or defined from star imports: constant_variables
+2:         return JOKE
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:64:100: E501 line too long (216 > 99 characters)
+2:     elif (check_item(my_list, '전부') or check_item(my_list, '다') or (check_item(my_list, '할') and check_item(my_list, '수') and check_item(my_list, '있는지'))) and (check_item(my_list, '보여') and check_item(my_list, '줘')):
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:65:16: F405 'HOUSE_PARTY_PROTOCOL' may be undefined, or defined from star imports: constant_variables
+2:         return HOUSE_PARTY_PROTOCOL
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:67:16: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+2:         return UNKNOWN_ERROR
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:69:1: E302 expected 2 blank lines, found 1
+2: def mode_selection_esp(string):
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:74:16: F405 'GREETING' may be undefined, or defined from star imports: constant_variables
+2:         return GREETING
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:75:100: E501 line too long (103 > 99 characters)
+2:     elif check_item(my_list, 'corona') or check_item(my_list, 'virus') or check_item(my_list, 'covid'):
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:76:16: F405 'COVID' may be undefined, or defined from star imports: constant_variables
+2:         return COVID
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:78:16: F405 'UNKNOWN_ERROR' may be undefined, or defined from star imports: constant_variables
+2:         return UNKNOWN_ERROR
+2:                ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:80:1: E302 expected 2 blank lines, found 1
+2: def universal_mode_selection(string, language):
+2: ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:89:20: F405 'ENGLISH' may be undefined, or defined from star imports: constant_variables
+2:     if language == ENGLISH:
+2:                    ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:91:22: F405 'KOREAN' may be undefined, or defined from star imports: constant_variables
+2:     elif language == KOREAN:
+2:                      ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:93:22: F405 'ESPANOL' may be undefined, or defined from star imports: constant_variables
+2:     elif language == ESPANOL:
+2:                      ^
+2: 
+2: ./src/sample_interface/application_managers/mode.py:94:42: W292 no newline at end of file
+2:         return mode_selection_esp(string)                                         ^
+2: 
+2: ./src/sample_interface/organs/check_microphone_connection.py:5:18: E261 at least two spaces before inline comment
+2: DEVICE_INDEX = 11 # FIX HERE!
+2:                  ^
+2: 
+2: ./src/sample_interface/organs/check_microphone_connection.py:9:32: E251 unexpected spaces around keyword / parameter equals
+2: with sr.Microphone(device_index = DEVICE_INDEX) as source:
+2:                                ^
+2: 
+2: ./src/sample_interface/organs/check_microphone_connection.py:9:34: E251 unexpected spaces around keyword / parameter equals
+2: with sr.Microphone(device_index = DEVICE_INDEX) as source:
+2:                                  ^
+2: 
+2: ./src/sample_interface/organs/check_microphone_connection.py:15:35: E231 missing whitespace after ','
+2: with open("microphone_results.wav","wb") as f:
+2:                                   ^
+2: 
+2: ./src/sample_interface/organs/ears.py:6:1: E302 expected 2 blank lines, found 1
+2: class Ears():
+2: ^
+2: 
+2: ./src/sample_interface/organs/ears.py:7:21: E225 missing whitespace around operator
+2:     def listen(self)->list:
+2:                     ^
+2: 
+2: ./src/sample_interface/organs/ears.py:14:28: E261 at least two spaces before inline comment
+2:         r = sr.Recognizer() # device_index = 3 for Jetson Nano
+2:                            ^
+2: 
+2: ./src/sample_interface/organs/ears.py:15:40: E251 unexpected spaces around keyword / parameter equals
+2:         with sr.Microphone(device_index = DEVICE_INDEX) as source:
+2:                                        ^
+2: 
+2: ./src/sample_interface/organs/ears.py:15:42: E251 unexpected spaces around keyword / parameter equals
+2:         with sr.Microphone(device_index = DEVICE_INDEX) as source:
+2:                                          ^
+2: 
+2: ./src/sample_interface/organs/ears.py:16:17: E117 over-indented (comment)
+2:                 # r.adjust_for_ambient_noise(source, duration =1)
+2:                 ^
+2: 
+2: ./src/sample_interface/organs/ears.py:17:17: E117 over-indented
+2:                 print("Say something!")
+2:                 ^
+2: 
+2: ./src/sample_interface/organs/ears.py:20:52: W291 trailing whitespace
+2:                 audio = r.listen(source, timeout=3) 
+2:                                                    ^
+2: 
+2: ./src/sample_interface/organs/ears.py:24:67: E251 unexpected spaces around keyword / parameter equals
+2:         eng = r.recognize_google(audio, language="en-US", show_all = True)
+2:                                                                   ^
+2: 
+2: ./src/sample_interface/organs/ears.py:24:69: E251 unexpected spaces around keyword / parameter equals
+2:         eng = r.recognize_google(audio, language="en-US", show_all = True)
+2:                                                                     ^
+2: 
+2: ./src/sample_interface/organs/ears.py:25:49: E251 unexpected spaces around keyword / parameter equals
+2:         kor = r.recognize_google(audio, language = 'ko-KR', show_all = True)
+2:                                                 ^
+2: 
+2: ./src/sample_interface/organs/ears.py:25:51: E251 unexpected spaces around keyword / parameter equals
+2:         kor = r.recognize_google(audio, language = 'ko-KR', show_all = True)
+2:                                                   ^
+2: 
+2: ./src/sample_interface/organs/ears.py:25:69: E251 unexpected spaces around keyword / parameter equals
+2:         kor = r.recognize_google(audio, language = 'ko-KR', show_all = True)
+2:                                                                     ^
+2: 
+2: ./src/sample_interface/organs/ears.py:25:71: E251 unexpected spaces around keyword / parameter equals
+2:         kor = r.recognize_google(audio, language = 'ko-KR', show_all = True)
+2:                                                                       ^
+2: 
+2: ./src/sample_interface/organs/ears.py:26:49: E251 unexpected spaces around keyword / parameter equals
+2:         esp = r.recognize_google(audio, language = 'es-ES', show_all = True)
+2:                                                 ^
+2: 
+2: ./src/sample_interface/organs/ears.py:26:51: E251 unexpected spaces around keyword / parameter equals
+2:         esp = r.recognize_google(audio, language = 'es-ES', show_all = True)
+2:                                                   ^
+2: 
+2: ./src/sample_interface/organs/ears.py:26:69: E251 unexpected spaces around keyword / parameter equals
+2:         esp = r.recognize_google(audio, language = 'es-ES', show_all = True)
+2:                                                                     ^
+2: 
+2: ./src/sample_interface/organs/ears.py:26:71: E251 unexpected spaces around keyword / parameter equals
+2:         esp = r.recognize_google(audio, language = 'es-ES', show_all = True)
+2:                                                                       ^
+2: 
+2: ./src/sample_interface/organs/ears.py:32:100: E501 line too long (103 > 99 characters)
+2:         #     print("Google Speech Recognition thinks you said " + eng + '\n or ' + kor +'\n or '+ esp)
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/organs/ears.py:37:100: E501 line too long (102 > 99 characters)
+2:         #     print("Could not request results from Google Speech Recognition service; {0}".format(e))
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/organs/ears.py:45:1: E305 expected 2 blank lines after class or function definition, found 1
+2: if __name__ == "__main__":
+2: ^
+2: 
+2: ./src/sample_interface/organs/ears.py:52:1: E303 too many blank lines (3)
+2: #Notes for listen() and its internal fns - DETAILED REGULATION OPTIONS - Sungsik Kong
+2: ^
+2: 
+2: ./src/sample_interface/organs/ears.py:52:1: E265 block comment should start with '# '
+2: #Notes for listen() and its internal fns - DETAILED REGULATION OPTIONS - Sungsik Kong
+2: ^
+2: 
+2: ./src/sample_interface/organs/ears.py:54:1: E265 block comment should start with '# '
+2: #1 listen function changes 'source' into 'AudioData' instance. 'AudioData' can be 'recognized' by google data deisgnated languages
+2: ^
+2: 
+2: ./src/sample_interface/organs/ears.py:54:100: E501 line too long (130 > 99 characters)
+2: #1 listen function changes 'source' into 'AudioData' instance. 'AudioData' can be 'recognized' by google data deisgnated languages
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/organs/ears.py:55:1: E265 block comment should start with '# '
+2: #2 'timeout' param is maximum waiting time(seconds) before 'speech_recognition.WaitTimeoutError'
+2: ^
+2: 
+2: ./src/sample_interface/organs/ears.py:56:1: E265 block comment should start with '# '
+2: #3 'phrase_time_limit' param is maximum seconds that letting phrase to continue before stopping and returning the part of the phrase
+2: ^
+2: 
+2: ./src/sample_interface/organs/ears.py:56:100: E501 line too long (132 > 99 characters)
+2: #3 'phrase_time_limit' param is maximum seconds that letting phrase to continue before stopping and returning the part of the phrase
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/organs/ears.py:57:1: E265 block comment should start with '# '
+2: #4 starts when energy above 'recognizer_instance.energy_threshold' and completed after 'timeout + phrase_timeout' seconds, and this returns one of the followings: audio data / waittimeError
+2: ^
+2: 
+2: ./src/sample_interface/organs/ears.py:57:100: E501 line too long (189 > 99 characters)
+2: #4 starts when energy above 'recognizer_instance.energy_threshold' and completed after 'timeout + phrase_timeout' seconds, and this returns one of the followings: audio data / waittimeError
+2:                                                                                                    ^
+2: 
+2: ./src/sample_interface/organs/ears.py:58:1: E265 block comment should start with '# '
+2: #5 such params are predetermined at the original __init__ function^
+2: 
+2: ./src/sample_interface/organs/ears.py:58:67: W292 no newline at end of file
+2: #5 such params are predetermined at the original __init__ function                                                                  ^
+2: 
+2: ./src/sample_interface/organs/ears.py:58:67: W292 no newline at end of file
+2: #5 such params are predetermined at the original __init__ function                                                                  ^
+2: 
+2: ./src/sample_interface/organs/ears.py:58:67: W292 no newline at end of file
+2: #5 such params are predetermined at the original __init__ function                                                                  ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:7:1: W293 blank line contains whitespace
+2:         
+2: ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:9:9: E117 over-indented
+2:         tts = gTTS(text = words, lang = 'en')
+2:         ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:9:24: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'en')
+2:                        ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:9:26: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'en')
+2:                          ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:9:38: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'en')
+2:                                      ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:9:40: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'en')
+2:                                        ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:16:9: E117 over-indented
+2:         tts = gTTS(text = words, lang = 'ko')
+2:         ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:16:24: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'ko')
+2:                        ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:16:26: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'ko')
+2:                          ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:16:38: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'ko')
+2:                                      ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:16:40: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'ko')
+2:                                        ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:23:9: E117 over-indented
+2:         tts = gTTS(text = words, lang = 'es')
+2:         ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:23:24: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'es')
+2:                        ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:23:26: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'es')
+2:                          ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:23:38: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'es')
+2:                                      ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:23:40: E251 unexpected spaces around keyword / parameter equals
+2:         tts = gTTS(text = words, lang = 'es')
+2:                                        ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:26:34: W291 trailing whitespace
+2:         os.remove('sample_1.mp3') 
+2:                                  ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:28:1: E302 expected 2 blank lines, found 1
+2: def universal_talk(string, language):
+2: ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:41:1: E305 expected 2 blank lines after class or function definition, found 1
+2: if __name__ =="__main__":
+2: ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:41:15: E225 missing whitespace around operator
+2: if __name__ =="__main__":
+2:               ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:50:2: W291 trailing whitespace
+2: # 
+2:  ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:56:43: W292 no newline at end of file
+2: #         mixer.music.play('sample_1.mp3')                                          ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:56:43: W292 no newline at end of file
+2: #         mixer.music.play('sample_1.mp3')                                          ^
+2: 
+2: ./src/sample_interface/organs/mouth.py:56:43: W292 no newline at end of file
+2: #         mixer.music.play('sample_1.mp3')                                          ^
+2: 
+2: ./src/sample_interface/application/clock.py:1:1: F401 'time' imported but unused
+2: import time
+2: ^
+2: 
+2: ./src/sample_interface/application/clock.py:3:1: F401 'schedule' imported but unused
+2: import schedule
+2: ^
+2: 
+2: ./src/sample_interface/application/clock.py:5:1: E302 expected 2 blank lines, found 1
+2: def clock() -> list:
+2: ^
+2: 
+2: ./src/sample_interface/application/clock.py:12:38: W292 no newline at end of file
+2:     return [year, month, day, minute]                                     ^
+2: 
+2: ./src/sample_interface/application/timer.py:1:1: F403 'from constant_variables import *' used; unable to detect undefined names
+2: from constant_variables import*
+2: ^
+2: 
+2: ./src/sample_interface/application/timer.py:4:1: E302 expected 2 blank lines, found 1
+2: def universal_timertime(master, language):
+2: ^
+2: 
+2: ./src/sample_interface/application/timer.py:5:20: F405 'ENGLISH' may be undefined, or defined from star imports: constant_variables
+2:     if language == ENGLISH:
+2:                    ^
+2: 
+2: ./src/sample_interface/application/timer.py:7:22: F405 'KOREAN' may be undefined, or defined from star imports: constant_variables
+2:     elif language == KOREAN:
+2:                      ^
+2: 
+2: ./src/sample_interface/application/timer.py:9:22: F405 'ESPANOL' may be undefined, or defined from star imports: constant_variables
+2:     elif language == ESPANOL:
+2:                      ^
+2: 
+2: ./src/sample_interface/application/timer.py:12:1: E302 expected 2 blank lines, found 1
+2: def timertime_KOR(master)->float:
+2: ^
+2: 
+2: ./src/sample_interface/application/timer.py:12:26: E225 missing whitespace around operator
+2: def timertime_KOR(master)->float:
+2:                          ^
+2: 
+2: ./src/sample_interface/application/timer.py:14:22: W605 invalid escape sequence '\d'
+2:     p = re.compile('(\d)+')
+2:                      ^
+2: 
+2: ./src/sample_interface/application/timer.py:24:14: E225 missing whitespace around operator
+2:             t*=60
+2:              ^
+2: 
+2: ./src/sample_interface/application/timer.py:26:14: E225 missing whitespace around operator
+2:             t*=3600
+2:              ^
+2: 
+2: ./src/sample_interface/application/timer.py:29:5: E722 do not use bare 'except'
+2:     except:
+2:     ^
+2: 
+2: ./src/sample_interface/application/timer.py:31:13: W291 trailing whitespace
+2:     return t     
+2:             ^
+2: 
+2: ./src/sample_interface/application/timer.py:33:1: E302 expected 2 blank lines, found 1
+2: def timertime_ENG(master)->float:
+2: ^
+2: 
+2: ./src/sample_interface/application/timer.py:33:26: E225 missing whitespace around operator
+2: def timertime_ENG(master)->float:
+2:                          ^
+2: 
+2: ./src/sample_interface/application/timer.py:35:22: W605 invalid escape sequence '\d'
+2:     p = re.compile('(\d)+')
+2:                      ^
+2: 
+2: ./src/sample_interface/application/timer.py:45:14: E225 missing whitespace around operator
+2:             t*=60
+2:              ^
+2: 
+2: ./src/sample_interface/application/timer.py:47:14: E225 missing whitespace around operator
+2:             t*=3600
+2:              ^
+2: 
+2: ./src/sample_interface/application/timer.py:50:5: E722 do not use bare 'except'
+2:     except:
+2:     ^
+2: 
+2: ./src/sample_interface/application/timer.py:52:13: W291 trailing whitespace
+2:     return t     
+2:             ^
+2: 
+2: ./src/sample_interface/application/timer.py:54:1: E302 expected 2 blank lines, found 1
+2: def timertime_ESP(master):
+2: ^
+2: 
+2: ./src/sample_interface/application/timer.py:55:9: W292 no newline at end of file
+2:     pass        ^
+2: 
+2: ./src/sample_interface/application/joke.py:3:1: E302 expected 2 blank lines, found 1
+2: def joke()->int:
+2: ^
+2: 
+2: ./src/sample_interface/application/joke.py:3:11: E225 missing whitespace around operator
+2: def joke()->int:
+2:           ^
+2: 
+2: ./src/sample_interface/application/joke.py:4:25: E231 missing whitespace after ','
+2:     joke_num = randint(1,6)
+2:                         ^
+2: 
+2: ./src/sample_interface/application/joke.py:5:20: W292 no newline at end of file
+2:     return joke_num                   ^
+2: 
+2: 5     E117 over-indented (comment)
+2: 1     E128 continuation line under-indented for visual indent
+2: 19    E203 whitespace before ':'
+2: 14    E225 missing whitespace around operator
+2: 6     E231 missing whitespace after ','
+2: 26    E251 unexpected spaces around keyword / parameter equals
+2: 3     E261 at least two spaces before inline comment
+2: 6     E265 block comment should start with '# '
+2: 17    E302 expected 2 blank lines, found 1
+2: 8     E303 too many blank lines (3)
+2: 3     E305 expected 2 blank lines after class or function definition, found 1
+2: 29    E501 line too long (118 > 99 characters)
+2: 6     E722 do not use bare 'except'
+2: 4     F401 'time' imported but unused
+2: 4     F403 'from constant_variables import *' used; unable to detect undefined names
+2: 60    F405 'ENGLISH' may be undefined, or defined from star imports: constant_variables
+2: 7     W291 trailing whitespace
+2: 14    W292 no newline at end of file
+2: 10    W293 blank line contains whitespace
+2: 2     W605 invalid escape sequence '\d'
+2: 
+2: 12 files checked
+2: 244 errors
+2: 
+2: 'E'-type errors: 143
+2: 'F'-type errors: 68
+2: 'W'-type errors: 33
+2: 
+2: Checked files:
+2: 
+2: * ./src/sample_interface/home.py
+2: * ./src/sample_interface/application_managers/action.py
+2: * ./src/sample_interface/application_managers/utils.py
+2: * ./src/sample_interface/application_managers/constant_variables.py
+2: * ./src/sample_interface/application_managers/mode.py
+2: * ./src/sample_interface/organs/check_microphone_connection.py
+2: * ./src/sample_interface/organs/ears.py
+2: * ./src/sample_interface/organs/__init__.py
+2: * ./src/sample_interface/organs/mouth.py
+2: * ./src/sample_interface/application/clock.py
+2: * ./src/sample_interface/application/timer.py
+2: * ./src/sample_interface/application/joke.py
+2: -- run_test.py: return code 1
+2: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/flake8.xunit.xml'
+2/5 Test #2: flake8 ...........................***Failed   17.77 sec
+test 3
+    Start 3: lint_cmake
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/lint_cmake.xunit.xml" "--package-name" "hrdp_human_interfaces" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/foxy/bin/ament_lint_cmake" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/lint_cmake.xunit.xml"
+3: Test timeout computed to be: 60
+3: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces':
+3:  - /opt/ros/foxy/bin/ament_lint_cmake --xunit-file /home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/lint_cmake.xunit.xml
+3: 
+3: No problems found
+3: -- run_test.py: return code 0
+3: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/lint_cmake.xunit.xml'
+3/5 Test #3: lint_cmake .......................   Passed    8.50 sec
+test 4
+    Start 4: pep257
+
+4: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/pep257.xunit.xml" "--package-name" "hrdp_human_interfaces" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/ament_pep257/pep257.txt" "--command" "/opt/ros/foxy/bin/ament_pep257" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/pep257.xunit.xml"
+4: Test timeout computed to be: 60
+4: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces':
+4:  - /opt/ros/foxy/bin/ament_pep257 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/pep257.xunit.xml
+4: ./src/sample_interface/application/clock.py:5 in public function `clock`: D400: First line should end with a period (not 'e')
+4: ./src/sample_interface/application/timer.py:12 in public function `timertime_KOR`: D400: First line should end with a period (not 'r')
+4: ./src/sample_interface/application/timer.py:12 in public function `timertime_KOR`: D403: First word of the first line should be properly capitalized ('Extract', not 'extract')
+4: ./src/sample_interface/application/timer.py:33 in public function `timertime_ENG`: D400: First line should end with a period (not 'r')
+4: ./src/sample_interface/application/timer.py:33 in public function `timertime_ENG`: D403: First word of the first line should be properly capitalized ('Extract', not 'extract')
+4: ./src/sample_interface/application_managers/action.py:9 in public method `__init__`: D400: First line should end with a period (not 'e')
+4: ./src/sample_interface/application_managers/action.py:58 in public method `universal_action`: D205: 1 blank line required between summary line and description (found 0)
+4: ./src/sample_interface/application_managers/action.py:58 in public method `universal_action`: D208: Docstring is over-indented
+4: ./src/sample_interface/application_managers/action.py:58 in public method `universal_action`: D213: Multi-line docstring summary should start at the second line
+4: ./src/sample_interface/application_managers/action.py:58 in public method `universal_action`: D400: First line should end with a period (not 'y')
+4: ./src/sample_interface/application_managers/action.py:74 in public method `__init__`: D400: First line should end with a period (not 's')
+4: ./src/sample_interface/application_managers/action.py:153 in public method `__init__`: D400: First line should end with a period (not 's')
+4: ./src/sample_interface/application_managers/constant_variables.py:1 at module level: D400: First line should end with a period (not 'N')
+4: ./src/sample_interface/application_managers/mode.py:20 in public function `split_string`: D400: First line should end with a period (not 'g')
+4: ./src/sample_interface/application_managers/mode.py:20 in public function `split_string`: D403: First word of the first line should be properly capitalized ('Split', not 'split')
+4: ./src/sample_interface/application_managers/mode.py:69 in public function `mode_selection_esp`: D400: First line should end with a period (not 'P')
+4: ./src/sample_interface/application_managers/mode.py:80 in public function `universal_mode_selection`: D208: Docstring is over-indented
+4: ./src/sample_interface/application_managers/mode.py:80 in public function `universal_mode_selection`: D213: Multi-line docstring summary should start at the second line
+4: ./src/sample_interface/application_managers/mode.py:80 in public function `universal_mode_selection`: D400: First line should end with a period (not 'e')
+4: ./src/sample_interface/home.py:17 in public function `language_inquiry`: D400: First line should end with a period (not 'e')
+4: ./src/sample_interface/home.py:43 in public function `language_selection`: D400: First line should end with a period (not 't')
+4: ./src/sample_interface/home.py:43 in public function `language_selection`: D403: First word of the first line should be properly capitalized ('Language', not 'language')
+4: ./src/sample_interface/organs/ears.py:7 in public method `listen`: D201: No blank lines allowed before function docstring (found 1)
+4: ./src/sample_interface/organs/ears.py:7 in public method `listen`: D400: First line should end with a period (not 'd')
+4: ./src/sample_interface/organs/ears.py:7 in public method `listen`: D403: First word of the first line should be properly capitalized ('If', not 'if')
+4: ./src/sample_interface/organs/mouth.py:1 at module level: D400: First line should end with a period (not 'S')
+4: ./src/sample_interface/organs/mouth.py:28 in public function `universal_talk`: D205: 1 blank line required between summary line and description (found 0)
+4: ./src/sample_interface/organs/mouth.py:28 in public function `universal_talk`: D208: Docstring is over-indented
+4: ./src/sample_interface/organs/mouth.py:28 in public function `universal_talk`: D213: Multi-line docstring summary should start at the second line
+4: ./src/sample_interface/organs/mouth.py:28 in public function `universal_talk`: D400: First line should end with a period (not 'n')
+4: ./src/sample_interface/organs/mouth.py:28 in public function `universal_talk`: D401: First line should be in imperative mood ('Define', not 'Defined')
+4: 31 errors
+4: checking ./src/sample_interface/application/clock.py
+4: checking ./src/sample_interface/application/joke.py
+4: checking ./src/sample_interface/application/timer.py
+4: checking ./src/sample_interface/application_managers/action.py
+4: checking ./src/sample_interface/application_managers/constant_variables.py
+4: checking ./src/sample_interface/application_managers/mode.py
+4: checking ./src/sample_interface/application_managers/utils.py
+4: checking ./src/sample_interface/home.py
+4: checking ./src/sample_interface/organs/__init__.py
+4: checking ./src/sample_interface/organs/check_microphone_connection.py
+4: checking ./src/sample_interface/organs/ears.py
+4: checking ./src/sample_interface/organs/mouth.py
+4: -- run_test.py: return code 1
+4: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/pep257.xunit.xml'
+4/5 Test #4: pep257 ...........................***Failed   13.44 sec
+test 5
+    Start 5: xmllint
+
+5: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/xmllint.xunit.xml" "--package-name" "hrdp_human_interfaces" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/ament_xmllint/xmllint.txt" "--command" "/opt/ros/foxy/bin/ament_xmllint" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/xmllint.xunit.xml"
+5: Test timeout computed to be: 60
+5: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces':
+5:  - /opt/ros/foxy/bin/ament_xmllint --xunit-file /home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/xmllint.xunit.xml
+5: File 'package.xml' is valid
+5: 
+5: No problems found
+5: -- run_test.py: return code 0
+5: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/xmllint.xunit.xml'
+5/5 Test #5: xmllint ..........................   Passed   12.36 sec
+
+40% tests passed[0;0m, [0;31m3 tests failed[0;0m out of 5
+
+Label Time Summary:
+copyright     =   8.58 sec*proc (1 test)
+flake8        =  17.77 sec*proc (1 test)
+lint_cmake    =   8.50 sec*proc (1 test)
+linter        =  60.66 sec*proc (5 tests)
+pep257        =  13.44 sec*proc (1 test)
+xmllint       =  12.36 sec*proc (1 test)
+
+Total Test time (real) =  60.68 sec
+
+The following tests FAILED:
+	[0;31m  1 - copyright (Failed)[0;0m
+	[0;31m  2 - flake8 (Failed)[0;0m
+	[0;31m  4 - pep257 (Failed)[0;0m
+Errors while running CTest

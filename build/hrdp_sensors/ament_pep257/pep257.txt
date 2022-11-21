@@ -1,0 +1,29 @@
+-- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_sensors':
+ - /opt/ros/foxy/bin/ament_pep257 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_sensors/test_results/hrdp_sensors/pep257.xunit.xml
+
+./src/camera/camera_constants.py:83 in public class `CameraConstants`: D211: No blank lines allowed before class docstring (found 1)
+./src/camera/camera_constants.py:83 in public class `CameraConstants`: D205: 1 blank line required between summary line and description (found 0)
+./src/camera/camera_constants.py:83 in public class `CameraConstants`: D400: First line should end with a period (not ']')
+./src/camera/camera_publisher.py:7 in public class `CameraPublisher`: D204: 1 blank line required after class docstring (found 0)
+./src/camera/camera_publisher.py:7 in public class `CameraPublisher`: D205: 1 blank line required between summary line and description (found 0)
+./src/camera/camera_publisher.py:7 in public class `CameraPublisher`: D400: First line should end with a period (not 'r')
+./src/camera/depth_filter_manager.py:8 in public method `apply_DepthFilter`: D200: One-line docstring should fit on one line with quotes (found 3)
+./src/camera/depth_filter_manager.py:8 in public method `apply_DepthFilter`: D400: First line should end with a period (not '!')
+./src/camera/depth_filter_manager.py:8 in public method `apply_DepthFilter`: D401: First line should be in imperative mood ('Apply', not 'Applying')
+./src/camera/rgb_camera.py:6 in public class `RGBRealsenseCamera`: D204: 1 blank line required after class docstring (found 0)
+./src/camera/rgb_camera.py:6 in public class `RGBRealsenseCamera`: D205: 1 blank line required between summary line and description (found 0)
+./src/camera/rgb_camera.py:6 in public class `RGBRealsenseCamera`: D400: First line should end with a period (not 'a')
+./src/camera/rgbd_camera.py:38 in public method `apply_DepthFilter`: D200: One-line docstring should fit on one line with quotes (found 3)
+./src/camera/rgbd_camera.py:38 in public method `apply_DepthFilter`: D400: First line should end with a period (not '!')
+./src/camera/rgbd_camera.py:38 in public method `apply_DepthFilter`: D401: First line should be in imperative mood ('Apply', not 'Applying')
+15 errors
+checking ./src/camera/camera_constants.py
+checking ./src/camera/camera_publisher.py
+checking ./src/camera/depth_filter_manager.py
+checking ./src/camera/rgb_camera.py
+checking ./src/camera/rgbd_camera.py
+checking ./src/lidar/__init__.py
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_sensors/test_results/hrdp_sensors/pep257.xunit.xml'

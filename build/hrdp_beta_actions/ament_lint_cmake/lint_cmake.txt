@@ -1,0 +1,12 @@
+-- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_beta_actions':
+ - /opt/ros/foxy/bin/ament_lint_cmake --xunit-file /home/r1mini/sungsik_ws/build/hrdp_beta_actions/test_results/hrdp_beta_actions/lint_cmake.xunit.xml
+
+CMakeLists.txt:24: Mismatching spaces inside () after command [whitespace/mismatch]
+CMakeLists.txt:27: Weird indentation; use 2 spaces [whitespace/indent]
+
+
+2 errors
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_beta_actions/test_results/hrdp_beta_actions/lint_cmake.xunit.xml'

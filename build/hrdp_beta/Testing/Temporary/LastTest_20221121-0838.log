@@ -1,0 +1,166 @@
+Start testing: Nov 21 17:38 KST
+----------------------------------------------------------
+1/5 Testing: copyright
+1/5 Test: copyright
+Command: "/usr/bin/python3" "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/copyright.xunit.xml" "--package-name" "hrdp_beta" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_beta/ament_copyright/copyright.txt" "--command" "/opt/ros/foxy/bin/ament_copyright" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/copyright.xunit.xml"
+Directory: /home/r1mini/sungsik_ws/src/hrdp_beta
+"copyright" start time: Nov 21 17:38 KST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_beta':
+ - /opt/ros/foxy/bin/ament_copyright --xunit-file /home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/copyright.xunit.xml
+src/sensors/sensor_manager.py: could not find copyright notice
+1 errors, checked 6 files
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/copyright.xunit.xml'
+<end of output>
+Test time =   8.76 sec
+----------------------------------------------------------
+Test Failed.
+"copyright" end time: Nov 21 17:39 KST
+"copyright" time elapsed: 00:00:08
+----------------------------------------------------------
+
+2/5 Testing: flake8
+2/5 Test: flake8
+Command: "/usr/bin/python3" "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/flake8.xunit.xml" "--package-name" "hrdp_beta" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_beta/ament_flake8/flake8.txt" "--command" "/opt/ros/foxy/bin/ament_flake8" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/flake8.xunit.xml"
+Directory: /home/r1mini/sungsik_ws/src/hrdp_beta
+"flake8" start time: Nov 21 17:39 KST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_beta':
+ - /opt/ros/foxy/bin/ament_flake8 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/flake8.xunit.xml
+
+./src/sensors/sensor_manager.py:1:1: F401 'rclpy' imported but unused
+import rclpy
+^
+
+./src/sensors/sensor_manager.py:3:1: F403 'from lidar import *' used; unable to detect undefined names
+from lidar import *
+^
+
+./src/sensors/sensor_manager.py:3:1: F401 'lidar.*' imported but unused
+from lidar import *
+^
+
+./src/sensors/sensor_manager.py:23:1: W391 blank line at end of file
+        ^
+
+./src/sensors/sensor_manager.py:23:1: W293 blank line contains whitespace
+        ^
+
+2     F401 'rclpy' imported but unused
+1     F403 'from lidar import *' used; unable to detect undefined names
+1     W293 blank line contains whitespace
+1     W391 blank line at end of file
+
+6 files checked
+5 errors
+
+'F'-type errors: 3
+'W'-type errors: 2
+
+Checked files:
+
+* ./src/sensors/sensor_manager.py
+* ./src/sensors/camera/__init__.py
+* ./src/core/localization/__init__.py
+* ./src/core/naviagation/__init__.py
+* ./src/core/interface/ears.py
+* ./src/core/interface/mouth.py
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/flake8.xunit.xml'
+<end of output>
+Test time =  16.31 sec
+----------------------------------------------------------
+Test Failed.
+"flake8" end time: Nov 21 17:39 KST
+"flake8" time elapsed: 00:00:16
+----------------------------------------------------------
+
+3/5 Testing: lint_cmake
+3/5 Test: lint_cmake
+Command: "/usr/bin/python3" "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/lint_cmake.xunit.xml" "--package-name" "hrdp_beta" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_beta/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/foxy/bin/ament_lint_cmake" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/lint_cmake.xunit.xml"
+Directory: /home/r1mini/sungsik_ws/src/hrdp_beta
+"lint_cmake" start time: Nov 21 17:39 KST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_beta':
+ - /opt/ros/foxy/bin/ament_lint_cmake --xunit-file /home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/lint_cmake.xunit.xml
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/lint_cmake.xunit.xml'
+<end of output>
+Test time =   8.02 sec
+----------------------------------------------------------
+Test Passed.
+"lint_cmake" end time: Nov 21 17:39 KST
+"lint_cmake" time elapsed: 00:00:08
+----------------------------------------------------------
+
+4/5 Testing: pep257
+4/5 Test: pep257
+Command: "/usr/bin/python3" "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/pep257.xunit.xml" "--package-name" "hrdp_beta" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_beta/ament_pep257/pep257.txt" "--command" "/opt/ros/foxy/bin/ament_pep257" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/pep257.xunit.xml"
+Directory: /home/r1mini/sungsik_ws/src/hrdp_beta
+"pep257" start time: Nov 21 17:39 KST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_beta':
+ - /opt/ros/foxy/bin/ament_pep257 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/pep257.xunit.xml
+./src/sensors/sensor_manager.py:6 in public class `SensorManager`: D204: 1 blank line required after class docstring (found 0)
+./src/sensors/sensor_manager.py:6 in public class `SensorManager`: D205: 1 blank line required between summary line and description (found 0)
+./src/sensors/sensor_manager.py:6 in public class `SensorManager`: D400: First line should end with a period (not 'r')
+3 errors
+checking ./src/core/interface/ears.py
+checking ./src/core/interface/mouth.py
+checking ./src/core/localization/__init__.py
+checking ./src/core/naviagation/__init__.py
+checking ./src/sensors/camera/__init__.py
+checking ./src/sensors/sensor_manager.py
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/pep257.xunit.xml'
+<end of output>
+Test time =  13.01 sec
+----------------------------------------------------------
+Test Failed.
+"pep257" end time: Nov 21 17:39 KST
+"pep257" time elapsed: 00:00:13
+----------------------------------------------------------
+
+5/5 Testing: xmllint
+5/5 Test: xmllint
+Command: "/usr/bin/python3" "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/xmllint.xunit.xml" "--package-name" "hrdp_beta" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_beta/ament_xmllint/xmllint.txt" "--command" "/opt/ros/foxy/bin/ament_xmllint" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/xmllint.xunit.xml"
+Directory: /home/r1mini/sungsik_ws/src/hrdp_beta
+"xmllint" start time: Nov 21 17:39 KST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_beta':
+ - /opt/ros/foxy/bin/ament_xmllint --xunit-file /home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/xmllint.xunit.xml
+File 'package.xml' is valid
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/xmllint.xunit.xml'
+<end of output>
+Test time =  11.83 sec
+----------------------------------------------------------
+Test Passed.
+"xmllint" end time: Nov 21 17:39 KST
+"xmllint" time elapsed: 00:00:11
+----------------------------------------------------------
+
+End testing: Nov 21 17:39 KST
+
+copyright =   8.76 sec*proc
+
+flake8 =  16.31 sec*proc
+
+lint_cmake =   8.02 sec*proc
+
+linter =  57.93 sec*proc
+
+pep257 =  13.01 sec*proc
+
+xmllint =  11.83 sec*proc
+

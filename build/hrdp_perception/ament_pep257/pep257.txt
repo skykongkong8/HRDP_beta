@@ -1,0 +1,27 @@
+-- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_perception':
+ - /opt/ros/foxy/bin/ament_pep257 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/pep257.xunit.xml
+
+./src/vision/face_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D204: 1 blank line required after class docstring (found 0)
+./src/vision/face_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D205: 1 blank line required between summary line and description (found 0)
+./src/vision/face_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D400: First line should end with a period (not 'r')
+./src/vision/gesture_detection/gesture_transformer.py:13 in public class `GestureTransformer`: D204: 1 blank line required after class docstring (found 0)
+./src/vision/gesture_detection/gesture_transformer.py:13 in public class `GestureTransformer`: D205: 1 blank line required between summary line and description (found 0)
+./src/vision/gesture_detection/gesture_transformer.py:13 in public class `GestureTransformer`: D400: First line should end with a period (not 'r')
+./src/vision/gesture_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D204: 1 blank line required after class docstring (found 0)
+./src/vision/gesture_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D205: 1 blank line required between summary line and description (found 0)
+./src/vision/gesture_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D400: First line should end with a period (not 'r')
+9 errors
+checking ./src/perception.py
+checking ./src/vision/face_detection/face_detection_action_server.py
+checking ./src/vision/face_detection/face_detector.py
+checking ./src/vision/face_detection/rgb_subscriber.py
+checking ./src/vision/gesture_detection/gesture_detection_constants.py
+checking ./src/vision/gesture_detection/gesture_transformer.py
+checking ./src/vision/gesture_detection/rgb_subscriber.py
+checking ./src/vision/sample_body_pose_detection.py
+checking ./src/vision/sample_face_detection.py
+checking ./src/vision/sample_hand_pose_detection.py
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/pep257.xunit.xml'

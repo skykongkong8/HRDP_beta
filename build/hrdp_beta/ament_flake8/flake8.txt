@@ -1,0 +1,45 @@
+-- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_beta':
+ - /opt/ros/foxy/bin/ament_flake8 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/flake8.xunit.xml
+
+
+./src/sensors/sensor_manager.py:1:1: F401 'rclpy' imported but unused
+import rclpy
+^
+
+./src/sensors/sensor_manager.py:3:1: F403 'from lidar import *' used; unable to detect undefined names
+from lidar import *
+^
+
+./src/sensors/sensor_manager.py:3:1: F401 'lidar.*' imported but unused
+from lidar import *
+^
+
+./src/sensors/sensor_manager.py:23:1: W391 blank line at end of file
+        ^
+
+./src/sensors/sensor_manager.py:23:1: W293 blank line contains whitespace
+        ^
+
+2     F401 'rclpy' imported but unused
+1     F403 'from lidar import *' used; unable to detect undefined names
+1     W293 blank line contains whitespace
+1     W391 blank line at end of file
+
+6 files checked
+5 errors
+
+'F'-type errors: 3
+'W'-type errors: 2
+
+Checked files:
+
+* ./src/sensors/sensor_manager.py
+* ./src/sensors/camera/__init__.py
+* ./src/core/localization/__init__.py
+* ./src/core/naviagation/__init__.py
+* ./src/core/interface/ears.py
+* ./src/core/interface/mouth.py
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_beta/test_results/hrdp_beta/flake8.xunit.xml'

@@ -1,0 +1,18 @@
+-- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_perception':
+ - /opt/ros/foxy/bin/ament_copyright --xunit-file /home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/copyright.xunit.xml
+
+src/perception.py: could not find copyright notice
+src/vision/face_detection/face_detection_action_server.py: could not find copyright notice
+src/vision/face_detection/face_detector.py: could not find copyright notice
+src/vision/face_detection/rgb_subscriber.py: could not find copyright notice
+src/vision/gesture_detection/gesture_detection_constants.py: could not find copyright notice
+src/vision/gesture_detection/gesture_transformer.py: could not find copyright notice
+src/vision/gesture_detection/rgb_subscriber.py: could not find copyright notice
+src/vision/sample_body_pose_detection.py: could not find copyright notice
+src/vision/sample_face_detection.py: could not find copyright notice
+src/vision/sample_hand_pose_detection.py: could not find copyright notice
+10 errors, checked 10 files
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/copyright.xunit.xml'

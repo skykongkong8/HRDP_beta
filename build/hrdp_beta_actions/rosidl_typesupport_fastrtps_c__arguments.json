@@ -3,7 +3,8 @@
   "output_dir": "/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_fastrtps_c/hrdp_beta_actions",
   "template_dir": "/opt/ros/foxy/share/rosidl_typesupport_fastrtps_c/resource",
   "idl_tuples": [
-    "/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_adapter/hrdp_beta_actions:action/RGBFrame.idl"
+    "/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_adapter/hrdp_beta_actions:action/RGBFrame.idl",
+    "/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_adapter/hrdp_beta_actions:action/FaceDetection.idl"
   ],
   "ros_interface_dependencies": [
     "action_msgs:/opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl",
@@ -24,6 +25,7 @@
     "/opt/ros/foxy/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
     "/opt/ros/foxy/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
     "/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_adapter/hrdp_beta_actions/action/RGBFrame.idl",
+    "/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_adapter/hrdp_beta_actions/action/FaceDetection.idl",
     "/opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl",
     "/opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl",

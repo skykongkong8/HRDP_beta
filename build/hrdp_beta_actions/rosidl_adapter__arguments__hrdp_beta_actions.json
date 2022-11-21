@@ -1,6 +1,7 @@
 {
   "package_name": "hrdp_beta_actions",
   "non_idl_tuples": [
-    "/home/r1mini/sungsik_ws/src/hrdp_beta_actions:action/RGBFrame.action"
+    "/home/r1mini/sungsik_ws/src/hrdp_beta_actions:action/RGBFrame.action",
+    "/home/r1mini/sungsik_ws/src/hrdp_beta_actions:action/FaceDetection.action"
   ]
 }

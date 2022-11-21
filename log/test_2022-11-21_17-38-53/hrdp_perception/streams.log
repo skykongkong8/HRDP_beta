@@ -1,0 +1,1043 @@
+[0.994s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception': AMENT_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[1.248s] UpdateCTestConfiguration  from :/home/r1mini/sungsik_ws/build/hrdp_perception/CTestConfiguration.ini
+[1.258s] Parse Config file:/home/r1mini/sungsik_ws/build/hrdp_perception/CTestConfiguration.ini
+[1.262s]    Site: ros2
+[1.279s]    Build name: (empty)
+[1.285s]  Add coverage exclude regular expressions.
+[1.289s] SetCTestConfiguration:CMakeCommand:/usr/bin/cmake
+[1.299s] Create new tag: 20221121-0839 - Experimental
+[1.302s] UpdateCTestConfiguration  from :/home/r1mini/sungsik_ws/build/hrdp_perception/CTestConfiguration.ini
+[1.317s] Parse Config file:/home/r1mini/sungsik_ws/build/hrdp_perception/CTestConfiguration.ini
+[1.320s] Test project /home/r1mini/sungsik_ws/build/hrdp_perception
+[1.322s] Constructing a list of tests
+[1.325s] Done constructing a list of tests
+[1.340s] Updating test list for fixtures
+[1.343s] Added 0 tests to meet fixture requirements
+[1.348s] Checking test dependency graph...
+[1.351s] Checking test dependency graph end
+[1.354s] test 1
+[1.359s]     Start 1: copyright
+[1.374s] 
+[1.380s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/copyright.xunit.xml" "--package-name" "hrdp_perception" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_perception/ament_copyright/copyright.txt" "--command" "/opt/ros/foxy/bin/ament_copyright" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/copyright.xunit.xml"
+[1.396s] 1: Test timeout computed to be: 60
+[2.572s] 1: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_perception':
+[2.573s] 1:  - /opt/ros/foxy/bin/ament_copyright --xunit-file /home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/copyright.xunit.xml
+[8.759s] 1: src/perception.py: could not find copyright notice
+[8.764s] 1: src/vision/face_detection/face_detection_action_server.py: could not find copyright notice
+[8.765s] 1: src/vision/face_detection/face_detector.py: could not find copyright notice
+[8.766s] 1: src/vision/face_detection/rgb_subscriber.py: could not find copyright notice
+[8.766s] 1: src/vision/gesture_detection/gesture_detection_constants.py: could not find copyright notice
+[8.770s] 1: src/vision/gesture_detection/gesture_transformer.py: could not find copyright notice
+[8.775s] 1: src/vision/gesture_detection/rgb_subscriber.py: could not find copyright notice
+[8.790s] 1: src/vision/sample_body_pose_detection.py: could not find copyright notice
+[8.793s] 1: src/vision/sample_face_detection.py: could not find copyright notice
+[8.796s] 1: src/vision/sample_hand_pose_detection.py: could not find copyright notice
+[8.800s] 1: 10 errors, checked 10 files
+[9.691s] 1: -- run_test.py: return code 1
+[9.692s] 1: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/copyright.xunit.xml'
+[10.070s] 1/5 Test #1: copyright ........................***Failed    8.82 sec
+[10.072s] test 2
+[10.073s]     Start 2: flake8
+[10.074s] 
+[10.075s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/flake8.xunit.xml" "--package-name" "hrdp_perception" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_perception/ament_flake8/flake8.txt" "--command" "/opt/ros/foxy/bin/ament_flake8" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/flake8.xunit.xml"
+[10.082s] 2: Test timeout computed to be: 60
+[11.958s] 2: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_perception':
+[11.966s] 2:  - /opt/ros/foxy/bin/ament_flake8 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/flake8.xunit.xml
+[27.792s] 2: 
+[27.794s] 2: ./src/perception.py:1:1: F401 'rclpy' imported but unused
+[27.808s] 2: import rclpy
+[27.811s] 2: ^
+[27.813s] 2: 
+[27.814s] 2: ./src/perception.py:3:1: F403 'from vision.object_detection import *' used; unable to detect undefined names
+[27.817s] 2: from vision.object_detection import *
+[27.819s] 2: ^
+[27.855s] 2: 
+[27.875s] 2: ./src/perception.py:3:1: F401 'vision.object_detection.*' imported but unused
+[27.885s] 2: from vision.object_detection import *
+[27.888s] 2: ^
+[27.889s] 2: 
+[27.891s] 2: ./src/perception.py:5:1: E302 expected 2 blank lines, found 1
+[27.893s] 2: class PerceptionManager:
+[27.908s] 2: ^
+[27.913s] 2: 
+[27.915s] 2: ./src/perception.py:7:49: W292 no newline at end of file
+[27.928s] 2:         self.gesture_detection = GestureDetector                                                ^
+[27.931s] 2: 
+[27.934s] 2: ./src/vision/sample_hand_pose_detection.py:14:1: E302 expected 2 blank lines, found 1
+[27.936s] 2: class VainllaRealsenseCamera:
+[27.941s] 2: ^
+[27.948s] 2: 
+[27.951s] 2: ./src/vision/sample_hand_pose_detection.py:20:1: W293 blank line contains whitespace
+[27.967s] 2:     
+[27.975s] 2: ^
+[27.977s] 2: 
+[27.978s] 2: ./src/vision/sample_hand_pose_detection.py:23:1: W293 blank line contains whitespace
+[27.981s] 2:     
+[27.983s] 2: ^
+[27.984s] 2: 
+[27.986s] 2: ./src/vision/sample_hand_pose_detection.py:34:1: W293 blank line contains whitespace
+[27.988s] 2:         
+[27.990s] 2: ^
+[27.992s] 2: 
+[27.994s] 2: ./src/vision/sample_hand_pose_detection.py:35:1: E305 expected 2 blank lines after class or function definition, found 1
+[27.996s] 2: camera = VainllaRealsenseCamera()
+[27.998s] 2: ^
+[28.000s] 2: 
+[28.001s] 2: ./src/vision/sample_hand_pose_detection.py:37:1: E302 expected 2 blank lines, found 1
+[28.002s] 2: class HandPoseDetector:
+[28.004s] 2: ^
+[28.005s] 2: 
+[28.006s] 2: ./src/vision/sample_hand_pose_detection.py:40:1: W293 blank line contains whitespace
+[28.008s] 2:         
+[28.009s] 2: ^
+[28.013s] 2: 
+[28.015s] 2: ./src/vision/sample_hand_pose_detection.py:44:1: E303 too many blank lines (4)
+[28.017s] 2: # For webcam input:
+[28.019s] 2: ^
+[28.020s] 2: 
+[28.022s] 2: ./src/vision/sample_hand_pose_detection.py:45:1: E305 expected 2 blank lines after class or function definition, found 4
+[28.024s] 2: with mp_hands.Hands(
+[28.026s] 2: ^
+[28.027s] 2: 
+[28.029s] 2: ./src/vision/sample_hand_pose_detection.py:48:5: E125 continuation line with same indent as next logical line
+[28.031s] 2:     min_tracking_confidence=0.5) as hands:
+[28.033s] 2:     ^
+[28.034s] 2: 
+[28.036s] 2: ./src/vision/sample_hand_pose_detection.py:49:3: E111 indentation is not a multiple of four
+[28.037s] 2:   while True:
+[28.038s] 2:   ^
+[28.040s] 2: 
+[28.041s] 2: ./src/vision/sample_face_detection.py:6:1: E402 module level import not at top of file
+[28.049s] 2: import numpy as np
+[28.053s] 2: ^
+[28.055s] 2: 
+[28.059s] 2: ./src/vision/sample_face_detection.py:8:1: E302 expected 2 blank lines, found 1
+[28.063s] 2: class VainllaRealsenseCamera:
+[28.070s] 2: ^
+[28.072s] 2: 
+[28.074s] 2: ./src/vision/sample_face_detection.py:14:1: W293 blank line contains whitespace
+[28.076s] 2:     
+[28.077s] 2: ^
+[28.079s] 2: 
+[28.082s] 2: ./src/vision/sample_face_detection.py:17:1: W293 blank line contains whitespace
+[28.083s] 2:     
+[28.085s] 2: ^
+[28.086s] 2: 
+[28.087s] 2: ./src/vision/sample_face_detection.py:28:1: W293 blank line contains whitespace
+[28.089s] 2:         
+[28.092s] 2: ^
+[28.099s] 2: 
+[28.101s] 2: ./src/vision/sample_face_detection.py:29:1: E305 expected 2 blank lines after class or function definition, found 1
+[28.102s] 2: camera = VainllaRealsenseCamera()
+[28.104s] 2: ^
+[28.105s] 2: 
+[28.106s] 2: ./src/vision/sample_face_detection.py:33:5: E125 continuation line with same indent as next logical line
+[28.108s] 2:     model_selection=1, min_detection_confidence=0.5) as face_detection:
+[28.109s] 2:     ^
+[28.112s] 2: 
+[28.114s] 2: ./src/vision/sample_face_detection.py:34:3: E111 indentation is not a multiple of four
+[28.116s] 2:   while True:
+[28.117s] 2:   ^
+[28.118s] 2: 
+[28.119s] 2: ./src/vision/sample_face_detection.py:37:7: E111 indentation is not a multiple of four
+[28.121s] 2:       print("Ignoring empty camera frame.")
+[28.123s] 2:       ^
+[28.125s] 2: 
+[28.127s] 2: ./src/vision/sample_face_detection.py:38:7: E114 indentation is not a multiple of four (comment)
+[28.128s] 2:       # If loading a video, use 'break' instead of 'continue'.
+[28.130s] 2:       ^
+[28.132s] 2: 
+[28.134s] 2: ./src/vision/sample_face_detection.py:39:7: E111 indentation is not a multiple of four
+[28.135s] 2:       continue
+[28.136s] 2:       ^
+[28.137s] 2: 
+[28.138s] 2: ./src/vision/sample_face_detection.py:51:7: E111 indentation is not a multiple of four
+[28.140s] 2:       print(len(results.detections))
+[28.141s] 2:       ^
+[28.143s] 2: 
+[28.144s] 2: ./src/vision/sample_face_detection.py:52:7: E111 indentation is not a multiple of four
+[28.146s] 2:       for detection in results.detections:
+[28.148s] 2:       ^
+[28.152s] 2: 
+[28.155s] 2: ./src/vision/sample_face_detection.py:57:7: E111 indentation is not a multiple of four
+[28.161s] 2:       break
+[28.168s] 2:       ^
+[28.174s] 2: 
+[28.177s] 2: ./src/vision/sample_body_pose_detection.py:6:1: E402 module level import not at top of file
+[28.181s] 2: import numpy as np
+[28.184s] 2: ^
+[28.188s] 2: 
+[28.191s] 2: ./src/vision/sample_body_pose_detection.py:7:1: E402 module level import not at top of file
+[28.194s] 2: import pyrealsense2.pyrealsense2 as rs
+[28.197s] 2: ^
+[28.200s] 2: 
+[28.204s] 2: ./src/vision/sample_body_pose_detection.py:9:1: E302 expected 2 blank lines, found 1
+[28.209s] 2: class VainllaRealsenseCamera:
+[28.216s] 2: ^
+[28.218s] 2: 
+[28.221s] 2: ./src/vision/sample_body_pose_detection.py:15:1: W293 blank line contains whitespace
+[28.223s] 2:     
+[28.226s] 2: ^
+[28.228s] 2: 
+[28.231s] 2: ./src/vision/sample_body_pose_detection.py:18:1: W293 blank line contains whitespace
+[28.233s] 2:     
+[28.234s] 2: ^
+[28.236s] 2: 
+[28.238s] 2: ./src/vision/sample_body_pose_detection.py:29:1: W293 blank line contains whitespace
+[28.240s] 2:         
+[28.245s] 2: ^
+[28.259s] 2: 
+[28.263s] 2: ./src/vision/sample_body_pose_detection.py:30:1: E305 expected 2 blank lines after class or function definition, found 1
+[28.269s] 2: camera = VainllaRealsenseCamera()
+[28.272s] 2: ^
+[28.275s] 2: 
+[28.277s] 2: ./src/vision/sample_body_pose_detection.py:35:5: E125 continuation line with same indent as next logical line
+[28.278s] 2:     min_tracking_confidence=0.5) as pose:
+[28.279s] 2:     ^
+[28.298s] 2: 
+[28.300s] 2: ./src/vision/sample_body_pose_detection.py:36:3: E111 indentation is not a multiple of four
+[28.301s] 2:   while True:
+[28.302s] 2:   ^
+[28.303s] 2: 
+[28.304s] 2: ./src/vision/sample_body_pose_detection.py:39:7: E111 indentation is not a multiple of four
+[28.306s] 2:       print("Ignoring empty camera frame.")
+[28.307s] 2:       ^
+[28.314s] 2: 
+[28.318s] 2: ./src/vision/sample_body_pose_detection.py:40:7: E114 indentation is not a multiple of four (comment)
+[28.320s] 2:       # If loading a video, use 'break' instead of 'continue'.
+[28.331s] 2:       ^
+[28.333s] 2: 
+[28.334s] 2: ./src/vision/sample_body_pose_detection.py:41:7: E111 indentation is not a multiple of four
+[28.335s] 2:       continue
+[28.337s] 2:       ^
+[28.351s] 2: 
+[28.353s] 2: ./src/vision/sample_body_pose_detection.py:60:7: E111 indentation is not a multiple of four
+[28.355s] 2:       break
+[28.360s] 2:       ^
+[28.368s] 2: 
+[28.376s] 2: ./src/vision/gesture_detection/gesture_detection_constants.py:17:22: E203 whitespace before ':'
+[28.381s] 2: CONTINUOUS_LABEL_TIME : int = 1
+[28.384s] 2:                      ^
+[28.386s] 2: 
+[28.389s] 2: ./src/vision/gesture_detection/gesture_transformer.py:2:1: F401 'sys' imported but unused
+[28.392s] 2: import sys
+[28.395s] 2: ^
+[28.399s] 2: 
+[28.402s] 2: ./src/vision/gesture_detection/gesture_transformer.py:4:1: F401 'os' imported but unused
+[28.412s] 2: import os
+[28.414s] 2: ^
+[28.415s] 2: 
+[28.418s] 2: ./src/vision/gesture_detection/gesture_transformer.py:5:1: F403 'from gesture_detection_constants import *' used; unable to detect undefined names
+[28.419s] 2: from gesture_detection_constants import *
+[28.429s] 2: ^
+[28.431s] 2: 
+[28.433s] 2: ./src/vision/gesture_detection/gesture_transformer.py:11:24: E261 at least two spaces before inline comment
+[28.434s] 2: import tensorflow as tf # (or somehow, tensorflowlite)
+[28.448s] 2:                        ^
+[28.450s] 2: 
+[28.452s] 2: ./src/vision/gesture_detection/gesture_transformer.py:13:1: E302 expected 2 blank lines, found 1
+[28.453s] 2: class GestureTransformer():
+[28.454s] 2: ^
+[28.456s] 2: 
+[28.458s] 2: ./src/vision/gesture_detection/gesture_transformer.py:17:43: W291 trailing whitespace
+[28.471s] 2:     """
+[28.476s] 2:     GestureTransformer
+[28.498s] 2:     ==================
+[28.499s] 2:     1. Pretrained transformer.tflite model 
+[28.500s] 2:     2. Gets RGB image streaming as input and detected gesture labels as ouput.
+[28.501s] 2:     3. dependencies : numpy, sys, time, os, opencv 4.*, mediapipe, tensorflowlite
+[28.501s] 2:     """
+[28.502s] 2:                                           ^
+[28.503s] 2: 
+[28.504s] 2: ./src/vision/gesture_detection/gesture_transformer.py:22:27: F405 'seq_length' may be undefined, or defined from star imports: gesture_detection_constants
+[28.505s] 2:         self.seq_length = seq_length
+[28.506s] 2:                           ^
+[28.509s] 2: 
+[28.512s] 2: ./src/vision/gesture_detection/gesture_transformer.py:23:27: F405 'MODEL_PATH' may be undefined, or defined from star imports: gesture_detection_constants
+[28.515s] 2:         self.MODEL_PATH = MODEL_PATH
+[28.520s] 2:                           ^
+[28.525s] 2: 
+[28.528s] 2: ./src/vision/gesture_detection/gesture_transformer.py:25:41: F405 'min_detection_confidence' may be undefined, or defined from star imports: gesture_detection_constants
+[28.530s] 2:         self.min_detection_confidence = min_detection_confidence
+[28.533s] 2:                                         ^
+[28.534s] 2: 
+[28.535s] 2: ./src/vision/gesture_detection/gesture_transformer.py:26:40: F405 'min_tracking_confidence' may be undefined, or defined from star imports: gesture_detection_constants
+[28.537s] 2:         self.min_tracking_confidence = min_tracking_confidence
+[28.538s] 2:                                        ^
+[28.539s] 2: 
+[28.541s] 2: ./src/vision/gesture_detection/gesture_transformer.py:27:30: F405 'max_num_hands' may be undefined, or defined from star imports: gesture_detection_constants
+[28.543s] 2:         self.max_num_hands = max_num_hands
+[28.559s] 2:                              ^
+[28.563s] 2: 
+[28.566s] 2: ./src/vision/gesture_detection/gesture_transformer.py:29:28: F405 'upper_thres' may be undefined, or defined from star imports: gesture_detection_constants
+[28.577s] 2:         self.upper_thres = upper_thres
+[28.592s] 2:                            ^
+[28.594s] 2: 
+[28.595s] 2: ./src/vision/gesture_detection/gesture_transformer.py:30:28: F405 'lower_thres' may be undefined, or defined from star imports: gesture_detection_constants
+[28.608s] 2:         self.lower_thres = lower_thres
+[28.610s] 2:                            ^
+[28.611s] 2: 
+[28.612s] 2: ./src/vision/gesture_detection/gesture_transformer.py:49:26: E261 at least two spaces before inline comment
+[28.613s] 2:         self.model = None # tf.load_model(self.MODEL_PATH) # get .tflite model here
+[28.614s] 2:                          ^
+[28.615s] 2: 
+[28.616s] 2: ./src/vision/gesture_detection/gesture_transformer.py:51:1: W293 blank line contains whitespace
+[28.632s] 2:         
+[28.634s] 2: ^
+[28.636s] 2: 
+[28.637s] 2: ./src/vision/gesture_detection/gesture_transformer.py:52:5: E303 too many blank lines (2)
+[28.639s] 2:     def get_hand_model(self):
+[28.640s] 2:     ^
+[28.642s] 2: 
+[28.656s] 2: ./src/vision/gesture_detection/gesture_transformer.py:70:1: W293 blank line contains whitespace
+[28.658s] 2:     
+[28.660s] 2: ^
+[28.663s] 2: 
+[28.665s] 2: ./src/vision/gesture_detection/gesture_transformer.py:71:38: E251 unexpected spaces around keyword / parameter equals
+[28.674s] 2:     def detect(self, img, last_action = 'nothing'):
+[28.678s] 2:                                      ^
+[28.681s] 2: 
+[28.696s] 2: ./src/vision/gesture_detection/gesture_transformer.py:71:40: E251 unexpected spaces around keyword / parameter equals
+[28.699s] 2:     def detect(self, img, last_action = 'nothing'):
+[28.700s] 2:                                        ^
+[28.702s] 2: 
+[28.703s] 2: ./src/vision/gesture_detection/gesture_transformer.py:81:9: E303 too many blank lines (2)
+[28.704s] 2:         if result.multi_hand_landmarks is not None:
+[28.705s] 2:         ^
+[28.706s] 2: 
+[28.707s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:30: E231 missing whitespace after ','
+[28.723s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.725s] 2:                              ^
+[28.726s] 2: 
+[28.727s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:32: E231 missing whitespace after ','
+[28.728s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.729s] 2:                                ^
+[28.731s] 2: 
+[28.749s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:34: E231 missing whitespace after ','
+[28.751s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.753s] 2:                                  ^
+[28.755s] 2: 
+[28.777s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:36: E231 missing whitespace after ','
+[28.781s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.798s] 2:                                    ^
+[28.800s] 2: 
+[28.801s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:38: E231 missing whitespace after ','
+[28.803s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.804s] 2:                                      ^
+[28.806s] 2: 
+[28.807s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:40: E231 missing whitespace after ','
+[28.827s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.829s] 2:                                        ^
+[28.830s] 2: 
+[28.832s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:42: E231 missing whitespace after ','
+[28.833s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.834s] 2:                                          ^
+[28.835s] 2: 
+[28.837s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:44: E231 missing whitespace after ','
+[28.838s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.839s] 2:                                            ^
+[28.841s] 2: 
+[28.842s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:46: E231 missing whitespace after ','
+[28.843s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.846s] 2:                                              ^
+[28.848s] 2: 
+[28.852s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:48: E231 missing whitespace after ','
+[28.859s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.868s] 2:                                                ^
+[28.872s] 2: 
+[28.875s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:51: E231 missing whitespace after ','
+[28.891s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.897s] 2:                                                   ^
+[28.901s] 2: 
+[28.904s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:54: E231 missing whitespace after ','
+[28.907s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.910s] 2:                                                      ^
+[28.912s] 2: 
+[28.916s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:56: E231 missing whitespace after ','
+[28.918s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.922s] 2:                                                        ^
+[28.925s] 2: 
+[28.930s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:59: E231 missing whitespace after ','
+[28.933s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.936s] 2:                                                           ^
+[28.939s] 2: 
+[28.942s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:62: E231 missing whitespace after ','
+[28.945s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.948s] 2:                                                              ^
+[28.952s] 2: 
+[28.955s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:65: E231 missing whitespace after ','
+[28.959s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.962s] 2:                                                                 ^
+[28.966s] 2: 
+[28.969s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:67: E231 missing whitespace after ','
+[28.976s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.984s] 2:                                                                   ^
+[28.989s] 2: 
+[28.993s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:70: E231 missing whitespace after ','
+[28.996s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[28.999s] 2:                                                                      ^
+[29.003s] 2: 
+[29.006s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:73: E231 missing whitespace after ','
+[29.009s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[29.012s] 2:                                                                         ^
+[29.015s] 2: 
+[29.018s] 2: ./src/vision/gesture_detection/gesture_transformer.py:88:82: E261 at least two spaces before inline comment
+[29.022s] 2:                 v1 = joint[[0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19], :3] # Parent joint
+[29.025s] 2:                                                                                  ^
+[29.030s] 2: 
+[29.033s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:30: E231 missing whitespace after ','
+[29.036s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.038s] 2:                              ^
+[29.041s] 2: 
+[29.044s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:32: E231 missing whitespace after ','
+[29.047s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.049s] 2:                                ^
+[29.052s] 2: 
+[29.056s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:34: E231 missing whitespace after ','
+[29.059s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.063s] 2:                                  ^
+[29.066s] 2: 
+[29.072s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:36: E231 missing whitespace after ','
+[29.080s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.086s] 2:                                    ^
+[29.089s] 2: 
+[29.091s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:38: E231 missing whitespace after ','
+[29.094s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.097s] 2:                                      ^
+[29.099s] 2: 
+[29.103s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:40: E231 missing whitespace after ','
+[29.105s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.108s] 2:                                        ^
+[29.110s] 2: 
+[29.113s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:42: E231 missing whitespace after ','
+[29.116s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.120s] 2:                                          ^
+[29.126s] 2: 
+[29.131s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:44: E231 missing whitespace after ','
+[29.134s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.136s] 2:                                            ^
+[29.139s] 2: 
+[29.142s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:46: E231 missing whitespace after ','
+[29.146s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.148s] 2:                                              ^
+[29.152s] 2: 
+[29.155s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:49: E231 missing whitespace after ','
+[29.158s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.161s] 2:                                                 ^
+[29.165s] 2: 
+[29.169s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:52: E231 missing whitespace after ','
+[29.172s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.182s] 2:                                                    ^
+[29.189s] 2: 
+[29.193s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:55: E231 missing whitespace after ','
+[29.196s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.199s] 2:                                                       ^
+[29.201s] 2: 
+[29.205s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:58: E231 missing whitespace after ','
+[29.208s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.211s] 2:                                                          ^
+[29.214s] 2: 
+[29.217s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:61: E231 missing whitespace after ','
+[29.220s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.222s] 2:                                                             ^
+[29.228s] 2: 
+[29.234s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:64: E231 missing whitespace after ','
+[29.237s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.240s] 2:                                                                ^
+[29.243s] 2: 
+[29.247s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:67: E231 missing whitespace after ','
+[29.250s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.253s] 2:                                                                   ^
+[29.256s] 2: 
+[29.259s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:70: E231 missing whitespace after ','
+[29.263s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.266s] 2:                                                                      ^
+[29.269s] 2: 
+[29.273s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:73: E231 missing whitespace after ','
+[29.275s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.278s] 2:                                                                         ^
+[29.281s] 2: 
+[29.283s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:76: E231 missing whitespace after ','
+[29.286s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.288s] 2:                                                                            ^
+[29.289s] 2: 
+[29.292s] 2: ./src/vision/gesture_detection/gesture_transformer.py:89:85: E261 at least two spaces before inline comment
+[29.294s] 2:                 v2 = joint[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], :3] # Child joint
+[29.299s] 2:                                                                                     ^
+[29.301s] 2: 
+[29.302s] 2: ./src/vision/gesture_detection/gesture_transformer.py:90:28: E261 at least two spaces before inline comment
+[29.304s] 2:                 v = v2 - v1 # [20, 3]
+[29.306s] 2:                            ^
+[29.310s] 2: 
+[29.313s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:21: E128 continuation line under-indented for visual indent
+[29.316s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.318s] 2:                     ^
+[29.320s] 2: 
+[29.323s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:25: E231 missing whitespace after ','
+[29.325s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.328s] 2:                         ^
+[29.329s] 2: 
+[29.331s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:27: E231 missing whitespace after ','
+[29.334s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.336s] 2:                           ^
+[29.341s] 2: 
+[29.343s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:29: E231 missing whitespace after ','
+[29.345s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.349s] 2:                             ^
+[29.351s] 2: 
+[29.364s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:31: E231 missing whitespace after ','
+[29.373s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.383s] 2:                               ^
+[29.385s] 2: 
+[29.406s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:33: E231 missing whitespace after ','
+[29.410s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.413s] 2:                                 ^
+[29.427s] 2: 
+[29.431s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:35: E231 missing whitespace after ','
+[29.445s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.447s] 2:                                   ^
+[29.449s] 2: 
+[29.451s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:37: E231 missing whitespace after ','
+[29.452s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.454s] 2:                                     ^
+[29.460s] 2: 
+[29.461s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:39: E231 missing whitespace after ','
+[29.464s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.482s] 2:                                       ^
+[29.486s] 2: 
+[29.495s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:42: E231 missing whitespace after ','
+[29.498s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.499s] 2:                                          ^
+[29.501s] 2: 
+[29.502s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:45: E231 missing whitespace after ','
+[29.505s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.507s] 2:                                             ^
+[29.508s] 2: 
+[29.520s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:48: E231 missing whitespace after ','
+[29.522s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.524s] 2:                                                ^
+[29.526s] 2: 
+[29.528s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:51: E231 missing whitespace after ','
+[29.534s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.549s] 2:                                                   ^
+[29.550s] 2: 
+[29.552s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:54: E231 missing whitespace after ','
+[29.554s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.555s] 2:                                                      ^
+[29.557s] 2: 
+[29.558s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:57: E231 missing whitespace after ','
+[29.560s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.561s] 2:                                                         ^
+[29.563s] 2: 
+[29.596s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:61: E231 missing whitespace after ','
+[29.606s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.607s] 2:                                                             ^
+[29.615s] 2: 
+[29.617s] 2: ./src/vision/gesture_detection/gesture_transformer.py:97:65: W291 trailing whitespace
+[29.619s] 2:                     v[[0,1,2,4,5,6,8,9,10,12,13,14,16,17,18],:], 
+[29.620s] 2:                                                                 ^
+[29.621s] 2: 
+[29.623s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:25: E231 missing whitespace after ','
+[29.624s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.643s] 2:                         ^
+[29.645s] 2: 
+[29.646s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:27: E231 missing whitespace after ','
+[29.647s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.648s] 2:                           ^
+[29.649s] 2: 
+[29.650s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:29: E231 missing whitespace after ','
+[29.651s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.669s] 2:                             ^
+[29.671s] 2: 
+[29.672s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:31: E231 missing whitespace after ','
+[29.674s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.704s] 2:                               ^
+[29.709s] 2: 
+[29.712s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:33: E231 missing whitespace after ','
+[29.717s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.720s] 2:                                 ^
+[29.724s] 2: 
+[29.728s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:35: E231 missing whitespace after ','
+[29.731s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.735s] 2:                                   ^
+[29.738s] 2: 
+[29.741s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:37: E231 missing whitespace after ','
+[29.749s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.753s] 2:                                     ^
+[29.758s] 2: 
+[29.761s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:40: E231 missing whitespace after ','
+[29.764s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.767s] 2:                                        ^
+[29.770s] 2: 
+[29.775s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:43: E231 missing whitespace after ','
+[29.803s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.817s] 2:                                           ^
+[29.819s] 2: 
+[29.823s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:46: E231 missing whitespace after ','
+[29.827s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.831s] 2:                                              ^
+[29.834s] 2: 
+[29.836s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:49: E231 missing whitespace after ','
+[29.841s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.843s] 2:                                                 ^
+[29.847s] 2: 
+[29.850s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:52: E231 missing whitespace after ','
+[29.853s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.857s] 2:                                                    ^
+[29.860s] 2: 
+[29.864s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:55: E231 missing whitespace after ','
+[29.868s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.872s] 2:                                                       ^
+[29.876s] 2: 
+[29.907s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:58: E231 missing whitespace after ','
+[29.914s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.929s] 2:                                                          ^
+[29.931s] 2: 
+[29.932s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:62: E231 missing whitespace after ','
+[29.934s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.935s] 2:                                                              ^
+[29.938s] 2: 
+[29.941s] 2: ./src/vision/gesture_detection/gesture_transformer.py:98:67: E261 at least two spaces before inline comment
+[29.944s] 2:                     v[[1,2,3,5,6,7,9,10,11,13,14,15,17,18,19],:])) # [15,]
+[29.958s] 2:                                                                   ^
+[29.962s] 2: 
+[29.965s] 2: ./src/vision/gesture_detection/gesture_transformer.py:100:42: E261 at least two spaces before inline comment
+[29.973s] 2:                 angle = np.degrees(angle) # Convert radian to degree
+[29.976s] 2:                                          ^
+[29.979s] 2: 
+[29.982s] 2: ./src/vision/gesture_detection/gesture_transformer.py:108:36: F405 'seq_length' may be undefined, or defined from star imports: gesture_detection_constants
+[30.010s] 2:                 if len(self.seq) < seq_length:
+[30.017s] 2:                                    ^
+[30.025s] 2: 
+[30.028s] 2: ./src/vision/gesture_detection/gesture_transformer.py:111:64: F405 'seq_length' may be undefined, or defined from star imports: gesture_detection_constants
+[30.032s] 2:                 input_data = np.expand_dims(np.array(self.seq[-seq_length:], dtype=np.float32), axis=0)
+[30.035s] 2:                                                                ^
+[30.038s] 2: 
+[30.048s] 2: ./src/vision/gesture_detection/gesture_transformer.py:111:100: E501 line too long (103 > 99 characters)
+[30.054s] 2:                 input_data = np.expand_dims(np.array(self.seq[-seq_length:], dtype=np.float32), axis=0)
+[30.057s] 2:                                                                                                    ^
+[30.060s] 2: 
+[30.063s] 2: ./src/vision/gesture_detection/gesture_transformer.py:112:1: W293 blank line contains whitespace
+[30.065s] 2:                 
+[30.068s] 2: ^
+[30.071s] 2: 
+[30.074s] 2: ./src/vision/gesture_detection/gesture_transformer.py:121:44: W291 trailing whitespace
+[30.077s] 2:                 if conf > self.upper_thres: 
+[30.080s] 2:                                            ^
+[30.111s] 2: 
+[30.115s] 2: ./src/vision/gesture_detection/gesture_transformer.py:122:1: W293 blank line contains whitespace
+[30.118s] 2:                 
+[30.123s] 2: ^
+[30.126s] 2: 
+[30.129s] 2: ./src/vision/gesture_detection/gesture_transformer.py:126:50: E261 at least two spaces before inline comment
+[30.137s] 2:                     if len(self.action_seq) >= 5: # ONLY when the last 5 gesture seq is identical, it would be considered as a valid gesture! Else, show "?" sign
+[30.140s] 2:                                                  ^
+[30.142s] 2: 
+[30.145s] 2: ./src/vision/gesture_detection/gesture_transformer.py:126:100: E501 line too long (161 > 99 characters)
+[30.147s] 2:                     if len(self.action_seq) >= 5: # ONLY when the last 5 gesture seq is identical, it would be considered as a valid gesture! Else, show "?" sign
+[30.150s] 2:                                                                                                    ^
+[30.155s] 2: 
+[30.158s] 2: ./src/vision/gesture_detection/gesture_transformer.py:128:100: E501 line too long (251 > 99 characters)
+[30.161s] 2:                         if self.action_seq[-1] == self.action_seq[-2] == self.action_seq[-3] == self.action_seq[-4] == self.action_seq[-5]: # ONLY when the last 3 gesture seq is identical, it would be considered as a valid gesture! Else, show "?" sign
+[30.164s] 2:                                                                                                    ^
+[30.167s] 2: 
+[30.173s] 2: ./src/vision/gesture_detection/gesture_transformer.py:128:140: E261 at least two spaces before inline comment
+[30.186s] 2:                         if self.action_seq[-1] == self.action_seq[-2] == self.action_seq[-3] == self.action_seq[-4] == self.action_seq[-5]: # ONLY when the last 3 gesture seq is identical, it would be considered as a valid gesture! Else, show "?" sign
+[30.190s] 2:                                                                                                                                            ^
+[30.196s] 2: 
+[30.198s] 2: ./src/vision/gesture_detection/gesture_transformer.py:132:17: E303 too many blank lines (2)
+[30.214s] 2:                 elif conf < self.lower_thres:
+[30.216s] 2:                 ^
+[30.217s] 2: 
+[30.219s] 2: ./src/vision/gesture_detection/gesture_transformer.py:135:37: E711 comparison to None should be 'if cond is None:'
+[30.220s] 2:                 if self.last_action == None:
+[30.221s] 2:                                     ^
+[30.222s] 2: 
+[30.232s] 2: ./src/vision/gesture_detection/gesture_transformer.py:138:1: W293 blank line contains whitespace
+[30.234s] 2:                 
+[30.235s] 2: ^
+[30.237s] 2: 
+[30.238s] 2: ./src/vision/gesture_detection/gesture_transformer.py:146:37: F405 'CONTINUOUS_LABEL_TIME' may be undefined, or defined from star imports: gesture_detection_constants
+[30.239s] 2:                     if time_past >= CONTINUOUS_LABEL_TIME:
+[30.240s] 2:                                     ^
+[30.242s] 2: 
+[30.243s] 2: ./src/vision/gesture_detection/gesture_transformer.py:147:100: E501 line too long (120 > 99 characters)
+[30.257s] 2:                         print(f"[INFO] Same action for {time_past} seconds! Detected Gesture is: {this_action.upper()}")
+[30.260s] 2:                                                                                                    ^
+[30.262s] 2: 
+[30.264s] 2: ./src/vision/gesture_detection/gesture_transformer.py:150:9: E303 too many blank lines (2)
+[30.265s] 2:         return this_action        ^
+[30.267s] 2: 
+[30.283s] 2: ./src/vision/gesture_detection/gesture_transformer.py:150:27: W292 no newline at end of file
+[30.284s] 2:         return this_action                          ^
+[30.286s] 2: 
+[30.288s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:3:1: F401 'sensor_msgs.msg.CompressedImage' imported but unused
+[30.312s] 2: from sensor_msgs.msg import Image, CompressedImage
+[30.315s] 2: ^
+[30.316s] 2: 
+[30.318s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:21:41: E128 continuation line under-indented for visual indent
+[30.322s] 2:                                         history=rclpy.qos.HistoryPolicy.KEEP_LAST,
+[30.328s] 2:                                         ^
+[30.344s] 2: 
+[30.346s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:22:41: E128 continuation line under-indented for visual indent
+[30.349s] 2:                                         depth=1)
+[30.350s] 2:                                         ^
+[30.352s] 2: 
+[30.354s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:24:48: E231 missing whitespace after ','
+[30.355s] 2:         self.last_image = np.random.random((720,1280,3)).astype(np.uint8)
+[30.357s] 2:                                                ^
+[30.358s] 2: 
+[30.376s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:24:53: E231 missing whitespace after ','
+[30.377s] 2:         self.last_image = np.random.random((720,1280,3)).astype(np.uint8)
+[30.379s] 2:                                                     ^
+[30.381s] 2: 
+[30.382s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:43:1: W293 blank line contains whitespace
+[30.383s] 2:         
+[30.385s] 2: ^
+[30.386s] 2: 
+[30.388s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:49:100: E501 line too long (109 > 99 characters)
+[30.389s] 2:         self.get_logger().info(f"Camera subscriber received : ({msg.height}, {msg.width})\nstep: {msg.step}")
+[30.391s] 2:                                                                                                    ^
+[30.405s] 2: 
+[30.407s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:58:28: E261 at least two spaces before inline comment
+[30.408s] 2:         scale_percent = 200 # 200%
+[30.409s] 2:                            ^
+[30.410s] 2: 
+[30.426s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:59:58: W291 trailing whitespace
+[30.438s] 2:         width = int(image.shape[1] * scale_percent / 100) 
+[30.443s] 2:                                                          ^
+[30.446s] 2: 
+[30.449s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:63:46: E203 whitespace before ','
+[30.453s] 2:         resized_image = cv2.resize(image, dim ,interpolation=cv2.INTER_AREA)
+[30.456s] 2:                                              ^
+[30.459s] 2: 
+[30.465s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:63:47: E231 missing whitespace after ','
+[30.468s] 2:         resized_image = cv2.resize(image, dim ,interpolation=cv2.INTER_AREA)
+[30.474s] 2:                                               ^
+[30.478s] 2: 
+[30.481s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:67:43: E251 unexpected spaces around keyword / parameter equals
+[30.484s] 2:         rclpy.spin_once(self, timeout_sec= 1)
+[30.487s] 2:                                           ^
+[30.489s] 2: 
+[30.493s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:74:20: E251 unexpected spaces around keyword / parameter equals
+[30.497s] 2:     rclpy.init(args = None)
+[30.500s] 2:                    ^
+[30.507s] 2: 
+[30.528s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:74:22: E251 unexpected spaces around keyword / parameter equals
+[30.532s] 2:     rclpy.init(args = None)
+[30.536s] 2:                      ^
+[30.539s] 2: 
+[30.541s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:81:1: W293 blank line contains whitespace
+[30.543s] 2:         
+[30.547s] 2: ^
+[30.552s] 2: 
+[30.555s] 2: ./src/vision/gesture_detection/rgb_subscriber.py:91:1: E303 too many blank lines (5)
+[30.557s] 2: # # WHEN RUNNING WITH DIRECT CAMERA CONNECTION WITH REMOTE PC (HIGHER RESOLUTION AND FPS)
+[30.558s] 2: ^
+[30.560s] 2: 
+[30.564s] 2: ./src/vision/face_detection/face_detection_action_server.py:6:1: F401 'sensor_msgs.msg.CompressedImage' imported but unused
+[30.567s] 2: from sensor_msgs.msg import Image, CompressedImage
+[30.569s] 2: ^
+[30.571s] 2: 
+[30.576s] 2: ./src/vision/face_detection/face_detection_action_server.py:10:1: E302 expected 2 blank lines, found 1
+[30.577s] 2: class FaceDetection(Node):
+[30.580s] 2: ^
+[30.581s] 2: 
+[30.582s] 2: ./src/vision/face_detection/face_detection_action_server.py:10:1: F811 redefinition of unused 'FaceDetection' from line 4
+[30.583s] 2: class FaceDetection(Node):
+[30.584s] 2: ^
+[30.586s] 2: 
+[30.587s] 2: ./src/vision/face_detection/face_detection_action_server.py:20:5: E303 too many blank lines (2)
+[30.588s] 2:     def initialize_subscriber(self):
+[30.589s] 2:     ^
+[30.591s] 2: 
+[30.592s] 2: ./src/vision/face_detection/face_detection_action_server.py:24:41: E128 continuation line under-indented for visual indent
+[30.594s] 2:                                         history=rclpy.qos.HistoryPolicy.KEEP_LAST,
+[30.596s] 2:                                         ^
+[30.597s] 2: 
+[30.601s] 2: ./src/vision/face_detection/face_detection_action_server.py:25:41: E128 continuation line under-indented for visual indent
+[30.603s] 2:                                         depth=1)
+[30.604s] 2:                                         ^
+[30.606s] 2: 
+[30.608s] 2: ./src/vision/face_detection/face_detection_action_server.py:27:48: E231 missing whitespace after ','
+[30.610s] 2:         self.last_image = np.random.random((480,640,3)).astype(np.uint8)
+[30.612s] 2:                                                ^
+[30.613s] 2: 
+[30.615s] 2: ./src/vision/face_detection/face_detection_action_server.py:27:52: E231 missing whitespace after ','
+[30.618s] 2:         self.last_image = np.random.random((480,640,3)).astype(np.uint8)
+[30.620s] 2:                                                    ^
+[30.622s] 2: 
+[30.628s] 2: ./src/vision/face_detection/face_detection_action_server.py:44:1: W293 blank line contains whitespace
+[30.631s] 2:          
+[30.632s] 2: ^
+[30.634s] 2: 
+[30.635s] 2: ./src/vision/face_detection/face_detection_action_server.py:48:5: E303 too many blank lines (2)
+[30.637s] 2:     def subscriber_callback(self, msg):
+[30.638s] 2:     ^
+[30.639s] 2: 
+[30.640s] 2: ./src/vision/face_detection/face_detection_action_server.py:50:100: E501 line too long (109 > 99 characters)
+[30.641s] 2:         self.get_logger().info(f"Camera subscriber received : ({msg.height}, {msg.width})\nstep: {msg.step}")
+[30.642s] 2:                                                                                                    ^
+[30.647s] 2: 
+[30.649s] 2: ./src/vision/face_detection/face_detection_action_server.py:53:5: E303 too many blank lines (2)
+[30.650s] 2:     def callback_for_compressed_image(self, msg):
+[30.651s] 2:     ^
+[30.652s] 2: 
+[30.667s] 2: ./src/vision/face_detection/face_detection_action_server.py:60:5: E303 too many blank lines (2)
+[30.671s] 2:     def upsample_image(self, image):
+[30.673s] 2:     ^
+[30.674s] 2: 
+[30.684s] 2: ./src/vision/face_detection/face_detection_action_server.py:61:28: E261 at least two spaces before inline comment
+[30.686s] 2:         scale_percent = 200 # 200%
+[30.688s] 2:                            ^
+[30.689s] 2: 
+[30.690s] 2: ./src/vision/face_detection/face_detection_action_server.py:62:58: W291 trailing whitespace
+[30.691s] 2:         width = int(image.shape[1] * scale_percent / 100) 
+[30.692s] 2:                                                          ^
+[30.693s] 2: 
+[30.694s] 2: ./src/vision/face_detection/face_detection_action_server.py:66:46: E203 whitespace before ','
+[30.695s] 2:         resized_image = cv2.resize(image, dim ,interpolation=cv2.INTER_AREA)
+[30.697s] 2:                                              ^
+[30.698s] 2: 
+[30.709s] 2: ./src/vision/face_detection/face_detection_action_server.py:66:47: E231 missing whitespace after ','
+[30.710s] 2:         resized_image = cv2.resize(image, dim ,interpolation=cv2.INTER_AREA)
+[30.712s] 2:                                               ^
+[30.729s] 2: 
+[30.732s] 2: ./src/vision/face_detection/face_detection_action_server.py:70:5: E303 too many blank lines (2)
+[30.735s] 2:     def face_detection(self):
+[30.737s] 2:     ^
+[30.739s] 2: 
+[30.742s] 2: ./src/vision/face_detection/face_detection_action_server.py:74:5: E303 too many blank lines (2)
+[30.745s] 2:     def initialize_action_server(self):
+[30.751s] 2:     ^
+[30.755s] 2: 
+[30.758s] 2: ./src/vision/face_detection/face_detection_action_server.py:79:34: W291 trailing whitespace
+[30.761s] 2:             self.execute_callback     
+[30.766s] 2:                                  ^
+[30.769s] 2: 
+[30.774s] 2: ./src/vision/face_detection/face_detection_action_server.py:83:5: E303 too many blank lines (2)
+[30.777s] 2:     def execute_callback(self, goal_handle):
+[30.780s] 2:     ^
+[30.786s] 2: 
+[30.789s] 2: ./src/vision/face_detection/face_detection_action_server.py:85:1: W293 blank line contains whitespace
+[30.792s] 2:         
+[30.794s] 2: ^
+[30.798s] 2: 
+[30.805s] 2: ./src/vision/face_detection/face_detection_action_server.py:105:1: W293 blank line contains whitespace
+[30.808s] 2:         
+[30.813s] 2: ^
+[30.818s] 2: 
+[30.824s] 2: ./src/vision/face_detection/face_detection_action_server.py:106:5: E303 too many blank lines (2)
+[30.833s] 2:     def run(self):
+[30.836s] 2:     ^
+[30.839s] 2: 
+[30.841s] 2: ./src/vision/face_detection/face_detection_action_server.py:107:42: E251 unexpected spaces around keyword / parameter equals
+[30.845s] 2:         rclpy.spin_once(self, timeout_sec = 1)
+[30.848s] 2:                                          ^
+[30.851s] 2: 
+[30.854s] 2: ./src/vision/face_detection/face_detection_action_server.py:107:44: E251 unexpected spaces around keyword / parameter equals
+[30.857s] 2:         rclpy.spin_once(self, timeout_sec = 1)
+[30.861s] 2:                                            ^
+[30.865s] 2: 
+[30.868s] 2: ./src/vision/face_detection/face_detection_action_server.py:108:1: W293 blank line contains whitespace
+[30.871s] 2:     
+[30.877s] 2: ^
+[30.880s] 2: 
+[30.883s] 2: ./src/vision/face_detection/face_detection_action_server.py:110:5: E303 too many blank lines (2)
+[30.888s] 2:     def terminate(self):
+[30.892s] 2:     ^
+[30.894s] 2: 
+[30.898s] 2: ./src/vision/face_detection/face_detection_action_server.py:115:1: E303 too many blank lines (3)
+[30.900s] 2: if __name__ == "__main__":
+[30.907s] 2: ^
+[30.910s] 2: 
+[30.915s] 2: ./src/vision/face_detection/face_detector.py:4:1: E302 expected 2 blank lines, found 1
+[30.920s] 2: class FaceDetector:
+[30.927s] 2: ^
+[30.933s] 2: 
+[30.936s] 2: ./src/vision/face_detection/face_detector.py:12:5: E125 continuation line with same indent as next logical line
+[30.939s] 2:             model_selection=1, min_detection_confidence=0.5) as face_detection:
+[30.942s] 2:     ^
+[30.944s] 2: 
+[30.947s] 2: ./src/vision/face_detection/rgb_subscriber.py:3:1: F401 'sensor_msgs.msg.CompressedImage' imported but unused
+[30.950s] 2: from sensor_msgs.msg import Image, CompressedImage
+[30.953s] 2: ^
+[30.964s] 2: 
+[30.967s] 2: ./src/vision/face_detection/rgb_subscriber.py:21:41: E128 continuation line under-indented for visual indent
+[30.970s] 2:                                         history=rclpy.qos.HistoryPolicy.KEEP_LAST,
+[30.974s] 2:                                         ^
+[30.980s] 2: 
+[30.983s] 2: ./src/vision/face_detection/rgb_subscriber.py:22:41: E128 continuation line under-indented for visual indent
+[30.985s] 2:                                         depth=1)
+[30.988s] 2:                                         ^
+[30.992s] 2: 
+[30.995s] 2: ./src/vision/face_detection/rgb_subscriber.py:24:48: E231 missing whitespace after ','
+[30.998s] 2:         self.last_image = np.random.random((480,640,3)).astype(np.uint8)
+[31.003s] 2:                                                ^
+[31.006s] 2: 
+[31.010s] 2: ./src/vision/face_detection/rgb_subscriber.py:24:52: E231 missing whitespace after ','
+[31.014s] 2:         self.last_image = np.random.random((480,640,3)).astype(np.uint8)
+[31.019s] 2:                                                    ^
+[31.024s] 2: 
+[31.031s] 2: ./src/vision/face_detection/rgb_subscriber.py:43:1: W293 blank line contains whitespace
+[31.038s] 2:         
+[31.042s] 2: ^
+[31.044s] 2: 
+[31.045s] 2: ./src/vision/face_detection/rgb_subscriber.py:49:100: E501 line too long (109 > 99 characters)
+[31.046s] 2:         self.get_logger().info(f"Camera subscriber received : ({msg.height}, {msg.width})\nstep: {msg.step}")
+[31.048s] 2:                                                                                                    ^
+[31.049s] 2: 
+[31.051s] 2: ./src/vision/face_detection/rgb_subscriber.py:58:28: E261 at least two spaces before inline comment
+[31.053s] 2:         scale_percent = 200 # 200%
+[31.054s] 2:                            ^
+[31.055s] 2: 
+[31.056s] 2: ./src/vision/face_detection/rgb_subscriber.py:59:58: W291 trailing whitespace
+[31.057s] 2:         width = int(image.shape[1] * scale_percent / 100) 
+[31.058s] 2:                                                          ^
+[31.059s] 2: 
+[31.060s] 2: ./src/vision/face_detection/rgb_subscriber.py:63:46: E203 whitespace before ','
+[31.062s] 2:         resized_image = cv2.resize(image, dim ,interpolation=cv2.INTER_AREA)
+[31.063s] 2:                                              ^
+[31.064s] 2: 
+[31.065s] 2: ./src/vision/face_detection/rgb_subscriber.py:63:47: E231 missing whitespace after ','
+[31.066s] 2:         resized_image = cv2.resize(image, dim ,interpolation=cv2.INTER_AREA)
+[31.069s] 2:                                               ^
+[31.072s] 2: 
+[31.074s] 2: ./src/vision/face_detection/rgb_subscriber.py:67:43: E251 unexpected spaces around keyword / parameter equals
+[31.077s] 2:         rclpy.spin_once(self, timeout_sec= 1)
+[31.081s] 2:                                           ^
+[31.083s] 2: 
+[31.085s] 2: ./src/vision/face_detection/rgb_subscriber.py:74:20: E251 unexpected spaces around keyword / parameter equals
+[31.087s] 2:     rclpy.init(args = None)
+[31.089s] 2:                    ^
+[31.093s] 2: 
+[31.096s] 2: ./src/vision/face_detection/rgb_subscriber.py:74:22: E251 unexpected spaces around keyword / parameter equals
+[31.099s] 2:     rclpy.init(args = None)
+[31.102s] 2:                      ^
+[31.105s] 2: 
+[31.111s] 2: ./src/vision/face_detection/rgb_subscriber.py:81:1: W293 blank line contains whitespace
+[31.114s] 2:         
+[31.117s] 2: ^
+[31.121s] 2: 
+[31.126s] 2: ./src/vision/face_detection/rgb_subscriber.py:91:1: E303 too many blank lines (5)
+[31.135s] 2: # # WHEN RUNNING WITH DIRECT CAMERA CONNECTION WITH REMOTE PC (HIGHER RESOLUTION AND FPS)
+[31.140s] 2: ^
+[31.141s] 2: 
+[31.142s] 2: 11    E111 indentation is not a multiple of four
+[31.143s] 2: 2     E114 indentation is not a multiple of four (comment)
+[31.144s] 2: 4     E125 continuation line with same indent as next logical line
+[31.145s] 2: 7     E128 continuation line under-indented for visual indent
+[31.147s] 2: 4     E203 whitespace before ','
+[31.148s] 2: 77    E231 missing whitespace after ','
+[31.150s] 2: 10    E251 unexpected spaces around keyword / parameter equals
+[31.151s] 2: 12    E261 at least two spaces before inline comment
+[31.152s] 2: 8     E302 expected 2 blank lines, found 1
+[31.153s] 2: 17    E303 too many blank lines (2)
+[31.154s] 2: 4     E305 expected 2 blank lines after class or function definition, found 1
+[31.156s] 2: 3     E402 module level import not at top of file
+[31.157s] 2: 7     E501 line too long (109 > 99 characters)
+[31.157s] 2: 1     E711 comparison to None should be 'if cond is None:'
+[31.158s] 2: 7     F401 'rclpy' imported but unused
+[31.160s] 2: 2     F403 'from vision.object_detection import *' used; unable to detect undefined names
+[31.161s] 2: 10    F405 'seq_length' may be undefined, or defined from star imports: gesture_detection_constants
+[31.162s] 2: 1     F811 redefinition of unused 'FaceDetection' from line 4
+[31.163s] 2: 7     W291 trailing whitespace
+[31.164s] 2: 2     W292 no newline at end of file
+[31.165s] 2: 23    W293 blank line contains whitespace
+[31.167s] 2: 
+[31.168s] 2: 10 files checked
+[31.170s] 2: 219 errors
+[31.173s] 2: 
+[31.174s] 2: 'E'-type errors: 167
+[31.176s] 2: 'F'-type errors: 20
+[31.177s] 2: 'W'-type errors: 32
+[31.182s] 2: 
+[31.185s] 2: Checked files:
+[31.186s] 2: 
+[31.187s] 2: * ./src/perception.py
+[31.189s] 2: * ./src/vision/sample_hand_pose_detection.py
+[31.193s] 2: * ./src/vision/sample_face_detection.py
+[31.194s] 2: * ./src/vision/sample_body_pose_detection.py
+[31.196s] 2: * ./src/vision/gesture_detection/gesture_detection_constants.py
+[31.197s] 2: * ./src/vision/gesture_detection/gesture_transformer.py
+[31.197s] 2: * ./src/vision/gesture_detection/rgb_subscriber.py
+[31.198s] 2: * ./src/vision/face_detection/face_detection_action_server.py
+[31.199s] 2: * ./src/vision/face_detection/face_detector.py
+[31.200s] 2: * ./src/vision/face_detection/rgb_subscriber.py
+[31.283s] 2: -- run_test.py: return code 1
+[31.298s] 2: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/flake8.xunit.xml'
+[31.304s] 2/5 Test #2: flake8 ...........................***Failed   18.77 sec
+[31.306s] test 3
+[31.307s]     Start 3: lint_cmake
+[31.308s] 
+[31.310s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/lint_cmake.xunit.xml" "--package-name" "hrdp_perception" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_perception/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/foxy/bin/ament_lint_cmake" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/lint_cmake.xunit.xml"
+[31.315s] 3: Test timeout computed to be: 60
+[31.327s] 3: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_perception':
+[31.328s] 3:  - /opt/ros/foxy/bin/ament_lint_cmake --xunit-file /home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/lint_cmake.xunit.xml
+[33.994s] 3: 
+[34.003s] 3: No problems found
+[34.558s] 3: -- run_test.py: return code 0
+[34.561s] 3: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/lint_cmake.xunit.xml'
+[35.002s] 3/5 Test #3: lint_cmake .......................   Passed    6.16 sec
+[35.004s] test 4
+[35.005s]     Start 4: pep257
+[35.010s] 
+[35.013s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/pep257.xunit.xml" "--package-name" "hrdp_perception" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_perception/ament_pep257/pep257.txt" "--command" "/opt/ros/foxy/bin/ament_pep257" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/pep257.xunit.xml"
+[35.055s] 4: Test timeout computed to be: 60
+[36.040s] 4: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_perception':
+[36.042s] 4:  - /opt/ros/foxy/bin/ament_pep257 --xunit-file /home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/pep257.xunit.xml
+[41.970s] 4: ./src/vision/face_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D204: 1 blank line required after class docstring (found 0)
+[41.974s] 4: ./src/vision/face_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D205: 1 blank line required between summary line and description (found 0)
+[42.028s] 4: ./src/vision/face_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D400: First line should end with a period (not 'r')
+[42.037s] 4: ./src/vision/gesture_detection/gesture_transformer.py:13 in public class `GestureTransformer`: D204: 1 blank line required after class docstring (found 0)
+[42.042s] 4: ./src/vision/gesture_detection/gesture_transformer.py:13 in public class `GestureTransformer`: D205: 1 blank line required between summary line and description (found 0)
+[42.045s] 4: ./src/vision/gesture_detection/gesture_transformer.py:13 in public class `GestureTransformer`: D400: First line should end with a period (not 'r')
+[42.049s] 4: ./src/vision/gesture_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D204: 1 blank line required after class docstring (found 0)
+[42.056s] 4: ./src/vision/gesture_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D205: 1 blank line required between summary line and description (found 0)
+[42.061s] 4: ./src/vision/gesture_detection/rgb_subscriber.py:8 in public class `RGBCameraSubscriber`: D400: First line should end with a period (not 'r')
+[42.066s] 4: 9 errors
+[42.071s] 4: checking ./src/perception.py
+[42.074s] 4: checking ./src/vision/face_detection/face_detection_action_server.py
+[42.077s] 4: checking ./src/vision/face_detection/face_detector.py
+[42.099s] 4: checking ./src/vision/face_detection/rgb_subscriber.py
+[42.115s] 4: checking ./src/vision/gesture_detection/gesture_detection_constants.py
+[42.120s] 4: checking ./src/vision/gesture_detection/gesture_transformer.py
+[42.123s] 4: checking ./src/vision/gesture_detection/rgb_subscriber.py
+[42.126s] 4: checking ./src/vision/sample_body_pose_detection.py
+[42.136s] 4: checking ./src/vision/sample_face_detection.py
+[42.144s] 4: checking ./src/vision/sample_hand_pose_detection.py
+[42.963s] 4: -- run_test.py: return code 1
+[42.969s] 4: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/pep257.xunit.xml'
+[43.185s] 4/5 Test #4: pep257 ...........................***Failed    8.18 sec
+[43.194s] test 5
+[43.198s]     Start 5: xmllint
+[43.201s] 
+[43.203s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/xmllint.xunit.xml" "--package-name" "hrdp_perception" "--output-file" "/home/r1mini/sungsik_ws/build/hrdp_perception/ament_xmllint/xmllint.txt" "--command" "/opt/ros/foxy/bin/ament_xmllint" "--xunit-file" "/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/xmllint.xunit.xml"
+[43.210s] 5: Test timeout computed to be: 60
+[44.070s] 5: -- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_perception':
+[44.072s] 5:  - /opt/ros/foxy/bin/ament_xmllint --xunit-file /home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/xmllint.xunit.xml
+[48.546s] 5: File 'package.xml' is valid
+[48.557s] 5: 
+[48.559s] 5: No problems found
+[49.388s] 5: -- run_test.py: return code 0
+[49.396s] 5: -- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_perception/test_results/hrdp_perception/xmllint.xunit.xml'
+[49.801s] 5/5 Test #5: xmllint ..........................   Passed    6.61 sec
+[49.804s] 
+[49.811s] 40% tests passed[0;0m, [0;31m3 tests failed[0;0m out of 5
+[49.817s] 
+[49.823s] Label Time Summary:
+[49.830s] copyright     =   8.82 sec*proc (1 test)
+[49.833s] flake8        =  18.77 sec*proc (1 test)
+[49.836s] lint_cmake    =   6.16 sec*proc (1 test)
+[49.840s] linter        =  48.53 sec*proc (5 tests)
+[49.843s] pep257        =   8.18 sec*proc (1 test)
+[49.847s] xmllint       =   6.61 sec*proc (1 test)
+[49.856s] 
+[49.881s] Total Test time (real) =  48.56 sec
+[49.886s] 
+[49.892s] The following tests FAILED:
+[49.895s] 	[0;31m  1 - copyright (Failed)[0;0m
+[49.898s] 	[0;31m  2 - flake8 (Failed)[0;0m
+[49.901s] 	[0;31m  4 - pep257 (Failed)[0;0m
+[49.905s] Errors while running CTest
+[49.909s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception' returned '8': AMENT_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

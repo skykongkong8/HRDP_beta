@@ -71,6 +71,7 @@ rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h: /opt/ros/foxy/share/ros
 rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h: /opt/ros/foxy/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h: /opt/ros/foxy/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h: rosidl_adapter/hrdp_beta_actions/action/RGBFrame.idl
+rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h: rosidl_adapter/hrdp_beta_actions/action/FaceDetection.idl
 rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h: /opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h: /opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h: /opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl
@@ -90,8 +91,23 @@ rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__struct.h: rosidl_g
 rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.h: rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.h
 
+rosidl_generator_c/hrdp_beta_actions/action/face_detection.h: rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/hrdp_beta_actions/action/face_detection.h
+
+rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.h: rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.h
+
+rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__struct.h: rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__struct.h
+
+rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__type_support.h: rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__type_support.h
+
 rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c: rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c
+
+rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c: rosidl_generator_c/hrdp_beta_actions/action/rgb_frame.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c
 
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o: CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/flags.make
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o: rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c
@@ -106,14 +122,29 @@ CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_bet
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c -o CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.s
 
+CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.o: CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/flags.make
+CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.o: rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.o   -c /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c
+
+CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c > CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.i
+
+CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c -o CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.s
+
 # Object files for target hrdp_beta_actions__rosidl_generator_c
 hrdp_beta_actions__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o"
+"CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o" \
+"CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.o"
 
 # External object files for target hrdp_beta_actions__rosidl_generator_c
 hrdp_beta_actions__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libhrdp_beta_actions__rosidl_generator_c.so: CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c.o
+libhrdp_beta_actions__rosidl_generator_c.so: CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c.o
 libhrdp_beta_actions__rosidl_generator_c.so: CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/build.make
 libhrdp_beta_actions__rosidl_generator_c.so: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
 libhrdp_beta_actions__rosidl_generator_c.so: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_c.so
@@ -138,7 +169,7 @@ libhrdp_beta_actions__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_runtime
 libhrdp_beta_actions__rosidl_generator_c.so: /opt/ros/foxy/lib/librcpputils.so
 libhrdp_beta_actions__rosidl_generator_c.so: /opt/ros/foxy/lib/librcutils.so
 libhrdp_beta_actions__rosidl_generator_c.so: CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libhrdp_beta_actions__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libhrdp_beta_actions__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,7 +185,12 @@ CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/depend: rosidl_generator_c/
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/depend: rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.h
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/depend: rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__struct.h
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/depend: rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.h
+CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/depend: rosidl_generator_c/hrdp_beta_actions/action/face_detection.h
+CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/depend: rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.h
+CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/depend: rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__struct.h
+CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/depend: rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__type_support.h
 CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/depend: rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.c
+CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/depend: rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.c
 	cd /home/r1mini/sungsik_ws/build/hrdp_beta_actions && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/r1mini/sungsik_ws/src/hrdp_beta_actions /home/r1mini/sungsik_ws/src/hrdp_beta_actions /home/r1mini/sungsik_ws/build/hrdp_beta_actions /home/r1mini/sungsik_ws/build/hrdp_beta_actions /home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hrdp_beta_actions__rosidl_generator_c.dir/depend
 

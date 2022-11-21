@@ -57,6 +57,10 @@ CMakeFiles/hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action
 CMakeFiles/hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/rgb_frame__builder.hpp
 CMakeFiles/hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/rgb_frame__struct.hpp
 CMakeFiles/hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/rgb_frame__traits.hpp
+CMakeFiles/hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/face_detection.hpp
+CMakeFiles/hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__builder.hpp
+CMakeFiles/hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__struct.hpp
+CMakeFiles/hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__traits.hpp
 
 
 rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -75,6 +79,7 @@ rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp: /opt/ros/foxy/share
 rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp: rosidl_adapter/hrdp_beta_actions/action/RGBFrame.idl
+rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp: rosidl_adapter/hrdp_beta_actions/action/FaceDetection.idl
 rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp: /opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp: /opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp: /opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl
@@ -94,11 +99,27 @@ rosidl_generator_cpp/hrdp_beta_actions/action/detail/rgb_frame__struct.hpp: rosi
 rosidl_generator_cpp/hrdp_beta_actions/action/detail/rgb_frame__traits.hpp: rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/hrdp_beta_actions/action/detail/rgb_frame__traits.hpp
 
+rosidl_generator_cpp/hrdp_beta_actions/action/face_detection.hpp: rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/hrdp_beta_actions/action/face_detection.hpp
+
+rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__builder.hpp: rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__builder.hpp
+
+rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__struct.hpp: rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__struct.hpp
+
+rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__traits.hpp: rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__traits.hpp
+
 hrdp_beta_actions__cpp: CMakeFiles/hrdp_beta_actions__cpp
 hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/rgb_frame.hpp
 hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/rgb_frame__builder.hpp
 hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/rgb_frame__struct.hpp
 hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/rgb_frame__traits.hpp
+hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/face_detection.hpp
+hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__builder.hpp
+hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__struct.hpp
+hrdp_beta_actions__cpp: rosidl_generator_cpp/hrdp_beta_actions/action/detail/face_detection__traits.hpp
 hrdp_beta_actions__cpp: CMakeFiles/hrdp_beta_actions__cpp.dir/build.make
 
 .PHONY : hrdp_beta_actions__cpp

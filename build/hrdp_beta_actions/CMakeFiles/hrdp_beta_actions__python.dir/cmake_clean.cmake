@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/hrdp_beta_actions__python.dir/rosidl_generator_py/hrdp_beta_actions/action/_face_detection_s.c.o"
   "CMakeFiles/hrdp_beta_actions__python.dir/rosidl_generator_py/hrdp_beta_actions/action/_rgb_frame_s.c.o"
   "rosidl_generator_py/hrdp_beta_actions/libhrdp_beta_actions__python.pdb"
   "rosidl_generator_py/hrdp_beta_actions/libhrdp_beta_actions__python.so"

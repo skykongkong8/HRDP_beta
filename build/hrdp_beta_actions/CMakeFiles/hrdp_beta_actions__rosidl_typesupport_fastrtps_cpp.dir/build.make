@@ -66,6 +66,7 @@ rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb
 rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp: /opt/ros/foxy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em
 rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp: /opt/ros/foxy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp: rosidl_adapter/hrdp_beta_actions/action/RGBFrame.idl
+rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp: rosidl_adapter/hrdp_beta_actions/action/FaceDetection.idl
 rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp: /opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl
 rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp: /opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl
 rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp: /opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl
@@ -78,6 +79,12 @@ rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb
 
 rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_fastrtps_cpp.hpp
+
+rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp: rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/face_detection__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/face_detection__rosidl_typesupport_fastrtps_cpp.hpp
 
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp.o: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp
@@ -92,14 +99,29 @@ CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesup
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp -o CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp.s
 
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.o: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.o -c /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp
+
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp > CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.i
+
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp -o CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.s
+
 # Object files for target hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp
 hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
-"CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp.o"
+"CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp.o" \
+"CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.o"
 
 # External object files for target hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp
 hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp_EXTERNAL_OBJECTS =
 
 libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp.o
+libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp.o
 libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/build.make
 libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/foxy/lib/librmw.so
 libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/foxy/lib/librosidl_typesupport_fastrtps_cpp.so
@@ -136,7 +158,7 @@ libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so: /usr/lib/aarch64-linux
 libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so: /usr/lib/aarch64-linux-gnu/libssl.so
 libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so: /usr/lib/aarch64-linux-gnu/libcrypto.so
 libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -150,6 +172,8 @@ CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/clean:
 
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/rgb_frame__type_support.cpp
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_fastrtps_cpp.hpp
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/dds_fastrtps/face_detection__type_support.cpp
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/hrdp_beta_actions/action/detail/face_detection__rosidl_typesupport_fastrtps_cpp.hpp
 	cd /home/r1mini/sungsik_ws/build/hrdp_beta_actions && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/r1mini/sungsik_ws/src/hrdp_beta_actions /home/r1mini/sungsik_ws/src/hrdp_beta_actions /home/r1mini/sungsik_ws/build/hrdp_beta_actions /home/r1mini/sungsik_ws/build/hrdp_beta_actions /home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.dir/depend
 

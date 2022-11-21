@@ -66,6 +66,7 @@ rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__ro
 rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
 rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h: rosidl_adapter/hrdp_beta_actions/action/RGBFrame.idl
+rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h: rosidl_adapter/hrdp_beta_actions/action/FaceDetection.idl
 rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl
 rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl
 rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl
@@ -76,8 +77,14 @@ rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__ro
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_introspection_c__arguments.json
 
+rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c: rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c
+
+rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c: rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c
 
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c.o: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c.o: rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c
@@ -92,14 +99,29 @@ CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_type
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c -o CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c.s
 
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.o: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.o: rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.o   -c /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c
+
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c > CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.i
+
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c -o CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.s
+
 # Object files for target hrdp_beta_actions__rosidl_typesupport_introspection_c
 hrdp_beta_actions__rosidl_typesupport_introspection_c_OBJECTS = \
-"CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c.o"
+"CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c.o" \
+"CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.o"
 
 # External object files for target hrdp_beta_actions__rosidl_typesupport_introspection_c
 hrdp_beta_actions__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libhrdp_beta_actions__rosidl_typesupport_introspection_c.so: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c.o
+libhrdp_beta_actions__rosidl_typesupport_introspection_c.so: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c.o
 libhrdp_beta_actions__rosidl_typesupport_introspection_c.so: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/build.make
 libhrdp_beta_actions__rosidl_typesupport_introspection_c.so: libhrdp_beta_actions__rosidl_generator_c.so
 libhrdp_beta_actions__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_c.so
@@ -125,7 +147,7 @@ libhrdp_beta_actions__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/l
 libhrdp_beta_actions__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libhrdp_beta_actions__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcutils.so
 libhrdp_beta_actions__rosidl_typesupport_introspection_c.so: CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libhrdp_beta_actions__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libhrdp_beta_actions__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,7 +160,9 @@ CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/clean:
 .PHONY : CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/clean
 
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__rosidl_typesupport_introspection_c.h
 CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.c
+CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/hrdp_beta_actions/action/detail/face_detection__type_support.c
 	cd /home/r1mini/sungsik_ws/build/hrdp_beta_actions && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/r1mini/sungsik_ws/src/hrdp_beta_actions /home/r1mini/sungsik_ws/src/hrdp_beta_actions /home/r1mini/sungsik_ws/build/hrdp_beta_actions /home/r1mini/sungsik_ws/build/hrdp_beta_actions /home/r1mini/sungsik_ws/build/hrdp_beta_actions/CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hrdp_beta_actions__rosidl_typesupport_introspection_c.dir/depend
 

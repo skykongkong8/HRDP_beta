@@ -97,6 +97,9 @@ CMakeFiles/hrdp_beta_actions__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_ge
  /usr/include/python3.8/unicodeobject.h
  /usr/include/python3.8/warnings.h
  /usr/include/python3.8/weakrefobject.h
+ rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__functions.h
+ rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__struct.h
+ rosidl_generator_c/hrdp_beta_actions/action/detail/face_detection__type_support.h
  rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__functions.h
  rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__struct.h
  rosidl_generator_c/hrdp_beta_actions/action/detail/rgb_frame__type_support.h
