@@ -1,18 +1,1 @@
-// generated from rosidl_adapter/resource/action.idl.em
-// with input from hrdp_beta_actions/action/RGBFrame.action
-// generated code does not contain a copyright notice
-
-
-module hrdp_beta_actions {
-  module action {
-    struct RGBFrame_Goal {
-      int32 order;
-    };
-    struct RGBFrame_Result {
-      int32 sequence;
-    };
-    struct RGBFrame_Feedback {
-      int32 partial_sequence;
-    };
-  };
-};
+/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_adapter/hrdp_beta_actions/action/RGBFrame.idl

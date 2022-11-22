@@ -1,0 +1,179 @@
+[4.979s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'hrdp_perception']
+[4.981s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f75992ee0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['hrdp_perception'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f75992ee0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f75944940>)
+[6.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[6.136s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[6.137s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[6.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[6.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[6.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[6.145s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/r1mini/sungsik_ws'
+[6.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[6.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[6.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[6.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[6.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[6.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[6.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[6.175s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[6.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[6.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[6.533s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[6.535s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[6.538s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[6.539s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[6.543s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[6.549s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[6.555s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[6.560s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[6.566s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[6.572s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[6.578s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[6.581s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[6.583s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[6.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[6.590s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[6.592s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[6.594s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[6.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[6.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[6.598s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[6.599s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[6.600s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[6.604s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[6.605s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[6.606s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[6.607s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[6.607s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[6.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extensions ['ignore', 'ignore_ament_install']
+[6.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extension 'ignore'
+[6.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extension 'ignore_ament_install'
+[6.612s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extensions ['colcon_pkg']
+[6.612s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extension 'colcon_pkg'
+[6.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extensions ['colcon_meta']
+[6.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extension 'colcon_meta'
+[6.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extensions ['ros']
+[6.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_actuators) by extension 'ros'
+[6.644s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_actuators' with type 'ros.ament_cmake' and name 'hrdp_actuators'
+[6.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extensions ['ignore', 'ignore_ament_install']
+[6.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'ignore'
+[6.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'ignore_ament_install'
+[6.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extensions ['colcon_pkg']
+[6.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'colcon_pkg'
+[6.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extensions ['colcon_meta']
+[6.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'colcon_meta'
+[6.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extensions ['ros']
+[6.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'ros'
+[6.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extensions ['cmake', 'python']
+[6.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'cmake'
+[6.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta) by extension 'python'
+[6.681s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_beta' with type 'cmake' and name 'hrdp_beta'
+[6.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extensions ['ignore', 'ignore_ament_install']
+[6.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extension 'ignore'
+[6.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extension 'ignore_ament_install'
+[6.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extensions ['colcon_pkg']
+[6.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extension 'colcon_pkg'
+[6.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extensions ['colcon_meta']
+[6.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extension 'colcon_meta'
+[6.695s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extensions ['ros']
+[6.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_beta_actions) by extension 'ros'
+[6.705s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_beta_actions' with type 'ros.ament_cmake' and name 'hrdp_beta_actions'
+[6.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[6.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extension 'ignore'
+[6.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extension 'ignore_ament_install'
+[6.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extensions ['colcon_pkg']
+[6.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extension 'colcon_pkg'
+[6.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extensions ['colcon_meta']
+[6.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extension 'colcon_meta'
+[6.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extensions ['ros']
+[6.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_human_interfaces) by extension 'ros'
+[6.729s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_human_interfaces' with type 'ros.ament_cmake' and name 'hrdp_human_interfaces'
+[6.732s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extensions ['ignore', 'ignore_ament_install']
+[6.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extension 'ignore'
+[6.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extension 'ignore_ament_install'
+[6.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extensions ['colcon_pkg']
+[6.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extension 'colcon_pkg'
+[6.737s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extensions ['colcon_meta']
+[6.738s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extension 'colcon_meta'
+[6.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extensions ['ros']
+[6.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_perception) by extension 'ros'
+[6.746s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_perception' with type 'ros.ament_cmake' and name 'hrdp_perception'
+[6.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extensions ['ignore', 'ignore_ament_install']
+[6.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extension 'ignore'
+[6.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extension 'ignore_ament_install'
+[6.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extensions ['colcon_pkg']
+[6.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extension 'colcon_pkg'
+[6.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extensions ['colcon_meta']
+[6.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extension 'colcon_meta'
+[6.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extensions ['ros']
+[6.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/hrdp_sensors) by extension 'ros'
+[6.764s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hrdp_sensors' with type 'ros.ament_cmake' and name 'hrdp_sensors'
+[6.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[6.768s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[6.769s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[6.770s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[6.770s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[7.140s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'hrdp_actuators' in 'src/hrdp_actuators'
+[7.141s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'hrdp_beta_actions' in 'src/hrdp_beta_actions'
+[7.142s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'hrdp_human_interfaces' in 'src/hrdp_human_interfaces'
+[7.143s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'hrdp_sensors' in 'src/hrdp_sensors'
+[7.145s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'hrdp_beta' in 'src/hrdp_beta'
+[7.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[7.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[7.204s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/r1mini/sungsik_ws/install
+[7.217s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/r1mini/ros2_ws/install
+[7.232s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/foxy
+[7.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[8.034s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_args' from command line to 'None'
+[8.035s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_target' from command line to 'None'
+[8.036s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[8.036s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[8.036s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_clean_first' from command line to 'False'
+[8.037s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'cmake_force_configure' from command line to 'False'
+[8.037s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'ament_cmake_args' from command line to 'None'
+[8.038s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[8.038s] Level 5:colcon.colcon_core.verb:set package 'hrdp_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[8.039s] DEBUG:colcon.colcon_core.verb:Building package 'hrdp_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/r1mini/sungsik_ws/build/hrdp_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/r1mini/sungsik_ws/install/hrdp_perception', 'merge_install': False, 'path': '/home/r1mini/sungsik_ws/src/hrdp_perception', 'symlink_install': False, 'test_result_base': None}
+[8.048s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[8.104s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[8.107s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/r1mini/sungsik_ws/src/hrdp_perception' with build type 'ament_cmake'
+[8.109s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/r1mini/sungsik_ws/src/hrdp_perception'
+[8.192s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[8.197s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.200s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.455s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception': CMAKE_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_perception -- -j4 -l4
+[15.626s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception' returned '2': CMAKE_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_perception -- -j4 -l4
+[16.141s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hrdp_perception)
+[16.263s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception' for CMake module files
+[16.268s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception' for CMake config files
+[16.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('hrdp_perception', 'cmake_prefix_path')
+[16.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/hook/cmake_prefix_path.ps1'
+[16.322s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/hook/cmake_prefix_path.dsv'
+[16.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/hook/cmake_prefix_path.sh'
+[16.374s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/bin'
+[16.376s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/lib/pkgconfig/hrdp_perception.pc'
+[16.379s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/lib/python3.8/site-packages'
+[16.383s] Level 1:colcon.colcon_core.environment:checking '/home/r1mini/sungsik_ws/install/hrdp_perception/bin'
+[16.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.ps1'
+[16.461s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.dsv'
+[16.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.sh'
+[16.484s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.bash'
+[16.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.zsh'
+[16.515s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/r1mini/sungsik_ws/install/hrdp_perception/share/colcon-core/packages/hrdp_perception)
+[16.522s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.528s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.529s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[16.531s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.675s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.679s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.681s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.791s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.845s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/r1mini/sungsik_ws/install/local_setup.ps1'
+[16.888s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/r1mini/sungsik_ws/install/_local_setup_util_ps1.py'
+[16.912s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/r1mini/sungsik_ws/install/setup.ps1'
+[16.932s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/r1mini/sungsik_ws/install/local_setup.sh'
+[16.939s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/r1mini/sungsik_ws/install/_local_setup_util_sh.py'
+[16.946s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/r1mini/sungsik_ws/install/setup.sh'
+[16.968s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/r1mini/sungsik_ws/install/local_setup.bash'
+[16.974s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/r1mini/sungsik_ws/install/setup.bash'
+[17.001s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/r1mini/sungsik_ws/install/local_setup.zsh'
+[17.007s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/r1mini/sungsik_ws/install/setup.zsh'

@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named face_detection.py
+
+# Build rule for target.
+face_detection.py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 face_detection.py
+.PHONY : face_detection.py
+
+# fast build rule for target.
+face_detection.py/fast:
+	$(MAKE) -f CMakeFiles/face_detection.py.dir/build.make CMakeFiles/face_detection.py.dir/build
+.PHONY : face_detection.py/fast
+
+#=============================================================================
 # Target rules for targets named hrdp_perception_uninstall
 
 # Build rule for target.
@@ -206,6 +219,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... face_detection.py"
 	@echo "... hrdp_perception_uninstall"
 	@echo "... uninstall"
 .PHONY : help

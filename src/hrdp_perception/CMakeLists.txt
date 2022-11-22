@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.5)
 project(hrdp_perception)
 
 # Default to C99
-if(NOT CMAKE_C_STANDARD)
-  set(CMAKE_C_STANDARD 99)
-endif()
+# if(NOT CMAKE_C_STANDARD)
+#   set(CMAKE_C_STANDARD 99)
+# endif()
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
@@ -20,8 +20,17 @@ find_package(ament_cmake REQUIRED)
 
 
 
+find_package(ament_cmake_python REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(hrdp_beta_actions REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+
+ament_python_install_package(${PROJECT_NAME})
+install(PROGRAMS
+  src/vision/face_detection/face_detection.py
+  DESTINATION lib/${PROJECT_NAME}
+  )
 
 
 

@@ -1,0 +1,11 @@
+[0.550s] Invoking command in '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/my_cpp_py_pkg -- -j4 -l4
+[1.485s] [35m[1mScanning dependencies of target cpp_executable[0m
+[1.735s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_executable.dir/src/cpp_node.cpp.o[0m
+[2.123s] [01m[K/home/r1mini/sungsik_ws/src/my_cpp_py_pkg/src/cpp_node.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[2.125s]     1 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[2.127s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.130s] compilation terminated.
+[2.143s] make[2]: *** [CMakeFiles/cpp_executable.dir/build.make:63: CMakeFiles/cpp_executable.dir/src/cpp_node.cpp.o] Error 1
+[2.145s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/cpp_executable.dir/all] Error 2
+[2.146s] make: *** [Makefile:141: all] Error 2
+[2.162s] Invoked command in '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/my_cpp_py_pkg -- -j4 -l4

@@ -1,18 +1,1 @@
-// generated from rosidl_adapter/resource/action.idl.em
-// with input from hrdp_beta_actions/action/FaceDetection.action
-// generated code does not contain a copyright notice
-
-
-module hrdp_beta_actions {
-  module action {
-    struct FaceDetection_Goal {
-      int32 input;
-    };
-    struct FaceDetection_Result {
-      int32 output;
-    };
-    struct FaceDetection_Feedback {
-      int32 total_face_num;
-    };
-  };
-};
+/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_adapter/hrdp_beta_actions/action/FaceDetection.idl

@@ -1,0 +1,27 @@
+[6.347s] Invoking command in '/home/r1mini/sungsik_ws/hrdp_beta_perception': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_beta_perception/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_beta_perception/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/hrdp_beta_perception build --build-base /home/r1mini/sungsik_ws/build/hrdp_beta_perception/build install --record /home/r1mini/sungsik_ws/build/hrdp_beta_perception/install.log --install-scripts $base/lib/hrdp_beta_perception --single-version-externally-managed
+[8.197s] /home/r1mini/.local/lib/python3.8/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[8.199s]   warnings.warn(
+[8.451s] running egg_info
+[8.453s] writing ../build/hrdp_beta_perception/hrdp_beta_perception.egg-info/PKG-INFO
+[8.456s] writing dependency_links to ../build/hrdp_beta_perception/hrdp_beta_perception.egg-info/dependency_links.txt
+[8.457s] writing entry points to ../build/hrdp_beta_perception/hrdp_beta_perception.egg-info/entry_points.txt
+[8.458s] writing requirements to ../build/hrdp_beta_perception/hrdp_beta_perception.egg-info/requires.txt
+[8.458s] writing top-level names to ../build/hrdp_beta_perception/hrdp_beta_perception.egg-info/top_level.txt
+[8.484s] reading manifest file '../build/hrdp_beta_perception/hrdp_beta_perception.egg-info/SOURCES.txt'
+[8.494s] writing manifest file '../build/hrdp_beta_perception/hrdp_beta_perception.egg-info/SOURCES.txt'
+[8.497s] running build
+[8.499s] running build_py
+[8.500s] copying hrdp_beta_perception/__init__.py -> /home/r1mini/sungsik_ws/build/hrdp_beta_perception/build/lib/hrdp_beta_perception
+[8.502s] running install
+[8.512s] running install_lib
+[8.520s] copying /home/r1mini/sungsik_ws/build/hrdp_beta_perception/build/lib/hrdp_beta_perception/__init__.py -> /home/r1mini/sungsik_ws/install/hrdp_beta_perception/lib/python3.8/site-packages/hrdp_beta_perception
+[8.525s] byte-compiling /home/r1mini/sungsik_ws/install/hrdp_beta_perception/lib/python3.8/site-packages/hrdp_beta_perception/__init__.py to __init__.cpython-38.pyc
+[8.527s] running install_data
+[8.534s] copying resource/hrdp_beta_perception -> /home/r1mini/sungsik_ws/install/hrdp_beta_perception/share/ament_index/resource_index/packages
+[8.535s] copying package.xml -> /home/r1mini/sungsik_ws/install/hrdp_beta_perception/share/hrdp_beta_perception
+[8.535s] running install_egg_info
+[8.548s] removing '/home/r1mini/sungsik_ws/install/hrdp_beta_perception/lib/python3.8/site-packages/hrdp_beta_perception-0.0.0-py3.8.egg-info' (and everything under it)
+[8.550s] Copying ../build/hrdp_beta_perception/hrdp_beta_perception.egg-info to /home/r1mini/sungsik_ws/install/hrdp_beta_perception/lib/python3.8/site-packages/hrdp_beta_perception-0.0.0-py3.8.egg-info
+[8.557s] running install_scripts
+[8.739s] writing list of installed files to '/home/r1mini/sungsik_ws/build/hrdp_beta_perception/install.log'
+[9.141s] Invoked command in '/home/r1mini/sungsik_ws/hrdp_beta_perception' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_beta_perception/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_beta_perception/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/hrdp_beta_perception build --build-base /home/r1mini/sungsik_ws/build/hrdp_beta_perception/build install --record /home/r1mini/sungsik_ws/build/hrdp_beta_perception/install.log --install-scripts $base/lib/hrdp_beta_perception --single-version-externally-managed

@@ -1,0 +1,135 @@
+[0.000000] (-) TimerEvent: {}
+[0.001681] (-) JobUnselected: {'identifier': 'hrdp_actuators'}
+[0.004207] (-) JobUnselected: {'identifier': 'hrdp_beta_actions'}
+[0.005109] (-) JobUnselected: {'identifier': 'hrdp_beta_perception'}
+[0.007074] (-) JobUnselected: {'identifier': 'hrdp_human_interfaces'}
+[0.008540] (-) JobUnselected: {'identifier': 'hrdp_perception'}
+[0.016819] (-) JobUnselected: {'identifier': 'hrdp_sensors'}
+[0.022023] (my_cpp_py_pkg) JobQueued: {'identifier': 'my_cpp_py_pkg', 'dependencies': OrderedDict()}
+[0.025919] (my_cpp_py_pkg) JobStarted: {'identifier': 'my_cpp_py_pkg'}
+[0.101625] (-) TimerEvent: {}
+[0.215222] (-) TimerEvent: {}
+[0.317378] (-) TimerEvent: {}
+[0.424012] (-) TimerEvent: {}
+[0.530559] (my_cpp_py_pkg) JobProgress: {'identifier': 'my_cpp_py_pkg', 'progress': 'cmake'}
+[0.531315] (-) TimerEvent: {}
+[0.545539] (my_cpp_py_pkg) JobProgress: {'identifier': 'my_cpp_py_pkg', 'progress': 'build'}
+[0.556777] (my_cpp_py_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg', '--', '-j4', '-l4'], 'cwd': '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'r1mini'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '7003'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/local/cuda/lib64:/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/r1mini'), ('OLDPWD', '/home/r1mini/sungsik_ws/src/my_cpp_py_pkg/scripts'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/r1mini/sungsik_ws/install:/home/r1mini/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'r1mini'), ('WINDOWID', '69216609'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-10.0/bin:/usr/local/cuda-10.0/bin:/home/r1mini/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/foxy/bin:/home/r1mini/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ros2:@/tmp/.ICE-unix/6911,unix/ros2:/tmp/.ICE-unix/6911'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/r1mini/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/r1mini'), ('AMENT_PREFIX_PATH', '/home/r1mini/sungsik_ws/install/my_cpp_py_pkg:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '7'), ('PWD', '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/home/r1mini/sungsik_ws/install/my_cpp_py_pkg/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/build/hrdp_beta_perception:/home/r1mini/sungsik_ws/install/hrdp_perception/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/install/hrdp_beta_perception/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_teleop/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_bringup/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/r1mini/sungsik_ws/install/my_cpp_py_pkg:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy')]), 'shell': False}
+[0.637060] (-) TimerEvent: {}
+[0.741795] (-) TimerEvent: {}
+[0.843939] (-) TimerEvent: {}
+[0.946263] (-) TimerEvent: {}
+[1.041922] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.046827] (-) TimerEvent: {}
+[1.149883] (-) TimerEvent: {}
+[1.252229] (-) TimerEvent: {}
+[1.354387] (-) TimerEvent: {}
+[1.457644] (-) TimerEvent: {}
+[1.559766] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.561695] (-) TimerEvent: {}
+[1.663743] (-) TimerEvent: {}
+[1.765930] (-) TimerEvent: {}
+[1.868053] (-) TimerEvent: {}
+[1.971501] (-) TimerEvent: {}
+[2.077668] (-) TimerEvent: {}
+[2.180080] (-) TimerEvent: {}
+[2.282295] (-) TimerEvent: {}
+[2.384215] (-) TimerEvent: {}
+[2.486049] (-) TimerEvent: {}
+[2.588310] (-) TimerEvent: {}
+[2.690255] (-) TimerEvent: {}
+[2.792420] (-) TimerEvent: {}
+[2.894249] (-) TimerEvent: {}
+[2.996776] (-) TimerEvent: {}
+[3.098879] (-) TimerEvent: {}
+[3.201223] (-) TimerEvent: {}
+[3.304912] (-) TimerEvent: {}
+[3.406940] (-) TimerEvent: {}
+[3.508904] (-) TimerEvent: {}
+[3.610958] (-) TimerEvent: {}
+[3.712987] (-) TimerEvent: {}
+[3.815532] (-) TimerEvent: {}
+[3.917532] (-) TimerEvent: {}
+[4.019361] (-) TimerEvent: {}
+[4.121299] (-) TimerEvent: {}
+[4.223343] (-) TimerEvent: {}
+[4.325633] (-) TimerEvent: {}
+[4.427722] (-) TimerEvent: {}
+[4.529684] (-) TimerEvent: {}
+[4.631815] (-) TimerEvent: {}
+[4.734087] (-) TimerEvent: {}
+[4.836913] (-) TimerEvent: {}
+[4.850800] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.937399] (-) TimerEvent: {}
+[4.999244] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[5.037864] (-) TimerEvent: {}
+[5.140036] (-) TimerEvent: {}
+[5.242027] (-) TimerEvent: {}
+[5.344269] (-) TimerEvent: {}
+[5.446802] (-) TimerEvent: {}
+[5.493382] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.547235] (-) TimerEvent: {}
+[5.568593] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[5.647893] (-) TimerEvent: {}
+[5.750070] (-) TimerEvent: {}
+[5.852108] (-) TimerEvent: {}
+[5.954183] (-) TimerEvent: {}
+[6.056364] (-) TimerEvent: {}
+[6.158899] (-) TimerEvent: {}
+[6.261112] (-) TimerEvent: {}
+[6.363141] (-) TimerEvent: {}
+[6.465208] (-) TimerEvent: {}
+[6.567218] (-) TimerEvent: {}
+[6.670531] (-) TimerEvent: {}
+[6.772797] (-) TimerEvent: {}
+[6.875050] (-) TimerEvent: {}
+[6.977337] (-) TimerEvent: {}
+[7.079443] (-) TimerEvent: {}
+[7.171489] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.180075] (-) TimerEvent: {}
+[7.282231] (-) TimerEvent: {}
+[7.384823] (-) TimerEvent: {}
+[7.487188] (-) TimerEvent: {}
+[7.589654] (-) TimerEvent: {}
+[7.692156] (-) TimerEvent: {}
+[7.794164] (-) TimerEvent: {}
+[7.806733] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[7.827139] (my_cpp_py_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.894607] (-) TimerEvent: {}
+[7.996901] (-) TimerEvent: {}
+[8.098848] (-) TimerEvent: {}
+[8.200948] (-) TimerEvent: {}
+[8.303433] (-) TimerEvent: {}
+[8.405567] (-) TimerEvent: {}
+[8.507755] (-) TimerEvent: {}
+[8.609875] (-) TimerEvent: {}
+[8.712026] (-) TimerEvent: {}
+[8.814102] (-) TimerEvent: {}
+[8.916602] (-) TimerEvent: {}
+[9.019184] (-) TimerEvent: {}
+[9.121983] (-) TimerEvent: {}
+[9.224456] (-) TimerEvent: {}
+[9.293049] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[9.323138] (my_cpp_py_pkg) StderrLine: {'line': b'CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake:67 (message):\n'}
+[9.325312] (-) TimerEvent: {}
+[9.329850] (my_cpp_py_pkg) StderrLine: {'line': b"  ament_cmake_symlink_install_targets() 'scripts/py_node.py' is not a target\n"}
+[9.331651] (my_cpp_py_pkg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[9.332709] (my_cpp_py_pkg) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/symlink_install/install.cmake:37 (ament_cmake_symlink_install_targets)\n'}
+[9.333564] (my_cpp_py_pkg) StderrLine: {'line': b'  CMakeLists.txt:36 (install)\n'}
+[9.348149] (my_cpp_py_pkg) StderrLine: {'line': b'\n'}
+[9.350263] (my_cpp_py_pkg) StderrLine: {'line': b'\n'}
+[9.353992] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[9.356658] (my_cpp_py_pkg) StdoutLine: {'line': b'See also "/home/r1mini/sungsik_ws/build/my_cpp_py_pkg/CMakeFiles/CMakeOutput.log".\n'}
+[9.357869] (my_cpp_py_pkg) StdoutLine: {'line': b'See also "/home/r1mini/sungsik_ws/build/my_cpp_py_pkg/CMakeFiles/CMakeError.log".\n'}
+[9.425903] (-) TimerEvent: {}
+[9.464762] (my_cpp_py_pkg) StderrLine: {'line': b'make: *** [Makefile:222: cmake_check_build_system] Error 1\n'}
+[9.502641] (my_cpp_py_pkg) CommandEnded: {'returncode': 2}
+[9.526745] (-) TimerEvent: {}
+[9.632724] (-) TimerEvent: {}
+[9.735062] (-) TimerEvent: {}
+[9.837581] (-) TimerEvent: {}
+[9.939671] (-) TimerEvent: {}
+[10.041778] (-) TimerEvent: {}
+[10.144868] (-) TimerEvent: {}
+[10.149942] (my_cpp_py_pkg) JobEnded: {'identifier': 'my_cpp_py_pkg', 'rc': 2}
+[10.166613] (-) EventReactorShutdown: {}

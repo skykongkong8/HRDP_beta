@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:61 (file):
+  file INSTALL cannot find
+  "/home/r1mini/sungsik_ws/src/hrdp_perception/src/face_detection.py": No
+  such file or directory.
+
+

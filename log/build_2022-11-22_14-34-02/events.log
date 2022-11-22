@@ -1,0 +1,357 @@
+[0.000000] (-) TimerEvent: {}
+[0.006680] (-) JobUnselected: {'identifier': 'hrdp_actuators'}
+[0.020053] (-) JobUnselected: {'identifier': 'hrdp_beta_actions'}
+[0.020924] (-) JobUnselected: {'identifier': 'hrdp_beta_perception'}
+[0.021470] (-) JobUnselected: {'identifier': 'hrdp_human_interfaces'}
+[0.023630] (-) JobUnselected: {'identifier': 'hrdp_perception'}
+[0.024993] (-) JobUnselected: {'identifier': 'hrdp_sensors'}
+[0.026166] (my_cpp_py_pkg) JobQueued: {'identifier': 'my_cpp_py_pkg', 'dependencies': OrderedDict()}
+[0.028746] (my_cpp_py_pkg) JobStarted: {'identifier': 'my_cpp_py_pkg'}
+[0.091347] (-) TimerEvent: {}
+[0.193768] (-) TimerEvent: {}
+[0.296111] (-) TimerEvent: {}
+[0.400091] (-) TimerEvent: {}
+[0.420526] (my_cpp_py_pkg) JobProgress: {'identifier': 'my_cpp_py_pkg', 'progress': 'cmake'}
+[0.428695] (my_cpp_py_pkg) JobProgress: {'identifier': 'my_cpp_py_pkg', 'progress': 'build'}
+[0.435676] (my_cpp_py_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg', '--', '-j4', '-l4'], 'cwd': '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'r1mini'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '7003'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/local/cuda/lib64:/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/r1mini'), ('OLDPWD', '/home/r1mini/sungsik_ws/src/my_cpp_py_pkg'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/r1mini/sungsik_ws/install:/home/r1mini/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'r1mini'), ('WINDOWID', '69216609'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-10.0/bin:/usr/local/cuda-10.0/bin:/home/r1mini/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/foxy/bin:/home/r1mini/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ros2:@/tmp/.ICE-unix/6911,unix/ros2:/tmp/.ICE-unix/6911'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/r1mini/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/r1mini'), ('AMENT_PREFIX_PATH', '/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '7'), ('PWD', '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/home/r1mini/sungsik_ws/build/hrdp_beta_perception:/home/r1mini/sungsik_ws/install/hrdp_perception/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/install/hrdp_beta_perception/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_teleop/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_bringup/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy')]), 'shell': False}
+[0.502087] (-) TimerEvent: {}
+[0.606003] (-) TimerEvent: {}
+[0.708168] (-) TimerEvent: {}
+[0.810635] (-) TimerEvent: {}
+[0.855807] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.911850] (-) TimerEvent: {}
+[1.014422] (-) TimerEvent: {}
+[1.117516] (-) TimerEvent: {}
+[1.223817] (-) TimerEvent: {}
+[1.330123] (-) TimerEvent: {}
+[1.433035] (-) TimerEvent: {}
+[1.540699] (-) TimerEvent: {}
+[1.634775] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.641241] (-) TimerEvent: {}
+[1.751337] (-) TimerEvent: {}
+[1.864548] (-) TimerEvent: {}
+[1.967372] (-) TimerEvent: {}
+[2.073814] (-) TimerEvent: {}
+[2.176573] (-) TimerEvent: {}
+[2.279186] (-) TimerEvent: {}
+[2.391291] (-) TimerEvent: {}
+[2.498379] (-) TimerEvent: {}
+[2.601088] (-) TimerEvent: {}
+[2.703124] (-) TimerEvent: {}
+[2.805241] (-) TimerEvent: {}
+[2.907358] (-) TimerEvent: {}
+[3.010162] (-) TimerEvent: {}
+[3.112143] (-) TimerEvent: {}
+[3.213986] (-) TimerEvent: {}
+[3.316132] (-) TimerEvent: {}
+[3.418292] (-) TimerEvent: {}
+[3.520315] (-) TimerEvent: {}
+[3.622395] (-) TimerEvent: {}
+[3.730819] (-) TimerEvent: {}
+[3.833086] (-) TimerEvent: {}
+[3.935264] (-) TimerEvent: {}
+[4.037877] (-) TimerEvent: {}
+[4.144208] (-) TimerEvent: {}
+[4.248781] (-) TimerEvent: {}
+[4.353836] (-) TimerEvent: {}
+[4.456119] (-) TimerEvent: {}
+[4.558446] (-) TimerEvent: {}
+[4.660555] (-) TimerEvent: {}
+[4.762666] (-) TimerEvent: {}
+[4.865076] (-) TimerEvent: {}
+[4.967170] (-) TimerEvent: {}
+[5.069146] (-) TimerEvent: {}
+[5.173054] (-) TimerEvent: {}
+[5.278555] (-) TimerEvent: {}
+[5.381238] (-) TimerEvent: {}
+[5.488012] (-) TimerEvent: {}
+[5.590890] (-) TimerEvent: {}
+[5.710469] (-) TimerEvent: {}
+[5.817049] (-) TimerEvent: {}
+[5.920229] (-) TimerEvent: {}
+[6.023679] (-) TimerEvent: {}
+[6.133531] (-) TimerEvent: {}
+[6.236501] (-) TimerEvent: {}
+[6.344158] (-) TimerEvent: {}
+[6.446472] (-) TimerEvent: {}
+[6.548719] (-) TimerEvent: {}
+[6.651017] (-) TimerEvent: {}
+[6.755648] (-) TimerEvent: {}
+[6.858274] (-) TimerEvent: {}
+[6.961418] (-) TimerEvent: {}
+[7.064407] (-) TimerEvent: {}
+[7.124201] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[7.165022] (-) TimerEvent: {}
+[7.270033] (-) TimerEvent: {}
+[7.284458] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[7.370610] (-) TimerEvent: {}
+[7.473130] (-) TimerEvent: {}
+[7.575594] (-) TimerEvent: {}
+[7.678695] (-) TimerEvent: {}
+[7.781092] (-) TimerEvent: {}
+[7.884601] (-) TimerEvent: {}
+[7.993737] (-) TimerEvent: {}
+[8.104037] (-) TimerEvent: {}
+[8.207248] (-) TimerEvent: {}
+[8.313339] (-) TimerEvent: {}
+[8.415654] (-) TimerEvent: {}
+[8.517944] (-) TimerEvent: {}
+[8.617933] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.620286] (-) TimerEvent: {}
+[8.715279] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[8.720953] (-) TimerEvent: {}
+[8.830584] (-) TimerEvent: {}
+[8.934637] (-) TimerEvent: {}
+[9.037042] (-) TimerEvent: {}
+[9.139364] (-) TimerEvent: {}
+[9.241697] (-) TimerEvent: {}
+[9.345250] (-) TimerEvent: {}
+[9.453993] (-) TimerEvent: {}
+[9.556364] (-) TimerEvent: {}
+[9.658610] (-) TimerEvent: {}
+[9.761836] (-) TimerEvent: {}
+[9.869228] (-) TimerEvent: {}
+[9.974509] (-) TimerEvent: {}
+[10.081409] (-) TimerEvent: {}
+[10.185770] (-) TimerEvent: {}
+[10.291048] (-) TimerEvent: {}
+[10.395728] (-) TimerEvent: {}
+[10.502845] (-) TimerEvent: {}
+[10.612542] (-) TimerEvent: {}
+[10.718952] (-) TimerEvent: {}
+[10.821281] (-) TimerEvent: {}
+[10.923925] (-) TimerEvent: {}
+[11.030680] (-) TimerEvent: {}
+[11.140468] (-) TimerEvent: {}
+[11.251149] (-) TimerEvent: {}
+[11.356404] (-) TimerEvent: {}
+[11.459298] (-) TimerEvent: {}
+[11.567449] (-) TimerEvent: {}
+[11.676906] (-) TimerEvent: {}
+[11.784976] (-) TimerEvent: {}
+[11.890186] (-) TimerEvent: {}
+[11.999120] (-) TimerEvent: {}
+[12.101332] (-) TimerEvent: {}
+[12.203702] (-) TimerEvent: {}
+[12.306028] (-) TimerEvent: {}
+[12.410064] (-) TimerEvent: {}
+[12.512469] (-) TimerEvent: {}
+[12.614929] (-) TimerEvent: {}
+[12.718086] (-) TimerEvent: {}
+[12.821589] (-) TimerEvent: {}
+[12.924543] (-) TimerEvent: {}
+[12.974843] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[13.025051] (-) TimerEvent: {}
+[13.127986] (-) TimerEvent: {}
+[13.233832] (-) TimerEvent: {}
+[13.336276] (-) TimerEvent: {}
+[13.438765] (-) TimerEvent: {}
+[13.543385] (-) TimerEvent: {}
+[13.645674] (-) TimerEvent: {}
+[13.749290] (-) TimerEvent: {}
+[13.851968] (-) TimerEvent: {}
+[13.955772] (-) TimerEvent: {}
+[14.061616] (-) TimerEvent: {}
+[14.164292] (-) TimerEvent: {}
+[14.268081] (-) TimerEvent: {}
+[14.370584] (-) TimerEvent: {}
+[14.472847] (-) TimerEvent: {}
+[14.575279] (-) TimerEvent: {}
+[14.677653] (-) TimerEvent: {}
+[14.781931] (-) TimerEvent: {}
+[14.885626] (-) TimerEvent: {}
+[14.988130] (-) TimerEvent: {}
+[15.090661] (-) TimerEvent: {}
+[15.193456] (-) TimerEvent: {}
+[15.295876] (-) TimerEvent: {}
+[15.398101] (-) TimerEvent: {}
+[15.500509] (-) TimerEvent: {}
+[15.602836] (-) TimerEvent: {}
+[15.705068] (-) TimerEvent: {}
+[15.807459] (-) TimerEvent: {}
+[15.886495] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[15.908036] (-) TimerEvent: {}
+[16.004039] (my_cpp_py_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[16.015511] (-) TimerEvent: {}
+[16.118137] (-) TimerEvent: {}
+[16.220719] (-) TimerEvent: {}
+[16.331320] (-) TimerEvent: {}
+[16.434177] (-) TimerEvent: {}
+[16.538688] (-) TimerEvent: {}
+[16.642380] (-) TimerEvent: {}
+[16.744861] (-) TimerEvent: {}
+[16.847526] (-) TimerEvent: {}
+[16.949896] (-) TimerEvent: {}
+[17.053337] (-) TimerEvent: {}
+[17.156002] (-) TimerEvent: {}
+[17.258382] (-) TimerEvent: {}
+[17.366379] (-) TimerEvent: {}
+[17.468754] (-) TimerEvent: {}
+[17.571356] (-) TimerEvent: {}
+[17.674611] (-) TimerEvent: {}
+[17.779083] (-) TimerEvent: {}
+[17.894227] (-) TimerEvent: {}
+[17.997026] (-) TimerEvent: {}
+[18.101541] (-) TimerEvent: {}
+[18.204099] (-) TimerEvent: {}
+[18.306979] (-) TimerEvent: {}
+[18.415253] (-) TimerEvent: {}
+[18.520761] (-) TimerEvent: {}
+[18.627573] (-) TimerEvent: {}
+[18.741913] (-) TimerEvent: {}
+[18.851340] (-) TimerEvent: {}
+[18.959319] (-) TimerEvent: {}
+[19.065535] (-) TimerEvent: {}
+[19.170470] (-) TimerEvent: {}
+[19.279690] (-) TimerEvent: {}
+[19.384081] (-) TimerEvent: {}
+[19.488625] (-) TimerEvent: {}
+[19.591194] (-) TimerEvent: {}
+[19.693291] (-) TimerEvent: {}
+[19.795547] (-) TimerEvent: {}
+[19.898217] (-) TimerEvent: {}
+[20.000429] (-) TimerEvent: {}
+[20.102718] (-) TimerEvent: {}
+[20.204912] (-) TimerEvent: {}
+[20.307268] (-) TimerEvent: {}
+[20.361340] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[20.407873] (-) TimerEvent: {}
+[20.511204] (-) TimerEvent: {}
+[20.613689] (-) TimerEvent: {}
+[20.716329] (-) TimerEvent: {}
+[20.818598] (-) TimerEvent: {}
+[20.920844] (-) TimerEvent: {}
+[21.023280] (-) TimerEvent: {}
+[21.125847] (-) TimerEvent: {}
+[21.228446] (-) TimerEvent: {}
+[21.331004] (-) TimerEvent: {}
+[21.433361] (-) TimerEvent: {}
+[21.535654] (-) TimerEvent: {}
+[21.637841] (-) TimerEvent: {}
+[21.740078] (-) TimerEvent: {}
+[21.843108] (-) TimerEvent: {}
+[21.945600] (-) TimerEvent: {}
+[22.048008] (-) TimerEvent: {}
+[22.152890] (-) TimerEvent: {}
+[22.162943] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[22.253480] (-) TimerEvent: {}
+[22.356023] (-) TimerEvent: {}
+[22.460537] (-) TimerEvent: {}
+[22.563387] (-) TimerEvent: {}
+[22.666023] (-) TimerEvent: {}
+[22.771149] (-) TimerEvent: {}
+[22.875319] (-) TimerEvent: {}
+[22.983396] (-) TimerEvent: {}
+[23.085610] (-) TimerEvent: {}
+[23.187920] (-) TimerEvent: {}
+[23.291559] (-) TimerEvent: {}
+[23.394130] (-) TimerEvent: {}
+[23.498702] (-) TimerEvent: {}
+[23.602500] (-) TimerEvent: {}
+[23.704904] (-) TimerEvent: {}
+[23.807324] (-) TimerEvent: {}
+[23.911391] (-) TimerEvent: {}
+[24.014901] (-) TimerEvent: {}
+[24.119542] (-) TimerEvent: {}
+[24.221791] (-) TimerEvent: {}
+[24.324273] (-) TimerEvent: {}
+[24.435288] (-) TimerEvent: {}
+[24.540004] (-) TimerEvent: {}
+[24.643100] (-) TimerEvent: {}
+[24.748973] (-) TimerEvent: {}
+[24.851363] (-) TimerEvent: {}
+[24.954539] (-) TimerEvent: {}
+[25.060607] (-) TimerEvent: {}
+[25.162839] (-) TimerEvent: {}
+[25.189491] (my_cpp_py_pkg) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[25.200387] (my_cpp_py_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[25.204109] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/r1mini/sungsik_ws/src/my_cpp_py_pkg/include\n'}
+[25.207133] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[25.227355] (my_cpp_py_pkg) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[25.237520] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[25.242116] (my_cpp_py_pkg) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[25.247988] (my_cpp_py_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[25.251923] (my_cpp_py_pkg) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[25.262970] (my_cpp_py_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[25.265029] (-) TimerEvent: {}
+[25.266256] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[25.272477] (my_cpp_py_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[25.315409] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[25.365654] (-) TimerEvent: {}
+[25.459479] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[25.466148] (-) TimerEvent: {}
+[25.483408] (my_cpp_py_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/r1mini/sungsik_ws/build/my_cpp_py_pkg\n'}
+[25.566808] (-) TimerEvent: {}
+[25.669215] (-) TimerEvent: {}
+[25.772039] (-) TimerEvent: {}
+[25.874427] (-) TimerEvent: {}
+[25.979413] (-) TimerEvent: {}
+[26.086220] (-) TimerEvent: {}
+[26.193247] (-) TimerEvent: {}
+[26.295670] (-) TimerEvent: {}
+[26.311545] (my_cpp_py_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cpp_executable\x1b[0m\n'}
+[26.397113] (-) TimerEvent: {}
+[26.503090] (-) TimerEvent: {}
+[26.610112] (-) TimerEvent: {}
+[26.712661] (-) TimerEvent: {}
+[26.761679] (my_cpp_py_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cpp_executable.dir/src/cpp_node.cpp.o\x1b[0m\n'}
+[26.813267] (-) TimerEvent: {}
+[26.916029] (-) TimerEvent: {}
+[27.019042] (-) TimerEvent: {}
+[27.128238] (-) TimerEvent: {}
+[27.237437] (-) TimerEvent: {}
+[27.341017] (-) TimerEvent: {}
+[27.443417] (-) TimerEvent: {}
+[27.545891] (-) TimerEvent: {}
+[27.648646] (-) TimerEvent: {}
+[27.751313] (-) TimerEvent: {}
+[27.853932] (-) TimerEvent: {}
+[27.956496] (-) TimerEvent: {}
+[28.059078] (-) TimerEvent: {}
+[28.082927] (my_cpp_py_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cpp_executable\x1b[0m\n'}
+[28.159635] (-) TimerEvent: {}
+[28.262780] (-) TimerEvent: {}
+[28.368355] (-) TimerEvent: {}
+[28.471372] (-) TimerEvent: {}
+[28.575422] (-) TimerEvent: {}
+[28.680641] (-) TimerEvent: {}
+[28.783915] (-) TimerEvent: {}
+[28.892031] (-) TimerEvent: {}
+[29.002485] (-) TimerEvent: {}
+[29.107565] (-) TimerEvent: {}
+[29.210815] (-) TimerEvent: {}
+[29.326008] (-) TimerEvent: {}
+[29.428594] (-) TimerEvent: {}
+[29.531827] (-) TimerEvent: {}
+[29.643322] (-) TimerEvent: {}
+[29.749623] (-) TimerEvent: {}
+[29.777189] (my_cpp_py_pkg) StderrLine: {'line': b"/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':\n"}
+[29.794878] (my_cpp_py_pkg) StderrLine: {'line': b"(.text+0x18): undefined reference to `main'\n"}
+[29.825648] (my_cpp_py_pkg) StderrLine: {'line': b"/usr/bin/ld: (.text+0x1c): undefined reference to `main'\n"}
+[29.863210] (-) TimerEvent: {}
+[29.866278] (my_cpp_py_pkg) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[29.868549] (my_cpp_py_pkg) StderrLine: {'line': b'make[2]: *** [CMakeFiles/cpp_executable.dir/build.make:84: cpp_executable] Error 1\n'}
+[29.875731] (my_cpp_py_pkg) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/cpp_executable.dir/all] Error 2\n'}
+[29.877463] (my_cpp_py_pkg) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[29.947243] (my_cpp_py_pkg) CommandEnded: {'returncode': 2}
+[29.999342] (-) TimerEvent: {}
+[30.104337] (-) TimerEvent: {}
+[30.206814] (-) TimerEvent: {}
+[30.310101] (-) TimerEvent: {}
+[30.414662] (-) TimerEvent: {}
+[30.517194] (-) TimerEvent: {}
+[30.620363] (-) TimerEvent: {}
+[30.723419] (-) TimerEvent: {}
+[30.828948] (-) TimerEvent: {}
+[30.939261] (-) TimerEvent: {}
+[31.050800] (-) TimerEvent: {}
+[31.160167] (-) TimerEvent: {}
+[31.262695] (-) TimerEvent: {}
+[31.365047] (-) TimerEvent: {}
+[31.467443] (-) TimerEvent: {}
+[31.569690] (-) TimerEvent: {}
+[31.677287] (-) TimerEvent: {}
+[31.781801] (-) TimerEvent: {}
+[31.870791] (my_cpp_py_pkg) JobEnded: {'identifier': 'my_cpp_py_pkg', 'rc': 2}
+[31.884308] (-) TimerEvent: {}
+[31.902707] (-) EventReactorShutdown: {}

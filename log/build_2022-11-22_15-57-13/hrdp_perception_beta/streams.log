@@ -1,0 +1,25 @@
+[10.957s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception_beta': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_perception_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_perception_beta/build --no-deps install_data
+[16.320s] /home/r1mini/.local/lib/python3.8/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[16.323s]   warnings.warn(
+[16.854s] running develop
+[18.375s] running egg_info
+[18.376s] creating hrdp_perception_beta.egg-info
+[18.379s] writing hrdp_perception_beta.egg-info/PKG-INFO
+[18.380s] writing dependency_links to hrdp_perception_beta.egg-info/dependency_links.txt
+[18.382s] writing entry points to hrdp_perception_beta.egg-info/entry_points.txt
+[18.384s] writing requirements to hrdp_perception_beta.egg-info/requires.txt
+[18.386s] writing top-level names to hrdp_perception_beta.egg-info/top_level.txt
+[18.408s] writing manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'
+[18.430s] reading manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'
+[18.441s] writing manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'
+[18.725s] running build_ext
+[18.726s] Creating /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages/hrdp-perception-beta.egg-link (link to .)
+[18.742s] 
+[18.744s] Installed /home/r1mini/sungsik_ws/build/hrdp_perception_beta
+[18.746s] running install_data
+[18.747s] creating /home/r1mini/sungsik_ws/install/hrdp_perception_beta/share/ament_index
+[18.748s] creating /home/r1mini/sungsik_ws/install/hrdp_perception_beta/share/ament_index/resource_index
+[18.749s] creating /home/r1mini/sungsik_ws/install/hrdp_perception_beta/share/ament_index/resource_index/packages
+[18.750s] copying resource/hrdp_perception_beta -> /home/r1mini/sungsik_ws/install/hrdp_perception_beta/share/ament_index/resource_index/packages
+[18.751s] copying package.xml -> /home/r1mini/sungsik_ws/install/hrdp_perception_beta/share/hrdp_perception_beta
+[19.283s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception_beta' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_perception_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_perception_beta/build --no-deps install_data

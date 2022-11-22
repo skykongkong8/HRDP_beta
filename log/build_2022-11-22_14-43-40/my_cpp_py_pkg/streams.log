@@ -1,0 +1,55 @@
+[0.246s] Invoking command in '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/my_cpp_py_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/my_cpp_py_pkg
+[0.441s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.827s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.377s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.557s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[4.169s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.234s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.742s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.309s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[6.326s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.585s] -- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)
+[7.624s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[8.888s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.899s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.902s] -- Configured cppcheck include dirs: 
+[8.903s] -- Configured cppcheck exclude dirs and/or files: 
+[8.914s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[8.916s] -- Configured cpplint exclude dirs and/or files: 
+[8.919s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.969s] -- Added test 'lint_cmake' to check CMake code style
+[8.973s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[8.978s] -- Added test 'uncrustify' to check C / C++ code style
+[8.982s] -- Configured uncrustify additional arguments: 
+[8.984s] -- Added test 'xmllint' to check XML markup files
+[9.015s] -- Configuring done
+[9.067s] -- Generating done
+[9.086s] -- Build files have been written to: /home/r1mini/sungsik_ws/build/my_cpp_py_pkg
+[9.173s] Invoked command in '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/my_cpp_py_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/my_cpp_py_pkg
+[9.206s] Invoking command in '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/my_cpp_py_pkg -- -j4 -l4
+[9.686s] Invoked command in '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/my_cpp_py_pkg -- -j4 -l4
+[10.012s] Invoking command in '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/my_cpp_py_pkg
+[10.138s] -- Install configuration: ""
+[10.144s] -- Execute custom install script
+[10.151s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/environment/pythonpath.sh
+[10.159s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/environment/pythonpath.dsv
+[10.170s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/lib/python3.8/site-packages/my_cpp_py_pkg/__init__.py
+[10.181s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/lib/python3.8/site-packages/my_cpp_py_pkg/module_to_import.py
+[10.194s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/lib//py_node.py
+[10.214s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_py_pkg
+[10.217s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_py_pkg
+[10.219s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/environment/ament_prefix_path.sh
+[10.227s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/environment/ament_prefix_path.dsv
+[10.233s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/environment/path.sh
+[10.239s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/environment/path.dsv
+[10.246s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/local_setup.bash
+[10.254s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/local_setup.sh
+[10.265s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/local_setup.zsh
+[10.270s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/local_setup.dsv
+[10.289s] -- Symlinking: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/package.dsv
+[10.456s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/ament_index/resource_index/packages/my_cpp_py_pkg
+[10.468s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/cmake/my_cpp_py_pkgConfig.cmake
+[10.474s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/cmake/my_cpp_py_pkgConfig-version.cmake
+[10.476s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/my_cpp_py_pkg/share/my_cpp_py_pkg/package.xml
+[10.964s] Listing '/home/r1mini/sungsik_ws/install/my_cpp_py_pkg/lib/python3.8/site-packages/my_cpp_py_pkg'...
+[11.085s] Invoked command in '/home/r1mini/sungsik_ws/build/my_cpp_py_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/my_cpp_py_pkg

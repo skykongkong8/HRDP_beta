@@ -1,0 +1,53 @@
+[0.000000] (-) TimerEvent: {}
+[0.003023] (-) JobUnselected: {'identifier': 'hrdp_actuators'}
+[0.003872] (-) JobUnselected: {'identifier': 'hrdp_beta_actions'}
+[0.006169] (-) JobUnselected: {'identifier': 'hrdp_human_interfaces'}
+[0.009528] (-) JobUnselected: {'identifier': 'hrdp_perception'}
+[0.014189] (-) JobUnselected: {'identifier': 'hrdp_sensors'}
+[0.019212] (hrdp_beta_perception) JobQueued: {'identifier': 'hrdp_beta_perception', 'dependencies': OrderedDict([('hrdp_beta_actions', '/home/r1mini/sungsik_ws/install/hrdp_beta_actions')])}
+[0.023628] (hrdp_beta_perception) JobStarted: {'identifier': 'hrdp_beta_perception'}
+[0.097132] (-) TimerEvent: {}
+[0.201298] (-) TimerEvent: {}
+[0.303930] (-) TimerEvent: {}
+[0.406929] (-) TimerEvent: {}
+[0.509658] (-) TimerEvent: {}
+[0.611593] (-) TimerEvent: {}
+[0.713667] (-) TimerEvent: {}
+[0.815877] (-) TimerEvent: {}
+[0.918071] (-) TimerEvent: {}
+[1.020146] (-) TimerEvent: {}
+[1.122367] (-) TimerEvent: {}
+[1.225616] (-) TimerEvent: {}
+[1.327758] (-) TimerEvent: {}
+[1.429906] (-) TimerEvent: {}
+[1.531716] (-) TimerEvent: {}
+[1.634380] (-) TimerEvent: {}
+[1.736176] (-) TimerEvent: {}
+[1.838021] (-) TimerEvent: {}
+[1.939745] (-) TimerEvent: {}
+[2.041530] (-) TimerEvent: {}
+[2.143498] (-) TimerEvent: {}
+[2.245343] (-) TimerEvent: {}
+[2.347138] (-) TimerEvent: {}
+[2.449136] (-) TimerEvent: {}
+[2.551187] (-) TimerEvent: {}
+[2.652933] (-) TimerEvent: {}
+[2.754606] (-) TimerEvent: {}
+[2.856364] (-) TimerEvent: {}
+[2.958254] (-) TimerEvent: {}
+[3.060044] (-) TimerEvent: {}
+[3.162091] (-) TimerEvent: {}
+[3.263958] (-) TimerEvent: {}
+[3.366225] (-) TimerEvent: {}
+[3.468223] (-) TimerEvent: {}
+[3.570307] (-) TimerEvent: {}
+[3.672395] (-) TimerEvent: {}
+[3.775316] (-) TimerEvent: {}
+[3.879122] (-) TimerEvent: {}
+[3.981241] (-) TimerEvent: {}
+[4.083532] (-) TimerEvent: {}
+[4.185950] (-) TimerEvent: {}
+[4.288105] (-) TimerEvent: {}
+[4.365752] (hrdp_beta_perception) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 51, in build\n    setup_py_data = get_setup_data(self.context.pkg, env)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/__init__.py", line 20, in get_setup_data\n    return dict(pkg.metadata[key](env))\n  File "/usr/lib/python3/dist-packages/colcon_ros/package_augmentation/ros_ament_python.py", line 57, in getter\n    return get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 241, in get_setup_information\n    _setup_information_cache[hashable_env] = _get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 281, in _get_setup_information\n    result = subprocess.run(\n  File "/usr/lib/python3.8/subprocess.py", line 516, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command \'[\'/usr/bin/python3\', \'-c\', "import sys;from setuptools.extern.packaging.specifiers import SpecifierSet;from distutils.core import run_setup;dist = run_setup(    \'setup.py\', script_args=(\'--dry-run\',), stop_after=\'config\');skip_keys = (\'cmdclass\', \'distclass\', \'ext_modules\', \'metadata\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\'_\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\'metadata\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\'license_files\', \'provides_extras\')};sys.stdout.buffer.write(repr(data).encode(\'utf-8\'))"]\' returned non-zero exit status 1.\n'}
+[4.370730] (hrdp_beta_perception) JobEnded: {'identifier': 'hrdp_beta_perception', 'rc': 1}
+[4.380732] (-) EventReactorShutdown: {}

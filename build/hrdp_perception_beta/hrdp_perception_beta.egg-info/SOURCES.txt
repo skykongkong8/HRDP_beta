@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+hrdp_perception_beta/__init__.py
+hrdp_perception_beta.egg-info/PKG-INFO
+hrdp_perception_beta.egg-info/SOURCES.txt
+hrdp_perception_beta.egg-info/dependency_links.txt
+hrdp_perception_beta.egg-info/entry_points.txt
+hrdp_perception_beta.egg-info/requires.txt
+hrdp_perception_beta.egg-info/top_level.txt
+hrdp_perception_beta.egg-info/zip-safe
+resource/hrdp_perception_beta

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_generator_py/hrdp_beta_actions/libhrdp_beta_actions__python.so" "TARGETS" "hrdp_beta_actions__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

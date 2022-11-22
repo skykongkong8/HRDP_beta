@@ -1,0 +1,1 @@
+/home/r1mini/sungsik_ws/src/my_cpp_py_pkg/scripts/py_node.py

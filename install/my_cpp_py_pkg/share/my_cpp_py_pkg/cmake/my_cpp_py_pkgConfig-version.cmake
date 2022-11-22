@@ -1,0 +1,1 @@
+/home/r1mini/sungsik_ws/build/my_cpp_py_pkg/ament_cmake_core/my_cpp_py_pkgConfig-version.cmake

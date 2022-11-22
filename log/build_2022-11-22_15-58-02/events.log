@@ -1,0 +1,178 @@
+[0.000000] (-) TimerEvent: {}
+[0.002919] (-) JobUnselected: {'identifier': 'hrdp_actuators'}
+[0.003707] (-) JobUnselected: {'identifier': 'hrdp_beta_actions'}
+[0.005481] (-) JobUnselected: {'identifier': 'hrdp_beta_perception'}
+[0.007545] (-) JobUnselected: {'identifier': 'hrdp_human_interfaces'}
+[0.011090] (-) JobUnselected: {'identifier': 'hrdp_perception'}
+[0.011593] (-) JobUnselected: {'identifier': 'hrdp_sensors'}
+[0.011751] (-) JobUnselected: {'identifier': 'my_cpp_py_pkg'}
+[0.011978] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.012319] (hrdp_perception_beta) JobQueued: {'identifier': 'hrdp_perception_beta', 'dependencies': OrderedDict()}
+[0.017040] (hrdp_perception_beta) JobStarted: {'identifier': 'hrdp_perception_beta'}
+[0.097587] (-) TimerEvent: {}
+[0.203275] (-) TimerEvent: {}
+[0.317069] (-) TimerEvent: {}
+[0.421661] (-) TimerEvent: {}
+[0.523513] (-) TimerEvent: {}
+[0.625450] (-) TimerEvent: {}
+[0.727297] (-) TimerEvent: {}
+[0.829480] (-) TimerEvent: {}
+[0.931322] (-) TimerEvent: {}
+[1.033276] (-) TimerEvent: {}
+[1.135181] (-) TimerEvent: {}
+[1.237008] (-) TimerEvent: {}
+[1.339008] (-) TimerEvent: {}
+[1.442018] (-) TimerEvent: {}
+[1.544100] (-) TimerEvent: {}
+[1.646175] (-) TimerEvent: {}
+[1.748003] (-) TimerEvent: {}
+[1.849861] (-) TimerEvent: {}
+[1.951646] (-) TimerEvent: {}
+[2.053560] (-) TimerEvent: {}
+[2.155760] (-) TimerEvent: {}
+[2.257724] (-) TimerEvent: {}
+[2.359756] (-) TimerEvent: {}
+[2.461906] (-) TimerEvent: {}
+[2.563851] (-) TimerEvent: {}
+[2.665711] (-) TimerEvent: {}
+[2.767608] (-) TimerEvent: {}
+[2.869537] (-) TimerEvent: {}
+[2.971472] (-) TimerEvent: {}
+[3.073458] (-) TimerEvent: {}
+[3.175302] (-) TimerEvent: {}
+[3.277824] (-) TimerEvent: {}
+[3.379831] (-) TimerEvent: {}
+[3.481757] (-) TimerEvent: {}
+[3.583840] (-) TimerEvent: {}
+[3.686096] (-) TimerEvent: {}
+[3.790345] (-) TimerEvent: {}
+[3.892521] (-) TimerEvent: {}
+[3.995406] (-) TimerEvent: {}
+[4.102436] (-) TimerEvent: {}
+[4.204918] (-) TimerEvent: {}
+[4.306955] (-) TimerEvent: {}
+[4.408978] (-) TimerEvent: {}
+[4.510880] (-) TimerEvent: {}
+[4.613359] (-) TimerEvent: {}
+[4.715152] (-) TimerEvent: {}
+[4.817132] (-) TimerEvent: {}
+[4.919003] (-) TimerEvent: {}
+[5.021223] (-) TimerEvent: {}
+[5.123111] (-) TimerEvent: {}
+[5.225069] (-) TimerEvent: {}
+[5.326968] (-) TimerEvent: {}
+[5.429066] (-) TimerEvent: {}
+[5.530783] (-) TimerEvent: {}
+[5.632538] (-) TimerEvent: {}
+[5.734463] (-) TimerEvent: {}
+[5.836369] (-) TimerEvent: {}
+[5.938979] (-) TimerEvent: {}
+[6.041449] (-) TimerEvent: {}
+[6.147360] (-) TimerEvent: {}
+[6.249459] (-) TimerEvent: {}
+[6.351352] (-) TimerEvent: {}
+[6.453188] (-) TimerEvent: {}
+[6.555015] (-) TimerEvent: {}
+[6.657062] (-) TimerEvent: {}
+[6.759058] (-) TimerEvent: {}
+[6.860959] (-) TimerEvent: {}
+[6.963307] (-) TimerEvent: {}
+[7.065625] (-) TimerEvent: {}
+[7.167851] (-) TimerEvent: {}
+[7.269792] (-) TimerEvent: {}
+[7.371599] (-) TimerEvent: {}
+[7.473497] (-) TimerEvent: {}
+[7.575364] (-) TimerEvent: {}
+[7.677301] (-) TimerEvent: {}
+[7.779290] (-) TimerEvent: {}
+[7.881215] (-) TimerEvent: {}
+[7.983161] (-) TimerEvent: {}
+[8.085043] (-) TimerEvent: {}
+[8.186939] (-) TimerEvent: {}
+[8.288735] (-) TimerEvent: {}
+[8.392300] (-) TimerEvent: {}
+[8.494292] (-) TimerEvent: {}
+[8.596264] (-) TimerEvent: {}
+[8.698904] (-) TimerEvent: {}
+[8.805285] (-) TimerEvent: {}
+[8.907396] (-) TimerEvent: {}
+[9.009649] (-) TimerEvent: {}
+[9.111962] (-) TimerEvent: {}
+[9.214130] (-) TimerEvent: {}
+[9.316247] (-) TimerEvent: {}
+[9.357804] (hrdp_perception_beta) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/r1mini/sungsik_ws/build/hrdp_perception_beta/build', '--no-deps', 'install_data'], 'cwd': '/home/r1mini/sungsik_ws/build/hrdp_perception_beta', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US', 'USER': 'r1mini', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '7003', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda/lib64:/usr/local/cuda/lib64:/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/r1mini', 'OLDPWD': '/home/r1mini/sungsik_ws/src', 'DESKTOP_SESSION': 'xubuntu', 'ROS_PYTHON_VERSION': '3', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'LC_MONETARY': 'ko_KR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/r1mini/sungsik_ws/install:/home/r1mini/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'r1mini', 'WINDOWID': '69206019', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'CLUTTER_BACKEND': 'x11', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/cuda-10.0/bin:/usr/local/cuda-10.0/bin:/home/r1mini/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/foxy/bin:/home/r1mini/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ros2:@/tmp/.ICE-unix/6911,unix/ros2:/tmp/.ICE-unix/6911', 'GDM_LANG': 'en_US', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'xfce-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XDG_SESSION_DESKTOP': 'xubuntu', 'XAUTHORITY': '/home/r1mini/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/r1mini', 'AMENT_PREFIX_PATH': '/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/my_cpp_py_pkg:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'xubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'XDG_VTNR': '7', 'PWD': '/home/r1mini/sungsik_ws/build/hrdp_perception_beta', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share', 'PYTHONPATH': '/home/r1mini/sungsik_ws/build/hrdp_perception_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/build/py_pubsub:/home/r1mini/sungsik_ws/install/py_pubsub/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/install/my_cpp_py_pkg/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/install/hrdp_perception/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/build/hrdp_beta_perception:/home/r1mini/sungsik_ws/install/hrdp_beta_perception/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_teleop/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_bringup/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/r1mini/sungsik_ws/install/my_cpp_py_pkg:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer'}, 'shell': False}
+[9.426463] (-) TimerEvent: {}
+[9.539147] (-) TimerEvent: {}
+[9.641458] (-) TimerEvent: {}
+[9.743599] (-) TimerEvent: {}
+[9.845653] (-) TimerEvent: {}
+[9.947673] (-) TimerEvent: {}
+[10.049895] (-) TimerEvent: {}
+[10.151777] (-) TimerEvent: {}
+[10.253754] (-) TimerEvent: {}
+[10.355747] (-) TimerEvent: {}
+[10.457793] (-) TimerEvent: {}
+[10.559946] (-) TimerEvent: {}
+[10.662011] (-) TimerEvent: {}
+[10.763979] (-) TimerEvent: {}
+[10.866272] (-) TimerEvent: {}
+[10.968369] (-) TimerEvent: {}
+[11.071977] (-) TimerEvent: {}
+[11.174409] (-) TimerEvent: {}
+[11.276472] (-) TimerEvent: {}
+[11.378702] (-) TimerEvent: {}
+[11.483552] (-) TimerEvent: {}
+[11.585684] (-) TimerEvent: {}
+[11.687741] (-) TimerEvent: {}
+[11.789570] (-) TimerEvent: {}
+[11.891364] (-) TimerEvent: {}
+[11.993337] (-) TimerEvent: {}
+[12.095102] (-) TimerEvent: {}
+[12.196913] (-) TimerEvent: {}
+[12.299267] (-) TimerEvent: {}
+[12.401187] (-) TimerEvent: {}
+[12.503670] (-) TimerEvent: {}
+[12.606563] (-) TimerEvent: {}
+[12.708477] (-) TimerEvent: {}
+[12.810390] (-) TimerEvent: {}
+[12.912319] (-) TimerEvent: {}
+[13.015020] (-) TimerEvent: {}
+[13.023770] (hrdp_perception_beta) StdoutLine: {'line': b'running develop\n'}
+[13.115497] (-) TimerEvent: {}
+[13.217585] (-) TimerEvent: {}
+[13.319425] (-) TimerEvent: {}
+[13.421138] (-) TimerEvent: {}
+[13.522824] (-) TimerEvent: {}
+[13.624375] (-) TimerEvent: {}
+[13.726113] (-) TimerEvent: {}
+[13.827765] (-) TimerEvent: {}
+[13.929439] (-) TimerEvent: {}
+[14.031115] (-) TimerEvent: {}
+[14.132916] (-) TimerEvent: {}
+[14.218245] (hrdp_perception_beta) StdoutLine: {'line': b'running egg_info\n'}
+[14.220371] (hrdp_perception_beta) StdoutLine: {'line': b'writing hrdp_perception_beta.egg-info/PKG-INFO\n'}
+[14.222683] (hrdp_perception_beta) StdoutLine: {'line': b'writing dependency_links to hrdp_perception_beta.egg-info/dependency_links.txt\n'}
+[14.224687] (hrdp_perception_beta) StdoutLine: {'line': b'writing entry points to hrdp_perception_beta.egg-info/entry_points.txt\n'}
+[14.226214] (hrdp_perception_beta) StdoutLine: {'line': b'writing requirements to hrdp_perception_beta.egg-info/requires.txt\n'}
+[14.227003] (hrdp_perception_beta) StdoutLine: {'line': b'writing top-level names to hrdp_perception_beta.egg-info/top_level.txt\n'}
+[14.233138] (-) TimerEvent: {}
+[14.251280] (hrdp_perception_beta) StdoutLine: {'line': b"reading manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'\n"}
+[14.256231] (hrdp_perception_beta) StdoutLine: {'line': b"writing manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'\n"}
+[14.333544] (-) TimerEvent: {}
+[14.435197] (-) TimerEvent: {}
+[14.530795] (hrdp_perception_beta) StdoutLine: {'line': b'running build_ext\n'}
+[14.532550] (hrdp_perception_beta) StdoutLine: {'line': b'Creating /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages/hrdp-perception-beta.egg-link (link to .)\n'}
+[14.535353] (-) TimerEvent: {}
+[14.539216] (hrdp_perception_beta) StdoutLine: {'line': b'\n'}
+[14.540522] (hrdp_perception_beta) StdoutLine: {'line': b'Installed /home/r1mini/sungsik_ws/build/hrdp_perception_beta\n'}
+[14.541293] (hrdp_perception_beta) StdoutLine: {'line': b'running install_data\n'}
+[14.635880] (-) TimerEvent: {}
+[14.737993] (-) TimerEvent: {}
+[14.840078] (-) TimerEvent: {}
+[14.942159] (-) TimerEvent: {}
+[15.044538] (-) TimerEvent: {}
+[15.068361] (hrdp_perception_beta) CommandEnded: {'returncode': 0}
+[15.149743] (-) TimerEvent: {}
+[15.252560] (-) TimerEvent: {}
+[15.277440] (hrdp_perception_beta) JobEnded: {'identifier': 'hrdp_perception_beta', 'rc': 0}
+[15.287307] (-) EventReactorShutdown: {}

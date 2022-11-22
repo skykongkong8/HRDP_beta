@@ -1,0 +1,135 @@
+[0.000000] (-) TimerEvent: {}
+[0.003040] (-) JobUnselected: {'identifier': 'hrdp_actuators'}
+[0.003928] (-) JobUnselected: {'identifier': 'hrdp_beta'}
+[0.005894] (-) JobUnselected: {'identifier': 'hrdp_beta_actions'}
+[0.007374] (-) JobUnselected: {'identifier': 'hrdp_human_interfaces'}
+[0.015101] (-) JobUnselected: {'identifier': 'hrdp_sensors'}
+[0.015671] (hrdp_perception) JobQueued: {'identifier': 'hrdp_perception', 'dependencies': OrderedDict([('hrdp_beta_actions', '/home/r1mini/sungsik_ws/install/hrdp_beta_actions')])}
+[0.016071] (hrdp_perception) JobStarted: {'identifier': 'hrdp_perception'}
+[0.101373] (-) TimerEvent: {}
+[0.205297] (-) TimerEvent: {}
+[0.253801] (hrdp_perception) JobProgress: {'identifier': 'hrdp_perception', 'progress': 'cmake'}
+[0.265877] (hrdp_perception) JobProgress: {'identifier': 'hrdp_perception', 'progress': 'build'}
+[0.271836] (hrdp_perception) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/r1mini/sungsik_ws/build/hrdp_perception', '--', '-j4', '-l4'], 'cwd': '/home/r1mini/sungsik_ws/build/hrdp_perception', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'r1mini'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '7223'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib:/usr/local/cuda/lib64:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/r1mini'), ('OLDPWD', '/home/r1mini/sungsik_ws/src'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/r1mini/sungsik_ws/install:/home/r1mini/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'r1mini'), ('WINDOWID', '67118699'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-10.0/bin:/home/r1mini/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/foxy/bin:/home/r1mini/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ros2:@/tmp/.ICE-unix/7130,unix/ros2:/tmp/.ICE-unix/7130'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/r1mini/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/r1mini'), ('AMENT_PREFIX_PATH', '/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '7'), ('PWD', '/home/r1mini/sungsik_ws/build/hrdp_perception'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_teleop/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_bringup/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy')]), 'shell': False}
+[0.305966] (-) TimerEvent: {}
+[0.411063] (-) TimerEvent: {}
+[0.513307] (-) TimerEvent: {}
+[0.542031] (hrdp_perception) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.616584] (-) TimerEvent: {}
+[0.718816] (-) TimerEvent: {}
+[0.820959] (-) TimerEvent: {}
+[0.923214] (hrdp_perception) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.925110] (-) TimerEvent: {}
+[1.026818] (-) TimerEvent: {}
+[1.128891] (-) TimerEvent: {}
+[1.230881] (-) TimerEvent: {}
+[1.332807] (-) TimerEvent: {}
+[1.434815] (-) TimerEvent: {}
+[1.536736] (-) TimerEvent: {}
+[1.638745] (-) TimerEvent: {}
+[1.743968] (-) TimerEvent: {}
+[1.846109] (-) TimerEvent: {}
+[1.948221] (-) TimerEvent: {}
+[2.055417] (-) TimerEvent: {}
+[2.158044] (-) TimerEvent: {}
+[2.260000] (-) TimerEvent: {}
+[2.361907] (-) TimerEvent: {}
+[2.463839] (-) TimerEvent: {}
+[2.565691] (-) TimerEvent: {}
+[2.667843] (-) TimerEvent: {}
+[2.769688] (-) TimerEvent: {}
+[2.871701] (-) TimerEvent: {}
+[2.973596] (-) TimerEvent: {}
+[3.075458] (-) TimerEvent: {}
+[3.177505] (-) TimerEvent: {}
+[3.279587] (-) TimerEvent: {}
+[3.381843] (-) TimerEvent: {}
+[3.484357] (-) TimerEvent: {}
+[3.586987] (-) TimerEvent: {}
+[3.689668] (-) TimerEvent: {}
+[3.796593] (-) TimerEvent: {}
+[3.804822] (hrdp_perception) StdoutLine: {'line': b'-- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[3.807170] (hrdp_perception) StdoutLine: {'line': b'-- Found hrdp_beta_actions: 0.0.0 (/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake)\n'}
+[3.897046] (-) TimerEvent: {}
+[3.999631] (-) TimerEvent: {}
+[4.005544] (hrdp_perception) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.025400] (hrdp_perception) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[4.100186] (-) TimerEvent: {}
+[4.202643] (-) TimerEvent: {}
+[4.305105] (-) TimerEvent: {}
+[4.407516] (-) TimerEvent: {}
+[4.509622] (-) TimerEvent: {}
+[4.611899] (-) TimerEvent: {}
+[4.714390] (-) TimerEvent: {}
+[4.817861] (-) TimerEvent: {}
+[4.920228] (-) TimerEvent: {}
+[5.022498] (-) TimerEvent: {}
+[5.125350] (-) TimerEvent: {}
+[5.227916] (-) TimerEvent: {}
+[5.335285] (-) TimerEvent: {}
+[5.417554] (hrdp_perception) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.435757] (-) TimerEvent: {}
+[5.537997] (-) TimerEvent: {}
+[5.640302] (-) TimerEvent: {}
+[5.742516] (-) TimerEvent: {}
+[5.844627] (-) TimerEvent: {}
+[5.946875] (-) TimerEvent: {}
+[6.049016] (-) TimerEvent: {}
+[6.151330] (-) TimerEvent: {}
+[6.253483] (-) TimerEvent: {}
+[6.355643] (-) TimerEvent: {}
+[6.457897] (-) TimerEvent: {}
+[6.516434] (hrdp_perception) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[6.558391] (-) TimerEvent: {}
+[6.660643] (-) TimerEvent: {}
+[6.763091] (-) TimerEvent: {}
+[6.865282] (-) TimerEvent: {}
+[6.967442] (-) TimerEvent: {}
+[7.069571] (-) TimerEvent: {}
+[7.171767] (-) TimerEvent: {}
+[7.273941] (-) TimerEvent: {}
+[7.376223] (-) TimerEvent: {}
+[7.478635] (-) TimerEvent: {}
+[7.580715] (-) TimerEvent: {}
+[7.606240] (hrdp_perception) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[7.681054] (-) TimerEvent: {}
+[7.783183] (-) TimerEvent: {}
+[7.885470] (-) TimerEvent: {}
+[7.987619] (-) TimerEvent: {}
+[8.090373] (-) TimerEvent: {}
+[8.192707] (-) TimerEvent: {}
+[8.294941] (-) TimerEvent: {}
+[8.397126] (-) TimerEvent: {}
+[8.499715] (-) TimerEvent: {}
+[8.601873] (-) TimerEvent: {}
+[8.614851] (hrdp_perception) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.647857] (hrdp_perception) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[8.656479] (hrdp_perception) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.673833] (hrdp_perception) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[8.689949] (hrdp_perception) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.704352] (-) TimerEvent: {}
+[8.714047] (hrdp_perception) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.723805] (hrdp_perception) StderrLine: {'line': b'CMake Error at CMakeLists.txt:28 (add_executable):\n'}
+[8.727766] (hrdp_perception) StderrLine: {'line': b'  Cannot find source file:\n'}
+[8.731804] (hrdp_perception) StderrLine: {'line': b'\n'}
+[8.734978] (hrdp_perception) StderrLine: {'line': b'    src/face_detection.py\n'}
+[8.769336] (hrdp_perception) StderrLine: {'line': b'\n'}
+[8.775064] (hrdp_perception) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm\n'}
+[8.791197] (hrdp_perception) StderrLine: {'line': b'  .hpp .hxx .in .txx\n'}
+[8.794968] (hrdp_perception) StderrLine: {'line': b'\n'}
+[8.799122] (hrdp_perception) StderrLine: {'line': b'\n'}
+[8.802792] (hrdp_perception) StderrLine: {'line': b'CMake Error at CMakeLists.txt:28 (add_executable):\n'}
+[8.806567] (-) TimerEvent: {}
+[8.809776] (hrdp_perception) StderrLine: {'line': b'  No SOURCES given to target: face_detection\n'}
+[8.814194] (hrdp_perception) StderrLine: {'line': b'\n'}
+[8.824823] (hrdp_perception) StderrLine: {'line': b'\n'}
+[8.829495] (hrdp_perception) StderrLine: {'line': b'CMake Generate step failed.  Build files cannot be regenerated correctly.\n'}
+[8.857373] (hrdp_perception) StderrLine: {'line': b'make: *** [Makefile:222: cmake_check_build_system] Error 1\n'}
+[8.904303] (hrdp_perception) CommandEnded: {'returncode': 2}
+[8.917395] (-) TimerEvent: {}
+[9.023017] (-) TimerEvent: {}
+[9.125324] (-) TimerEvent: {}
+[9.233833] (-) TimerEvent: {}
+[9.328576] (hrdp_perception) JobEnded: {'identifier': 'hrdp_perception', 'rc': 2}
+[9.337896] (-) TimerEvent: {}
+[9.338949] (-) EventReactorShutdown: {}

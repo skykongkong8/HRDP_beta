@@ -1,0 +1,43 @@
+[0.300s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception': CMAKE_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_perception -- -j4 -l4
+[0.559s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.899s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.766s] -- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)
+[3.768s] -- Found hrdp_beta_actions: 0.0.0 (/home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake)
+[3.960s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.986s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.554s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.487s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[7.475s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[8.539s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.566s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.571s] -- Added test 'lint_cmake' to check CMake code style
+[8.575s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[8.613s] -- Added test 'xmllint' to check XML markup files
+[8.644s] -- Configuring done
+[8.716s] -- Generating done
+[8.747s] -- Build files have been written to: /home/r1mini/sungsik_ws/build/hrdp_perception
+[9.095s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception' returned '0': CMAKE_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_perception -- -j4 -l4
+[9.406s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception': CMAKE_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_perception
+[9.494s] -- Install configuration: ""
+[9.497s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/pythonpath.sh
+[9.500s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/pythonpath.dsv
+[9.501s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/lib/python3.8/site-packages/hrdp_perception
+[9.502s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/lib/python3.8/site-packages/hrdp_perception/__init__.py
+[9.875s] Listing '/home/r1mini/sungsik_ws/install/hrdp_perception/lib/python3.8/site-packages/hrdp_perception'...
+[9.964s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/lib/hrdp_perception/face_detection.py
+[9.972s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/ament_index/resource_index/package_run_dependencies/hrdp_perception
+[9.973s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/ament_index/resource_index/parent_prefix_path/hrdp_perception
+[9.973s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/ament_prefix_path.sh
+[9.978s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/ament_prefix_path.dsv
+[9.980s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/path.sh
+[9.983s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/environment/path.dsv
+[9.985s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.bash
+[9.987s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.sh
+[9.989s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.zsh
+[9.991s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/local_setup.dsv
+[9.993s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.dsv
+[9.995s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/ament_index/resource_index/packages/hrdp_perception
+[9.999s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/cmake/hrdp_perceptionConfig.cmake
+[10.014s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/cmake/hrdp_perceptionConfig-version.cmake
+[10.024s] -- Installing: /home/r1mini/sungsik_ws/install/hrdp_perception/share/hrdp_perception/package.xml
+[10.035s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception' returned '0': CMAKE_PREFIX_PATH=/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_perception
