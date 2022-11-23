@@ -1,0 +1,40 @@
+[0.992s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/hrdp_sensors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/hrdp_sensors
+[1.203s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.977s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.685s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[6.777s] -- Found rclpy: 1.0.11 (/opt/ros/foxy/share/rclpy/cmake)
+[6.786s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[7.179s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.225s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.861s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.591s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[11.831s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.854s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.872s] -- Added test 'lint_cmake' to check CMake code style
+[11.885s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[11.893s] -- Added test 'xmllint' to check XML markup files
+[11.919s] -- Configuring done
+[12.057s] -- Generating done
+[12.075s] -- Build files have been written to: /home/r1mini/sungsik_ws/build/hrdp_sensors
+[12.101s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake /home/r1mini/sungsik_ws/src/hrdp_sensors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/r1mini/sungsik_ws/install/hrdp_sensors
+[12.178s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_sensors -- -j4 -l4
+[12.829s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_sensors -- -j4 -l4
+[13.260s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_sensors
+[13.347s] -- Install configuration: ""
+[13.353s] -- Execute custom install script
+[13.355s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/ament_index/resource_index/package_run_dependencies/hrdp_sensors
+[13.448s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/ament_index/resource_index/parent_prefix_path/hrdp_sensors
+[13.551s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/environment/ament_prefix_path.sh
+[13.656s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/environment/ament_prefix_path.dsv
+[13.744s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/environment/path.sh
+[13.829s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/environment/path.dsv
+[13.916s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/local_setup.bash
+[14.000s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/local_setup.sh
+[14.086s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/local_setup.zsh
+[14.181s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/local_setup.dsv
+[14.268s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.dsv
+[14.351s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/ament_index/resource_index/packages/hrdp_sensors
+[14.447s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/cmake/hrdp_sensorsConfig.cmake
+[14.533s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/cmake/hrdp_sensorsConfig-version.cmake
+[14.632s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_sensors/share/hrdp_sensors/package.xml
+[14.751s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_sensors

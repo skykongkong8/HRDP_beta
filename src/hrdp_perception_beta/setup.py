@@ -13,13 +13,15 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='r1mini',
+    maintainer='skykongkong8',
     maintainer_email='kssjustin98@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            #'face_detection = hrdp_perception_beta.face_detection:main',
+            'face_detection = hrdp_perception_beta.vision.face_detection:main',
         ],
     },
 )
