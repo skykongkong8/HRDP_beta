@@ -25,8 +25,11 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
 > Responsible for getting, processing, filtering, logging all the sensor data
   * camera  
   
-## 2. hrdp_percepption_beta
+## 2. hrdp_perception_beta
 > Contains: [face_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/face_detection.py), [pose_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/sample_scripts/sample_body_pose_detection.py), [3d_sneakers_objectron](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/shoe_3d_detection.py)  
+
+> Sample Image: 3D Sneakers Objectron -> returns Translation & Rotation
+![3D Sneakers OObjectron](https://github.com/skykongkong8/hrdp_beta/blob/main/res/sneakers_objectron.png)
 
 > **WARNING** : you should require specific .tflite model's' for objectron node.  
 You can download all the files from [here](https://github.com/google/mediapipe/tree/v0.8.10.1/mediapipe/modules/objectron), or from the older branches of [mediapipe](https://github.com/google/mediapipe) repo if deprecated, and add it to: 
