@@ -1,7 +1,9 @@
 import numpy as np
 import cv2
 import pyrealsense2.pyrealsense2 as rs
-from camera_constants import CameraConstants
+from .camera_constants import CameraConstants # when runnining for ros2 run
+# from camera_constants import CameraConstants # when running for __main__
+
 
 class RGBRealsenseCamera:
     """
@@ -64,6 +66,7 @@ class RGBRealsenseCamera:
 
                 if flag:
                     rgb_dim = rgb_img.shape
+                    print(rgb_img)
 
                    
                     cv2.namedWindow("RGBD Camera Experiment- RGB", cv2.WINDOW_AUTOSIZE)

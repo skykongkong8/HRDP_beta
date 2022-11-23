@@ -18,7 +18,7 @@ Please add constants you need below whenever you code it. *
 """
 **RESOLUTION TUNING TRIAL LOG!** 
 [WARNING] : this is only subjective assessment, so it might vary under your environment or purpose...
-[example DEVICE] : IntelRealsense D435 + NVDIA Jetson Nano
+[example DEVICE] : IntelRealsense D455 + NVDIA Jetson Nano
 HD : not working
 SVGA : not working
 WVGA : not working

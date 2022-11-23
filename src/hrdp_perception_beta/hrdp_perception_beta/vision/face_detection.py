@@ -1,11 +1,11 @@
 #!/usr/bin/python3.8
 
 import rclpy
-from rclpy.action import ActionServer
 from rclpy.node import Node
 from hrdp_beta_actions.action import FaceDetection
 from sensor_msgs.msg import Image, CompressedImage
 from example_interfaces.srv import SetBool
+from cv_bridge import CvBridge
 import mediapipe as mp
 import numpy as np
 import cv2
@@ -30,25 +30,28 @@ class FaceDetection(Node):
     def __init__(self):
         super().__init__('face_detection_node')
 
-        self.initialize_subscriber()
-        self.face_detector = FaceDetector()
-        self.face_num = 0
-        self.initialize_action_server()
-
-
-    def initialize_subscriber(self):
-        qos_policy = rclpy.qos.QoSProfile(reliability=rclpy.qos.ReliabilityPolicy.BEST_EFFORT,
+        self.qos_policy = rclpy.qos.QoSProfile(reliability=rclpy.qos.ReliabilityPolicy.BEST_EFFORT,
                                         history=rclpy.qos.HistoryPolicy.KEEP_LAST,
                                         depth=1)
 
+        self.initialize_subscriber()
+        self.face_detector = FaceDetector()
+        self.face_num = 0
+        self.initialize_service()
+
+
+    def initialize_subscriber(self):
+        
+
         self.image = np.random.random((480,640,3)).astype(np.uint8)
+        self.br = CvBridge()
 
         # 'IMAGE' SUBSCRIBER (WHEN RUNNING ON THE ROBOT)
         self.subscriber = self.create_subscription(
             Image,
             "/sensor/rgb_camera/rgb_frame",
             self.subscriber_callback,
-            qos_policy,
+            self.qos_policy,
         )
 
         # 'COMPRESSED IMAGE' SUBSCRIBER (WHEN RUNNING REMOTELY FROM PC WITH SAME ROS DOMAIN ID)
@@ -63,11 +66,14 @@ class FaceDetection(Node):
 
 
     def subscriber_callback(self, msg):
-        self.image = np.asarray(msg.data)
-        self.get_logger().info(f"Camera subscriber received : ({msg.height}, {msg.width})\nstep: {msg.step}")
+        self.image = self.br.imgmsg_to_cv2(msg)
+        self.get_logger().info(f"Camera subscriber received : {self.image.shape}")
 
 
     def callback_for_compressed_image(self, msg):
+        """
+        Just in case for CompressedImage situation : decoding process is needed...
+        """
         as_array = np.asarray(msg.data)
         received_data = cv2.imdecode(as_array, cv2.IMREAD_COLOR)
         self.image = received_data
@@ -75,6 +81,9 @@ class FaceDetection(Node):
 
 
     def upsample_image(self, image):
+        """
+        Just in case for CompressedImage situation : upsampling process is needed...
+        """
         scale_percent = 200 # 200%
         width = int(image.shape[1] * scale_percent / 100) 
         height = int(image.shape[0] * scale_percent / 100)
@@ -88,7 +97,7 @@ class FaceDetection(Node):
         self.face_num = self.face_detector.detect(self.image)
 
 
-    def initialize_action_server(self):
+    def initialize_service(self):
         self.srv = self.create_service(
             SetBool,
             "hrdp_perception_beta/face_detection",

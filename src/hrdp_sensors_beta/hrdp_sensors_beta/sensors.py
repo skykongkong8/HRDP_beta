@@ -1,10 +1,11 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from camera.rgb_camera import RGBRealsenseCamera
+from .camera.rgb_camera import RGBRealsenseCamera
+from cv_bridge import CvBridge
 # from camera.rgb_camera import RGBDRealsenseCamera
-from lidar.lidar import *
-from supersonic.supersonic import *
+from .lidar.lidar import *
+from .supersonic.supersonic import *
 
 class Sensors(Node):
     """
@@ -14,8 +15,8 @@ class Sensors(Node):
     """
     def __init__(self):
         super().__init__("sensors")
-        self.qos_policy = rclpy.qos.QosProfile(
-            reliability = rclpy.qos.Reliability.BEST_EFFORT,
+        self.qos_policy = rclpy.qos.QoSProfile(
+            reliability = rclpy.qos.ReliabilityPolicy.BEST_EFFORT,
             history = rclpy.qos.HistoryPolicy.KEEP_LAST,
             depth = 1
         )
@@ -25,11 +26,12 @@ class Sensors(Node):
     def initialize_camera(self):
         self.camera_publisher = self.create_publisher(
             Image,
-            'sensor/rgb_camera/rgb_frame',
+            '/sensor/rgb_camera/rgb_frame',
             self.qos_policy 
         )
 
         self.rgb_camera = RGBRealsenseCamera()
+        self.br = CvBridge()
 
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.camera_callback)
@@ -38,10 +40,14 @@ class Sensors(Node):
 
 
     def camera_callback(self):
-        msg = Image()
-        success, msg.data = self.rgb_camera.get_frame_stream()
-
+        success, raw_data = self.rgb_camera.get_frame_stream()
+        if success:
+            self.camera_publisher.publish(
+                self.br.cv2_to_imgmsg(raw_data)
+            )
+            self.get_logger().info(f"Camera Publisher publishing state is : {success}, {raw_data.shape}")
         self.get_logger().info(f"Camera Publisher publishing state is : {success}")
+
 
     def run(self):
         rclpy.spin_once(self, timeout_sec = 0.1)
@@ -58,7 +64,7 @@ def main():
             sensors_node.run()
         except KeyboardInterrupt:
             break
-    sensors_node.termiante()
+    sensors_node.terminate()
     rclpy.shutdown()
 
 if __name__ == "__main__":
