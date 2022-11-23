@@ -1,10 +1,10 @@
-# hrdp_beta
+# **hrdp_beta**
 > hms robot developing platform (beta)  
 Sample packages for basic robot developing infrastructure.
 
 Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty.korea.ac.kr/kufaculty/drsspark/index.do) in [Korea University](https://www.korea.edu/)
 
-## Overview
+## **Overview**
 ![hrdp vs hrdp_beta](https://github.com/skykongkong8/hrdp_beta/blob/main/res/HRDP_compare_blockdiagram.drawio.png)
 ## Environment settings
 * HW : [Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
@@ -26,4 +26,10 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
   * camera  
   
 ## 2. hrdp_percepption_beta
-> Contains: face_detection pose_detection, 3d_sneakers_objectron
+> Contains: [face_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/face_detection.py), [pose_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/sample_scripts/sample_body_pose_detection.py), [3d_sneakers_objectron](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/shoe_3d_detection.py)  
+
+> **WARNING** : you should require specific .tflite model's' for objectron node.  
+You can download all the files from [here](https://github.com/google/mediapipe/tree/v0.8.10.1/mediapipe/modules/objectron), or from the older branches of [mediapipe](https://github.com/google/mediapipe) repo if deprecated, and add it to: 
+```
+{your_python_dist-packages}/mediapipe/modules/objectron
+```
