@@ -2,9 +2,9 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from .camera.rgb_camera import RGBRealsenseCamera
+# from .camera.rgb_camera import RGBDRealsenseCamera
 from cv_bridge import CvBridge
 import cv2
-# from camera.rgb_camera import RGBDRealsenseCamera
 from .lidar.lidar import *
 from .supersonic.supersonic import *
 

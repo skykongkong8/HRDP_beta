@@ -37,16 +37,12 @@ with mp_objectron.Objectron(static_image_mode=False,
     success, image = camera.get_frame_stream()
     if not success:
       print("Ignoring empty camera frame.")
-      # If loading a video, use 'break' instead of 'continue'.
       continue
 
-    # To improve performance, optionally mark the image as not writeable to
-    # pass by reference.
     image.flags.writeable = False
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     results = objectron.process(image)
 
-    # Draw the box landmarks on the image.
     image.flags.writeable = True
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
     if results.detected_objects:
@@ -55,7 +51,56 @@ with mp_objectron.Objectron(static_image_mode=False,
               image, detected_object.landmarks_2d, mp_objectron.BOX_CONNECTIONS)
             mp_drawing.draw_axis(image, detected_object.rotation,
                                  detected_object.translation)
-    # Flip the image horizontally for a selfie-view display.
-    cv2.imshow('MediaPipe Objectron', cv2.flip(image, 1))
+            # print(f"detected_object.landmarks_2d : {detected_object.landmarks_2d}")
+            # print(f"detected_object.rotation : {detected_object.rotation}")
+            # print(f"detected_object.translation : {detected_object.translation}")
+            
+    cv2.imshow('Sample Objectron Display', cv2.flip(image, 1))
     if cv2.waitKey(5) & 0xFF == 27:
       break
+
+# earned data shape is as follows:
+# """
+#             detected_object.landmarks_2d : landmark {
+#               x: 0.5101729035377502
+#               y: 0.6404306888580322
+#             }
+#             landmark {
+#               x: 0.6115990877151489
+#               y: 0.6913644671440125
+#             }
+#             landmark {
+#               x: 0.4373060464859009
+#               y: 0.613743782043457
+#             }
+#             landmark {
+#               x: 0.597723662853241
+#               y: 0.6387505531311035
+#             }
+#             landmark {
+#               x: 0.41731971502304077
+#               y: 0.5615760087966919
+#             }
+#             landmark {
+#               x: 0.5977671146392822
+#               y: 0.7361617088317871
+#             }
+#             landmark {
+#               x: 0.4039123058319092
+#               y: 0.6660838723182678
+#             }
+#             landmark {
+#               x: 0.582684338092804
+#               y: 0.6748308539390564
+#             }
+#             landmark {
+#               x: 0.37889596819877625
+#               y: 0.5933163166046143
+#             }
+
+#             detected_object.rotation : [[-0.39624611 -0.28607664 -0.84410852]
+#             [-0.41951647  0.95490348  0.4358438 ]
+#             [ 0.81669772  0.07949647  0.31228349]]
+#             detected_object.translation : [ 0.01053309 -0.14738743 -0.49543691]
+
+#             """
