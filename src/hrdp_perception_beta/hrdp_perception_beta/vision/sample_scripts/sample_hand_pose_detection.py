@@ -3,8 +3,6 @@ import mediapipe as mp
 import pyrealsense2.pyrealsense2 as rs
 import numpy as np
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 
 
 mp_drawing = mp.solutions.drawing_utils

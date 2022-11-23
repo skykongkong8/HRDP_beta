@@ -1,0 +1,118 @@
+[0.897s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta_actions -- -j4 -l4
+[5.885s] [  2%] Built target hrdp_beta_actions__cpp
+[5.891s] [ 12%] Built target hrdp_beta_actions__rosidl_generator_c
+[5.901s] [ 23%] Built target hrdp_beta_actions__rosidl_typesupport_cpp
+[5.929s] [ 33%] Built target hrdp_beta_actions__rosidl_typesupport_c
+[5.935s] [ 43%] Built target hrdp_beta_actions__rosidl_typesupport_introspection_c
+[5.937s] [ 53%] Built target hrdp_beta_actions__rosidl_typesupport_fastrtps_cpp
+[5.938s] [ 64%] Built target hrdp_beta_actions__rosidl_typesupport_introspection_cpp
+[5.943s] [ 74%] Built target hrdp_beta_actions__rosidl_typesupport_fastrtps_c
+[5.945s] [ 74%] Built target hrdp_beta_actions
+[5.946s] [ 76%] Built target hrdp_beta_actions__py
+[6.303s] [ 84%] Built target hrdp_beta_actions__python
+[7.183s] [ 89%] Built target hrdp_beta_actions__rosidl_typesupport_introspection_c__pyext
+[8.132s] [ 94%] Built target hrdp_beta_actions__rosidl_typesupport_c__pyext
+[9.131s] [100%] Built target hrdp_beta_actions__rosidl_typesupport_fastrtps_c__pyext
+[9.611s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_beta_actions -- -j4 -l4
+[14.960s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_beta_actions
+[15.300s] -- Install configuration: ""
+[15.314s] -- Execute custom install script
+[15.317s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/ament_index/resource_index/rosidl_interfaces/hrdp_beta_actions
+[15.336s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/camera_rgb.h
+[15.344s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__functions.h
+[15.351s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__struct.h
+[15.354s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__type_support.h
+[15.358s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/face_detection__functions.h
+[15.370s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/face_detection__struct.h
+[15.373s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/face_detection__type_support.h
+[15.375s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/rgb_frame__functions.h
+[15.388s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/rgb_frame__struct.h
+[15.392s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/rgb_frame__type_support.h
+[15.395s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/face_detection.h
+[15.401s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/rgb_frame.h
+[15.409s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg/rosidl_generator_c__visibility_control.h
+[15.422s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/library_path.sh
+[15.431s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/library_path.dsv
+[15.442s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__rosidl_typesupport_fastrtps_c.h
+[15.444s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/face_detection__rosidl_typesupport_fastrtps_c.h
+[15.447s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_fastrtps_c.h
+[15.456s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[15.509s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_fastrtps_c.so
+[15.530s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__rosidl_typesupport_fastrtps_cpp.hpp
+[15.532s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/face_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[15.533s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_fastrtps_cpp.hpp
+[15.535s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[15.565s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_fastrtps_cpp.so
+[15.580s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__rosidl_typesupport_introspection_c.h
+[15.582s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/face_detection__rosidl_typesupport_introspection_c.h
+[15.593s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_c.h
+[15.598s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[15.599s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/camera_rgb.hpp
+[15.601s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__builder.hpp
+[15.614s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__struct.hpp
+[15.617s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__traits.hpp
+[15.619s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/face_detection__builder.hpp
+[15.628s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/face_detection__struct.hpp
+[15.630s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/face_detection__traits.hpp
+[15.639s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/rgb_frame__builder.hpp
+[15.641s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/rgb_frame__struct.hpp
+[15.642s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/rgb_frame__traits.hpp
+[15.644s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/face_detection.hpp
+[15.646s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/rgb_frame.hpp
+[15.656s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/camera_rgb__rosidl_typesupport_introspection_cpp.hpp
+[15.661s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/face_detection__rosidl_typesupport_introspection_cpp.hpp
+[15.664s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/include/hrdp_beta_actions/action/detail/rgb_frame__rosidl_typesupport_introspection_cpp.hpp
+[15.666s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/pythonpath.sh
+[15.685s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/pythonpath.dsv
+[15.687s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/__init__.py
+[15.696s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/action/__init__.py
+[15.716s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/action/_camera_rgb.py
+[15.728s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/action/_face_detection.py
+[15.782s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/action/_rgb_frame.py
+[15.798s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[15.809s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[15.824s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages/hrdp_beta_actions/hrdp_beta_actions_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[15.830s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__python.so
+[15.840s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/action/RGBFrame.idl
+[15.842s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/action/FaceDetection.idl
+[15.850s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/action/RGBFrame.action
+[15.854s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/action/FaceDetection.action
+[15.862s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/ament_index/resource_index/package_run_dependencies/hrdp_beta_actions
+[15.864s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/ament_index/resource_index/parent_prefix_path/hrdp_beta_actions
+[15.866s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/ament_prefix_path.sh
+[15.868s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/ament_prefix_path.dsv
+[15.890s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/path.sh
+[15.892s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/environment/path.dsv
+[15.905s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/local_setup.bash
+[15.911s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/local_setup.sh
+[15.917s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/local_setup.zsh
+[15.925s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/local_setup.dsv
+[15.930s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.dsv
+[16.127s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/ament_index/resource_index/packages/hrdp_beta_actions
+[16.132s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/rosidl_cmake-extras.cmake
+[16.139s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.148s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/ament_cmake_export_libraries-extras.cmake
+[16.196s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/ament_cmake_export_targets-extras.cmake
+[16.210s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.231s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[16.238s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[16.301s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actionsConfig.cmake
+[16.311s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actionsConfig-version.cmake
+[16.318s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/package.xml
+[16.328s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_generator_c.so
+[16.337s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_introspection_c.so
+[16.347s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_c.so
+[16.380s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_introspection_cpp.so
+[16.394s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/libhrdp_beta_actions__rosidl_typesupport_cpp.so
+[17.444s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_generator_cExport.cmake
+[17.459s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_generator_cExport-noconfig.cmake
+[17.470s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_introspection_cExport.cmake
+[17.484s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[17.514s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_cExport.cmake
+[17.532s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_cExport-noconfig.cmake
+[17.536s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_generator_cppExport.cmake
+[17.554s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_introspection_cppExport.cmake
+[17.564s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[17.580s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_cppExport.cmake
+[17.581s] -- Up-to-date: /home/r1mini/sungsik_ws/install/hrdp_beta_actions/share/hrdp_beta_actions/cmake/hrdp_beta_actions__rosidl_typesupport_cppExport-noconfig.cmake
+[17.615s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_beta_actions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_beta_actions

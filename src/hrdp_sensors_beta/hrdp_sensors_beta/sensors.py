@@ -3,6 +3,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Image
 from .camera.rgb_camera import RGBRealsenseCamera
 from cv_bridge import CvBridge
+import cv2
 # from camera.rgb_camera import RGBDRealsenseCamera
 from .lidar.lidar import *
 from .supersonic.supersonic import *
@@ -42,6 +43,10 @@ class Sensors(Node):
     def camera_callback(self):
         success, raw_data = self.rgb_camera.get_frame_stream()
         if success:
+            # cv2.imshow('hrdp_sensors_beta_camera_streaming', cv2.flip(raw_data, 1))
+            print("Frame Streaming:")
+            print(raw_data)
+            
             self.camera_publisher.publish(
                 self.br.cv2_to_imgmsg(raw_data)
             )

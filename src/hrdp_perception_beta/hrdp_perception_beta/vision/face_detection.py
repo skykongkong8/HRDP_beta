@@ -9,6 +9,7 @@ from cv_bridge import CvBridge
 import mediapipe as mp
 import numpy as np
 import cv2
+import os
 
 
 class FaceDetector:
@@ -20,10 +21,12 @@ class FaceDetector:
         with self.mp_face_detection.FaceDetection(
             model_selection=1, min_detection_confidence=0.5) as face_detection:
             image.flags.writeable = False
-            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+            # image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
             results = face_detection.process(image)
             if results.detections:
                 self.face_counts = len(results.detections)
+            # cv2.imwrite(f'{os.getcwd()}/processed_raw_image'+ '.png', image)
+        return self.face_counts
 
 
 class FaceDetection(Node):
@@ -43,7 +46,7 @@ class FaceDetection(Node):
     def initialize_subscriber(self):
         
 
-        self.image = np.random.random((480,640,3)).astype(np.uint8)
+        # self.image = np.random.random((480,640,3)).astype(np.uint8)
         self.br = CvBridge()
 
         # 'IMAGE' SUBSCRIBER (WHEN RUNNING ON THE ROBOT)
@@ -67,8 +70,8 @@ class FaceDetection(Node):
 
     def subscriber_callback(self, msg):
         self.image = self.br.imgmsg_to_cv2(msg)
-        self.get_logger().info(f"Camera subscriber received : {self.image.shape}")
-
+        # self.get_logger().info(f"Camera subscriber received : {self.image.shape}")
+        self.get_logger().info(f"Received camera frame : {self.image}")
 
     def callback_for_compressed_image(self, msg):
         """
@@ -94,14 +97,16 @@ class FaceDetection(Node):
 
 
     def face_detection(self):
+        self.get_logger().info(f'Detecting current {self.image.shape} image...')
         self.face_num = self.face_detector.detect(self.image)
 
 
     def initialize_service(self):
         self.srv = self.create_service(
             SetBool,
-            "hrdp_perception_beta/face_detection",
-            self.execute_callback
+            "/hrdp_perception_beta/face_detection",
+            self.execute_callback,
+            # qos_profile = self.qos_policy
         )
 
 
@@ -110,6 +115,7 @@ class FaceDetection(Node):
         # response.success : bool, response.message : string
         response.success = False
         if request.data:
+            self.get_logger().info('Face detection service processing service call request...')
             self.face_detection()
             response.message = str(self.face_num)
             response.success = True
@@ -123,6 +129,7 @@ class FaceDetection(Node):
         
     def run(self):
         rclpy.spin_once(self, timeout_sec = 1)
+        self.face_detector.face_counts = 0
     
 
     # def terminate(self):

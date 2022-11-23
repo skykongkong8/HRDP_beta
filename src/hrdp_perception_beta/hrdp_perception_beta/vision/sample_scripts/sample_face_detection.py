@@ -49,6 +49,7 @@ with mp_face_detection.FaceDetection(
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
     if results.detections:
       print(len(results.detections))
+
       for detection in results.detections:
         mp_drawing.draw_detection(image, detection)
     # Flip the image horizontally for a selfie-view display.

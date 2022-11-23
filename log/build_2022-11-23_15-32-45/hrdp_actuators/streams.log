@@ -1,0 +1,21 @@
+[1.513s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_actuators': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_actuators -- -j4 -l4
+[13.201s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_actuators' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_actuators -- -j4 -l4
+[14.352s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_actuators': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_actuators
+[14.681s] -- Install configuration: ""
+[14.694s] -- Execute custom install script
+[14.706s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/ament_index/resource_index/package_run_dependencies/hrdp_actuators
+[14.717s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/ament_index/resource_index/parent_prefix_path/hrdp_actuators
+[14.772s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/environment/ament_prefix_path.sh
+[14.810s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/environment/ament_prefix_path.dsv
+[14.840s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/environment/path.sh
+[14.864s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/environment/path.dsv
+[14.938s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/local_setup.bash
+[15.019s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/local_setup.sh
+[15.034s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/local_setup.zsh
+[15.053s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/local_setup.dsv
+[15.094s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.dsv
+[15.331s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/ament_index/resource_index/packages/hrdp_actuators
+[15.335s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/cmake/hrdp_actuatorsConfig.cmake
+[15.342s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/cmake/hrdp_actuatorsConfig-version.cmake
+[15.362s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_actuators/share/hrdp_actuators/package.xml
+[15.388s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_actuators' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_actuators
