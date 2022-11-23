@@ -5,7 +5,7 @@ Sample packages for basic robot developing infrastructure.
 Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty.korea.ac.kr/kufaculty/drsspark/index.do) in [Korea University](https://www.korea.edu/)
 
 ## Overview
-![hrdp vs hrdp_beta](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_beta/src/res/HRDP_compare_blockdiagram.drawio.png)
+![hrdp vs hrdp_beta](https://github.com/skykongkong8/hrdp_beta/blob/main/res/HRDP_compare_blockdiagram.drawio.png)
 ## Environment settings
 * HW : [Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
 * OS + frameworks : ubuntu 20.04 + ros2-foxy download from [here](https://omorobot.com/docs/ros2-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-jetson-nano/)
@@ -21,6 +21,9 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
     * sdk install : [follow here](https://github.com/CreedyNZ/rplidar_ros2)
 * Major python dependencies : [mediapipe](https://google.github.io/mediapipe/getting_started/python.html), [tensorflow 2.4](https://www.tensorflow.org/install/source?hl=ko), gTTS, SpeechRecognition, playsound
 
-## 1. hrdp_sensors
+## 1. hrdp_sensors_beta
 > Responsible for getting, processing, filtering, logging all the sensor data
   * camera  
+  
+## 2. hrdp_percepption_beta
+> Contains: face_detection pose_detection, 3d_sneakers_objectron
