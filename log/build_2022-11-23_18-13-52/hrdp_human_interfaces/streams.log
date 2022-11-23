@@ -1,0 +1,21 @@
+[4.894s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_human_interfaces -- -j4 -l4
+[5.638s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/r1mini/sungsik_ws/build/hrdp_human_interfaces -- -j4 -l4
+[6.174s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_human_interfaces
+[6.409s] -- Install configuration: ""
+[6.411s] -- Execute custom install script
+[6.416s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/ament_index/resource_index/package_run_dependencies/hrdp_human_interfaces
+[6.426s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/ament_index/resource_index/parent_prefix_path/hrdp_human_interfaces
+[6.428s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/environment/ament_prefix_path.sh
+[6.430s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/environment/ament_prefix_path.dsv
+[6.435s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/environment/path.sh
+[6.441s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/environment/path.dsv
+[6.454s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/local_setup.bash
+[6.461s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/local_setup.sh
+[6.467s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/local_setup.zsh
+[6.469s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/local_setup.dsv
+[6.470s] -- Symlinking: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.dsv
+[6.601s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/ament_index/resource_index/packages/hrdp_human_interfaces
+[6.618s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/cmake/hrdp_human_interfacesConfig.cmake
+[6.620s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/cmake/hrdp_human_interfacesConfig-version.cmake
+[6.621s] -- Up-to-date symlink: /home/r1mini/sungsik_ws/install/hrdp_human_interfaces/share/hrdp_human_interfaces/package.xml
+[7.043s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/r1mini/sungsik_ws/build/hrdp_human_interfaces

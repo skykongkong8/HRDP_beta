@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+hrdp_human_interface_beta/__init__.py
+hrdp_human_interface_beta/home.py
+hrdp_human_interface_beta.egg-info/PKG-INFO
+hrdp_human_interface_beta.egg-info/SOURCES.txt
+hrdp_human_interface_beta.egg-info/dependency_links.txt
+hrdp_human_interface_beta.egg-info/entry_points.txt
+hrdp_human_interface_beta.egg-info/requires.txt
+hrdp_human_interface_beta.egg-info/top_level.txt
+hrdp_human_interface_beta.egg-info/zip-safe
+resource/hrdp_human_interface_beta

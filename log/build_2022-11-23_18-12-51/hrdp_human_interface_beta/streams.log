@@ -1,0 +1,23 @@
+[8.669s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/build --no-deps install_data
+[12.266s] running develop
+[13.957s] running egg_info
+[13.959s] creating hrdp_human_interface_beta.egg-info
+[13.960s] writing hrdp_human_interface_beta.egg-info/PKG-INFO
+[13.961s] writing dependency_links to hrdp_human_interface_beta.egg-info/dependency_links.txt
+[13.962s] writing entry points to hrdp_human_interface_beta.egg-info/entry_points.txt
+[13.963s] writing requirements to hrdp_human_interface_beta.egg-info/requires.txt
+[13.964s] writing top-level names to hrdp_human_interface_beta.egg-info/top_level.txt
+[13.988s] writing manifest file 'hrdp_human_interface_beta.egg-info/SOURCES.txt'
+[14.005s] reading manifest file 'hrdp_human_interface_beta.egg-info/SOURCES.txt'
+[14.011s] writing manifest file 'hrdp_human_interface_beta.egg-info/SOURCES.txt'
+[14.345s] running build_ext
+[14.348s] Creating /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/python3.8/site-packages/hrdp-human-interface-beta.egg-link (link to .)
+[14.356s] 
+[14.358s] Installed /home/r1mini/sungsik_ws/build/hrdp_human_interface_beta
+[14.359s] running install_data
+[14.361s] creating /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/share/ament_index
+[14.362s] creating /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/share/ament_index/resource_index
+[14.363s] creating /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/share/ament_index/resource_index/packages
+[14.363s] copying resource/hrdp_human_interface_beta -> /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/share/ament_index/resource_index/packages
+[14.364s] copying package.xml -> /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/share/hrdp_human_interface_beta
+[14.927s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/build --no-deps install_data
