@@ -16,7 +16,7 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
     * sdk install : [follow here](https://github.com/IntelRealSense/librealsense/tree/development/wrappers/python
 ) and [here](https://jstar0525.tistory.com/97)
     >  WARNING : cmake with python binding, CUDA, RSUSB !!!  
-    > *Many github issues are suffering from installing **librealsense2 with python binding at arm64 CPU architecture with ubuntu 20.04**, especially for Jetson Nano since Nvidia is not releasing the official image for it by far. However, I found the tric!*
+    > *Many github issues are suffering from installing **librealsense2 with python binding at arm64 CPU architecture with ubuntu 20.04**, especially for Jetson Nano since Nvidia is not releasing the official image for it by far. However, I found the trick!*
   * lidar : [rplidar_s1](https://www.slamtec.com/en/Lidar/S1)
     * sdk install : [follow here](https://github.com/CreedyNZ/rplidar_ros2)
 * Major python dependencies : [mediapipe](https://google.github.io/mediapipe/getting_started/python.html), [tensorflow 2.4](https://www.tensorflow.org/install/source?hl=ko), gTTS, SpeechRecognition, playsound
