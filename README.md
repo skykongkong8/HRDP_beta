@@ -15,15 +15,20 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
   * camera : [Intel Realsense D455](https://www.intelrealsense.com/depth-camera-d455/)
     * sdk install : [follow here](https://github.com/IntelRealSense/librealsense/tree/development/wrappers/python
 ) and [here](https://jstar0525.tistory.com/97)
-    >  WARNING : cmake with python binding, CUDA, RSUSB !!!  
-    > *Many github issues are suffering from installing **librealsense2 with python binding at arm64 CPU architecture with ubuntu 20.04**, especially for Jetson Nano since Nvidia is not releasing the official image for it by far. However, I found the trick!*
+    > * **WARNING** : cmake with python binding, CUDA, RSUSB !!!  
+    > *  *Many github issues are suffering from installing **librealsense2 with python binding at arm64 CPU architecture with ubuntu 20.04**, especially for Jetson Nano since Nvidia is not releasing the official image for it by far. However, I found the trick!*
   * lidar : [rplidar_s1](https://www.slamtec.com/en/Lidar/S1)
     * sdk install : [follow here](https://github.com/CreedyNZ/rplidar_ros2)
 * Major python dependencies : [mediapipe](https://google.github.io/mediapipe/getting_started/python.html), [tensorflow 2.4](https://www.tensorflow.org/install/source?hl=ko), gTTS, SpeechRecognition, playsound
 
 ## 1. hrdp_sensors_beta
-> Responsible for getting, processing, filtering, logging all the sensor data
-  * camera  
+> * Responsible for getting, processing, filtering, logging all the sensor data   
+> *  Currently only supports RGB & Depth camera    
+   
+Open a new terminal and insert:
+``` terminal
+ros2 run hrdp_sensors_beta sensors
+```
   
 ## 2. hrdp_perception_beta
 > Contains: [face_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/face_detection.py), [pose_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/sample_scripts/sample_body_pose_detection.py), [3d_sneakers_objectron](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/shoe_3d_detection.py)  
@@ -35,4 +40,9 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
 You can download all the files from [here](https://github.com/google/mediapipe/tree/v0.8.10.1/mediapipe/modules/objectron), or from the older branches of [mediapipe](https://github.com/google/mediapipe) repo if deprecated, and add it to: 
 ```
 {your_python_dist-packages}/mediapipe/modules/objectron
+```
+### Face detection node
+Open a new terminal and insert:
+```terminal
+ros2 run  hrdp_perception_beta face_detection
 ```
