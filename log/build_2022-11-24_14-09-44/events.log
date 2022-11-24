@@ -1,0 +1,313 @@
+[0.000000] (-) TimerEvent: {}
+[0.003169] (-) JobUnselected: {'identifier': 'hrdp_actuators'}
+[0.004036] (-) JobUnselected: {'identifier': 'hrdp_beta_actions'}
+[0.006170] (-) JobUnselected: {'identifier': 'hrdp_human_interface_beta'}
+[0.007843] (-) JobUnselected: {'identifier': 'hrdp_perception_beta'}
+[0.011488] (-) JobUnselected: {'identifier': 'hrdp_sensors_beta'}
+[0.012076] (hrdp_actuators_beta) JobQueued: {'identifier': 'hrdp_actuators_beta', 'dependencies': OrderedDict()}
+[0.012560] (hrdp_actuators_beta) JobStarted: {'identifier': 'hrdp_actuators_beta'}
+[0.097322] (-) TimerEvent: {}
+[0.204625] (-) TimerEvent: {}
+[0.315163] (-) TimerEvent: {}
+[0.418315] (-) TimerEvent: {}
+[0.521040] (-) TimerEvent: {}
+[0.622982] (-) TimerEvent: {}
+[0.725697] (-) TimerEvent: {}
+[0.827677] (-) TimerEvent: {}
+[0.929721] (-) TimerEvent: {}
+[1.031685] (-) TimerEvent: {}
+[1.133664] (-) TimerEvent: {}
+[1.235604] (-) TimerEvent: {}
+[1.338023] (-) TimerEvent: {}
+[1.440452] (-) TimerEvent: {}
+[1.542981] (-) TimerEvent: {}
+[1.645236] (-) TimerEvent: {}
+[1.747402] (-) TimerEvent: {}
+[1.851238] (-) TimerEvent: {}
+[1.953261] (-) TimerEvent: {}
+[2.055190] (-) TimerEvent: {}
+[2.157174] (-) TimerEvent: {}
+[2.259187] (-) TimerEvent: {}
+[2.362082] (-) TimerEvent: {}
+[2.463949] (-) TimerEvent: {}
+[2.566091] (-) TimerEvent: {}
+[2.668133] (-) TimerEvent: {}
+[2.770429] (-) TimerEvent: {}
+[2.872800] (-) TimerEvent: {}
+[2.975126] (-) TimerEvent: {}
+[3.077148] (-) TimerEvent: {}
+[3.178992] (-) TimerEvent: {}
+[3.281141] (-) TimerEvent: {}
+[3.383348] (-) TimerEvent: {}
+[3.485511] (-) TimerEvent: {}
+[3.587379] (-) TimerEvent: {}
+[3.689231] (-) TimerEvent: {}
+[3.791169] (-) TimerEvent: {}
+[3.893601] (-) TimerEvent: {}
+[3.995530] (-) TimerEvent: {}
+[4.097635] (-) TimerEvent: {}
+[4.199657] (-) TimerEvent: {}
+[4.301997] (-) TimerEvent: {}
+[4.404679] (-) TimerEvent: {}
+[4.507263] (-) TimerEvent: {}
+[4.609896] (-) TimerEvent: {}
+[4.712441] (-) TimerEvent: {}
+[4.821591] (-) TimerEvent: {}
+[4.924586] (-) TimerEvent: {}
+[5.026719] (-) TimerEvent: {}
+[5.128599] (-) TimerEvent: {}
+[5.230422] (-) TimerEvent: {}
+[5.332196] (-) TimerEvent: {}
+[5.434029] (-) TimerEvent: {}
+[5.536357] (-) TimerEvent: {}
+[5.639206] (-) TimerEvent: {}
+[5.741847] (-) TimerEvent: {}
+[5.847385] (-) TimerEvent: {}
+[5.949743] (-) TimerEvent: {}
+[6.052081] (-) TimerEvent: {}
+[6.154056] (-) TimerEvent: {}
+[6.256052] (-) TimerEvent: {}
+[6.358296] (-) TimerEvent: {}
+[6.460735] (-) TimerEvent: {}
+[6.564528] (-) TimerEvent: {}
+[6.666672] (-) TimerEvent: {}
+[6.768980] (-) TimerEvent: {}
+[6.871068] (-) TimerEvent: {}
+[6.974193] (-) TimerEvent: {}
+[7.078647] (-) TimerEvent: {}
+[7.180509] (-) TimerEvent: {}
+[7.282375] (-) TimerEvent: {}
+[7.384541] (-) TimerEvent: {}
+[7.487876] (-) TimerEvent: {}
+[7.589909] (-) TimerEvent: {}
+[7.691728] (-) TimerEvent: {}
+[7.794089] (-) TimerEvent: {}
+[7.896465] (-) TimerEvent: {}
+[8.001180] (-) TimerEvent: {}
+[8.104357] (-) TimerEvent: {}
+[8.207296] (-) TimerEvent: {}
+[8.311655] (-) TimerEvent: {}
+[8.413858] (-) TimerEvent: {}
+[8.515719] (-) TimerEvent: {}
+[8.617783] (-) TimerEvent: {}
+[8.719696] (-) TimerEvent: {}
+[8.822459] (-) TimerEvent: {}
+[8.929279] (-) TimerEvent: {}
+[9.032947] (-) TimerEvent: {}
+[9.135771] (-) TimerEvent: {}
+[9.238503] (-) TimerEvent: {}
+[9.340642] (-) TimerEvent: {}
+[9.442658] (-) TimerEvent: {}
+[9.545401] (-) TimerEvent: {}
+[9.647490] (-) TimerEvent: {}
+[9.749526] (-) TimerEvent: {}
+[9.854115] (-) TimerEvent: {}
+[9.956409] (-) TimerEvent: {}
+[10.059063] (-) TimerEvent: {}
+[10.164528] (-) TimerEvent: {}
+[10.267715] (-) TimerEvent: {}
+[10.370569] (-) TimerEvent: {}
+[10.473288] (-) TimerEvent: {}
+[10.578754] (-) TimerEvent: {}
+[10.683195] (-) TimerEvent: {}
+[10.787296] (-) TimerEvent: {}
+[10.889875] (-) TimerEvent: {}
+[10.993563] (-) TimerEvent: {}
+[11.098321] (-) TimerEvent: {}
+[11.202966] (-) TimerEvent: {}
+[11.307056] (-) TimerEvent: {}
+[11.410557] (-) TimerEvent: {}
+[11.513458] (-) TimerEvent: {}
+[11.615791] (-) TimerEvent: {}
+[11.718164] (-) TimerEvent: {}
+[11.820306] (-) TimerEvent: {}
+[11.922823] (-) TimerEvent: {}
+[12.025639] (-) TimerEvent: {}
+[12.128242] (-) TimerEvent: {}
+[12.230716] (-) TimerEvent: {}
+[12.333559] (-) TimerEvent: {}
+[12.441203] (-) TimerEvent: {}
+[12.545339] (-) TimerEvent: {}
+[12.647935] (-) TimerEvent: {}
+[12.752738] (-) TimerEvent: {}
+[12.854987] (-) TimerEvent: {}
+[12.957361] (-) TimerEvent: {}
+[13.060018] (-) TimerEvent: {}
+[13.162687] (-) TimerEvent: {}
+[13.266608] (-) TimerEvent: {}
+[13.370650] (-) TimerEvent: {}
+[13.474265] (-) TimerEvent: {}
+[13.581304] (-) TimerEvent: {}
+[13.694263] (-) TimerEvent: {}
+[13.799089] (-) TimerEvent: {}
+[13.901865] (-) TimerEvent: {}
+[14.006069] (-) TimerEvent: {}
+[14.112135] (-) TimerEvent: {}
+[14.221351] (-) TimerEvent: {}
+[14.328073] (-) TimerEvent: {}
+[14.434935] (-) TimerEvent: {}
+[14.544245] (-) TimerEvent: {}
+[14.648557] (-) TimerEvent: {}
+[14.750993] (-) TimerEvent: {}
+[14.854028] (-) TimerEvent: {}
+[14.960098] (-) TimerEvent: {}
+[15.064021] (-) TimerEvent: {}
+[15.166446] (-) TimerEvent: {}
+[15.288606] (-) TimerEvent: {}
+[15.362555] (hrdp_actuators_beta) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/r1mini/sungsik_ws/build/hrdp_actuators_beta/build', '--no-deps', 'install_data'], 'cwd': '/home/r1mini/sungsik_ws/build/hrdp_actuators_beta', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US', 'USER': 'r1mini', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '8091', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda/lib64:/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/r1mini', 'OLDPWD': '/home/r1mini/sungsik_ws/src', 'DESKTOP_SESSION': 'xubuntu', 'ROS_PYTHON_VERSION': '3', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'LC_MONETARY': 'ko_KR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/r1mini/sungsik_ws/install:/home/r1mini/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'r1mini', 'WINDOWID': '60837221', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'CLUTTER_BACKEND': 'x11', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c2', 'ROS_LOCALHOST_ONLY': '0', 'TB3_MODEL': 'burger', 'PATH': '/usr/local/cuda-10.0/bin:/home/r1mini/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/foxy/bin:/home/r1mini/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ros2:@/tmp/.ICE-unix/7998,unix/ros2:/tmp/.ICE-unix/7998', 'GDM_LANG': 'en_US', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'xfce-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XDG_SESSION_DESKTOP': 'xubuntu', 'XAUTHORITY': '/home/r1mini/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '30', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/r1mini', 'AMENT_PREFIX_PATH': '/home/r1mini/sungsik_ws/install/py_pubsub:/home/r1mini/sungsik_ws/install/my_cpp_py_pkg:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_human_interface_beta:/home/r1mini/sungsik_ws/install/hrdp_beta_perception:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'xubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'XDG_VTNR': '7', 'PWD': '/home/r1mini/sungsik_ws/build/hrdp_actuators_beta', 'OPENCR_PORT': '/dev/ttyACM0', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share', 'LDS_MODEL': 'LDS-02', 'PYTHONPATH': '/home/r1mini/sungsik_ws/build/hrdp_actuators_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_actuators_beta/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/build/py_pubsub:/home/r1mini/sungsik_ws/install/py_pubsub/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/install/my_cpp_py_pkg/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/build/hrdp_sensors_beta:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/build/hrdp_perception_beta:/home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/install/hrdp_perception/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta:/home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/build/hrdp_beta_perception:/home/r1mini/sungsik_ws/install/hrdp_beta_perception/lib/python3.8/site-packages:/home/r1mini/sungsik_ws/install/hrdp_beta_actions/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_teleop:/home/r1mini/ros2_ws/install/omo_r1mini_teleop/lib/python3.8/site-packages:/home/r1mini/ros2_ws/build/omo_r1mini_bringup:/home/r1mini/ros2_ws/install/omo_r1mini_bringup/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/r1mini/sungsik_ws/install/my_cpp_py_pkg:/home/r1mini/sungsik_ws/install/hrdp_sensors:/home/r1mini/sungsik_ws/install/hrdp_perception:/home/r1mini/sungsik_ws/install/hrdp_human_interfaces:/home/r1mini/sungsik_ws/install/hrdp_beta_actions:/home/r1mini/sungsik_ws/install/hrdp_beta:/home/r1mini/sungsik_ws/install/hrdp_actuators:/home/r1mini/ros2_ws/install/ydlidar_sdk:/home/r1mini/ros2_ws/install/ydlidar_ros2_driver:/home/r1mini/ros2_ws/install/omo_r1mini:/home/r1mini/ros2_ws/install/omo_r1mini_navigation2:/home/r1mini/ros2_ws/install/omo_r1mini_gazebo:/home/r1mini/ros2_ws/install/omo_r1mini_description:/home/r1mini/ros2_ws/install/omo_r1mini_cartographer', 'OPENCR_MODEL': 'burger'}, 'shell': False}
+[15.483347] (-) TimerEvent: {}
+[15.595460] (-) TimerEvent: {}
+[15.705791] (-) TimerEvent: {}
+[15.810429] (-) TimerEvent: {}
+[15.917329] (-) TimerEvent: {}
+[16.021728] (-) TimerEvent: {}
+[16.129344] (-) TimerEvent: {}
+[16.237306] (-) TimerEvent: {}
+[16.342181] (-) TimerEvent: {}
+[16.445252] (-) TimerEvent: {}
+[16.552465] (-) TimerEvent: {}
+[16.656334] (-) TimerEvent: {}
+[16.764207] (-) TimerEvent: {}
+[16.869386] (-) TimerEvent: {}
+[16.973654] (-) TimerEvent: {}
+[17.078668] (-) TimerEvent: {}
+[17.183018] (-) TimerEvent: {}
+[17.286387] (-) TimerEvent: {}
+[17.401797] (-) TimerEvent: {}
+[17.503998] (-) TimerEvent: {}
+[17.606293] (-) TimerEvent: {}
+[17.708370] (-) TimerEvent: {}
+[17.810889] (-) TimerEvent: {}
+[17.913308] (-) TimerEvent: {}
+[18.015390] (-) TimerEvent: {}
+[18.117760] (-) TimerEvent: {}
+[18.219924] (-) TimerEvent: {}
+[18.322024] (-) TimerEvent: {}
+[18.424351] (-) TimerEvent: {}
+[18.527482] (-) TimerEvent: {}
+[18.630049] (-) TimerEvent: {}
+[18.735008] (-) TimerEvent: {}
+[18.837147] (-) TimerEvent: {}
+[18.942118] (-) TimerEvent: {}
+[19.044255] (-) TimerEvent: {}
+[19.146303] (-) TimerEvent: {}
+[19.248932] (-) TimerEvent: {}
+[19.350871] (-) TimerEvent: {}
+[19.453631] (-) TimerEvent: {}
+[19.557416] (-) TimerEvent: {}
+[19.659741] (-) TimerEvent: {}
+[19.761773] (-) TimerEvent: {}
+[19.866072] (-) TimerEvent: {}
+[19.973799] (-) TimerEvent: {}
+[20.082084] (-) TimerEvent: {}
+[20.183984] (-) TimerEvent: {}
+[20.285881] (-) TimerEvent: {}
+[20.387813] (-) TimerEvent: {}
+[20.489893] (-) TimerEvent: {}
+[20.591679] (-) TimerEvent: {}
+[20.693659] (-) TimerEvent: {}
+[20.795720] (-) TimerEvent: {}
+[20.898208] (-) TimerEvent: {}
+[21.002858] (-) TimerEvent: {}
+[21.109927] (-) TimerEvent: {}
+[21.215724] (-) TimerEvent: {}
+[21.304440] (hrdp_actuators_beta) StdoutLine: {'line': b'running develop\n'}
+[21.316135] (-) TimerEvent: {}
+[21.418779] (-) TimerEvent: {}
+[21.520904] (-) TimerEvent: {}
+[21.625577] (-) TimerEvent: {}
+[21.727567] (-) TimerEvent: {}
+[21.829830] (-) TimerEvent: {}
+[21.932443] (-) TimerEvent: {}
+[22.034752] (-) TimerEvent: {}
+[22.136797] (-) TimerEvent: {}
+[22.238985] (-) TimerEvent: {}
+[22.341214] (-) TimerEvent: {}
+[22.443356] (-) TimerEvent: {}
+[22.545617] (-) TimerEvent: {}
+[22.647804] (-) TimerEvent: {}
+[22.751781] (-) TimerEvent: {}
+[22.856016] (-) TimerEvent: {}
+[22.959624] (-) TimerEvent: {}
+[23.064489] (-) TimerEvent: {}
+[23.169130] (-) TimerEvent: {}
+[23.275108] (-) TimerEvent: {}
+[23.378261] (-) TimerEvent: {}
+[23.483066] (-) TimerEvent: {}
+[23.585867] (-) TimerEvent: {}
+[23.690694] (-) TimerEvent: {}
+[23.796494] (-) TimerEvent: {}
+[23.902673] (-) TimerEvent: {}
+[24.009861] (-) TimerEvent: {}
+[24.112123] (-) TimerEvent: {}
+[24.214851] (-) TimerEvent: {}
+[24.316987] (-) TimerEvent: {}
+[24.419048] (-) TimerEvent: {}
+[24.521362] (-) TimerEvent: {}
+[24.623483] (-) TimerEvent: {}
+[24.727155] (-) TimerEvent: {}
+[24.830406] (-) TimerEvent: {}
+[24.934931] (-) TimerEvent: {}
+[25.043592] (-) TimerEvent: {}
+[25.161342] (-) TimerEvent: {}
+[25.263439] (-) TimerEvent: {}
+[25.366062] (-) TimerEvent: {}
+[25.470696] (-) TimerEvent: {}
+[25.573038] (-) TimerEvent: {}
+[25.675260] (-) TimerEvent: {}
+[25.778209] (-) TimerEvent: {}
+[25.880171] (-) TimerEvent: {}
+[25.982324] (-) TimerEvent: {}
+[26.084439] (-) TimerEvent: {}
+[26.187044] (-) TimerEvent: {}
+[26.289292] (-) TimerEvent: {}
+[26.393369] (-) TimerEvent: {}
+[26.495526] (-) TimerEvent: {}
+[26.504798] (hrdp_actuators_beta) StdoutLine: {'line': b'running egg_info\n'}
+[26.507619] (hrdp_actuators_beta) StdoutLine: {'line': b'creating hrdp_actuators_beta.egg-info\n'}
+[26.509206] (hrdp_actuators_beta) StdoutLine: {'line': b'writing hrdp_actuators_beta.egg-info/PKG-INFO\n'}
+[26.510885] (hrdp_actuators_beta) StdoutLine: {'line': b'writing dependency_links to hrdp_actuators_beta.egg-info/dependency_links.txt\n'}
+[26.512559] (hrdp_actuators_beta) StdoutLine: {'line': b'writing entry points to hrdp_actuators_beta.egg-info/entry_points.txt\n'}
+[26.514498] (hrdp_actuators_beta) StdoutLine: {'line': b'writing requirements to hrdp_actuators_beta.egg-info/requires.txt\n'}
+[26.515616] (hrdp_actuators_beta) StdoutLine: {'line': b'writing top-level names to hrdp_actuators_beta.egg-info/top_level.txt\n'}
+[26.533832] (hrdp_actuators_beta) StdoutLine: {'line': b"writing manifest file 'hrdp_actuators_beta.egg-info/SOURCES.txt'\n"}
+[26.554655] (hrdp_actuators_beta) StdoutLine: {'line': b"reading manifest file 'hrdp_actuators_beta.egg-info/SOURCES.txt'\n"}
+[26.560361] (hrdp_actuators_beta) StdoutLine: {'line': b"writing manifest file 'hrdp_actuators_beta.egg-info/SOURCES.txt'\n"}
+[26.595984] (-) TimerEvent: {}
+[26.699652] (-) TimerEvent: {}
+[26.801974] (-) TimerEvent: {}
+[26.904002] (-) TimerEvent: {}
+[27.006125] (-) TimerEvent: {}
+[27.108150] (-) TimerEvent: {}
+[27.210295] (-) TimerEvent: {}
+[27.312452] (-) TimerEvent: {}
+[27.406548] (hrdp_actuators_beta) StdoutLine: {'line': b'running build_ext\n'}
+[27.410032] (hrdp_actuators_beta) StdoutLine: {'line': b'Creating /home/r1mini/sungsik_ws/install/hrdp_actuators_beta/lib/python3.8/site-packages/hrdp-actuators-beta.egg-link (link to .)\n'}
+[27.412631] (-) TimerEvent: {}
+[27.430446] (hrdp_actuators_beta) StdoutLine: {'line': b'\n'}
+[27.433641] (hrdp_actuators_beta) StdoutLine: {'line': b'Installed /home/r1mini/sungsik_ws/build/hrdp_actuators_beta\n'}
+[27.435566] (hrdp_actuators_beta) StdoutLine: {'line': b'running install_data\n'}
+[27.439471] (hrdp_actuators_beta) StdoutLine: {'line': b'creating /home/r1mini/sungsik_ws/install/hrdp_actuators_beta/share/ament_index\n'}
+[27.451371] (hrdp_actuators_beta) StdoutLine: {'line': b'creating /home/r1mini/sungsik_ws/install/hrdp_actuators_beta/share/ament_index/resource_index\n'}
+[27.453420] (hrdp_actuators_beta) StdoutLine: {'line': b'creating /home/r1mini/sungsik_ws/install/hrdp_actuators_beta/share/ament_index/resource_index/packages\n'}
+[27.455531] (hrdp_actuators_beta) StdoutLine: {'line': b'copying resource/hrdp_actuators_beta -> /home/r1mini/sungsik_ws/install/hrdp_actuators_beta/share/ament_index/resource_index/packages\n'}
+[27.457744] (hrdp_actuators_beta) StdoutLine: {'line': b'copying package.xml -> /home/r1mini/sungsik_ws/install/hrdp_actuators_beta/share/hrdp_actuators_beta\n'}
+[27.513371] (-) TimerEvent: {}
+[27.616383] (-) TimerEvent: {}
+[27.721191] (-) TimerEvent: {}
+[27.827360] (-) TimerEvent: {}
+[27.931965] (-) TimerEvent: {}
+[28.039895] (-) TimerEvent: {}
+[28.145980] (-) TimerEvent: {}
+[28.251158] (-) TimerEvent: {}
+[28.354389] (-) TimerEvent: {}
+[28.456765] (-) TimerEvent: {}
+[28.561416] (-) TimerEvent: {}
+[28.639519] (hrdp_actuators_beta) CommandEnded: {'returncode': 0}
+[28.668405] (-) TimerEvent: {}
+[28.772236] (-) TimerEvent: {}
+[28.881793] (-) TimerEvent: {}
+[28.992641] (-) TimerEvent: {}
+[29.097788] (-) TimerEvent: {}
+[29.137026] (hrdp_actuators_beta) JobEnded: {'identifier': 'hrdp_actuators_beta', 'rc': 0}
+[29.162341] (-) EventReactorShutdown: {}

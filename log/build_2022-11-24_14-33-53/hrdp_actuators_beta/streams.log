@@ -1,0 +1,17 @@
+[17.152s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_actuators_beta': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_actuators_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_actuators_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_actuators_beta/build --no-deps install_data
+[22.444s] running develop
+[25.022s] running egg_info
+[25.024s] writing hrdp_actuators_beta.egg-info/PKG-INFO
+[25.027s] writing dependency_links to hrdp_actuators_beta.egg-info/dependency_links.txt
+[25.030s] writing entry points to hrdp_actuators_beta.egg-info/entry_points.txt
+[25.033s] writing requirements to hrdp_actuators_beta.egg-info/requires.txt
+[25.035s] writing top-level names to hrdp_actuators_beta.egg-info/top_level.txt
+[25.067s] reading manifest file 'hrdp_actuators_beta.egg-info/SOURCES.txt'
+[25.090s] writing manifest file 'hrdp_actuators_beta.egg-info/SOURCES.txt'
+[25.791s] running build_ext
+[25.794s] Creating /home/r1mini/sungsik_ws/install/hrdp_actuators_beta/lib/python3.8/site-packages/hrdp-actuators-beta.egg-link (link to .)
+[25.822s] 
+[25.830s] Installed /home/r1mini/sungsik_ws/build/hrdp_actuators_beta
+[25.848s] running install_data
+[25.869s] copying package.xml -> /home/r1mini/sungsik_ws/install/hrdp_actuators_beta/share/hrdp_actuators_beta
+[27.711s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_actuators_beta' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_actuators_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_actuators_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_actuators_beta/build --no-deps install_data

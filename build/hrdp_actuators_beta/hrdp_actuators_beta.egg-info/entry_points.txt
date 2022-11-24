@@ -1,0 +1,3 @@
+[console_scripts]
+keyboard_control = hrdp_actuators_beta.dynamixel.control_dynamixel_with_keyboard:main
+
