@@ -4,7 +4,7 @@ from organs.mouth import universal_talk
 from application_managers.mode import universal_mode_selection, check_item, split_string
 from application_managers.utils import getKey, check_internet_connection
 from application_managers.constant_variables import*
-
+import gc
 import os
 import sys
 
@@ -58,8 +58,7 @@ def language_selection(argument)->int:
     else:
         return language_inquiry(False)
 
-"""Actual Home"""
-if __name__ == "__main__":
+def main():
     if check_internet_connection():
         try:
             language = language_selection(sys.argv)
@@ -89,3 +88,9 @@ if __name__ == "__main__":
         """Offline Condition: use 'vosk'"""
         print('Offline version: T.B.A.')
         pass
+
+
+    
+"""Actual Home"""
+if __name__ == "__main__":
+    main()
