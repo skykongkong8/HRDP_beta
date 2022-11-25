@@ -10,10 +10,13 @@ from sensor_msgs.msg import Image
 MAX_SHOE_NUM = 1
 
 class Sneakers3dDetecor:
+
+
     def __init__(self):
         self.objectron_result = None
         self.mp_objectron = mp.solutions.objectron
 
+        
     def detect(self, image):
         with self.mp_objectron.Objectron(static_image_mode=False,
             max_num_objects=MAX_SHOE_NUM,

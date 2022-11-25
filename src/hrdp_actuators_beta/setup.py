@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "keyboard_control = hrdp_actuators_beta.dynamixel.control_dynamixel_with_keyboard:main",
+            "keyboard_control = hrdp_actuators_beta.dynamixel.control_dynamixel_with_keyboard.main:main",
+            "voice_control = hrdp_actuators_beta.dynamixel.control_dynamixel_with_voice.main:main"
         ],
     },
 )

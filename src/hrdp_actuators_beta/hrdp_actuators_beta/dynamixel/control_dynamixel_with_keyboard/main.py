@@ -6,7 +6,7 @@ import sys
 import rclpy
 from rclpy.qos import QoSProfile
 from geometry_msgs.msg import Twist
-from .dynamixel_constants import *
+from ..dynamixel_constants import *
 import termios
 import tty
 

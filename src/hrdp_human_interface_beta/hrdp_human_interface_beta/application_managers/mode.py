@@ -26,12 +26,6 @@ def mode_selection_eng(string):
 
     if check_item(my_list, 'hello') or check_item(my_list, 'hi') or (check_item(my_list, 'meet') and check_item(my_list, 'nice') and check_item(my_list, 'you')):
         return GREETING
-    elif check_item(my_list, 'corona') or check_item(my_list, 'covid'):
-        return COVID
-    elif check_item(my_list, 'brightness') or (check_item(my_list, 'light') and (check_item(my_list, 'down') or check_item(my_list, 'up'))):
-        return BRIGHTNESS
-    elif check_item(my_list, 'volume'):
-        return VOLUME
     elif (check_item(my_list, 'time') and check_item(my_list, 'what')) or check_item(my_list, 'clock'):
         return CLOCK
     elif check_item(my_list, 'timer'):
@@ -49,12 +43,6 @@ def mode_selection_kor(string):
 
     if check_item(my_list, '안녕'):
         return GREETING
-    elif check_item(my_list, '코로나') or check_item(my_list, '확진자'):
-        return COVID
-    elif check_item(my_list, '밝기') or (check_item(my_list, '화면이') and (check_item(my_list, '밝아') or check_item(my_list, '어두워'))):
-        return BRIGHTNESS
-    elif check_item(my_list, '볼륨') or check_item(my_list, '소리'):
-        return VOLUME
     elif check_item(my_list, '시간') or (check_item(my_list, '몇') and check_item(my_list, '시')) or check_item(my_list, '시계'):
         return CLOCK
     elif check_item(my_list, '타이머') or (check_item(my_list, '후에') and check_item(my_list, '알려줘')):
@@ -72,8 +60,6 @@ def mode_selection_esp(string):
 
     if check_item(my_list, 'hola'):
         return GREETING
-    elif check_item(my_list, 'corona') or check_item(my_list, 'virus') or check_item(my_list, 'covid'):
-        return COVID
     else:
         return UNKNOWN_ERROR
 
