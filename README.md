@@ -25,15 +25,18 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
 > * Responsible for getting, processing, filtering, logging all the sensor data   
 > *  Currently only supports RGB & Depth camera    
    
+### Sensors node
 Open a new terminal and insert:
 ``` terminal
 ros2 run hrdp_sensors_beta sensors
 ```
   
 ## 2. hrdp_perception_beta
-> Contains: [face_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/face_detection.py), [pose_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/sample_scripts/sample_body_pose_detection.py), [3d_sneakers_objectron](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/shoe_3d_detection.py)  
+> * Contains: [face_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/face_detection.py), [pose_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/sample_scripts/sample_body_pose_detection.py), [3d_sneakers_objectron](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/shoe_3d_detection.py)
+> * with tensorflow 2.4+, you can enjoy personalized detection functions with customized tf/tflie models. However, in this repository we are using jdk to use tf models without tf!  
 
-> Sample Image: 3D Sneakers Objectron -> returns Translation & Rotation
+
+Sample Image: 3D Sneakers Objectron -> returns Translation & Rotation  
 ![3D Sneakers OObjectron](https://github.com/skykongkong8/hrdp_beta/blob/main/res/sneakers_objectron.png)
 
 > **WARNING** : you should require specific .tflite model's' for objectron node.  
@@ -44,5 +47,21 @@ You can download all the files from [here](https://github.com/google/mediapipe/t
 ### Face detection node
 Open a new terminal and insert:
 ```terminal
-ros2 run  hrdp_perception_beta face_detection
+ros2 run hrdp_perception_beta face_detection
 ```
+
+## 3. hrdp_actuators_beta 
+### Keyboard control node
+Open a new terminal and insert:
+```ros
+ros2 run hrdp_actuators_beta keyboard_control
+```
+### Voice control node
+Open a new terminal and insert:
+```ros
+ros2 run hrdpp_actuators_beta voice_control
+```
+
+## 4. hrdp_human_interfaces
+> * Functions of ears and mouth for a robot.
+> * simple AI speaker functions : clock, timer, joke
