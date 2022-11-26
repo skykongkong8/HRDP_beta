@@ -9,7 +9,7 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
 ## Environment settings
 * HW : [Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
 * OS + frameworks : ubuntu 20.04 + ros2-foxy download from [here](https://omorobot.com/docs/ros2-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-jetson-nano/)
-  * swap mem : follow [here](https://opencourse.tistory.com/224](https://github.com/JetsonHacksNano/installSwapfile) or below
+  * swap mem : follow [here](https://github.com/JetsonHacksNano/installSwapfile) or below
   ```git
   cd ~
   git clone https://github.com/JetsonHacksNano/installSwapfile
