@@ -9,13 +9,47 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
 ## Environment settings
 * HW : [Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
 * OS + frameworks : ubuntu 20.04 + ros2-foxy download from [here](https://omorobot.com/docs/ros2-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-jetson-nano/)
-  * swap mem : follow this [link](https://opencourse.tistory.com/224)
-  * CUDA : cudatoolkit 10 + cudnn7 + gcc7 linking followed from [here](https://kyubot.tistory.com/139)
+  * swap mem : follow [here](https://opencourse.tistory.com/224](https://github.com/JetsonHacksNano/installSwapfile) or below
+  ```git
+  cd ~
+  git clone https://github.com/JetsonHacksNano/installSwapfile
+  cd installSwapfile
+  ./installSwapfile.sh
+  sudo reboot
+  ```
+  * CUDA : cudatoolkit 10 + cudnn7 + gcc7 linking
+  > Latest cuda configuration for Jetson Nano by far! (November, 2022)
+  1. install CUDA
+  ```
+  sudo apt install -y cuda-core-10-0\
+  cuda-cublas-dev-10-0\
+  cuda-cudart-dev-10-0\
+  cuda-libraries-dev-10-0\
+  cuda-toolkit-10-0
+  ```
+  2. install cudnn
+  ```
+  sudo apt install libcudnn7-dev
+  ```
+  3. export cuda path
+  ```
+  export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+  export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+  ```
+  4. link gcc/g++ version (for opencv build)_
+  ```
+  sudo apt install gcc-7 g++-7
+  sudo ln -s /usr/bin/gcc-7 /usr/local/cuda-10.0/bin/gcc
+  sudo ln -s /usr/bin/g++-7 /usr/local/cuda-10.0/bin/g++
+  ```
 * Sensor
   * camera : [Intel Realsense D455](https://www.intelrealsense.com/depth-camera-d455/)
     * sdk install : [follow here](https://github.com/IntelRealSense/librealsense/tree/development/wrappers/python
 ) and [here](https://jstar0525.tistory.com/97)
     > * **WARNING** : cmake with python binding, CUDA, RSUSB !!!  
+    ```cmake
+    cmake  ../  -DBUILD_PYTHON_BINDINGS:bool=true -DFORCE_RSUSB_BACKEND=true -DBUILD_WITH_CUDA=true
+    ```
     > *  *Many github issues are suffering from installing **librealsense2 with python binding at arm64 CPU architecture with ubuntu 20.04**, especially for Jetson Nano since Nvidia is not releasing the official image for it by far. However, I found the trick!*
   * lidar : [rplidar_s1](https://www.slamtec.com/en/Lidar/S1)
     * sdk install : [follow here](https://github.com/CreedyNZ/rplidar_ros2)
