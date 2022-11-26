@@ -1,7 +1,10 @@
 import speech_recognition as sr
 
 # Check out the output of from the folling code and fix DEVIE_INDEX for desired audio input device
+print("####################################")
+print("DEVICE LISTS")
 print(sr.Microphone.list_microphone_names())
+print("####################################\n")
 DEVICE_INDEX = 11 # FIX HERE!
 
 r = sr.Recognizer()

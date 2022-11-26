@@ -1,5 +1,5 @@
 import speech_recognition as sr
-from check_microphone_connection import DEVICE_INDEX
+from .check_microphone_connection import DEVICE_INDEX
 
 """EARS MODULE FOR SPEECH RECOGNITION"""
 

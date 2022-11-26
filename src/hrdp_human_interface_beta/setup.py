@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'user_voice_listener = hrdp_human_interface_beta.nodes.user_voice_listener.main:main'
         ],
     },
 )

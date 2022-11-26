@@ -1,0 +1,18 @@
+[27.752s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_actuators_beta': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_actuators_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_actuators_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_actuators_beta/build --no-deps install_data
+[33.359s] running develop
+[36.728s] running egg_info
+[36.736s] writing hrdp_actuators_beta.egg-info/PKG-INFO
+[36.751s] writing dependency_links to hrdp_actuators_beta.egg-info/dependency_links.txt
+[36.760s] writing entry points to hrdp_actuators_beta.egg-info/entry_points.txt
+[36.775s] writing requirements to hrdp_actuators_beta.egg-info/requires.txt
+[36.777s] writing top-level names to hrdp_actuators_beta.egg-info/top_level.txt
+[36.836s] reading manifest file 'hrdp_actuators_beta.egg-info/SOURCES.txt'
+[36.854s] writing manifest file 'hrdp_actuators_beta.egg-info/SOURCES.txt'
+[37.402s] running build_ext
+[37.408s] Creating /home/r1mini/sungsik_ws/install/hrdp_actuators_beta/lib/python3.8/site-packages/hrdp-actuators-beta.egg-link (link to .)
+[37.415s] Installing keyboard_control script to /home/r1mini/sungsik_ws/install/hrdp_actuators_beta/lib/hrdp_actuators_beta
+[37.418s] Installing voice_control script to /home/r1mini/sungsik_ws/install/hrdp_actuators_beta/lib/hrdp_actuators_beta
+[37.423s] 
+[37.426s] Installed /home/r1mini/sungsik_ws/build/hrdp_actuators_beta
+[37.429s] running install_data
+[38.304s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_actuators_beta' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_actuators_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_actuators_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_actuators_beta/build --no-deps install_data
