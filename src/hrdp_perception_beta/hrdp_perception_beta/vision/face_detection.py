@@ -9,10 +9,22 @@ from cv_bridge import CvBridge
 import mediapipe as mp
 import numpy as np
 import cv2
-import os
 
 
 class FaceDetector:
+    """
+    FaceDetector
+    ============
+    face detection using mediapipe solutions.
+
+    How to use:
+
+    face_detector = FaceDetector()
+
+    num_faces = face_detector.detect(image : np.array()) # both video streaming & image
+    """
+
+
     def __init__(self):
         self.face_counts = 0
         self.mp_face_detection = mp.solutions.face_detection
@@ -30,6 +42,18 @@ class FaceDetector:
 
 
 class FaceDetection(Node):
+    """
+    FaceDetection
+    =============
+    * Overall progress would be like:
+    1. Subscribed to '/hrdp_sensors_beta/rgbd_camera/rgb_frame' 
+    2. Decode Image sensor message to numpy array format.
+    3. Apply face detection and compute total face in the camera streaming image
+    4. Create face detection service and wait for the client service call : '/hrdp_perception_beta/face_detection'
+    
+    """
+
+
     def __init__(self):
         super().__init__('face_detection_node')
 
@@ -40,19 +64,19 @@ class FaceDetection(Node):
         self.initialize_subscriber()
         self.face_detector = FaceDetector()
         self.face_num = 0
+
         self.initialize_service()
+
+        self.get_logger().info('Face detection node initialized!')
 
 
     def initialize_subscriber(self):
-        
-
-        # self.image = np.random.random((480,640,3)).astype(np.uint8)
         self.br = CvBridge()
 
         # 'IMAGE' SUBSCRIBER (WHEN RUNNING ON THE ROBOT)
         self.subscriber = self.create_subscription(
             Image,
-            "/sensor/rgb_camera/rgb_frame",
+            "/hrdp_sensors_beta/rgbd_camera/rgb_frame",
             self.subscriber_callback,
             self.qos_policy,
         )
@@ -60,26 +84,29 @@ class FaceDetection(Node):
         # 'COMPRESSED IMAGE' SUBSCRIBER (WHEN RUNNING REMOTELY FROM PC WITH SAME ROS DOMAIN ID)
         # self.subscriber = self.create_subscription(
         #     CompressedImage,
-        #     "/sensor/rgb_camera/rgb_frame",
+        #     "/hrdp_sensors/rgbd_camera/rgb_frame",
         #     self.callback_for_compressed_image,
         #     qos_policy,
         # )
          
-        self.get_logger().info(f"RGB Camera Subscriber initialized!")
-
 
     def subscriber_callback(self, msg):
         self.image = self.br.imgmsg_to_cv2(msg)
-        # self.get_logger().info(f"Camera subscriber received : {self.image.shape}")
-        self.get_logger().info(f"Received camera frame : {self.image}")
+
+        self.get_logger().info(f"Camera subscriber receiving : {self.image.shape}")
+
 
     def callback_for_compressed_image(self, msg):
         """
         Just in case for CompressedImage situation : decoding process is needed...
         """
-        as_array = np.asarray(msg.data)
+        msg = self.br.imgmsg_to_cv2(msg)
+
+        as_array = np.asarray(msg)
         received_data = cv2.imdecode(as_array, cv2.IMREAD_COLOR)
+
         self.image = received_data
+        
         self.get_logger().info(f"Camera subscriber received : {received_data.shape}")
 
 
@@ -88,6 +115,7 @@ class FaceDetection(Node):
         Just in case for CompressedImage situation : upsampling process is needed...
         """
         scale_percent = 200 # 200%
+
         width = int(image.shape[1] * scale_percent / 100) 
         height = int(image.shape[0] * scale_percent / 100)
         dim = (width, height)
@@ -98,6 +126,7 @@ class FaceDetection(Node):
 
     def face_detection(self):
         self.get_logger().info(f'Detecting current {self.image.shape} image...')
+
         self.face_num = self.face_detector.detect(self.image)
 
 
@@ -106,7 +135,6 @@ class FaceDetection(Node):
             SetBool,
             "/hrdp_perception_beta/face_detection",
             self.execute_callback,
-            # qos_profile = self.qos_policy
         )
 
 
@@ -114,17 +142,16 @@ class FaceDetection(Node):
         #  request.data : bool
         # response.success : bool, response.message : string
         response.success = False
+
         if request.data:
             self.get_logger().info('Face detection service processing service call request...')
+
             self.face_detection()
+
             response.message = str(self.face_num)
             response.success = True
             
         return response
-
-
-
-
 
         
     def run(self):
@@ -132,21 +159,22 @@ class FaceDetection(Node):
         self.face_detector.face_counts = 0
     
 
-    # def terminate(self):
-    #     self.destroy_node()
-
 def main(args=None):
     rclpy.init(args=None)
+
     face_detection_node = FaceDetection()
+
     while True:
         try:
             face_detection_node.run()
+
         except KeyboardInterrupt:
             break
-    # face_detection_node.terminate()
+    
+    face_detection_node.destroy_node()
     rclpy.shutdown()
 
-
+    
 
 if __name__ == "__main__":
     main()

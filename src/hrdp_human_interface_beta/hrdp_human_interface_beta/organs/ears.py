@@ -1,5 +1,4 @@
 import speech_recognition as sr
-# from .check_microphone_connection import DEVICE_INDEX
 
 # CHECK MICROPHONE CONNECTION!
 mic_list = sr.Microphone.list_microphone_names()
@@ -19,6 +18,22 @@ KOREAN = 1
 SPANISH = 2
 
 class Ears():
+    """
+    Ears
+    ====
+    ### "STT interface in online environment"
+
+    How to use:
+
+    ears = Ears()  
+
+    what_you_said = ears.listen( LANGUAGE ) 
+    
+    * [ ENGLISH : 0 / KOREAN : 1 / SPANISH : 2 ]
+    """
+
+
+
     def listen(self, language):
         # obtain audio from the microphone - PREREQUISITE: PyAudio 0.2.11 or later version
 
@@ -31,7 +46,7 @@ class Ears():
                 print("Say something!")
                 r.pause_threshold = 1
                 r.adjust_for_ambient_noise(source)
-                audio = r.listen(source, timeout = 4) 
+                audio = r.listen(source, timeout = 5) 
 
         # recognize speech using Google Speech Recognition
         if language == ENGLISH:
@@ -45,16 +60,19 @@ class Ears():
             
         return words
 
-        # return eng
-
-if __name__ == "__main__":
+    
+def main():
     ears = Ears()
     what_you_said = ears.listen()
     print(what_you_said)
+    
+
+if __name__ == "__main__":
+    main()
+    
 
 
-
-#Notes for listen() and its internal fns - DETAILED REGULATION OPTIONS - Sungsik Kong
+#Notes for listen() and its internal fns - DETAILED REGULATION OPTIONS - Skykongkong8
 
 #1 listen function changes 'source' into 'AudioData' instance. 'AudioData' can be 'recognized' by google data deisgnated languages
 #2 'timeout' param is maximum waiting time(seconds) before 'speech_recognition.WaitTimeoutError'

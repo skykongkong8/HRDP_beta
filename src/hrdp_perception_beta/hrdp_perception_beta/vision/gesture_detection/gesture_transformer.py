@@ -128,7 +128,6 @@ class GestureTransformer():
                         if self.action_seq[-1] == self.action_seq[-2] == self.action_seq[-3] == self.action_seq[-4] == self.action_seq[-5]: # ONLY when the last 3 gesture seq is identical, it would be considered as a valid gesture! Else, show "?" sign
                             this_action = action
 
-
                 elif conf < self.lower_thres:
                     this_action = '?'
 

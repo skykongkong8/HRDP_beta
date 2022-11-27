@@ -14,7 +14,7 @@ class ControlDynamixelWithVoice(Node):
     =========================
     1. Subscribed to '/hrdp_human_interface_beta/user_voice'
     2. Interpret the user's intention with a simple logic
-    3. Obey the user command
+    3. Obey the user command by publishing to predetermined topics 
     """
 
 
@@ -23,8 +23,11 @@ class ControlDynamixelWithVoice(Node):
 
         self.linear_velocity = 0.0
         self.angular_velocity = 0.0
+
         self.listening_state = False
+        
         self.user_words = ''
+        
         self.mode = NEUTRAL
 
         qos_policy = QoSProfile(
@@ -55,6 +58,7 @@ class ControlDynamixelWithVoice(Node):
     def user_voice_callback(self, msg):
         self.user_words = msg.data
         self.get_logger().info(f"Got user words : {msg.data}")
+        
         self.listening_state = True
 
     
@@ -154,7 +158,7 @@ class ControlDynamixelWithVoice(Node):
             
     def obey_user_voice(self):
         self.user_words_interpreting_logic()
-        self.get_logger().info(f'Changing mode to : {mode_hasher[self.mode]}!')
+        self.get_logger().info(f'Changing mode to : {mode_hasher[self.mode]}')
 
         self.formulate_velocities()
 

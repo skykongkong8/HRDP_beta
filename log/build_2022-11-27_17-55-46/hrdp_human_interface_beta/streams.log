@@ -1,0 +1,17 @@
+[28.205s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/build --no-deps install_data
+[34.649s] running develop
+[38.006s] running egg_info
+[38.008s] writing hrdp_human_interface_beta.egg-info/PKG-INFO
+[38.018s] writing dependency_links to hrdp_human_interface_beta.egg-info/dependency_links.txt
+[38.021s] writing entry points to hrdp_human_interface_beta.egg-info/entry_points.txt
+[38.024s] writing requirements to hrdp_human_interface_beta.egg-info/requires.txt
+[38.034s] writing top-level names to hrdp_human_interface_beta.egg-info/top_level.txt
+[38.102s] reading manifest file 'hrdp_human_interface_beta.egg-info/SOURCES.txt'
+[38.128s] writing manifest file 'hrdp_human_interface_beta.egg-info/SOURCES.txt'
+[39.160s] running build_ext
+[39.165s] Creating /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/python3.8/site-packages/hrdp-human-interface-beta.egg-link (link to .)
+[39.195s] Installing user_voice_listener script to /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/hrdp_human_interface_beta
+[39.210s] 
+[39.213s] Installed /home/r1mini/sungsik_ws/build/hrdp_human_interface_beta
+[39.215s] running install_data
+[40.122s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/build --no-deps install_data

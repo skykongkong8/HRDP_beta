@@ -1,4 +1,5 @@
 #!/usr/bin/python3.8
+
 import rclpy
 from .control_dynamixel_with_voice import ControlDynamixelWithVoice
     
@@ -13,5 +14,6 @@ def main():
     control_dynamixel_with_voice.destroy_node()
     rclpy.shutdown()
 
+    
 if __name__ == '__main__':
     main()

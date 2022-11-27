@@ -4,12 +4,28 @@ import numpy as np
 import rclpy
 from rclpy.node import Node
 from cv_bridge import CvBridge
-from geometry_msgs.msg import Twist
 from sensor_msgs.msg import Image
+from std_msgs.msg import Float64MultiArray
 
+
+# maximum number of shoes to apply 3D detection
 MAX_SHOE_NUM = 1
 
+
+
 class Sneakers3dDetecor:
+    """
+    Sneakers3dDetector
+    ==================
+    How to use:
+
+    sneakers_3d_detector = Sneakers3dDetector()
+
+    sneakers_3d_detector.detect( image : np.array )
+
+    detected_results = sneakers_3d_detector.objectron_result
+
+    """
 
 
     def __init__(self):
@@ -33,7 +49,7 @@ class Sneakers3dDetecor:
             if results.detected_objects:
                 for detected_object in results.detected_objects:
                     self.objectron_result = [
-                        detected_object.landmarks_2d,
+                        # detected_object.landmarks_2d,
                         detected_object.rotation,
                         detected_object.translation
                     ]
@@ -41,16 +57,47 @@ class Sneakers3dDetecor:
 
                     
 class SneakersObjectron(Node):
+    """
+    SneakersObjectron
+    =================
+    1. Subscribed to RGB image topic : "/sensor/rgb_camera/rgb_frame"
+    2. Detects 3D objectron of a sneaker and compute its translation (1x3) and rotation (3x3) values
+    3. Publishes both physical values via :
+        * '/hrdp_perception_beta/shoe_3d_detection/translation'
+        * '/hrdp_perception_beta/shoe_3d_detection/rotation'
+    """
+
+
     def __init__(self):
         super().__init__('sneakers_objectron_node')
+
+        self.image = None
+        self.image_streaming_state = False
+
         self.qos_policy = rclpy.qos.QoSProfile(reliability=rclpy.qos.ReliabilityPolicy.BEST_EFFORT,
                                         history=rclpy.qos.HistoryPolicy.KEEP_LAST,
                                         depth=1)
+        
         self.initialize_subscriber()
         
         self.sneakers_3d_detector = Sneakers3dDetecor()
 
-        self.initialize_publisher()
+        self.rotation_publisher = self.create_publisher(
+            Float64MultiArray,
+            '/hrdp_perception_beta/shoe_3d_detection/rotation'
+        )
+
+        self.translation_publisher = self.create_publisher(
+            Float64MultiArray,
+            '/hrdp_perception_beta/shoe_3d_detection/translation'
+        )
+
+        self.update_timer = self.create_timer(
+            0.0010,
+            self.timer_callback
+        )
+
+        self.get_logger().info('Sneakers objectron node initialized!')
         
 
     def initialize_subscriber(self):
@@ -77,8 +124,10 @@ class SneakersObjectron(Node):
 
     def subscriber_callback(self, msg):
         self.image = self.br.imgmsg_to_cv2(msg)
-        # self.get_logger().info(f"Camera subscriber received : {self.image.shape}")
-        self.get_logger().info(f"Received camera frame : {self.image}")
+        self.get_logger().info(f"Camera subscriber received : {self.image.shape}")
+
+        self.image_streaming_state = True
+
 
     def callback_for_compressed_image(self, msg):
         """
@@ -86,7 +135,9 @@ class SneakersObjectron(Node):
         """
         as_array = np.asarray(msg.data)
         received_data = cv2.imdecode(as_array, cv2.IMREAD_COLOR)
+
         self.image = received_data
+
         self.get_logger().info(f"Camera subscriber received : {received_data.shape}")
 
 
@@ -94,7 +145,9 @@ class SneakersObjectron(Node):
         """
         Just in case for CompressedImage situation : upsampling process is needed...
         """
+
         scale_percent = 200 # 200%
+
         width = int(image.shape[1] * scale_percent / 100) 
         height = int(image.shape[0] * scale_percent / 100)
         dim = (width, height)
@@ -105,6 +158,7 @@ class SneakersObjectron(Node):
     
     def sneakers_objectron(self):
         flag = False
+
         self.get_logger().info(f'Detecting sneakers and estimating its position and rotation...')
         self.sneakers_3d_detector.detect()
 
@@ -114,10 +168,33 @@ class SneakersObjectron(Node):
         return flag
 
 
-    def initialize_publisher(self):
-        self.publisher = self.create_publisher(
+    def set_publisher_messages(self):
+        rotation = Float64MultiArray()
+        translation = Float64MultiArray()
 
-        )
+        detection_result = self.sneakers_3d_detector.objectron_result
+        
+        rotation.data = detection_result.rotation
+        translation.data = detection_result.translation
+
+        return rotation, translation
+
+    
+    def do_publishing(self):
+        rotation, translation = self.set_publisher_messages()
+
+        self.rotation_publisher.publish(rotation)
+        self.translation_publisher.publish(translation)
+
+    
+    def timer_callback(self):
+        if self.image_streaming_state:
+            self.do_publishing()
+
+
+    
+
+
 
         
         

@@ -42,6 +42,9 @@ class UserVoiceListener(Node):
         
         if what_you_said:
             self.get_logger().info(f"You said : {what_you_said}")
+            universal_talk("You said the following", ENGLISH)
+            for _ in range(2):
+                universal_talk(what_you_said, LANGUAGE)
             self.user_words.data = what_you_said
             return True
 
