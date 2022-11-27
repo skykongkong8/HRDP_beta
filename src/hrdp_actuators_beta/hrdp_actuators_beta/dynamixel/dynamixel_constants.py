@@ -15,3 +15,11 @@ FRONT = 1
 BACK = 2
 ROTATE_CCW = 3
 ROTATE_CW = 4
+
+mode_hasher = {
+    0 : 'NEUTRAL',
+    1 : 'FRONT',
+    2 : 'BACK',
+    3 : 'ROTATE_CCW',
+    4 : 'ROTATE_CW'
+}

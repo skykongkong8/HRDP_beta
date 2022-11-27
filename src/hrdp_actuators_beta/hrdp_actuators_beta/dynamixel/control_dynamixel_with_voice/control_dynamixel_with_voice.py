@@ -12,9 +12,9 @@ class ControlDynamixelWithVoice(Node):
     """
     ControlDynamixelWithVoice
     =========================
-    1. Listens to every word user says.
+    1. Subscribed to '/hrdp_human_interface_beta/user_voice'
     2. Interpret the user's intention with a simple logic
-    3. Obey the user's words.
+    3. Obey the user command
     """
 
 
@@ -54,6 +54,7 @@ class ControlDynamixelWithVoice(Node):
 
     def user_voice_callback(self, msg):
         self.user_words = msg.data
+        self.get_logger().info(f"Got user words : {msg.data}")
         self.listening_state = True
 
     
@@ -62,11 +63,11 @@ class ControlDynamixelWithVoice(Node):
             self.obey_user_voice()
 
 
-    def split_string(self, string : str):
+    def split_string(self, string : str) -> str:
         return string.lower().split(' ') 
 
 
-    def check_item(self, my_list, word):
+    def check_item(self, my_list, word) -> bool:
         flag = False
 
         for token in my_list:
@@ -98,6 +99,14 @@ class ControlDynamixelWithVoice(Node):
                     self.mode = FRONT
                 elif self.check_item(segmented_user_words, '뒤'):
                     self.mode = BACK
+
+            elif self.check_item(segmented_user_words, '회전') or self.check_item(segmented_user_words, '돌아'):
+                if self.check_item(segmented_user_words, '좌회전'):
+                    self.mode = ROTATE_CCW
+                elif self.check_item(segmented_user_words, '우회전'):
+                    self.mode = ROTATE_CW
+                else:
+                    self.mode = ROTATE_CCW
 
             else:
                 self.mode = NEUTRAL
@@ -145,10 +154,15 @@ class ControlDynamixelWithVoice(Node):
             
     def obey_user_voice(self):
         self.user_words_interpreting_logic()
+        self.get_logger().info(f'Changing mode to : {mode_hasher[self.mode]}!')
+
         self.formulate_velocities()
+
         twist = self.formulate_twist()
 
         self.cmd_vel_publisher.publish(twist)
+        self.get_logger().info(f'Publishing twist with : \n{twist}')
+
         if self.mode != NEUTRAL:
             sleep(3)
             self.mode = NEUTRAL

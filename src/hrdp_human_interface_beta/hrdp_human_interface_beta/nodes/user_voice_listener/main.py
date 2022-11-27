@@ -2,7 +2,8 @@ import rclpy
 from .user_voice_listener import UserVoiceListener
 
 def main(args = None):
-    
+    rclpy.init(args = None)
+
     user_voice_listener = UserVoiceListener()
     user_voice_listener.run()
 

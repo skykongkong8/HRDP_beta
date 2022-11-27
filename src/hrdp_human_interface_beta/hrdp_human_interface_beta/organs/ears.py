@@ -1,10 +1,25 @@
 import speech_recognition as sr
-from .check_microphone_connection import DEVICE_INDEX
+# from .check_microphone_connection import DEVICE_INDEX
+
+# CHECK MICROPHONE CONNECTION!
+mic_list = sr.Microphone.list_microphone_names()
+
+for i in range(len(mic_list)):
+    print(mic_list[i])
+    if 'tegra' not in mic_list[i] and 'UAC' not in mic_list[i] and 'USB' in mic_list[i]:
+        DEVICE_INDEX = i
+        print(f"DEVICE_INDEX : {DEVICE_INDEX}")
+        break
+        
 
 """EARS MODULE FOR SPEECH RECOGNITION"""
 
+ENGLISH = 0
+KOREAN = 1
+SPANISH = 2
+
 class Ears():
-    def listen(self)->list:
+    def listen(self, language):
         # obtain audio from the microphone - PREREQUISITE: PyAudio 0.2.11 or later version
 
         """if you want to adjust the minimum energy threshold"""
@@ -13,32 +28,22 @@ class Ears():
 
         r = sr.Recognizer() # device_index = 3 for Jetson Nano
         with sr.Microphone(device_index = DEVICE_INDEX) as source:
-                # r.adjust_for_ambient_noise(source, duration =1)
                 print("Say something!")
                 r.pause_threshold = 1
                 r.adjust_for_ambient_noise(source)
-                audio = r.listen(source, timeout=3) 
+                audio = r.listen(source, timeout = 4) 
 
         # recognize speech using Google Speech Recognition
-        # try:
-        eng = r.recognize_google(audio, language="en-US", show_all = True)
-        kor = r.recognize_google(audio, language = 'ko-KR', show_all = True)
-        esp = r.recognize_google(audio, language = 'es-ES', show_all = True)
-        # except:
-        #     print('Unknown Error! Please restart the program')
-        #     return
-
-        # try:
-        #     print("Google Speech Recognition thinks you said " + eng + '\n or ' + kor +'\n or '+ esp)
-        # except sr.UnknownValueError:
-        #     print("Google Speech Recognition could not understand audio")
-        #     pass
-        # except sr.RequestError as e:
-        #     print("Could not request results from Google Speech Recognition service; {0}".format(e))
-        # except Exception as e:
-        #     print(e)
-        #     pass
-        return [eng, kor, esp]
+        if language == ENGLISH:
+            words = r.recognize_google(audio, language= "en-US")
+        elif language == KOREAN:
+            words = r.recognize_google(audio, language = 'ko-KR')
+        elif language == SPANISH:
+            words = r.recognize_google(audio, language = 'es-ES')
+        else:
+            words = r.recognize_google(audio, language = 'ko-KR')
+            
+        return words
 
         # return eng
 

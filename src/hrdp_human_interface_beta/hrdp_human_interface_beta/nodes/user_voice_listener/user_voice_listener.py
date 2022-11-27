@@ -6,13 +6,15 @@ from hrdp_human_interface_beta.organs.ears import Ears
 from hrdp_human_interface_beta.organs.mouth import universal_talk
 from .constant_variables import *
 
-LANGUAGE : int = ENGLISH
+LANGUAGE : int = KOREAN
 
 class UserVoiceListener(Node):
     """
-    UserVoiceClient
+    UserVoiceListener
     ===============
-
+    1. Language setting
+    2. Speak and recognize
+    3. Publish to topic: '/hrdp_human_interface_beta/user_voice'
     """
 
 
@@ -36,7 +38,7 @@ class UserVoiceListener(Node):
 
 
     def listen_and_repeat(self):
-        what_you_said : str = self.ears.listen()[LANGUAGE]
+        what_you_said : str = self.ears.listen(LANGUAGE)
         
         if what_you_said:
             self.get_logger().info(f"You said : {what_you_said}")
@@ -56,3 +58,4 @@ class UserVoiceListener(Node):
         flag = self.listen_and_repeat()
         if flag:
             self.do_publishing()
+            self.get_logger().info(f"Successfully published your words : {self.user_words.data}")
