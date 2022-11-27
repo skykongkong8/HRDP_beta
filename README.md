@@ -98,5 +98,10 @@ ros2 run hrdpp_actuators_beta voice_control
 
 ## 4. hrdp_human_interfaces
 > * Functions of ears and mouth for a robot.
-> * simple AI speaker functions : clock, timer, joke
-Before running any nodes, please run `python3 microphone_connection_check.py` and correct DEVICE_INDEX variable properly!
+> * Simple AI speaker functions : clock, timer, joke  
+> * Before running any nodes, please run `organs/microphone_connection_check.py` and correct DEVICE_INDEX variable properly!
+
+### User voice listener node
+```ros
+ros2 run hrdp_human_interface_beta user_voice_listener
+```
