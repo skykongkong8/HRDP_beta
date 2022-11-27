@@ -48,11 +48,11 @@ class Sneakers3dDetecor:
             image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
             if results.detected_objects:
                 for detected_object in results.detected_objects:
-                    self.objectron_result = [
+                    self.objectron_result = {
                         # detected_object.landmarks_2d,
-                        detected_object.rotation,
-                        detected_object.translation
-                    ]
+                        'rotation' : detected_object.rotation,
+                        'translation' : detected_object.translation
+                    }
 
 
                     
@@ -77,6 +77,8 @@ class SneakersObjectron(Node):
         self.qos_policy = rclpy.qos.QoSProfile(reliability=rclpy.qos.ReliabilityPolicy.BEST_EFFORT,
                                         history=rclpy.qos.HistoryPolicy.KEEP_LAST,
                                         depth=1)
+
+        self._qos = rclpy.qos.QoSProfile(depth = 10)
         
         self.initialize_subscriber()
         
@@ -84,12 +86,14 @@ class SneakersObjectron(Node):
 
         self.rotation_publisher = self.create_publisher(
             Float64MultiArray,
-            '/hrdp_perception_beta/shoe_3d_detection/rotation'
+            '/hrdp_perception_beta/shoe_3d_detection/rotation',
+            self._qos
         )
 
         self.translation_publisher = self.create_publisher(
             Float64MultiArray,
-            '/hrdp_perception_beta/shoe_3d_detection/translation'
+            '/hrdp_perception_beta/shoe_3d_detection/translation',
+            self._qos
         )
 
         self.update_timer = self.create_timer(
@@ -106,7 +110,7 @@ class SneakersObjectron(Node):
         # 'IMAGE' SUBSCRIBER (WHEN RUNNING ON THE ROBOT)
         self.subscriber = self.create_subscription(
             Image,
-            "/sensor/rgb_camera/rgb_frame",
+            "/hrdp_sensors_beta/rgbd_camera/rgb_frame",
             self.subscriber_callback,
             self.qos_policy,
         )
@@ -114,7 +118,7 @@ class SneakersObjectron(Node):
         # 'COMPRESSED IMAGE' SUBSCRIBER (WHEN RUNNING REMOTELY FROM PC WITH SAME ROS DOMAIN ID)
         # self.subscriber = self.create_subscription(
         #     CompressedImage,
-        #     "/sensor/rgb_camera/rgb_frame",
+        #    "/hrdp_sensors_beta/rgbd_camera/rgb_frame",
         #     self.callback_for_compressed_image,
         #     qos_policy,
         # )
@@ -152,30 +156,40 @@ class SneakersObjectron(Node):
         height = int(image.shape[0] * scale_percent / 100)
         dim = (width, height)
 
-        resized_image = cv2.resize(image, dim ,interpolation=cv2.INTER_AREA)
+        resized_image = cv2.resize(image, dim , interpolation=cv2.INTER_AREA)
+
         return resized_image
 
     
     def sneakers_objectron(self):
         flag = False
 
-        self.get_logger().info(f'Detecting sneakers and estimating its position and rotation...')
-        self.sneakers_3d_detector.detect()
+        self.sneakers_3d_detector.detect(self.image)
 
         if self.sneakers_3d_detector.objectron_result:
+            self.get_logger().info(f'Detected sneakers and estimating its position and rotation...')
             flag = True
 
         return flag
 
 
     def set_publisher_messages(self):
+        flag = self.sneakers_objectron()
+
         rotation = Float64MultiArray()
         translation = Float64MultiArray()
 
-        detection_result = self.sneakers_3d_detector.objectron_result
-        
-        rotation.data = detection_result.rotation
-        translation.data = detection_result.translation
+        if flag:
+            detection_result = self.sneakers_3d_detector.objectron_result
+            
+            # rot= [[np.float64(detection_result['rotation'][i][j]) for j in range(len(detection_result['rotation']))] for i in range(len(detection_result['rotation'][0]))]
+            # print(rot)
+            # rotation.data  = np.array(detection_result['rotation'], dtype = np.float64)
+            # self.get_logger().info(f"Rotation:\n{detection_result['rotation']}")
+
+            translation.data = [np.float64(detection_result['translation'][i]) for i in range(len(detection_result['translation']))]
+            self.get_logger().info(f"Translation:\n{detection_result['translation']}")
+
 
         return rotation, translation
 
@@ -184,7 +198,10 @@ class SneakersObjectron(Node):
         rotation, translation = self.set_publisher_messages()
 
         self.rotation_publisher.publish(rotation)
+        # self.get_logger().info(f"Rotation:\n{rotation.data}")
+
         self.translation_publisher.publish(translation)
+        self.get_logger().info(f"Translation:\n{translation.data}")
 
     
     def timer_callback(self):

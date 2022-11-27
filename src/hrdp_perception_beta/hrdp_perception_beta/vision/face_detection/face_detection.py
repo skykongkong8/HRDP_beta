@@ -32,12 +32,16 @@ class FaceDetector:
     def detect(self, image):
         with self.mp_face_detection.FaceDetection(
             model_selection=1, min_detection_confidence=0.5) as face_detection:
+
             image.flags.writeable = False
             # image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
             results = face_detection.process(image)
+
             if results.detections:
                 self.face_counts = len(results.detections)
             # cv2.imwrite(f'{os.getcwd()}/processed_raw_image'+ '.png', image)
+
         return self.face_counts
 
 
@@ -50,6 +54,9 @@ class FaceDetection(Node):
     2. Decode Image sensor message to numpy array format.
     3. Apply face detection and compute total face in the camera streaming image
     4. Create face detection service and wait for the client service call : '/hrdp_perception_beta/face_detection'
+
+    TIP : Open a new terminal after running this node and insert:
+    ros2 service call /hrdp_perception_beta/face_detection example_interfaces/srv/SetBool "{data: True}"
     
     """
 
@@ -59,7 +66,7 @@ class FaceDetection(Node):
 
         self.qos_policy = rclpy.qos.QoSProfile(reliability=rclpy.qos.ReliabilityPolicy.BEST_EFFORT,
                                         history=rclpy.qos.HistoryPolicy.KEEP_LAST,
-                                        depth=1)
+                                        depth=1)    
 
         self.initialize_subscriber()
         self.face_detector = FaceDetector()
@@ -93,7 +100,7 @@ class FaceDetection(Node):
     def subscriber_callback(self, msg):
         self.image = self.br.imgmsg_to_cv2(msg)
 
-        self.get_logger().info(f"Camera subscriber receiving : {self.image.shape}")
+        # self.get_logger().info(f"Camera subscriber receiving : {self.image.shape}")
 
 
     def callback_for_compressed_image(self, msg):
@@ -107,7 +114,7 @@ class FaceDetection(Node):
 
         self.image = received_data
         
-        self.get_logger().info(f"Camera subscriber received : {received_data.shape}")
+        # self.get_logger().info(f"Camera subscriber received : {received_data.shape}")
 
 
     def upsample_image(self, image):

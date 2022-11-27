@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'face_detection = hrdp_perception_beta.vision.face_detection:main',
+            'face_detection = hrdp_perception_beta.vision.face_detection.face_detection:main',
             'gesture_detection = hrdp_perception_beta.vision.gesture_detection.main:main',
             'sneakers_objectron = hrdp_perception_beta.vision.sneakers_objectron.main:main',
         ],
