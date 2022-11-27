@@ -1,0 +1,17 @@
+[29.268s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception_beta': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_perception_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_perception_beta/build --no-deps install_data
+[35.836s] running develop
+[39.596s] running egg_info
+[39.605s] writing hrdp_perception_beta.egg-info/PKG-INFO
+[39.613s] writing dependency_links to hrdp_perception_beta.egg-info/dependency_links.txt
+[39.622s] writing entry points to hrdp_perception_beta.egg-info/entry_points.txt
+[39.628s] writing requirements to hrdp_perception_beta.egg-info/requires.txt
+[39.634s] writing top-level names to hrdp_perception_beta.egg-info/top_level.txt
+[39.687s] reading manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'
+[39.717s] writing manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'
+[40.700s] running build_ext
+[40.702s] Creating /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages/hrdp-perception-beta.egg-link (link to .)
+[40.735s] Installing face_detection script to /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/hrdp_perception_beta
+[40.739s] 
+[40.740s] Installed /home/r1mini/sungsik_ws/build/hrdp_perception_beta
+[40.761s] running install_data
+[41.989s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception_beta' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_perception_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_perception_beta/build --no-deps install_data
