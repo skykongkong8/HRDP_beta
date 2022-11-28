@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating hrdp_human_interface_beta.egg-info
+writing hrdp_human_interface_beta.egg-info/PKG-INFO
+writing dependency_links to hrdp_human_interface_beta.egg-info/dependency_links.txt
+writing entry points to hrdp_human_interface_beta.egg-info/entry_points.txt
+writing requirements to hrdp_human_interface_beta.egg-info/requires.txt
+writing top-level names to hrdp_human_interface_beta.egg-info/top_level.txt
+writing manifest file 'hrdp_human_interface_beta.egg-info/SOURCES.txt'
+reading manifest file 'hrdp_human_interface_beta.egg-info/SOURCES.txt'
+writing manifest file 'hrdp_human_interface_beta.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/python3.8/site-packages/hrdp-human-interface-beta.egg-link (link to .)
+Installing user_voice_listener script to /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/hrdp_human_interface_beta
+
+Installed /home/r1mini/sungsik_ws/build/hrdp_human_interface_beta
+running install_data
+creating /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/share/ament_index
+creating /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/share/ament_index/resource_index
+creating /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/share/ament_index/resource_index/packages
+copying resource/hrdp_human_interface_beta -> /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/share/ament_index/resource_index/packages
+copying package.xml -> /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/share/hrdp_human_interface_beta

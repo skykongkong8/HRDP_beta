@@ -1,3 +1,0 @@
-[console_scripts]
-face_detection = hrdp_beta_perception.face_detection:main
-

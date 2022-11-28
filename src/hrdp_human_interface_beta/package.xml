@@ -22,8 +22,8 @@
   <exec_depend>std_msgs</exec_depend>
 
   <exec_depend>python3-schedule</exec_depend>
-  <exec_depend>speechrecognition</exec_depend>
-  <exec_depend>gTTS</exec_depend>
+  <exec_depend>python-speechrecognition-pip</exec_depend>
+  <exec_depend>python-gTTS-pip</exec_depend>
   <exec_depend>python3-playsound-pip</exec_depend>
 
 

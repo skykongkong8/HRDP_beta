@@ -5,6 +5,11 @@ from .camera_constants import CameraConstants
 from .depth_filter_manager import DepthFilterManager
 
 class RGBDRealsenseCamera:
+    """
+    RGBDRealsenseCamera
+    ===================
+    1. Collect Realsense camera data with success flag 
+    """
 
 
     def __init__(self):

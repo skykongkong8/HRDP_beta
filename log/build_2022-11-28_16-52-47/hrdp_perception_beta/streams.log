@@ -1,0 +1,19 @@
+[17.183s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_perception_beta': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_perception_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_perception_beta/build --no-deps install_data
+[20.777s] running develop
+[22.620s] running egg_info
+[22.625s] writing hrdp_perception_beta.egg-info/PKG-INFO
+[22.628s] writing dependency_links to hrdp_perception_beta.egg-info/dependency_links.txt
+[22.633s] writing entry points to hrdp_perception_beta.egg-info/entry_points.txt
+[22.637s] writing requirements to hrdp_perception_beta.egg-info/requires.txt
+[22.648s] writing top-level names to hrdp_perception_beta.egg-info/top_level.txt
+[22.684s] reading manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'
+[22.700s] writing manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'
+[23.468s] running build_ext
+[23.469s] Creating /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages/hrdp-perception-beta.egg-link (link to .)
+[23.484s] Installing face_detection script to /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/hrdp_perception_beta
+[23.485s] Installing gesture_detection script to /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/hrdp_perception_beta
+[23.487s] Installing sneakers_objectron script to /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/hrdp_perception_beta
+[23.491s] 
+[23.500s] Installed /home/r1mini/sungsik_ws/build/hrdp_perception_beta
+[23.502s] running install_data
+[24.278s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_perception_beta' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_perception_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_perception_beta/build --no-deps install_data

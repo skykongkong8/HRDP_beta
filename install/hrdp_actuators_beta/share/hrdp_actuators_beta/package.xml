@@ -2,10 +2,12 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>hrdp_actuators_beta</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="kssjustin98@gmail.com">r1mini</maintainer>
-  <license>TODO: License declaration</license>
+  <version>1.0.0</version>
+  <description>
+    This package is expected to collect all the signals from robot-perception-in-the-loop and human controlling interfaces and formulate the optimal actuation strategy.
+  </description>
+  <maintainer email="kssjustin98@gmail.com">skykongkong8</maintainer>
+  <license>TODO: License declaration : skykongkong8</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
@@ -19,6 +21,12 @@
   <exec_depend>example_interfaces</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
+  <!--exec_depend>hrdp_human_interface_beta</exec_depend-->
+
+  
+  <exec_depend>python3-numpy</exec_depend>
+ 
+  <exec_depend>turtlebot3_bringup</exec_depend>
 
 
 

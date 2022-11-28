@@ -1,9 +1,0 @@
--- run_test.py: invoking following command in '/home/r1mini/sungsik_ws/src/hrdp_human_interfaces':
- - /opt/ros/foxy/bin/ament_lint_cmake --xunit-file /home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/lint_cmake.xunit.xml
-
-
-No problems found
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/home/r1mini/sungsik_ws/build/hrdp_human_interfaces/test_results/hrdp_human_interfaces/lint_cmake.xunit.xml'

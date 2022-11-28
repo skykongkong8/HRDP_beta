@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating hrdp_perception_beta.egg-info
+writing hrdp_perception_beta.egg-info/PKG-INFO
+writing dependency_links to hrdp_perception_beta.egg-info/dependency_links.txt
+writing entry points to hrdp_perception_beta.egg-info/entry_points.txt
+writing requirements to hrdp_perception_beta.egg-info/requires.txt
+writing top-level names to hrdp_perception_beta.egg-info/top_level.txt
+writing manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'
+reading manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'
+writing manifest file 'hrdp_perception_beta.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/python3.8/site-packages/hrdp-perception-beta.egg-link (link to .)
+Installing face_detection script to /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/hrdp_perception_beta
+Installing gesture_detection script to /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/hrdp_perception_beta
+Installing sneakers_objectron script to /home/r1mini/sungsik_ws/install/hrdp_perception_beta/lib/hrdp_perception_beta
+
+Installed /home/r1mini/sungsik_ws/build/hrdp_perception_beta
+running install_data
+creating /home/r1mini/sungsik_ws/install/hrdp_perception_beta/share/ament_index
+creating /home/r1mini/sungsik_ws/install/hrdp_perception_beta/share/ament_index/resource_index
+creating /home/r1mini/sungsik_ws/install/hrdp_perception_beta/share/ament_index/resource_index/packages
+copying resource/hrdp_perception_beta -> /home/r1mini/sungsik_ws/install/hrdp_perception_beta/share/ament_index/resource_index/packages
+copying package.xml -> /home/r1mini/sungsik_ws/install/hrdp_perception_beta/share/hrdp_perception_beta

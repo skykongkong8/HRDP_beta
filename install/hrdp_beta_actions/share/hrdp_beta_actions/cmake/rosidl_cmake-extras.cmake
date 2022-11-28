@@ -1,1 +1,0 @@
-/home/r1mini/sungsik_ws/build/hrdp_beta_actions/rosidl_cmake/rosidl_cmake-extras.cmake

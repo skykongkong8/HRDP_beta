@@ -1,1 +1,0 @@
-/home/r1mini/sungsik_ws/src/py_pubsub/setup.py

@@ -1,9 +1,9 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from .camera.rgb_camera import RGBRealsenseCamera
-from .camera.d_camera import DRealsenseCamera
-# from .camera.rgb_camera import RGBDRealsenseCamera
+# from .camera.rgb_camera import RGBRealsenseCamera
+# from .camera.d_camera import DRealsenseCamera
+from .camera.rgbd_camera import RGBDRealsenseCamera
 from cv_bridge import CvBridge
 from .lidar.lidar import *
 from .supersonic.supersonic import *
@@ -41,7 +41,6 @@ class Sensors(Node):
             self.qos_policy 
         )
 
-        self.rgb_camera = RGBRealsenseCamera()
 
         self.d_camera_publisher = self.create_publisher(
             Image,
@@ -49,7 +48,9 @@ class Sensors(Node):
             self.qos_policy
         )
 
-        self.d_camera = DRealsenseCamera()
+        # self.rgb_camera = RGBRealsenseCamera()
+        # self.d_camera = DRealsenseCamera()
+        self.rgbd_camera = RGBDRealsenseCamera()
 
         self.br = CvBridge()
 
@@ -60,27 +61,52 @@ class Sensors(Node):
 
 
     def camera_callback(self):
-        success_rgb, raw_data_rgb = self.rgb_camera.get_frame_stream()
+        success, rgb_img, depth_img = self.rgbd_camera.get_frame_stream()
 
-        if success_rgb:
+        if success:
             self.rgb_camera_publisher.publish(
-                self.br.cv2_to_imgmsg(raw_data_rgb)
+                self.br.cv2_to_imgmsg(rgb_img)
             )
 
-            self.get_logger().info(f"RGB Camera Publisher publishing state is : {success_rgb}, {raw_data_rgb.shape}")
-        else:
-            self.get_logger().info(f"RGB Camera Publisher publishing state is : {success_rgb}")
+            self.get_logger().info(f"RGB Camera Publisher publishing state is : {success}, {rgb_img.shape}")
 
-        success_d, raw_data_d = self.d_camera.get_frame_stream()
-
-        if success_d:
             self.d_camera_publisher.publish(
-                self.br.cv2_to_imgmsg(raw_data_d)
+                self.br.cv2_to_imgmsg(depth_img)
             )
 
-            self.get_logger().info(f"Depth Camera Publisher publishing state is : {success_d}, {raw_data_d.shape}")
+            self.get_logger().info(f"Depth Camera Publisher publishing state is : {success}, {depth_img.shape}")
+
         else:
-            self.get_logger().info(f"Depth Camera Publisher publishing state is : {success_d}")
+            self.get_logger().info(f"RGB Camera Publisher publishing state is : {success}")
+            self.get_logger().info(f"Depth Camera Publisher publishing state is : {success}")
+
+
+    # CALLBACK FOR ONLY RGB FRAME
+    # def camera_callback(self):
+    #     success_rgb, raw_data_rgb = self.rgb_camera.get_frame_stream()
+
+    #     if success_rgb:
+    #         self.rgb_camera_publisher.publish(
+    #             self.br.cv2_to_imgmsg(raw_data_rgb)
+    #         )
+
+    #         self.get_logger().info(f"RGB Camera Publisher publishing state is : {success_rgb}, {raw_data_rgb.shape}")
+    #     else:
+    #         self.get_logger().info(f"RGB Camera Publisher publishing state is : {success_rgb}")
+
+            
+    # CALLBACK FOR ONLY DEPTH FRAME    
+    # def camera_callback(self):
+    #     success_d, raw_data_d = self.d_camera.get_frame_stream()
+
+    #     if success_d:
+    #         self.d_camera_publisher.publish(
+    #             self.br.cv2_to_imgmsg(raw_data_d)
+    #         )
+
+    #         self.get_logger().info(f"Depth Camera Publisher publishing state is : {success_d}, {raw_data_d.shape}")
+    #     else:
+    #         self.get_logger().info(f"Depth Camera Publisher publishing state is : {success_d}")
 
 
     def run(self):
