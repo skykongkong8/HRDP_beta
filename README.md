@@ -86,9 +86,14 @@ ros2 run hrdp_sensors_beta sensors
 > Subscribed to camera +  Face detection model  + Detection call service
 
 Open a new terminal and insert:
-```terminal
+```ros
 ros2 run hrdp_perception_beta face_detection
 ```
+Then to request the service:
+```ros
+ros2 service call /hrdp_perception_beta/face_detection example_interfaces/srv/SetBoool "{data : True}"
+```
+
 ### Sneakers objectron node
 > Subscribed to camera + MobileNet + Sneakers objectron model + MultiArray publishers  
 
