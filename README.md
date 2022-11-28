@@ -45,7 +45,7 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
 * Sensor
   * camera : [Intel Realsense D455](https://www.intelrealsense.com/depth-camera-d455/)
     * sdk install : [follow here](https://github.com/IntelRealSense/librealsense/tree/development/wrappers/python
-) and [here](https://jstar0525.tistory.com/97)
+) and [here](https://jstar0525.tistory.com/97) (download from source)
     > * **WARNING** : cmake with python binding, CUDA, RSUSB !!!  
     ```cmake
     cmake  ../  -DBUILD_PYTHON_BINDINGS:bool=true -DFORCE_RSUSB_BACKEND=true -DBUILD_WITH_CUDA=true
@@ -56,44 +56,58 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
 * Major python dependencies : [mediapipe](https://google.github.io/mediapipe/getting_started/python.html), [tensorflow 2.4](https://www.tensorflow.org/install/source?hl=ko), gTTS, SpeechRecognition, playsound
 
 ## 1. hrdp_sensors_beta
-> * Responsible for getting, processing, filtering, logging all the sensor data   
-> *  Currently only supports RGB & Depth camera    
+* Responsible for getting, processing, filtering, logging all the sensor data   
+*  Currently only supports RGB & Depth camera    
    
 ### Sensors node
-Open a new terminal and insert:
+> Multiple publishers for each sensors connected 
+
+Open a new terminal and insert:  
 ``` terminal
 ros2 run hrdp_sensors_beta sensors
 ```
   
 ## 2. hrdp_perception_beta
-> * Contains: [face_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/face_detection.py), [pose_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/sample_scripts/sample_body_pose_detection.py), [3d_sneakers_objectron](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/shoe_3d_detection.py)
+* Contains: [face_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/face_detection.py), [pose_detection](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/sample_scripts/sample_body_pose_detection.py), [3d_sneakers_objectron](https://github.com/skykongkong8/hrdp_beta/blob/main/src/hrdp_perception_beta/hrdp_perception_beta/vision/shoe_3d_detection.py)
 > * with tensorflow 2.4+, you can enjoy personalized detection functions with customized tf/tflie models. However, in this repository we are using jdk to use tf models without tf!  
 
+### Face detection node
+> Subscribed to camera +  Face detection model  + Detection call service
 
-Sample Image: 3D Sneakers Objectron -> returns Translation & Rotation  
-![3D Sneakers OObjectron](https://github.com/skykongkong8/hrdp_beta/blob/main/res/sneakers_objectron.png)
+Open a new terminal and insert:
+```terminal
+ros2 run hrdp_perception_beta face_detection
+```
+### Sneakers objectron node
+> Subscribed to camera + MobileNet + Sneakers objectron model + MultiArray publishers  
 
 > **WARNING** : you should require specific .tflite model's' for objectron node.  
 You can download all the files from [here](https://github.com/google/mediapipe/tree/v0.8.10.1/mediapipe/modules/objectron), or from the older branches of [mediapipe](https://github.com/google/mediapipe) repo if deprecated, and add it to: 
 ```
 {your_python_dist-packages}/mediapipe/modules/objectron
 ```
-### Face detection node
-Open a new terminal and insert:
-```terminal
-ros2 run hrdp_perception_beta face_detection
+Then, open a new terminal and insert:
+```ros
+ros2 run hrdp_perception_beta sneakers_objectron
 ```
+* Sample Image: sneakers_objectron_node -> Publishes Translation & Rotation  
+![3D Sneakers OObjectron](https://github.com/skykongkong8/hrdp_beta/blob/main/res/sneakers_objectron.png)  
 
 ## 3. hrdp_actuators_beta 
+* Current actuator suppported : [dynamixel](http://www.dynamixel.com/)
 ### Keyboard control node
+> Keyboard input interface + Twist publisher  
+
 Open a new terminal and insert:
 ```ros
 ros2 run hrdp_actuators_beta keyboard_control
 ```
 ### Voice control node
+> Subscribed to user_voice + String publisher
+
 Open a new terminal and insert:
 ```ros
-ros2 run hrdpp_actuators_beta voice_control
+ros2 run hrdp_actuators_beta voice_control
 ```
 
 ## 4. hrdp_human_interfaces
@@ -102,6 +116,9 @@ ros2 run hrdpp_actuators_beta voice_control
 > * Before running any nodes, please run `organs/microphone_connection_check.py` and correct DEVICE_INDEX variable properly!
 
 ### User voice listener node
+> Microphone connection + TTS algorithm + String publisher  
+
+Open a new terminal and insert:
 ```ros
 ros2 run hrdp_human_interface_beta user_voice_listener
 ```
