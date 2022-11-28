@@ -54,6 +54,17 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
   * lidar : [rplidar_s1](https://www.slamtec.com/en/Lidar/S1)
     * sdk install : [follow here](https://github.com/CreedyNZ/rplidar_ros2)
 * Major python dependencies : [mediapipe](https://google.github.io/mediapipe/getting_started/python.html), [tensorflow 2.4](https://www.tensorflow.org/install/source?hl=ko), gTTS, SpeechRecognition, playsound
+  * Almost every ros/python package depdency can be resolved with [rosdep](https://docs.ros.org/en/foxy/Tutorials/Intermediate/Rosdep.html)
+  > If it is your first time running rosdep:
+  ```ros
+  rosdep init
+  rosdep update
+  ```
+  > Then run:
+  ```ros
+  cd ~/your_ws
+  rosdep install  --from-paths src 
+  ```
 
 ## 1. hrdp_sensors_beta
 * Responsible for getting, processing, filtering, logging all the sensor data   
