@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+hrdp_core_beta/__init__.py
+hrdp_core_beta.egg-info/PKG-INFO
+hrdp_core_beta.egg-info/SOURCES.txt
+hrdp_core_beta.egg-info/dependency_links.txt
+hrdp_core_beta.egg-info/entry_points.txt
+hrdp_core_beta.egg-info/requires.txt
+hrdp_core_beta.egg-info/top_level.txt
+hrdp_core_beta.egg-info/zip-safe
+resource/hrdp_core_beta

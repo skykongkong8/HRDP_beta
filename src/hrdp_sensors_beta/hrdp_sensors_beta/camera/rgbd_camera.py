@@ -5,12 +5,15 @@ from .camera_constants import CameraConstants
 from .depth_filter_manager import DepthFilterManager
 
 class RGBDRealsenseCamera:
+
+
     def __init__(self):
         self.pipeline = rs.pipeline()
         config = rs.config()
 
         self.camera_constants = CameraConstants()
         self.filter_manager = DepthFilterManager()
+
         resolution = self.get_resolution()
         framerate = self.get_framerate()
 
@@ -22,19 +25,23 @@ class RGBDRealsenseCamera:
         align_to=rs.stream.color
         self.align = rs.align(align_to)
 
+        
     def get_resolution(self):
         width = self.camera_constants.FrameWidth
         height = self.camera_constants.FrameHeight
         return (width, height)
 
+    
     def get_framerate(self):
         framerate = self.camera_constants.FrameRate
         return framerate
 
+    
     def get_rgbBool(self):
         rgbBool = self.camera_constants.RGB
         return rgbBool
-        
+
+       
     def apply_DepthFilter(self, depth_frame, filterType= None):
         """
         Applying preprocessing filters on depth_frame # not on depth_ColorMap!
@@ -43,6 +50,7 @@ class RGBDRealsenseCamera:
 
         return filtered_depth
 
+    
     def get_frame_stream(self):
         frames = self.pipeline.wait_for_frames()
         aligned_frames = self.align.process(frames)
@@ -60,12 +68,11 @@ class RGBDRealsenseCamera:
 
         return True, rgb_image, depth_image
 
-    # def get_rgb_frame(self):
-        
 
     def release(self):
         self.pipeline.stop()
         print("Terminate Everything...")
+        
 
     def view_by_cv2(self):
         print("THIS IS FOR VISUAL CHECKING!")

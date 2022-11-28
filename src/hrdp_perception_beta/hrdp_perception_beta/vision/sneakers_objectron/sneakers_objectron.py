@@ -5,7 +5,7 @@ import rclpy
 from rclpy.node import Node
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
-from std_msgs.msg import Float64MultiArray
+from std_msgs.msg import Float64MultiArray, MultiArrayDimension
 
 
 # maximum number of shoes to apply 3D detection
@@ -60,7 +60,7 @@ class SneakersObjectron(Node):
     """
     SneakersObjectron
     =================
-    1. Subscribed to RGB image topic : "/sensor/rgb_camera/rgb_frame"
+    1. Subscribed to RGB image topic : "/hrdp_sensors_beta/rgbd_camera/rgb_frame"
     2. Detects 3D objectron of a sneaker and compute its translation (1x3) and rotation (3x3) values
     3. Publishes both physical values via :
         * '/hrdp_perception_beta/shoe_3d_detection/translation'
@@ -86,13 +86,13 @@ class SneakersObjectron(Node):
 
         self.rotation_publisher = self.create_publisher(
             Float64MultiArray,
-            '/hrdp_perception_beta/shoe_3d_detection/rotation',
+            '/hrdp_perception_beta/sneakers_objectron/rotation',
             self._qos
         )
 
         self.translation_publisher = self.create_publisher(
             Float64MultiArray,
-            '/hrdp_perception_beta/shoe_3d_detection/translation',
+            '/hrdp_perception_beta/sneakers_objectron/translation',
             self._qos
         )
 
@@ -182,10 +182,23 @@ class SneakersObjectron(Node):
         if flag:
             detection_result = self.sneakers_3d_detector.objectron_result
             
-            # rot= [[np.float64(detection_result['rotation'][i][j]) for j in range(len(detection_result['rotation']))] for i in range(len(detection_result['rotation'][0]))]
-            # print(rot)
-            # rotation.data  = np.array(detection_result['rotation'], dtype = np.float64)
-            # self.get_logger().info(f"Rotation:\n{detection_result['rotation']}")
+            # Linearize Nested array to allocate and publish with its original array dimension
+            rot= [[np.float64(detection_result['rotation'][i][j]) for j in range(len(detection_result['rotation']))] for i in range(len(detection_result['rotation'][0]))]
+            rotation.data  = [v for nested in rot for v in nested]
+
+            dim0 = MultiArrayDimension()
+            dim0.label = "foo"
+            dim0.size = len(rot)
+            dim0.stride = len(rotation.data)
+
+            dim1 = MultiArrayDimension()
+            dim1.label = "bar"
+            dim1.size = len(rot[0])
+            dim1.stride = dim1.size
+
+            rotation.layout.dim = [dim0, dim1]
+
+            self.get_logger().info(f"Rotation:\n{detection_result['rotation']}")
 
             translation.data = [np.float64(detection_result['translation'][i]) for i in range(len(detection_result['translation']))]
             self.get_logger().info(f"Translation:\n{detection_result['translation']}")
@@ -207,18 +220,3 @@ class SneakersObjectron(Node):
     def timer_callback(self):
         if self.image_streaming_state:
             self.do_publishing()
-
-
-    
-
-
-
-        
-        
-
-
-
-
-
-                
-                    

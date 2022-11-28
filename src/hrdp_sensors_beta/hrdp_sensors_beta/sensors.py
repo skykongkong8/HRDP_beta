@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from .camera.rgb_camera import RGBRealsenseCamera
+from .camera.d_camera import DRealsenseCamera
 # from .camera.rgb_camera import RGBDRealsenseCamera
 from cv_bridge import CvBridge
 from .lidar.lidar import *
@@ -15,8 +16,9 @@ class Sensors(Node):
     ####  In charge of all the sensors of current system.
 
     1. Publishes RGB sensor data to '/hrdp_sensors_beta/rgbd_camera/rgb_frame'
-    2. Please add-on other sensors like : lidar, supersonic, imu ... etc
-    3. Check QoS Policy for sensor signal latencies
+    2. Publishes Depth sensor data to '/hrdp_sensors_beta/rgbd_camera/d_frame'
+    3. Please add-on other sensors like : lidar, supersonic, imu ... etc
+    4. Check QoS Policy for sensor signal latencies
     """
 
 
@@ -33,32 +35,52 @@ class Sensors(Node):
         
 
     def initialize_camera(self):
-        self.camera_publisher = self.create_publisher(
+        self.rgb_camera_publisher = self.create_publisher(
             Image,
             '/hrdp_sensors_beta/rgbd_camera/rgb_frame',
             self.qos_policy 
         )
 
         self.rgb_camera = RGBRealsenseCamera()
+
+        self.d_camera_publisher = self.create_publisher(
+            Image,
+            '/hrdp_sensors_beta/rgbd_camera/d_frame',
+            self.qos_policy
+        )
+
+        self.d_camera = DRealsenseCamera()
+
         self.br = CvBridge()
 
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.camera_callback)
 
-        self.get_logger().info("Camera Publisher initialized!")
+        self.get_logger().info("Camera Publishers initialized!")
 
 
     def camera_callback(self):
-        success, raw_data = self.rgb_camera.get_frame_stream()
+        success_rgb, raw_data_rgb = self.rgb_camera.get_frame_stream()
 
-        if success:
-            self.camera_publisher.publish(
-                self.br.cv2_to_imgmsg(raw_data)
+        if success_rgb:
+            self.rgb_camera_publisher.publish(
+                self.br.cv2_to_imgmsg(raw_data_rgb)
             )
 
-            self.get_logger().info(f"Camera Publisher publishing state is : {success}, {raw_data.shape}")
+            self.get_logger().info(f"RGB Camera Publisher publishing state is : {success_rgb}, {raw_data_rgb.shape}")
+        else:
+            self.get_logger().info(f"RGB Camera Publisher publishing state is : {success_rgb}")
 
-        self.get_logger().info(f"Camera Publisher publishing state is : {success}")
+        success_d, raw_data_d = self.d_camera.get_frame_stream()
+
+        if success_d:
+            self.d_camera_publisher.publish(
+                self.br.cv2_to_imgmsg(raw_data_d)
+            )
+
+            self.get_logger().info(f"Depth Camera Publisher publishing state is : {success_d}, {raw_data_d.shape}")
+        else:
+            self.get_logger().info(f"Depth Camera Publisher publishing state is : {success_d}")
 
 
     def run(self):

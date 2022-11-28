@@ -2,10 +2,12 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>hrdp_human_interface_beta</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="kssjustin98@gmail.com">r1mini</maintainer>
-  <license>TODO: License declaration</license>
+  <version>1.0.0</version>
+  <description>
+    This packages is expected to comprehend human-derived signals and formulate it into robot-interpretable information.
+  </description>
+  <maintainer email="kssjustin98@gmail.com">skykongkong8</maintainer>
+  <license>TODO: License declaration : skykongkong8</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
@@ -18,6 +20,11 @@
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>example_interfaces</exec_depend>
   <exec_depend>std_msgs</exec_depend>
+
+  <exec_depend>python3-schedule</exec_depend>
+  <exec_depend>speechrecognition</exec_depend>
+  <exec_depend>gTTS</exec_depend>
+  <exec_depend>python3-playsound-pip</exec_depend>
 
 
 

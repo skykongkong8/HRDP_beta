@@ -2,10 +2,12 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>hrdp_perception_beta</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="kssjustin98@gmail.com">r1mini</maintainer>
-  <license>TODO: License declaration</license>
+  <version>1.0.0</version>
+  <description>
+    This package is expected to collect sensor data, apply proper detection algorithms (i.e. deep learning models), and obtain useful information for the robot system. 
+  </description>
+  <maintainer email="kssjustin98@gmail.com">skykongkong8</maintainer>
+  <license>TODO: License declaration : skykongkong8</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
@@ -18,6 +20,12 @@
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>example_interfaces</exec_depend>
   <exec_depend>std_msgs</exec_depend>
+  <!--exec_depend>hrdp_sensors_beta</exec_depend-->
+
+  <exec_depend>python-numpy</exec_depend>
+  <!--exec_depend>mediapipe CHECK IF THIS DEPENDENCY SHOULD BE DOWNLOADED FROM SOURCE IN YOUR ENVIRONMENT</exec_depend-->
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>python-opencv</exec_depend>
 
 
 
