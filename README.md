@@ -138,3 +138,11 @@ Open a new terminal and insert:
 ```ros
 ros2 run hrdp_human_interface_beta user_voice_listener
 ```
+
+## 5. hrdp_launch
+* Integrated launch files that contain multiple nodes from the distant packages.
+### hrdp_sneakers_objectron_launch.xml
+> Camera puublisher + camera subscriber + sneakers_objectron model + Rotation publisher + Translation publisher
+```
+ros2 launch hrdp_launch hrdp_sneakers_objectron_launch.xml
+```
