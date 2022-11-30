@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+hrdp_launch/__init__.py
+hrdp_launch.egg-info/PKG-INFO
+hrdp_launch.egg-info/SOURCES.txt
+hrdp_launch.egg-info/dependency_links.txt
+hrdp_launch.egg-info/entry_points.txt
+hrdp_launch.egg-info/requires.txt
+hrdp_launch.egg-info/top_level.txt
+hrdp_launch.egg-info/zip-safe
+launch/hrdp_sneaker_objectron_launch.xml
+launch/hrdp_sneakers_objectron_launch.xml
+resource/hrdp_launch

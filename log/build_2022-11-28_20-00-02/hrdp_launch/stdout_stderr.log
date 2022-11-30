@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing hrdp_launch.egg-info/PKG-INFO
+writing dependency_links to hrdp_launch.egg-info/dependency_links.txt
+writing entry points to hrdp_launch.egg-info/entry_points.txt
+writing requirements to hrdp_launch.egg-info/requires.txt
+writing top-level names to hrdp_launch.egg-info/top_level.txt
+reading manifest file 'hrdp_launch.egg-info/SOURCES.txt'
+writing manifest file 'hrdp_launch.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/r1mini/sungsik_ws/install/hrdp_launch/lib/python3.8/site-packages/hrdp-launch.egg-link (link to .)
+
+Installed /home/r1mini/sungsik_ws/build/hrdp_launch
+running install_data
+error: can't copy 'launch/hrdp_sneaker_objectron_launch.xml': doesn't exist or not a regular file

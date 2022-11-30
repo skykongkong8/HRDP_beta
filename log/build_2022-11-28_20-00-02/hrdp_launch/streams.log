@@ -1,0 +1,17 @@
+[20.143s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_launch': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_launch/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_launch/build --no-deps install_data
+[24.151s] running develop
+[25.979s] running egg_info
+[25.984s] writing hrdp_launch.egg-info/PKG-INFO
+[25.991s] writing dependency_links to hrdp_launch.egg-info/dependency_links.txt
+[26.009s] writing entry points to hrdp_launch.egg-info/entry_points.txt
+[26.014s] writing requirements to hrdp_launch.egg-info/requires.txt
+[26.019s] writing top-level names to hrdp_launch.egg-info/top_level.txt
+[26.081s] reading manifest file 'hrdp_launch.egg-info/SOURCES.txt'
+[26.090s] writing manifest file 'hrdp_launch.egg-info/SOURCES.txt'
+[27.158s] running build_ext
+[27.169s] Creating /home/r1mini/sungsik_ws/install/hrdp_launch/lib/python3.8/site-packages/hrdp-launch.egg-link (link to .)
+[27.190s] 
+[27.194s] Installed /home/r1mini/sungsik_ws/build/hrdp_launch
+[27.201s] running install_data
+[27.210s] error: can't copy 'launch/hrdp_sneaker_objectron_launch.xml': doesn't exist or not a regular file
+[28.591s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_launch' returned '1': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_launch/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_launch/build --no-deps install_data

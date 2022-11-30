@@ -1,1 +1,1 @@
-example_interfaces:gTTS:python3-playsound-pip:python3-schedule:rclpy:sensor_msgs:speechrecognition:std_msgs
+example_interfaces:python-gTTS-pip:python-speechrecognition-pip:python3-playsound-pip:python3-schedule:rclpy:sensor_msgs:std_msgs

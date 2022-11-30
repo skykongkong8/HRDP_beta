@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="hrdp_sensors_beta" exec="sensors" name="sensors"/>
+
+    <node pkg="hrdp_perception_beta" exec="sneakers_objectron" name="sneakers_objectron"/>
+    
+</launch>

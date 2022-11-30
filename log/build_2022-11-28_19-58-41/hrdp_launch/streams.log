@@ -1,0 +1,24 @@
+[10.332s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_launch': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_launch/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_launch/build --no-deps install_data
+[13.477s] running develop
+[14.668s] running egg_info
+[14.669s] creating hrdp_launch.egg-info
+[14.671s] writing hrdp_launch.egg-info/PKG-INFO
+[14.671s] writing dependency_links to hrdp_launch.egg-info/dependency_links.txt
+[14.672s] writing entry points to hrdp_launch.egg-info/entry_points.txt
+[14.673s] writing requirements to hrdp_launch.egg-info/requires.txt
+[14.673s] writing top-level names to hrdp_launch.egg-info/top_level.txt
+[14.692s] writing manifest file 'hrdp_launch.egg-info/SOURCES.txt'
+[14.705s] reading manifest file 'hrdp_launch.egg-info/SOURCES.txt'
+[14.709s] writing manifest file 'hrdp_launch.egg-info/SOURCES.txt'
+[14.980s] running build_ext
+[14.982s] Creating /home/r1mini/sungsik_ws/install/hrdp_launch/lib/python3.8/site-packages/hrdp-launch.egg-link (link to .)
+[14.992s] 
+[14.993s] Installed /home/r1mini/sungsik_ws/build/hrdp_launch
+[14.994s] running install_data
+[14.995s] creating /home/r1mini/sungsik_ws/install/hrdp_launch/share/ament_index
+[14.996s] creating /home/r1mini/sungsik_ws/install/hrdp_launch/share/ament_index/resource_index
+[14.997s] creating /home/r1mini/sungsik_ws/install/hrdp_launch/share/ament_index/resource_index/packages
+[14.998s] copying resource/hrdp_launch -> /home/r1mini/sungsik_ws/install/hrdp_launch/share/ament_index/resource_index/packages
+[14.999s] copying package.xml -> /home/r1mini/sungsik_ws/install/hrdp_launch/share/hrdp_launch
+[14.999s] copying launch/hrdp_sneaker_objectron_launch.xml -> /home/r1mini/sungsik_ws/install/hrdp_launch/share/hrdp_launch
+[15.523s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_launch' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_launch/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_launch/build --no-deps install_data

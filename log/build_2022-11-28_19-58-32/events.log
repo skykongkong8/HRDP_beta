@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.002973] (-) JobUnselected: {'identifier': 'hrdp_actuators_beta'}
+[0.003753] (-) JobUnselected: {'identifier': 'hrdp_human_interface_beta'}
+[0.004826] (-) JobUnselected: {'identifier': 'hrdp_launch'}
+[0.005286] (-) JobUnselected: {'identifier': 'hrdp_perception_beta'}
+[0.005529] (-) JobUnselected: {'identifier': 'hrdp_sensors_beta'}
+[0.006964] (-) EventReactorShutdown: {}

@@ -1,0 +1,18 @@
+[20.059s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/build --no-deps install_data
+[24.456s] running develop
+[26.445s] running egg_info
+[26.447s] writing hrdp_human_interface_beta.egg-info/PKG-INFO
+[26.456s] writing dependency_links to hrdp_human_interface_beta.egg-info/dependency_links.txt
+[26.459s] writing entry points to hrdp_human_interface_beta.egg-info/entry_points.txt
+[26.460s] writing requirements to hrdp_human_interface_beta.egg-info/requires.txt
+[26.461s] writing top-level names to hrdp_human_interface_beta.egg-info/top_level.txt
+[26.495s] reading manifest file 'hrdp_human_interface_beta.egg-info/SOURCES.txt'
+[26.501s] writing manifest file 'hrdp_human_interface_beta.egg-info/SOURCES.txt'
+[27.309s] running build_ext
+[27.329s] Creating /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/python3.8/site-packages/hrdp-human-interface-beta.egg-link (link to .)
+[27.342s] Installing user_voice_listener script to /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/hrdp_human_interface_beta
+[27.346s] 
+[27.353s] Installed /home/r1mini/sungsik_ws/build/hrdp_human_interface_beta
+[27.356s] running install_data
+[27.376s] copying package.xml -> /home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/share/hrdp_human_interface_beta
+[28.884s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_human_interface_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_human_interface_beta/build --no-deps install_data

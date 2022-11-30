@@ -29,6 +29,7 @@ class FaceDetector:
         self.face_counts = 0
         self.mp_face_detection = mp.solutions.face_detection
 
+        
     def detect(self, image):
         with self.mp_face_detection.FaceDetection(
             model_selection=1, min_detection_confidence=0.5) as face_detection:
@@ -146,7 +147,7 @@ class FaceDetection(Node):
 
 
     def execute_callback(self, request, response):
-        #  request.data : bool
+        # request.data : bool
         # response.success : bool, response.message : string
         response.success = False
 
