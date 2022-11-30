@@ -1,6 +1,6 @@
 # **hrdp_beta**
-> hms robot developing platform (beta)  
-Sample packages for basic robot developing infrastructure.
+> hms robot development platform (beta)  
+Sample packages for robot development kickstart.
 
 Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty.korea.ac.kr/kufaculty/drsspark/index.do) in [Korea University](https://www.korea.edu/)
 
@@ -127,9 +127,9 @@ ros2 run hrdp_actuators_beta voice_control
 ```
 
 ## 4. hrdp_human_interfaces
-> * Functions of ears and mouth for a robot.
-> * Simple AI speaker functions : clock, timer, joke  
-> * Before running any nodes, please run `organs/microphone_connection_check.py` and correct DEVICE_INDEX variable properly!
+* Functions of ears and mouth for a robot.  
+* Simple AI speaker functions : clock, timer, joke  
+* Before running any nodes, please run `organs/microphone_connection_check.py` and correct DEVICE_INDEX variable properly!
 
 ### User voice listener node
 > Microphone connection + TTS algorithm + String publisher  
