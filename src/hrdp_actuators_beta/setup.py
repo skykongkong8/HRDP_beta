@@ -4,7 +4,7 @@ package_name = 'hrdp_actuators_beta'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='1.0.0',
     packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -13,10 +13,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='r1mini',
+    maintainer='skykongkong8',
     maintainer_email='kssjustin98@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='    This package is expected to collect all the signals from robot-perception-in-the-loop and human controlling interfaces and formulate the optimal actuation strategy.',
+    license='TODO: License declaration: skykongkong8',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

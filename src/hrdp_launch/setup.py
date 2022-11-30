@@ -6,7 +6,7 @@ package_name = 'hrdp_launch'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='1.0.0',
     packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -16,10 +16,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='r1mini',
+    maintainer='skykongkong8',
     maintainer_email='kssjustin98@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='    This packages is expected to support launch files that contains multiple nodes from the distant packages.',
+    license='TODO: License declaration : skykongkong8',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
