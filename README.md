@@ -8,7 +8,7 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
 ![hrdp vs hrdp_beta](https://github.com/skykongkong8/hrdp_beta/blob/main/res/HRDP_compare_blockdiagram.drawio.png)
 ## Environment settings
 * HW : [Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
-* OS + frameworks : ubuntu 20.04 + ros2-foxy download from [here](https://omorobot.com/docs/ros2-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-jetson-nano/)
+* OS + frameworks : ubuntu 20.04 + [ros2-foxy](https://docs.ros.org/en/foxy/index.html) download from [here](https://omorobot.com/docs/ros2-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-jetson-nano/)
   * swap mem : follow [here](https://github.com/JetsonHacksNano/installSwapfile) or below
   ```git
   cd ~
@@ -54,7 +54,7 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
   * lidar : [rplidar_s1](https://www.slamtec.com/en/Lidar/S1)
     * sdk install : [follow here](https://github.com/CreedyNZ/rplidar_ros2)
 * Major python dependencies : [mediapipe](https://google.github.io/mediapipe/getting_started/python.html), [tensorflow 2.4](https://www.tensorflow.org/install/source?hl=ko), gTTS, SpeechRecognition, playsound
-  * Almost every ros/python package depdency can be resolved with [rosdep](https://docs.ros.org/en/foxy/Tutorials/Intermediate/Rosdep.html)
+  * Almost every ros/python package depdency can be resolved with [rosdep](https://docs.ros.org/en/foxy/Tutorials/Intermediate/Rosdep.html) + Check [here](https://github.com/ros/rosdistro/tree/master/rosdep) as well
   > If it is your first time running rosdep:
   ```ros
   rosdep init
@@ -71,10 +71,10 @@ Undergraduate Researcher Project in [Human Machine Systems Lab.](https://faculty
 *  Currently only supports RGB & Depth camera    
    
 ### Sensors node
-> Multiple publishers for each sensors connected 
+> Multiple publishers for each sensor connected 
 
 Open a new terminal and insert:  
-``` terminal
+``` ros
 ros2 run hrdp_sensors_beta sensors
 ```
   
@@ -91,17 +91,15 @@ ros2 run hrdp_perception_beta face_detection
 ```
 Then to request the service:
 ```ros
-ros2 service call /hrdp_perception_beta/face_detection example_interfaces/srv/SetBoool "{data : True}"
+ros2 service call /hrdp_perception_beta/face_detection example_interfaces/srv/SetBool "{data : True}"
 ```
 
 ### Sneakers objectron node
 > Subscribed to camera + MobileNet + Sneakers objectron model + MultiArray publishers  
 
 > **WARNING** : you should require specific .tflite model's' for objectron node.  
-You can download all the files from [here](https://github.com/google/mediapipe/tree/v0.8.10.1/mediapipe/modules/objectron), or from the older branches of [mediapipe](https://github.com/google/mediapipe) repo if deprecated, and add it to: 
-```
-{your_python_dist-packages}/mediapipe/modules/objectron
-```
+You can download all the files from [here](https://github.com/google/mediapipe/tree/v0.8.10.1/mediapipe/modules/objectron), or from the older branches of [mediapipe](https://github.com/google/mediapipe) repo if deprecated, and add it to : `{your_python_dist-packages}/mediapipe/modules/objectron`  
+
 Then, open a new terminal and insert:
 ```ros
 ros2 run hrdp_perception_beta sneakers_objectron
@@ -142,7 +140,7 @@ ros2 run hrdp_human_interface_beta user_voice_listener
 ## 5. hrdp_launch
 * Integrated launch files that contain multiple nodes from the distant packages.
 ### hrdp_sneakers_objectron_launch.xml
-> Camera puublisher + camera subscriber + sneakers_objectron model + Rotation publisher + Translation publisher
-```
+> Camera publisher + camera subscriber + sneakers_objectron model + Rotation publisher + Translation publisher
+```ros
 ros2 launch hrdp_launch hrdp_sneakers_objectron_launch.xml
 ```
