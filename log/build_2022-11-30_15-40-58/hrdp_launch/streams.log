@@ -1,0 +1,17 @@
+[14.102s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_launch': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_launch/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_launch/build --no-deps install_data
+[17.282s] running develop
+[18.784s] running egg_info
+[18.788s] writing hrdp_launch.egg-info/PKG-INFO
+[18.793s] writing dependency_links to hrdp_launch.egg-info/dependency_links.txt
+[18.797s] writing entry points to hrdp_launch.egg-info/entry_points.txt
+[18.802s] writing requirements to hrdp_launch.egg-info/requires.txt
+[18.806s] writing top-level names to hrdp_launch.egg-info/top_level.txt
+[18.844s] reading manifest file 'hrdp_launch.egg-info/SOURCES.txt'
+[18.854s] writing manifest file 'hrdp_launch.egg-info/SOURCES.txt'
+[19.420s] running build_ext
+[19.426s] Creating /home/r1mini/sungsik_ws/install/hrdp_launch/lib/python3.8/site-packages/hrdp-launch.egg-link (link to .)
+[19.449s] 
+[19.451s] Installed /home/r1mini/sungsik_ws/build/hrdp_launch
+[19.456s] running install_data
+[19.460s] copying package.xml -> /home/r1mini/sungsik_ws/install/hrdp_launch/share/hrdp_launch
+[20.284s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_launch' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_launch/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_launch/build --no-deps install_data

@@ -1,11 +1,11 @@
 Metadata-Version: 2.1
 Name: hrdp-perception-beta
-Version: 0.0.0
-Summary: TODO: Package description
+Version: 1.0.0
+Summary:     This package is expected to collect sensor data, apply proper detection algorithms (i.e. deep learning models), and obtain useful information for the robot system.
 Home-page: UNKNOWN
 Maintainer: skykongkong8
 Maintainer-email: kssjustin98@gmail.com
-License: TODO: License declaration
+License: TODO: License declaration : skykongkong8
 Platform: UNKNOWN
 
 UNKNOWN

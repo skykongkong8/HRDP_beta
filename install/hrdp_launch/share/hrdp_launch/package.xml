@@ -2,10 +2,12 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>hrdp_launch</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="kssjustin98@gmail.com">r1mini</maintainer>
-  <license>TODO: License declaration</license>
+  <version>1.0.0</version>
+  <description>
+    This packages is expected to support launch files that contains multiple nodes from the distant packages.
+  </description>
+  <maintainer email="kssjustin98@gmail.com">skykongkong8</maintainer>
+  <license>TODO: License declaration : skykongkong8</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

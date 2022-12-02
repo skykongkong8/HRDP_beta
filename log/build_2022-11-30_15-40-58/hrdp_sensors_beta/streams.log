@@ -1,0 +1,17 @@
+[6.120s] Invoking command in '/home/r1mini/sungsik_ws/build/hrdp_sensors_beta': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_sensors_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_sensors_beta/build --no-deps install_data
+[7.989s] running develop
+[8.954s] running egg_info
+[8.958s] writing hrdp_sensors_beta.egg-info/PKG-INFO
+[8.959s] writing dependency_links to hrdp_sensors_beta.egg-info/dependency_links.txt
+[8.960s] writing entry points to hrdp_sensors_beta.egg-info/entry_points.txt
+[8.960s] writing requirements to hrdp_sensors_beta.egg-info/requires.txt
+[8.961s] writing top-level names to hrdp_sensors_beta.egg-info/top_level.txt
+[8.980s] reading manifest file 'hrdp_sensors_beta.egg-info/SOURCES.txt'
+[8.989s] writing manifest file 'hrdp_sensors_beta.egg-info/SOURCES.txt'
+[9.223s] running build_ext
+[9.225s] Creating /home/r1mini/sungsik_ws/install/hrdp_sensors_beta/lib/python3.8/site-packages/hrdp-sensors-beta.egg-link (link to .)
+[9.232s] Installing sensors script to /home/r1mini/sungsik_ws/install/hrdp_sensors_beta/lib/hrdp_sensors_beta
+[9.234s] 
+[9.234s] Installed /home/r1mini/sungsik_ws/build/hrdp_sensors_beta
+[9.235s] running install_data
+[9.702s] Invoked command in '/home/r1mini/sungsik_ws/build/hrdp_sensors_beta' returned '0': PYTHONPATH=/home/r1mini/sungsik_ws/build/hrdp_sensors_beta/prefix_override:/home/r1mini/sungsik_ws/install/hrdp_sensors_beta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/r1mini/sungsik_ws/build/hrdp_sensors_beta/build --no-deps install_data

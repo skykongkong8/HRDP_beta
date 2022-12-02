@@ -2,7 +2,6 @@
 
 import rclpy
 from rclpy.node import Node
-from hrdp_beta_actions.action import FaceDetection
 from sensor_msgs.msg import Image, CompressedImage
 from example_interfaces.srv import SetBool
 from cv_bridge import CvBridge
